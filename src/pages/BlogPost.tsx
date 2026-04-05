@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Clock, User, Calendar, Share2, Twitter, Linkedin, Link as LinkIcon, BookOpen } from "lucide-react";
+import { ArrowLeft, Clock, User, Calendar, Share2, ExternalLink, Link as LinkIcon, BookOpen } from "lucide-react";
 import BlogHeader from "@/components/blog/BlogHeader";
 import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
