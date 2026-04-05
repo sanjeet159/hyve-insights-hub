@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, User } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
@@ -53,9 +54,9 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
               <Clock className="h-4 w-4" /> {post.readTime}
             </span>
           </div>
-          <button className="mt-8 inline-flex w-fit items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all duration-200 hover:gap-3 hover:shadow-lg">
+          <Link to={`/blog/${post.id}`} className="mt-8 inline-flex w-fit items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all duration-200 hover:gap-3 hover:shadow-lg">
             Read Article <ArrowRight className="h-4 w-4" />
-          </button>
+          </Link>
         </div>
       </motion.article>
     </section>
