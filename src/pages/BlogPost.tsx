@@ -140,10 +140,10 @@ const BlogPost = () => {
           <div className="ml-auto flex items-center gap-2">
             <span className="mr-1 text-xs font-medium">Share:</span>
             <button className="rounded-lg border border-border p-2 transition-colors hover:bg-accent">
-              <Twitter className="h-4 w-4" />
+              <Share2 className="h-4 w-4" />
             </button>
             <button className="rounded-lg border border-border p-2 transition-colors hover:bg-accent">
-              <Linkedin className="h-4 w-4" />
+              <ExternalLink className="h-4 w-4" />
             </button>
             <button className="rounded-lg border border-border p-2 transition-colors hover:bg-accent">
               <LinkIcon className="h-4 w-4" />
