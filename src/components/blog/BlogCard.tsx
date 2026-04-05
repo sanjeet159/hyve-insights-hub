@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Clock, User } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
@@ -9,8 +10,14 @@ interface BlogCardProps {
 
 const BlogCard = ({ post, index }: BlogCardProps) => {
   return (
+    <Link to={`/blog/${post.id}`}>
     <motion.article
       initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.1 }}
+      className="card-hover-border group cursor-pointer overflow-hidden rounded-2xl bg-card shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-card-hover)]"
+    >
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -47,6 +54,7 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
         <p className="mt-1 text-xs text-muted-foreground">{post.date}</p>
       </div>
     </motion.article>
+    </Link>
   );
 };
 
