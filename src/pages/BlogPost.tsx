@@ -6,7 +6,7 @@ import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
 import BlogCard from "@/components/blog/BlogCard";
 import { featuredPost, blogPosts } from "@/data/blogData";
-import { useMemo, useRef } from "react";
+import { useMemo } from "react";
 
 const articleContent = `
 ## The Shift from Solo to Team-Based Freelancing
@@ -62,7 +62,6 @@ Whether you're a seasoned solo freelancer looking to scale or a newcomer wanting
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
-  const articleRef = useRef<HTMLElement>(null);
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 80, damping: 30, restDelta: 0.001 });
@@ -87,14 +86,14 @@ const BlogPost = () => {
 
       <BlogHeader />
 
-      {/* Hero */}
-      <section className="relative pt-16">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="h-72 w-full overflow-hidden md:h-[440px]"
-        >
+      {/* Hero image - full width, clean */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="relative pt-16"
+      >
+        <div className="h-64 w-full overflow-hidden md:h-80 lg:h-96">
           <img
             src={post.image}
             alt={post.title}
@@ -102,79 +101,98 @@ const BlogPost = () => {
             width={1200}
             height={640}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-foreground/5" />
-        </motion.div>
-
-        <div className="container relative z-10 mx-auto -mt-36 px-4 md:-mt-44">
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="mx-auto max-w-3xl"
-          >
-            <Link
-              to="/"
-              className="mb-6 inline-flex items-center gap-2 rounded-full bg-background/90 px-4 py-2 text-sm font-medium text-foreground backdrop-blur-sm transition-all duration-200 hover:bg-background hover:shadow-sm hover:gap-2.5"
-            >
-              <ArrowLeft className="h-4 w-4" /> Back to Blog
-            </Link>
-
-            <motion.span
-              initial={{ opacity: 0, x: -12 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-              className="mt-4 inline-block rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm"
-            >
-              {post.category}
-            </motion.span>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.35, duration: 0.5 }}
-              className="mt-4 font-heading text-3xl font-extrabold leading-[1.15] text-background md:text-4xl lg:text-5xl"
-            >
-              {post.title}
-            </motion.h1>
-          </motion.div>
+          <div className="absolute inset-0 top-16 bg-gradient-to-t from-background via-background/20 to-transparent" />
         </div>
-      </section>
+      </motion.div>
+
+      {/* Title section - below image, clean layout */}
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="mx-auto max-w-3xl -mt-16 relative z-10"
+        >
+          {/* Back button */}
+          <Link
+            to="/"
+            className="mb-5 inline-flex items-center gap-2 rounded-full bg-card border border-border/60 px-4 py-2 text-sm font-medium text-foreground shadow-sm transition-all duration-200 hover:bg-accent hover:gap-2.5 hover:shadow-md"
+          >
+            <ArrowLeft className="h-4 w-4" /> Back to Blog
+          </Link>
+
+          {/* Category badge */}
+          <motion.div
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.25 }}
+            className="mt-3"
+          >
+            <span className="inline-block rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-primary-foreground shadow-sm shadow-primary/20">
+              {post.category}
+            </span>
+          </motion.div>
+
+          {/* Title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+            className="mt-5 font-heading text-3xl font-extrabold leading-[1.15] text-foreground md:text-4xl lg:text-[2.75rem]"
+          >
+            {post.title}
+          </motion.h1>
+
+          {/* Excerpt */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="mt-4 text-lg text-muted-foreground leading-relaxed"
+          >
+            {post.excerpt}
+          </motion.p>
+        </motion.div>
+      </div>
 
       {/* Meta bar */}
       <div className="container mx-auto px-4">
         <motion.div
-          initial={{ opacity: 0, y: 12 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45 }}
-          className="mx-auto mt-8 flex max-w-3xl flex-wrap items-center gap-5 border-b border-border/60 pb-6 text-sm text-muted-foreground"
+          className="mx-auto mt-8 flex max-w-3xl flex-wrap items-center gap-5 rounded-xl border border-border/50 bg-secondary/30 px-6 py-4 text-sm text-muted-foreground"
         >
-          <span className="flex items-center gap-1.5">
-            <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">
+          <span className="flex items-center gap-2">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">
               {post.author.charAt(0)}
             </div>
-            {post.author}
+            <span className="font-medium text-foreground">{post.author}</span>
           </span>
+          <span className="h-4 w-px bg-border" />
           <span className="flex items-center gap-1.5">
             <Calendar className="h-4 w-4" /> {post.date}
           </span>
+          <span className="h-4 w-px bg-border" />
           <span className="flex items-center gap-1.5">
             <Clock className="h-4 w-4" /> {post.readTime}
           </span>
-          <span className="flex items-center gap-1.5">
+          <span className="h-4 w-px bg-border hidden sm:block" />
+          <span className="hidden sm:flex items-center gap-1.5">
             <BookOpen className="h-4 w-4" /> Team Freelancing
           </span>
 
           {/* Share */}
           <div className="ml-auto flex items-center gap-2">
-            <span className="mr-1 text-xs font-medium text-muted-foreground/70">Share:</span>
+            <span className="mr-1 text-xs font-medium text-muted-foreground/70">Share</span>
             {[Share2, ExternalLink, LinkIcon].map((Icon, i) => (
               <motion.button
                 key={i}
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.93 }}
-                className="rounded-lg border border-border/60 p-2 transition-colors duration-200 hover:bg-accent hover:border-primary/30"
+                className="rounded-lg border border-border/50 bg-card p-2 transition-colors duration-200 hover:bg-accent hover:border-primary/30"
               >
-                <Icon className="h-4 w-4" />
+                <Icon className="h-3.5 w-3.5" />
               </motion.button>
             ))}
           </div>
@@ -183,7 +201,6 @@ const BlogPost = () => {
 
       {/* Article content */}
       <motion.article
-        ref={articleRef}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.55, duration: 0.5 }}
