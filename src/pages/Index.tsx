@@ -8,6 +8,7 @@ import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
 import { featuredPost, blogPosts, type Category } from "@/data/blogData";
 import { motion } from "framer-motion";
+import { Newspaper } from "lucide-react";
 
 const Index = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
@@ -36,15 +37,19 @@ const Index = () => {
       <FeaturedPost post={featuredPost} />
 
       {/* Latest Articles */}
-      <section className="container mx-auto px-4 pb-16">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+      <section className="container mx-auto px-4 pb-20">
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8 font-heading text-2xl font-bold text-foreground"
+          className="mb-10 flex items-center gap-2"
         >
-          Latest Articles
-        </motion.h2>
+          <Newspaper className="h-5 w-5 text-primary" />
+          <h2 className="font-heading text-2xl font-bold text-foreground">Latest Articles</h2>
+          <span className="ml-2 rounded-full bg-accent px-3 py-0.5 text-xs font-medium text-accent-foreground">
+            {filteredPosts.length} posts
+          </span>
+        </motion.div>
 
         {filteredPosts.length > 0 ? (
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -53,9 +58,14 @@ const Index = () => {
             ))}
           </div>
         ) : (
-          <p className="py-12 text-center text-muted-foreground">
-            No articles found. Try a different search or category.
-          </p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="py-16 text-center"
+          >
+            <p className="text-lg text-muted-foreground">No articles found.</p>
+            <p className="mt-1 text-sm text-muted-foreground/70">Try a different search or category.</p>
+          </motion.div>
         )}
       </section>
 

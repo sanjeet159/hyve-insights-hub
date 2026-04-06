@@ -17,6 +17,7 @@
 
     --primary: 40 88% 51%;
     --primary-foreground: 0 0% 100%;
+    --primary-glow: 35 95% 55%;
 
     --secondary: 40 20% 96%;
     --secondary-foreground: 220 20% 10%;
@@ -51,6 +52,7 @@
     --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.04), 0 1px 2px -1px hsl(0 0% 0% / 0.04);
     --shadow-card-hover: 0 20px 40px -12px hsl(40 88% 51% / 0.15), 0 4px 12px -2px hsl(0 0% 0% / 0.06);
     --shadow-featured: 0 24px 48px -12px hsl(0 0% 0% / 0.08);
+    --shadow-glow: 0 0 40px -8px hsl(40 88% 51% / 0.3);
   }
 }
 
@@ -83,10 +85,34 @@
   }
 
   .card-hover-border {
-    @apply border-2 border-transparent transition-all duration-300;
+    @apply border border-transparent transition-all duration-300;
   }
 
   .card-hover-border:hover {
-    border-color: hsl(40 88% 51% / 0.4);
+    border-color: hsl(40 88% 51% / 0.35);
   }
+
+  .reading-progress {
+    @apply fixed top-0 left-0 h-[3px] z-[60] transition-none;
+    background: linear-gradient(90deg, hsl(40 88% 51%), hsl(35 95% 55%));
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50;
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(40 10% 80%);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(40 10% 70%);
 }
