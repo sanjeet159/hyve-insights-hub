@@ -144,7 +144,7 @@ const BlogPost = () => {
               {/* Share buttons */}
               <div className="ml-auto flex items-center gap-1.5">
                 {[
-                  { Icon: Twitter, label: "Twitter" },
+                  { Icon: ExternalLink, label: "Twitter" },
                   { Icon: Share2, label: "Share" },
                   { Icon: LinkIcon, label: "Copy" },
                 ].map(({ Icon, label }) => (
