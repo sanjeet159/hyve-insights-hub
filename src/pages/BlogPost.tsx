@@ -156,7 +156,7 @@ const BlogPost = () => {
         className="container mx-auto px-4 py-14"
       >
         <div className="prose-article mx-auto max-w-3xl">
-          {articleContent.split("\n").map((line, i) => {
+          {(articleContents[post.id] || articleContents["1"]).split("\n").map((line, i) => {
             const trimmed = line.trim();
             if (!trimmed) return <div key={i} className="h-4" />;
 
