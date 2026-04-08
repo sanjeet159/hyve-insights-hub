@@ -10,7 +10,7 @@ import { featuredPost, blogPosts, type Category } from "@/data/blogData";
 import { motion, AnimatePresence } from "framer-motion";
 import { Newspaper, ChevronDown } from "lucide-react";
 
-const POSTS_PER_PAGE = 6;
+const POSTS_PER_PAGE = 3;
 
 const Index = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
