@@ -31,8 +31,8 @@ const BlogHeader = () => {
       }}
     >
       <div
-        className="container mx-auto flex items-center justify-between px-4 transition-all duration-300"
-        style={{ height: scrolled ? "56px" : "72px" }}
+        className="container mx-auto flex items-center justify-between px-4 transition-all duration-500 ease-in-out"
+        style={{ height: scrolled ? "48px" : "72px" }}
       >
         {/* Logo */}
         <a
