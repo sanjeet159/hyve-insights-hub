@@ -110,6 +110,61 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min read",
     image: blog6,
   },
+  {
+    id: "8",
+    title: "How to Price Your Freelance Services Competitively",
+    excerpt:
+      "Pricing can make or break your freelancing career. Learn data-driven strategies to set rates that attract clients and reflect your value.",
+    category: "Freelancing",
+    author: "Meera Joshi",
+    date: "Mar 1, 2026",
+    readTime: "5 min read",
+    image: blog1,
+  },
+  {
+    id: "9",
+    title: "The Ultimate Guide to Freelance Contracts in India",
+    excerpt:
+      "Protect yourself and your clients with well-structured contracts. This guide covers everything from scope to payment terms.",
+    category: "Escrow & Payments",
+    author: "Aditya Nair",
+    date: "Feb 25, 2026",
+    readTime: "7 min read",
+    image: blog3,
+  },
+  {
+    id: "10",
+    title: "Async Communication: The Secret to Remote Team Success",
+    excerpt:
+      "Master the art of asynchronous communication to boost productivity and reduce meetings in your distributed team.",
+    category: "Team Collaboration",
+    author: "Sneha Kulkarni",
+    date: "Feb 20, 2026",
+    readTime: "6 min read",
+    image: blog5,
+  },
+  {
+    id: "11",
+    title: "Why Startups Are Choosing Freelance Teams Over Agencies",
+    excerpt:
+      "Freelance teams offer the agility of freelancers with the reliability of agencies. Here's why startups are making the switch.",
+    category: "Startup Hiring",
+    author: "Rahul Desai",
+    date: "Feb 15, 2026",
+    readTime: "5 min read",
+    image: blog2,
+  },
+  {
+    id: "12",
+    title: "Time Blocking for Freelancers: A Practical Framework",
+    excerpt:
+      "Stop multitasking and start time blocking. This framework will help you manage multiple projects without the chaos.",
+    category: "Productivity",
+    author: "Isha Reddy",
+    date: "Feb 10, 2026",
+    readTime: "4 min read",
+    image: blog4,
+  },
 ];
 
 export const popularTopics = [
