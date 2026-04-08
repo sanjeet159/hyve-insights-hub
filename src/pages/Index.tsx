@@ -62,11 +62,30 @@ const Index = () => {
         </motion.div>
 
         {filteredPosts.length > 0 ? (
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {filteredPosts.map((post, i) => (
-              <BlogCard key={post.id} post={post} index={i} />
-            ))}
-          </div>
+          <>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <AnimatePresence>
+                {visiblePosts.map((post, i) => (
+                  <BlogCard key={post.id} post={post} index={i} />
+                ))}
+              </AnimatePresence>
+            </div>
+            {hasMore && (
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mt-12 flex justify-center"
+              >
+                <button
+                  onClick={handleShowMore}
+                  className="group inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-3 text-sm font-semibold text-foreground shadow-sm transition-all duration-300 hover:border-primary/40 hover:bg-primary/5 hover:shadow-md"
+                >
+                  More Blogs
+                  <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+                </button>
+              </motion.div>
+            )}
+          </>
         ) : (
           <motion.div
             initial={{ opacity: 0 }}
