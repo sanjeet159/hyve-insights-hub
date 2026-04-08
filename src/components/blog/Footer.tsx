@@ -29,7 +29,7 @@ const Footer = () => {
               <p className="mt-2 text-lg font-bold">
                 <span className="text-foreground">#startup</span>
                 <span className="text-primary">ind</span>
-                <span className="text-green-600">i</span>
+                <span style={{ color: "hsl(142 71% 35%)" }}>i</span>
                 <span className="text-primary">a</span>
               </p>
             </div>
