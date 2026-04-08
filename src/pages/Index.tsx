@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogHero from "@/components/blog/BlogHero";
 import FeaturedPost from "@/components/blog/FeaturedPost";
