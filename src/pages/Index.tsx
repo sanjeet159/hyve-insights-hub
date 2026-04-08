@@ -15,6 +15,7 @@ const POSTS_PER_PAGE = 6;
 const Index = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [searchQuery, setSearchQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
 
   const filteredPosts = useMemo(() => {
     return blogPosts.filter((post) => {
@@ -26,6 +27,13 @@ const Index = () => {
       return matchesCategory && matchesSearch;
     });
   }, [activeCategory, searchQuery]);
+
+  const visiblePosts = filteredPosts.slice(0, visibleCount);
+  const hasMore = visibleCount < filteredPosts.length;
+
+  const handleShowMore = useCallback(() => {
+    setVisibleCount((prev) => prev + POSTS_PER_PAGE);
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
