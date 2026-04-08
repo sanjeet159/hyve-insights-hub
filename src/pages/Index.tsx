@@ -7,8 +7,10 @@ import PopularTopics from "@/components/blog/PopularTopics";
 import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
 import { featuredPost, blogPosts, type Category } from "@/data/blogData";
-import { motion } from "framer-motion";
-import { Newspaper } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Newspaper, ChevronDown } from "lucide-react";
+
+const POSTS_PER_PAGE = 6;
 
 const Index = () => {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
