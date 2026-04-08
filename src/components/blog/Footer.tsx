@@ -1,4 +1,4 @@
-import { LinkedinIcon, InstagramIcon } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Footer = () => {
