@@ -6,6 +6,7 @@ import BlogCard from "@/components/blog/BlogCard";
 import PopularTopics from "@/components/blog/PopularTopics";
 import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
+import Footer from "@/components/blog/Footer";
 import { featuredPost, blogPosts, type Category } from "@/data/blogData";
 import { motion, AnimatePresence } from "framer-motion";
 import { Newspaper, ChevronDown } from "lucide-react";
@@ -101,6 +102,7 @@ const Index = () => {
       <PopularTopics />
       <Newsletter />
       <FooterCTA />
+      <Footer />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { ArrowLeft, Clock, Calendar, Share2, ExternalLink, LinkIcon, BookOpen } 
 import BlogHeader from "@/components/blog/BlogHeader";
 import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
+import Footer from "@/components/blog/Footer";
 import BlogCard from "@/components/blog/BlogCard";
 import { featuredPost, blogPosts } from "@/data/blogData";
 import { articleContents } from "@/data/articleContents";
@@ -324,6 +325,7 @@ const BlogPost = () => {
 
       <Newsletter />
       <FooterCTA />
+      <Footer />
     </div>
   );
 };
