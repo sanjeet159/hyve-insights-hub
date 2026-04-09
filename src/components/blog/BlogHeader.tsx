@@ -29,7 +29,7 @@ const BlogHeader = () => {
         transition={{ duration: 0.4 }}
         className="w-full transition-all duration-500 ease-in-out"
         style={{
-          maxWidth: scrolled ? "600px" : "100%",
+          maxWidth: scrolled ? "900px" : "100%",
           borderRadius: scrolled ? "9999px" : "0px",
           background: scrolled ? "hsl(var(--background) / 0.95)" : "hsl(var(--background) / 0.8)",
           backdropFilter: "blur(16px)",
