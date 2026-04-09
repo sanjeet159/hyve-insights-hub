@@ -48,12 +48,6 @@ const BlogHeader = () => {
           rel="noopener noreferrer"
           className="flex items-center gap-2.5"
         >
-          <motion.div
-            animate={{ scale: scrolled ? 0.9 : 1 }}
-            transition={{ duration: 0.3 }}
-            className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary font-heading text-lg font-extrabold text-primary-foreground shadow-sm"
-          >
-          </motion.div>
           <motion.span
             animate={{ fontSize: scrolled ? "18px" : "20px" }}
             transition={{ duration: 0.3 }}
