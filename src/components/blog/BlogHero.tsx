@@ -107,7 +107,7 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
               placeholder="Search articles..."
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
-              className="w-full rounded-full border border-border/70 bg-background/90 backdrop-blur-sm py-3.5 pl-12 pr-5 text-sm text-foreground shadow-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/40 focus:border-primary/50 focus:ring-2 focus:ring-primary/20"            />
+              className="w-full rounded-full border border-border/70 bg-background/90 backdrop-blur-sm py-3.5 pl-12 pr-5 text-sm text-foreground shadow-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/40 focus:border-primary/50 focus:ring-2 focus:ring-primary/20"/>
           </div>
         </motion.div>
 
