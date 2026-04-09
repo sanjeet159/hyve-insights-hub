@@ -2,8 +2,8 @@ import blog4 from "@/assets/blog-4.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
-  id: "12",
-  title: "Time Blocking for Freelancers: A Practical Framework",
+  id: "13",
+  title: "Post Testing",
   excerpt:
     "Stop multitasking and start time blocking. This framework will help you manage multiple projects without the chaos.",
   category: "Productivity",
