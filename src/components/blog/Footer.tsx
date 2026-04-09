@@ -8,8 +8,6 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              </div>
               <img src="/logo.png" alt="HYVE" className="h-8" />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
