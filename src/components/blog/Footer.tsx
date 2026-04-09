@@ -14,7 +14,7 @@ const Footer = () => {
                   <path d="M3 7l6-4 6 4 6-4v14l-6 4-6-4-6 4V7z" />
                 </svg>
               </div>
-              <span className="text-xl font-bold text-foreground tracking-tight">HYVE</span>
+              <img src="/logo.png" alt="HYVE" className="h-8" />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Helping Youth Venture Everywhere
