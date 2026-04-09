@@ -14,8 +14,6 @@ const post: BlogPostWithContent = {
   featured: true,
   content: `## The Shift from Solo to Team-Based Freelancing
 
-</div>
- 
 <p>If you are a freelancer in India, there is a near-certain chance you have experienced this: you deliver great work, send the invoice, and then wait. And wait. And wait some more. Maybe the client comes back with a revision request. Maybe they go silent entirely. Either way, the money you earned is not in your account.</p>
  
 <p>This is not a small inconvenience. For millions of Indian freelancers, delayed and unpaid invoices are the single biggest threat to their livelihood. A 2024 survey found that over <strong>68% of Indian freelancers</strong> had experienced at least one non-payment in the previous 12 months. Collectively, Indian freelancers lose hundreds of crores every year — not because they did bad work, but because the system they work in was never designed to protect them.</p>
@@ -84,7 +82,3 @@ const post: BlogPostWithContent = {
  
 <p>You built your skills. You put in the hours. You deserve to get paid — every time, on time, without the anxiety of wondering if this client will be the one who disappears.</p>
  
-<div class="cta-box">
-  <p>Join Hyve and get guaranteed payment on every project you take. 🐝</p>
-  <a href="https://hyvefreelance.com">Get Started Free →</a>
-</div>
