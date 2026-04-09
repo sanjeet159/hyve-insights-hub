@@ -53,7 +53,6 @@ const BlogHeader = () => {
             transition={{ duration: 0.3 }}
             className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary font-heading text-lg font-extrabold text-primary-foreground shadow-sm"
           >
-            H
           </motion.div>
           <motion.span
             animate={{ fontSize: scrolled ? "18px" : "20px" }}
