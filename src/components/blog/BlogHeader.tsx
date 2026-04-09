@@ -20,20 +20,27 @@ const BlogHeader = () => {
   ];
 
   return (
-    <motion.header
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.4 }}
-      className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur-xl transition-all duration-300"
-      style={{
-        borderBottom: scrolled ? "1px solid hsl(var(--border))" : "1px solid transparent",
-        boxShadow: scrolled ? "0 1px 12px hsl(var(--foreground) / 0.04)" : "none",
-      }}
+    <div className="fixed top-0 z-50 w-full flex justify-center transition-all duration-500 ease-in-out"
+      style={{ padding: scrolled ? "8px 16px" : "0px" }}
     >
-      <div
-        className="container mx-auto flex items-center justify-between px-4 transition-all duration-500 ease-in-out"
-        style={{ height: scrolled ? "48px" : "72px" }}
+      <motion.header
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        className="w-full transition-all duration-500 ease-in-out"
+        style={{
+          maxWidth: scrolled ? "900px" : "100%",
+          borderRadius: scrolled ? "9999px" : "0px",
+          background: scrolled ? "hsl(var(--background) / 0.95)" : "hsl(var(--background) / 0.8)",
+          backdropFilter: "blur(16px)",
+          border: scrolled ? "1px solid hsl(var(--border))" : "1px solid transparent",
+          boxShadow: scrolled ? "0 4px 24px hsl(var(--foreground) / 0.08)" : "none",
+        }}
       >
+        <div
+          className="flex items-center justify-between px-6 transition-all duration-500 ease-in-out"
+          style={{ height: scrolled ? "48px" : "72px" }}
+        >
         {/* Logo */}
         <a
           href="https://hyvefreelance.com"
