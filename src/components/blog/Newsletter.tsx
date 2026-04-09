@@ -11,13 +11,13 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="container mx-auto px-4 py-20">
+    <section className="w-full py-20">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl bg-foreground p-10 text-center md:p-14"
+        className="relative w-full overflow-hidden bg-foreground p-10 text-center md:p-14"
       >
         {/* Decorative glows */}
         <div className="pointer-events-none absolute inset-0">
