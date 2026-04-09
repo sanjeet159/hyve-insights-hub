@@ -101,14 +101,13 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
           className="mx-auto mt-10 max-w-lg"
         >
           <div className="relative group">
-            <Search className="absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-muted-foreground/60 transition-colors duration-200 group-focus-within:text-primary" />
+            <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-primary transition-colors duration-200" />
             <input
               type="text"
               placeholder="Search articles..."
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
-              className="w-full rounded-full border border-border/70 bg-background/90 backdrop-blur-sm py-3.5 pl-11 pr-5 text-sm text-foreground shadow-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/50 focus:border-primary/40 focus:ring-[3px] focus:ring-primary/10 focus:shadow-[0_0_20px_-4px_hsl(40_88%_51%_/_0.2)]"
-            />
+              className="w-full rounded-full border border-border/70 bg-background/90 backdrop-blur-sm py-3.5 pl-12 pr-5 text-sm text-foreground shadow-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/50 focus:border-primary/50 focus:ring-2 focus:ring-primary/20"            />
           </div>
         </motion.div>
 
