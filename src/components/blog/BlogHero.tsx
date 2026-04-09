@@ -101,7 +101,7 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
           className="mx-auto mt-10 max-w-lg"
         >
           <div className="relative group">
-            <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-primary transition-colors duration-200" />
+            <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-primary opacity-100" />
             <input
               type="text"
               placeholder="Search articles..."
