@@ -60,7 +60,7 @@ const BlogHeader = () => {
             transition={{ duration: 0.3 }}
             className="font-heading font-bold text-foreground"
           >
-            HYVE
+            <img src="/logo.png" alt="HYVE" className="h-8" />
           </motion.span>
         </a>
 
