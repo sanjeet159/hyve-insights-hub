@@ -28,7 +28,8 @@ export const allPosts = [
   post9,
   post10,
   post11,
-  post12,
+  post12
+  post-13,
 ];
 
 // Featured post is the first one (or any with featured: true)
