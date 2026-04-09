@@ -9,7 +9,6 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
               </div>
               <img src="/logo.png" alt="HYVE" className="h-8" />
             </div>
