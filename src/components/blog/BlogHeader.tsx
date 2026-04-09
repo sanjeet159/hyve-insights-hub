@@ -29,13 +29,20 @@ const BlogHeader = () => {
         transition={{ duration: 0.4 }}
         className="w-full transition-all duration-500 ease-in-out"
         style={{
-          maxWidth: scrolled ? "900px" : "1400px",
-          borderRadius: scrolled ? "9999px" : "0px",
-          background: scrolled ? "hsl(var(--background) / 0.95)" : "hsl(var(--background) / 0.8)",
-          backdropFilter: "blur(16px)",
-          border: scrolled ? "1px solid hsl(var(--border))" : "1px solid transparent",
-          boxShadow: scrolled ? "0 4px 24px hsl(var(--foreground) / 0.08)" : "none",
-        }}
+  maxWidth: scrolled ? "900px" : "1200px",
+  borderRadius: scrolled ? "9999px" : "0px",
+  background: scrolled
+    ? "rgba(255, 255, 255, 0.15)"
+    : "rgba(255, 255, 255, 0.08)",
+  backdropFilter: "blur(20px)",
+  WebkitBackdropFilter: "blur(20px)",
+  border: scrolled
+    ? "1px solid rgba(255, 255, 255, 0.3)"
+    : "1px solid rgba(255, 255, 255, 0.1)",
+  boxShadow: scrolled
+    ? "0 8px 32px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255,255,255,0.2)"
+    : "0 2px 16px rgba(0, 0, 0, 0.06)",
+}}
       >
         <div
           className="flex items-center justify-between px-6 transition-all duration-500 ease-in-out"
