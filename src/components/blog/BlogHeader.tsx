@@ -21,7 +21,7 @@ const BlogHeader = () => {
 
   return (
     <div className="fixed top-0 z-50 w-full flex justify-center transition-all duration-500 ease-in-out"
-      style={{ padding: scrolled ? "8px 16px" : "0px" }}
+      style={{ padding: scrolled ? "8px 16px" : "8px 24px" }}
     >
        <motion.header
         initial={{ y: -20, opacity: 0 }}
@@ -29,7 +29,7 @@ const BlogHeader = () => {
         transition={{ duration: 0.4 }}
         className="w-full transition-all duration-500 ease-in-out"
         style={{
-          maxWidth: scrolled ? "900px" : "100%",
+          maxWidth: scrolled ? "900px" : "1200px",
           borderRadius: scrolled ? "9999px" : "0px",
           background: scrolled ? "hsl(var(--background) / 0.95)" : "hsl(var(--background) / 0.8)",
           backdropFilter: "blur(16px)",
