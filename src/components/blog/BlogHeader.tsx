@@ -151,7 +151,8 @@ const BlogHeader = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.header>
+      </motion.header>
+    </div>
   );
 };
 
