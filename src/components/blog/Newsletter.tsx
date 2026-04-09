@@ -56,14 +56,14 @@ const Newsletter = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="mt-8 flex flex-col gap-3 sm:flex-row"
+              className="mt-8 flex flex-col gap-3 sm:flex-row justify-center items-center mx-auto max-w-md"
             >
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-1 rounded-xl border border-background/10 bg-background/10 px-5 py-3.5 text-background outline-none placeholder:text-background/35 transition-all duration-300 focus:ring-2 focus:ring-primary/50 focus:bg-background/15"
+                className="w-full sm:w-64 rounded-xl border border-background/10 bg-background/10 px-5 py-3.5 text-background outline-none placeholder:text-background/35 transition-all duration-300 focus:ring-2 focus:ring-primary/50 focus:bg-background/15"
               />
               <button
                 onClick={handleSubmit}
