@@ -39,6 +39,9 @@ export const featuredPost = allPosts.find((p) => p.featured) || allPosts[0];
 // All non-featured posts
 export const blogPosts = allPosts.filter((p) => p.id !== featuredPost.id);
 
+// Lookup by slug
+export const getPostBySlug = (slug: string) => allPosts.find((p) => p.slug === slug);
+
 // Article content map (for backward compatibility)
 export const articleContents: Record<string, string> = Object.fromEntries(
   allPosts.map((p) => [p.id, p.content])
