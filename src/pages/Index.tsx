@@ -1,4 +1,5 @@
 import { useState, useMemo, useCallback } from "react";
+import { Helmet } from "react-helmet-async";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogHero from "@/components/blog/BlogHero";
 import FeaturedPost from "@/components/blog/FeaturedPost";
@@ -36,8 +37,36 @@ const Index = () => {
     setVisibleCount((prev) => prev + POSTS_PER_PAGE);
   }, []);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "HYVE Blog",
+    description: "Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration in India.",
+    url: "https://hyveblogs.lovable.app",
+    publisher: {
+      "@type": "Organization",
+      name: "HYVE",
+      url: "https://hyvefreelance.com",
+    },
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>HYVE Blog — Freelancing, Startup Hiring & Remote Work Insights</title>
+        <meta name="description" content="Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration. Grow your freelance career with HYVE." />
+        <meta name="keywords" content="freelancing tips India, startup hiring, remote work guide, escrow payments, freelance team collaboration, HYVE blog, freelancer productivity" />
+        <link rel="canonical" href="https://hyveblogs.lovable.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="HYVE Blog — Freelancing, Startup Hiring & Remote Work Insights" />
+        <meta property="og:description" content="Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration." />
+        <meta property="og:url" content="https://hyveblogs.lovable.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="HYVE Blog — Freelancing, Startup Hiring & Remote Work Insights" />
+        <meta name="twitter:description" content="Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration." />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
+
       <BlogHeader />
       <BlogHero
         activeCategory={activeCategory}

@@ -10,7 +10,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ post, index }: BlogCardProps) => {
   return (
-    <Link to={`/blog/${post.id}`}>
+    <Link to={`/blog/${post.slug}`}>
       <motion.article
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
