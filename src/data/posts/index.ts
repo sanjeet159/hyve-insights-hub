@@ -4,6 +4,14 @@ import post2 from "./post-2";
 import post3 from "./post-3";
 import post4 from "./post-4";
 import post5 from "./post-5";
+import post6 from "./post-6";
+import post7 from "./post-7";
+import post8 from "./post-8";
+import post9 from "./post-9";
+import post10 from "./post-10";
+import post11 from "./post-11";
+import post12 from "./post-12";
+import post13 from "./post-13";
 
 export type { BlogPost, BlogPostWithContent, Category } from "./types";
 export { categories } from "./types";
