@@ -1,11 +1,42 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { TrendingUp, Hash } from "lucide-react";
+import { TrendingUp, Hash, Flame } from "lucide-react";
 import { popularTopics } from "@/data/blogData";
 
 const PopularTopics = () => {
+  // Load click counts from localStorage so they persist across sessions
+  const [clicks, setClicks] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    const stored = localStorage.getItem("hyve-topic-clicks");
+    if (stored) setClicks(JSON.parse(stored));
+  }, []);
+
+  const handleClick = (topic: string, href: string) => {
+    const updated = { ...clicks, [topic]: (clicks[topic] || 0) + 1 };
+    setClicks(updated);
+    localStorage.setItem("hyve-topic-clicks", JSON.stringify(updated));
+
+    // Also send to Google Analytics if available
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "topic_click", {
+        event_category: "Popular Topics",
+        event_label: topic,
+      });
+    }
+
+    window.open(href, "_blank");
+  };
+
+  // Sort topics by click count descending
+  const sorted = [...popularTopics].sort(
+    (a, b) => (clicks[b] || 0) - (clicks[a] || 0)
+  );
+
+  const maxClicks = Math.max(...sorted.map((t) => clicks[t] || 0), 1);
+
   return (
     <section className="relative overflow-hidden bg-secondary/40 py-20">
-      {/* Subtle bg accent */}
       <div className="pointer-events-none absolute top-0 right-0 h-64 w-64 rounded-full bg-primary/5 blur-3xl" />
 
       <div className="container mx-auto px-4">
@@ -27,6 +58,7 @@ const PopularTopics = () => {
           </p>
         </motion.div>
 
+        {/* Topic buttons */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -34,22 +66,80 @@ const PopularTopics = () => {
           transition={{ delay: 0.2 }}
           className="mx-auto mt-10 flex max-w-3xl flex-wrap justify-center gap-3"
         >
-          {popularTopics.map((topic, i) => (
-            <motion.button
-              key={topic}
-              initial={{ opacity: 0, scale: 0.92 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.15 + i * 0.04 }}
-              whileHover={{ scale: 1.04, y: -2 }}
-              whileTap={{ scale: 0.97 }}
-              className="flex items-center gap-2 rounded-full border border-border/60 bg-card px-5 py-2.5 text-sm font-medium text-foreground transition-all duration-250 hover:border-primary/40 hover:bg-accent hover:shadow-sm hover:shadow-primary/10"
-            >
-              <Hash className="h-3.5 w-3.5 text-primary/60" />
-              {topic}
-            </motion.button>
-          ))}
+          {sorted.map((topic, i) => {
+            const count = clicks[topic] || 0;
+            const isHot = count > 0 && count === Math.max(...Object.values(clicks));
+            return (
+              <motion.button
+                key={topic}
+                initial={{ opacity: 0, scale: 0.92 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.15 + i * 0.04 }}
+                whileHover={{ scale: 1.04, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+                onClick={() => handleClick(topic, `https://hyvefreelance.com`)}
+                className={`relative flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-250 hover:shadow-sm ${
+                  isHot
+                    ? "border-primary/60 bg-primary/10 text-primary hover:bg-primary/15"
+                    : "border-border/60 bg-card text-foreground hover:border-primary/40 hover:bg-accent hover:shadow-primary/10"
+                }`}
+              >
+                {isHot ? (
+                  <Flame className="h-3.5 w-3.5 text-primary" />
+                ) : (
+                  <Hash className="h-3.5 w-3.5 text-primary/60" />
+                )}
+                {topic}
+                {count > 0 && (
+                  <span className="ml-1 rounded-full bg-primary/15 px-1.5 py-0.5 text-[10px] font-semibold text-primary">
+                    {count}
+                  </span>
+                )}
+              </motion.button>
+            );
+          })}
         </motion.div>
+
+        {/* Click stats bar — only shows once someone has clicked */}
+        {Object.keys(clicks).length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="mx-auto mt-14 max-w-2xl"
+          >
+            <p className="mb-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              Topic Interest — based on clicks
+            </p>
+            <div className="flex flex-col gap-3">
+              {sorted
+                .filter((t) => clicks[t] > 0)
+                .map((topic) => {
+                  const count = clicks[topic] || 0;
+                  const pct = Math.round((count / maxClicks) * 100);
+                  return (
+                    <div key={topic} className="flex items-center gap-3">
+                      <span className="w-44 truncate text-right text-xs text-muted-foreground shrink-0">
+                        {topic}
+                      </span>
+                      <div className="flex-1 h-2 rounded-full bg-border/40 overflow-hidden">
+                        <motion.div
+                          initial={{ width: 0 }}
+                          animate={{ width: `${pct}%` }}
+                          transition={{ duration: 0.6, ease: "easeOut" }}
+                          className="h-full rounded-full bg-primary"
+                        />
+                      </div>
+                      <span className="w-8 text-xs font-semibold text-primary shrink-0">
+                        {count}
+                      </span>
+                    </div>
+                  );
+                })}
+            </div>
+          </motion.div>
+        )}
       </div>
     </section>
   );
