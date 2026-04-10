@@ -1,78 +1,105 @@
-import blog3 from "@/assets/blog-3.jpg";
+import blogFeatured from "@/assets/blog-featured.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "4",
-  slug: "understanding-escrow-payments-freelancer-safety-net",
-  title: "Understanding Escrow Payments: A Freelancer's Safety Net",
-  metaTitle: "Understanding Escrow Payments for Freelancers | HYVE Blog",
-  metaDescription: "Escrow payments protect both freelancers and clients. Learn how HYVE's built-in escrow system works and why it's essential for secure freelancing.",
-  keywords: ["escrow payments freelancing", "freelancer payment protection", "HYVE escrow system", "secure freelance payments", "escrow for clients"],
+  slug: "what-is-escrow-freelancing-india-guide",
+  title: "What Is Escrow in Freelancing? A Complete Guide for Indian Freelancers",
+  metaTitle: "What Is Escrow in Freelancing? Complete Guide for Indian Freelancers | HYVE Blog",
+  metaDescription:
+    "What is escrow and how does it protect freelancers? This complete guide explains how escrow payments work, why every Indian freelancer needs it, and how HYVE uses escrow to guarantee your income.",
+  keywords: [
+    "what is escrow for freelancers India",
+    "escrow payment freelancing explained",
+    "how does escrow work freelance",
+    "freelancer payment protection escrow",
+    "milestone escrow India",
+  ],
   excerpt:
-    "Escrow payments protect both freelancers and clients. Learn how HYVE's built-in escrow system works.",
-  category: "Escrow & Payments",
-  author: "Neha Gupta",
-  date: "Mar 20, 2026",
-  readTime: "4 min read",
-  image: blog3,
-  content: `## What Is Escrow and Why Does It Matter?
+    "What is escrow and how does it protect freelancers? This complete guide explains how escrow payments work, why every Indian freelancer needs it, and how HYVE uses escrow to guarantee your income.",
+  category: "Education",
+  author: "Sanjeet Kumar",
+  date: "Apr 10, 2026",
+  readTime: "5 min read",
+  image: blogFeatured,
+  featured: false,
+  content: `## What Is Escrow in Freelancing?
 
-In the freelancing world, trust is currency. Clients worry about paying for work that never gets delivered. Freelancers worry about completing work and never getting paid. This mutual anxiety has been the single biggest barrier to healthy freelance relationships — until escrow changed everything.
+If you have been freelancing for any amount of time in India, you have probably heard the word "escrow" thrown around. But many freelancers — even experienced ones — are not entirely sure what it means, how it works, or why it matters for their income security. This guide covers everything.
 
-### How Escrow Works on HYVE
+## What Is Escrow?
 
-The concept is elegantly simple: a neutral third party holds the payment until both sides are satisfied. Here's how it works on HYVE, step by step:
+Escrow is a financial arrangement where a neutral third party holds money on behalf of two parties involved in a transaction. The money is only released when specific, pre-agreed conditions are met.
 
-1. **Project agreement**: Client and freelancer agree on scope, timeline, and milestones
-2. **Fund deposit**: Client deposits the agreed amount into HYVE's secure escrow account
-3. **Work begins**: The freelancer (or team) starts working, knowing the funds are secured
-4. **Milestone review**: Upon milestone completion, the client reviews the deliverables
-5. **Release**: Once approved, funds are released to the freelancer instantly
+In the context of freelancing, here is what that means in plain terms:
 
-> "Before HYVE, I lost nearly ₹2 lakh to clients who ghosted after receiving deliverables. Escrow completely eliminated that risk. I haven't had a single payment issue in two years." — Meera Krishnan, UI/UX Designer
+1. You and a client agree on a project and price.
+2. The client deposits the agreed amount into an escrow account held by the platform.
+3. You do the work and deliver the milestone.
+4. The client approves the work.
+5. The escrow account releases the money to you.
 
-### The Psychology of Secured Payments
+The key point: **the client cannot take the money back** once it is in escrow, and **you do not receive it** until the conditions are met. Both sides are protected.
 
-Escrow doesn't just protect against fraud — it fundamentally changes the dynamics of a freelance engagement. When both parties know the money is secured and the process is fair, several positive things happen:
+## Why Does Escrow Matter for Indian Freelancers?
 
-**Freelancers take bigger risks.** Knowing payment is guaranteed, freelancers are more willing to invest extra effort, propose creative solutions, and go above and beyond.
+Without escrow, the freelance relationship is fundamentally unbalanced. As a freelancer, you do the work first and get paid after — which means you carry 100% of the risk. If the client disappears, refuses to pay, or disputes the work after it is delivered, you have almost no recourse in India without a formal contract and the willingness to go through legal channels.
 
-**Clients communicate more openly.** Without the anxiety of "what if they take my money and disappear," clients share more context, provide better briefs, and engage more collaboratively.
+Escrow changes this dynamic completely. When money is locked into escrow before you start, you know two things with certainty: the client has the funds, and the funds are committed to this project. You can begin work with confidence rather than anxiety.
 
-**Disputes decrease dramatically.** On HYVE, projects using escrow have 73% fewer disputes than those using direct payment arrangements.
+## How Escrow Works on HYVE — Step by Step
 
-### Milestone-Based vs. Full-Project Escrow
+### Step 1: Project Agreement
 
-HYVE supports both models, and choosing the right one depends on your project:
+You and the client agree on the project scope, deliverables, timeline, and milestone amounts. This is documented clearly on the HYVE platform — no more WhatsApp screenshots as your only record.
 
-**Milestone-based escrow** works best for larger projects. Breaking the project into 3–5 milestones with corresponding payments reduces risk for both parties. Clients only pay for completed work, and freelancers get regular cash flow.
+### Step 2: Client Funds the Escrow
 
-**Full-project escrow** suits smaller engagements — typically under ₹50,000 or less than two weeks of work. The simplicity of a single deposit and release keeps administrative overhead minimal.
+The client deposits the agreed milestone amount into HYVE's escrow system via Razorpay. The money leaves their account and is held securely — not by HYVE as an organisation, but in a protected escrow structure. The client cannot recall it without going through HYVE's dispute process.
 
-### What Happens When Things Go Wrong?
+### Step 3: You Start Work
 
-No system is perfect, and occasionally disagreements arise. HYVE's dispute resolution process is designed to be fair, fast, and transparent:
+With escrow confirmed, you begin the project. Your dashboard shows the escrow status at all times. You know the money is there.
 
-1. **Direct resolution window**: Both parties get 48 hours to resolve the issue directly
-2. **HYVE mediation**: If unresolved, a HYVE mediator reviews the project brief, deliverables, and communication history
-3. **Fair resolution**: The mediator proposes a resolution — typically a partial release, revision requirement, or full refund
-4. **Appeal option**: Either party can appeal the decision within 7 days
+### Step 4: You Deliver the Milestone
 
-In practice, over 90% of disputes are resolved in the direct resolution window. The existence of a fair process motivates both parties to find reasonable compromises.
+When the work is complete, you submit the milestone on the HYVE dashboard. The client is notified to review the deliverables.
 
-### Escrow for Team-Based Projects
+### Step 5: Payment Is Released
 
-Team-based freelancing adds complexity to payments. How do you split escrow funds among three developers, a designer, and a project manager? HYVE handles this automatically:
+Once the client approves the milestone, the escrow releases immediately to your HYVE wallet. You can withdraw to your bank account at any time. If the client does not respond within the agreed review period, the milestone is automatically released.
 
-**Pre-agreed splits** are configured when the team accepts a project. Each member's share is visible to everyone, ensuring transparency.
+## What Happens If There Is a Dispute?
 
-**Individual milestone tracking** allows different team members to have their funds released at different times, based on their specific deliverables.
+This is the question most freelancers ask first, and it is a good one. Disputes do happen — a client is not satisfied with the work, or a freelancer claims they delivered something the client says they did not.
 
-**Team lead controls** give the team lead the ability to adjust splits if roles change during the project, with all members' consent.
+On HYVE, disputes are handled by our resolution team. Both sides present their evidence — the original brief, the delivered work, communications on the platform. The team reviews and makes a fair determination. The escrow is held until the dispute is resolved, so neither party can extract the money while the disagreement is ongoing.
+
+This is vastly better than the alternative: chasing a client on WhatsApp, writing threatening emails, or giving up entirely on money you earned.
+
+## Common Questions About Escrow
+
+### Is the money safe while it is in escrow?
+
+Yes. HYVE's escrow is built on Razorpay, which is regulated and one of India's most trusted payment infrastructure providers. Funds in escrow are not accessible to HYVE for operational purposes — they are held in a segregated structure specifically for the transaction.
+
+### Does escrow cost extra?
+
+HYVE builds payment protection into the platform fee. There is no separate escrow charge that comes as a surprise.
+
+### Can a client refuse to release escrow?
+
+A client can raise a dispute if they believe the work does not meet the agreed brief. They cannot simply refuse to release payment without reason. If they try, the dispute process kicks in and HYVE's team assesses the situation.
+
+## The Bottom Line
+
+Escrow is not a luxury feature for high-value projects. It is the minimum standard of payment protection that every freelancer deserves on every project. The fact that most Indian freelancers have been working without it is a failure of the platforms and infrastructure available to them — not a failure of the freelancers themselves.
+
+HYVE exists to change that. Every project on our platform, regardless of size, comes with full escrow protection built in.
 
 ---
 
-*Protect your payments on every project. [Start using HYVE's escrow system](https://hyvefreelance.com) today — it's free to sign up.*`,
+*Work with confidence. Every project on HYVE is escrow-protected. [Start your free profile →](https://hyvefreelance.com) 🐝*`,
 };
 
 export default post;
