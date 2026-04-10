@@ -35,39 +35,82 @@ const post: BlogPostWithContent = {
 
 <h2>Fee Structure</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Factor</th>
-      <th>Upwork</th>
-      <th>HYVE</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Service fee (freelancer)</td>
-      <td>10% flat</td>
-      <td>Lower for Indian freelancers</td>
-    </tr>
-    <tr>
-      <td>Currency</td>
-      <td>USD (conversion fees apply)</td>
-      <td>INR — no conversion loss</td>
-    </tr>
-    <tr>
-      <td>Withdrawal fee</td>
-      <td>Yes (varies by method)</td>
-      <td>Integrated with Indian payment rails</td>
-    </tr>
-    <tr>
-      <td>Client posting fee</td>
-      <td>Free (limited) to paid plans</td>
-      <td>Free to post projects</td>
-    </tr>
-  </tbody>
-</table>
+<div style="overflow-x:auto;margin:28px 0;border-radius:10px;border:1px solid #e8e4dc;">
+  <table style="width:100%;border-collapse:collapse;font-family:inherit;font-size:0.95rem;">
+    <thead>
+      <tr>
+        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;font-size:0.9rem;letter-spacing:0.02em;">Factor</th>
+        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;font-size:0.9rem;letter-spacing:0.02em;">Upwork</th>
+        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;font-size:0.9rem;letter-spacing:0.02em;">HYVE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#ffffff;border-bottom:1px solid #f0ede8;">
+        <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">Service fee (freelancer)</td>
+        <td style="padding:14px 18px;color:#444444;">10% flat</td>
+        <td style="padding:14px 18px;color:#444444;">Lower for Indian freelancers</td>
+      </tr>
+      <tr style="background:#faf8f4;border-bottom:1px solid #f0ede8;">
+        <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">Currency</td>
+        <td style="padding:14px 18px;color:#444444;">USD (conversion fees apply)</td>
+        <td style="padding:14px 18px;color:#444444;">INR — no conversion loss</td>
+      </tr>
+      <tr style="background:#ffffff;border-bottom:1px solid #f0ede8;">
+        <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">Withdrawal fee</td>
+        <td style="padding:14px 18px;color:#444444;">Yes (varies by method)</td>
+        <td style="padding:14px 18px;color:#444444;">Integrated with Indian payment rails</td>
+      </tr>
+      <tr style="background:#faf8f4;">
+        <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">Client posting fee</td>
+        <td style="padding:14px 18px;color:#444444;">Free (limited) to paid plans</td>
+        <td style="padding:14px 18px;color:#444444;">Free to post projects</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <p>The currency difference matters more than most people realise. When you earn in USD on Upwork and withdraw to an Indian bank account, you lose money on the conversion rate and pay additional transfer fees. Over a year of freelancing, this can add up to thousands of rupees in unnecessary loss.</p>
+
+<h2>Platform Comparison at a Glance</h2>
+
+<div style="overflow-x:auto;margin:28px 0;border-radius:10px;border:1px solid #e8e4dc;">
+  <table style="width:100%;border-collapse:collapse;font-family:inherit;font-size:0.95rem;">
+    <thead>
+      <tr>
+        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;font-size:0.9rem;letter-spacing:0.02em;">Platform</th>
+        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;font-size:0.9rem;letter-spacing:0.02em;">Best For</th>
+        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;font-size:0.9rem;letter-spacing:0.02em;">Payment Protection</th>
+        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;font-size:0.9rem;letter-spacing:0.02em;">Team-Based?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#ffffff;border-bottom:1px solid #f0ede8;">
+        <td style="padding:14px 18px;font-weight:700;color:#0d0d0d;">HYVE</td>
+        <td style="padding:14px 18px;color:#444444;">Indian startups needing pre-vetted teams</td>
+        <td style="padding:14px 18px;color:#444444;"><span style="color:#16a34a;margin-right:6px;">&#10003;</span>Full escrow</td>
+        <td style="padding:14px 18px;color:#444444;"><span style="color:#16a34a;margin-right:6px;">&#10003;</span>Teams only</td>
+      </tr>
+      <tr style="background:#faf8f4;border-bottom:1px solid #f0ede8;">
+        <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">Upwork</td>
+        <td style="padding:14px 18px;color:#444444;">Global talent, individual freelancers</td>
+        <td style="padding:14px 18px;color:#444444;"><span style="color:#16a34a;margin-right:6px;">&#10003;</span>Escrow available</td>
+        <td style="padding:14px 18px;color:#444444;"><span style="color:#dc2626;margin-right:6px;">&#10007;</span>Mostly solo</td>
+      </tr>
+      <tr style="background:#ffffff;border-bottom:1px solid #f0ede8;">
+        <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">Fiverr</td>
+        <td style="padding:14px 18px;color:#444444;">Quick, low-cost individual tasks</td>
+        <td style="padding:14px 18px;color:#444444;"><span style="color:#16a34a;margin-right:6px;">&#10003;</span>Milestone payments</td>
+        <td style="padding:14px 18px;color:#444444;"><span style="color:#dc2626;margin-right:6px;">&#10007;</span>Solo gigs</td>
+      </tr>
+      <tr style="background:#faf8f4;">
+        <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">LinkedIn</td>
+        <td style="padding:14px 18px;color:#444444;">Networking, referrals</td>
+        <td style="padding:14px 18px;color:#444444;"><span style="color:#dc2626;margin-right:6px;">&#10007;</span>No protection</td>
+        <td style="padding:14px 18px;color:#444444;"><span style="color:#dc2626;margin-right:6px;">&#10007;</span>No structure</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h2>Project Matching</h2>
 
