@@ -4,7 +4,6 @@ import { TrendingUp, Hash, Flame } from "lucide-react";
 import { popularTopics } from "@/data/blogData";
 
 const PopularTopics = () => {
-  // Load click counts from localStorage so they persist across sessions
   const [clicks, setClicks] = useState<Record<string, number>>({});
 
   useEffect(() => {
@@ -12,20 +11,19 @@ const PopularTopics = () => {
     if (stored) setClicks(JSON.parse(stored));
   }, []);
 
-  const handleClick = (topic: string, href: string) => {
+  const handleClick = (topic: string) => {
     const updated = { ...clicks, [topic]: (clicks[topic] || 0) + 1 };
     setClicks(updated);
     localStorage.setItem("hyve-topic-clicks", JSON.stringify(updated));
 
-    // Also send to Google Analytics if available
+    // Send to Google Analytics if available
     if (typeof window !== "undefined" && (window as any).gtag) {
       (window as any).gtag("event", "topic_click", {
         event_category: "Popular Topics",
         event_label: topic,
       });
     }
-
-    window.open(href, "_blank");
+    // No navigation — just count the click
   };
 
   // Sort topics by click count descending
@@ -33,7 +31,7 @@ const PopularTopics = () => {
     (a, b) => (clicks[b] || 0) - (clicks[a] || 0)
   );
 
-  const maxClicks = Math.max(...sorted.map((t) => clicks[t] || 0), 1);
+  const maxClicks = Math.max(...Object.values(clicks), 0);
 
   return (
     <section className="relative overflow-hidden bg-secondary/40 py-20">
@@ -58,7 +56,7 @@ const PopularTopics = () => {
           </p>
         </motion.div>
 
-        {/* Topic buttons */}
+        {/* Topic buttons only — no bar chart */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -68,7 +66,7 @@ const PopularTopics = () => {
         >
           {sorted.map((topic, i) => {
             const count = clicks[topic] || 0;
-            const isHot = count > 0 && count === Math.max(...Object.values(clicks));
+            const isHot = count > 0 && count === maxClicks;
             return (
               <motion.button
                 key={topic}
@@ -78,7 +76,7 @@ const PopularTopics = () => {
                 transition={{ delay: 0.15 + i * 0.04 }}
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
-                onClick={() => handleClick(topic, `https://hyvefreelance.com`)}
+                onClick={() => handleClick(topic)}
                 className={`relative flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-250 hover:shadow-sm ${
                   isHot
                     ? "border-primary/60 bg-primary/10 text-primary hover:bg-primary/15"
@@ -100,46 +98,6 @@ const PopularTopics = () => {
             );
           })}
         </motion.div>
-
-        {/* Click stats bar — only shows once someone has clicked */}
-        {Object.keys(clicks).length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="mx-auto mt-14 max-w-2xl"
-          >
-            <p className="mb-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-              Topic Interest — based on clicks
-            </p>
-            <div className="flex flex-col gap-3">
-              {sorted
-                .filter((t) => clicks[t] > 0)
-                .map((topic) => {
-                  const count = clicks[topic] || 0;
-                  const pct = Math.round((count / maxClicks) * 100);
-                  return (
-                    <div key={topic} className="flex items-center gap-3">
-                      <span className="w-44 truncate text-right text-xs text-muted-foreground shrink-0">
-                        {topic}
-                      </span>
-                      <div className="flex-1 h-2 rounded-full bg-border/40 overflow-hidden">
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={{ width: `${pct}%` }}
-                          transition={{ duration: 0.6, ease: "easeOut" }}
-                          className="h-full rounded-full bg-primary"
-                        />
-                      </div>
-                      <span className="w-8 text-xs font-semibold text-primary shrink-0">
-                        {count}
-                      </span>
-                    </div>
-                  );
-                })}
-            </div>
-          </motion.div>
-        )}
       </div>
     </section>
   );
