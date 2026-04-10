@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "7",
+  slug: "solo-freelancer-to-team-lead-growth-story",
   title: "From Solo Freelancer to Team Lead: A Growth Story",
+  metaTitle: "From Solo Freelancer to Team Lead: A Growth Story | HYVE",
+  metaDescription: "How one developer scaled from solo projects to leading a 6-person freelance team on HYVE. Real lessons on growth, delegation, and team management.",
+  keywords: ["freelancer to team lead", "scaling freelance business", "freelance team management", "freelancer growth story", "HYVE freelance teams"],
   excerpt:
     "How one developer scaled from solo projects to leading a 6-person freelance team on HYVE.",
   category: "Freelancing",

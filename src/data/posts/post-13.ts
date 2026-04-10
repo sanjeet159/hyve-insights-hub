@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "13",
+  slug: "post-testing",
   title: "Post Testing",
+  metaTitle: "Post Testing | HYVE Blog",
+  metaDescription: "Stop multitasking and start time blocking. This framework will help you manage multiple projects without the chaos.",
+  keywords: ["time blocking", "freelancer productivity", "project management"],
   excerpt:
     "Stop multitasking and start time blocking. This framework will help you manage multiple projects without the chaos.",
   category: "Productivity",

@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { ArrowLeft, Clock, Calendar, Share2, ExternalLink, LinkIcon, BookOpen } from "lucide-react";
 import BlogHeader from "@/components/blog/BlogHeader";
@@ -6,18 +7,16 @@ import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
 import Footer from "@/components/blog/Footer";
 import BlogCard from "@/components/blog/BlogCard";
-import { featuredPost, blogPosts } from "@/data/blogData";
-import { articleContents } from "@/data/articleContents";
+import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
 import { useMemo } from "react";
 
 const BlogPost = () => {
-  const { id } = useParams<{ id: string }>();
+  const { slug } = useParams<{ slug: string }>();
 
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 80, damping: 30, restDelta: 0.001 });
 
-  const allPosts = [featuredPost, ...blogPosts];
-  const post = allPosts.find((p) => p.id === id) || featuredPost;
+  const post = getPostBySlug(slug || "") || allPosts[0];
 
   const relatedPosts = useMemo(
     () => blogPosts.filter((p) => p.id !== post.id && p.category === post.category).slice(0, 3),
@@ -26,10 +25,43 @@ const BlogPost = () => {
 
   const fallbackRelated = relatedPosts.length > 0 ? relatedPosts : blogPosts.filter((p) => p.id !== post.id).slice(0, 3);
 
-  const articleContent = articleContents[post.id] || articleContents["1"];
+  const articleContent = post.content;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.metaDescription,
+    author: { "@type": "Person", name: post.author },
+    datePublished: post.date,
+    image: post.image,
+    keywords: post.keywords.join(", "),
+    publisher: {
+      "@type": "Organization",
+      name: "HYVE",
+      url: "https://hyvefreelance.com",
+    },
+  };
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{post.metaTitle}</title>
+        <meta name="description" content={post.metaDescription} />
+        <meta name="keywords" content={post.keywords.join(", ")} />
+        <link rel="canonical" href={`https://hyveblogs.lovable.app/blog/${post.slug}`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={post.metaTitle} />
+        <meta property="og:description" content={post.metaDescription} />
+        <meta property="og:image" content={post.image} />
+        <meta property="og:url" content={`https://hyveblogs.lovable.app/blog/${post.slug}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.metaTitle} />
+        <meta name="twitter:description" content={post.metaDescription} />
+        <meta name="twitter:image" content={post.image} />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
+
       {/* Reading progress bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-[3px] z-[60] origin-left"
@@ -49,7 +81,6 @@ const BlogPost = () => {
           transition={{ duration: 0.6 }}
           className="relative"
         >
-          {/* Full-width image with overlay */}
           <div className="relative h-[280px] md:h-[380px] lg:h-[440px] w-full overflow-hidden">
             <motion.img
               initial={{ scale: 1.05 }}
@@ -65,10 +96,8 @@ const BlogPost = () => {
           </div>
         </motion.div>
 
-        {/* Content header - overlapping the image bottom */}
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-3xl -mt-28 relative z-10">
-            {/* Back + Category row */}
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -87,7 +116,6 @@ const BlogPost = () => {
               </span>
             </motion.div>
 
-            {/* Title */}
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
@@ -97,7 +125,6 @@ const BlogPost = () => {
               {post.title}
             </motion.h1>
 
-            {/* Excerpt */}
             <motion.p
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -107,14 +134,12 @@ const BlogPost = () => {
               {post.excerpt}
             </motion.p>
 
-            {/* Meta row */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.4 }}
               className="mt-7 flex flex-wrap items-center gap-4 pb-8 border-b border-border/50"
             >
-              {/* Author */}
               <div className="flex items-center gap-2.5">
                 <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/80 text-sm font-bold text-primary-foreground shadow-sm">
                   {post.author.charAt(0)}
@@ -142,7 +167,6 @@ const BlogPost = () => {
                 </span>
               </div>
 
-              {/* Share buttons */}
               <div className="ml-auto flex items-center gap-1.5">
                 {[
                   { Icon: ExternalLink, label: "Twitter" },

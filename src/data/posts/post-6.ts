@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "6",
+  slug: "building-high-performing-remote-freelance-team",
   title: "Building a High-Performing Remote Freelance Team",
+  metaTitle: "How to Build a High-Performing Remote Freelance Team | HYVE",
+  metaDescription: "Learn the frameworks and tools that help distributed freelance teams collaborate effectively and deliver quality work consistently.",
+  keywords: ["remote freelance team", "team collaboration freelancing", "distributed team management", "freelance team building", "remote work collaboration tools"],
   excerpt:
     "Learn the frameworks and tools that help distributed teams collaborate effectively and deliver quality work.",
   category: "Team Collaboration",

@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "5",
+  slug: "10-productivity-hacks-every-freelancer-should-know",
   title: "10 Productivity Hacks Every Freelancer Should Know",
+  metaTitle: "10 Productivity Hacks for Freelancers in 2026 | HYVE Blog",
+  metaDescription: "Maximize your output without burning out. These 10 proven productivity techniques will transform your freelance workflow and boost efficiency.",
+  keywords: ["freelancer productivity hacks", "productivity tips freelancing", "freelance workflow optimization", "time management freelancer", "avoid burnout freelancer"],
   excerpt:
     "Maximize your output without burning out. These proven productivity techniques will transform your workflow.",
   category: "Productivity",

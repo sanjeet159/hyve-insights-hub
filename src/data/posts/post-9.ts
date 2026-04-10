@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "9",
+  slug: "ultimate-guide-freelance-contracts-india",
   title: "The Ultimate Guide to Freelance Contracts in India",
+  metaTitle: "Ultimate Guide to Freelance Contracts in India | HYVE Blog",
+  metaDescription: "Protect yourself and your clients with well-structured freelance contracts. Covers scope, payment terms, IP rights, and dispute resolution for Indian freelancers.",
+  keywords: ["freelance contracts India", "freelancer agreement template", "freelance contract guide", "payment terms freelancer", "freelance legal protection India"],
   excerpt:
     "Protect yourself and your clients with well-structured contracts. This guide covers everything from scope to payment terms.",
   category: "Escrow & Payments",

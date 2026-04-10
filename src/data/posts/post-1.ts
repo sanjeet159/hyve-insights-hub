@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "1",
+  slug: "why-indian-freelancers-dont-get-paid-on-time",
   title: "Why Indian Freelancers Don't Get Paid On Time (And How to Fix It)",
+  metaTitle: "Why Indian Freelancers Don't Get Paid On Time | HYVE Blog",
+  metaDescription: "Unpaid invoices are killing Indian freelancers. Learn why payment delays happen, how escrow protects you, and how HYVE guarantees payment before work starts.",
+  keywords: ["freelancer payment delays India", "escrow payments freelancing", "HYVE freelance platform", "get paid on time freelancer", "freelance invoice protection"],
   excerpt:
     "Unpaid invoices are killing Indian freelancers. Learn why payment delays happen, how escrow protects you, and how Hyve guarantees payment before work even starts.",
   category: "Freelancing",

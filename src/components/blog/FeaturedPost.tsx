@@ -20,7 +20,7 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
         <h2 className="font-heading text-2xl font-bold text-foreground">Featured Article</h2>
       </motion.div>
 
-      <Link to={`/blog/${post.id}`}>
+      <Link to={`/blog/${post.slug}`}>
         <motion.article
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
