@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "4",
+  slug: "understanding-escrow-payments-freelancer-safety-net",
   title: "Understanding Escrow Payments: A Freelancer's Safety Net",
+  metaTitle: "Understanding Escrow Payments for Freelancers | HYVE Blog",
+  metaDescription: "Escrow payments protect both freelancers and clients. Learn how HYVE's built-in escrow system works and why it's essential for secure freelancing.",
+  keywords: ["escrow payments freelancing", "freelancer payment protection", "HYVE escrow system", "secure freelance payments", "escrow for clients"],
   excerpt:
     "Escrow payments protect both freelancers and clients. Learn how HYVE's built-in escrow system works.",
   category: "Escrow & Payments",

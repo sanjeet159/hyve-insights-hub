@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "10",
+  slug: "async-communication-secret-remote-team-success",
   title: "Async Communication: The Secret to Remote Team Success",
+  metaTitle: "Async Communication for Remote Teams | HYVE Blog",
+  metaDescription: "Master asynchronous communication to boost productivity and reduce meetings in your distributed freelance team. Practical tips and tools inside.",
+  keywords: ["async communication remote teams", "asynchronous work tips", "reduce meetings remote team", "remote team productivity", "distributed team communication"],
   excerpt:
     "Master the art of asynchronous communication to boost productivity and reduce meetings in your distributed team.",
   category: "Team Collaboration",

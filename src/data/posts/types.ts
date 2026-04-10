@@ -12,7 +12,11 @@ export type Category = (typeof categories)[number];
 
 export interface BlogPost {
   id: string;
+  slug: string;
   title: string;
+  metaTitle: string;
+  metaDescription: string;
+  keywords: string[];
   excerpt: string;
   category: Exclude<Category, "All">;
   author: string;

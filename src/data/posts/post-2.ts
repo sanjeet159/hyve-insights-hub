@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "2",
+  slug: "5-ways-startups-hire-freelance-teams-faster-2026",
   title: "5 Ways Startups Can Hire Freelance Teams Faster in 2026",
+  metaTitle: "5 Ways Startups Can Hire Freelance Teams Faster | HYVE Blog",
+  metaDescription: "Speed is everything for startups. Streamline your freelance hiring pipeline with these 5 proven strategies to get work done faster in 2026.",
+  keywords: ["startup freelance hiring", "hire freelance teams", "freelance recruitment 2026", "fast hiring startups", "HYVE hiring platform"],
   excerpt:
     "Speed is everything for startups. Here's how to streamline your freelance hiring pipeline and get work done faster.",
   category: "Startup Hiring",

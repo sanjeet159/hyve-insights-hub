@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "3",
+  slug: "remote-work-india-complete-guide-freelancers",
   title: "Remote Work in India: The Complete Guide for Freelancers",
+  metaTitle: "Remote Work in India: Complete Freelancer Guide 2026 | HYVE",
+  metaDescription: "From setting up your workspace to managing clients across time zones — everything Indian freelancers need to thrive remotely in 2026.",
+  keywords: ["remote work India", "freelancer remote guide", "work from home India", "remote freelancing tips", "time zone management freelancer"],
   excerpt:
     "From setting up your workspace to managing clients across time zones — everything you need to thrive remotely.",
   category: "Remote Work",

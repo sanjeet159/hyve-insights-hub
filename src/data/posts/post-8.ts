@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "8",
+  slug: "how-to-price-freelance-services-competitively",
   title: "How to Price Your Freelance Services Competitively",
+  metaTitle: "How to Price Your Freelance Services in 2026 | HYVE Blog",
+  metaDescription: "Pricing can make or break your freelancing career. Learn data-driven strategies to set competitive rates that attract clients and reflect your true value.",
+  keywords: ["freelance pricing strategy", "how to price freelance services", "freelancer rate card", "competitive freelance rates", "freelance pricing India"],
   excerpt:
     "Pricing can make or break your freelancing career. Learn data-driven strategies to set rates that attract clients and reflect your value.",
   category: "Freelancing",

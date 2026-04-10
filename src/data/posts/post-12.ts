@@ -3,7 +3,11 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "12",
+  slug: "time-blocking-freelancers-practical-framework",
   title: "Time Blocking for Freelancers: A Practical Framework",
+  metaTitle: "Time Blocking for Freelancers: Practical Framework | HYVE Blog",
+  metaDescription: "Stop multitasking and start time blocking. This practical framework helps freelancers manage multiple projects without chaos or burnout.",
+  keywords: ["time blocking freelancers", "freelance time management", "productivity framework freelancer", "stop multitasking freelancer", "project management freelance"],
   excerpt:
     "Stop multitasking and start time blocking. This framework will help you manage multiple projects without the chaos.",
   category: "Productivity",
