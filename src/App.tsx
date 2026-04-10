@@ -16,13 +16,13 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-      <ScrollToTop/>
-  <Routes>
-    <Route path="/" element={<Index />} />
-    <Route path="/blog/:slug" element={<BlogPost />} />
-    <Route path="*" element={<NotFound />} />
-  </Routes>
-</BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
