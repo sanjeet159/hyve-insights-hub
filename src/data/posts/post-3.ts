@@ -34,12 +34,37 @@ Here is an honest, side-by-side comparison.
 
 ## Fee Structure
 
-| Factor | Upwork | HYVE |
-|---|---|---|
-| Service fee (freelancer) | 10% flat | Lower for Indian freelancers |
-| Currency | USD (conversion fees apply) | INR — no conversion loss |
-| Withdrawal fee | Yes (varies by method) | Integrated with Indian payment rails |
-| Client posting fee | Free (limited) to paid plans | Free to post projects |
+<table style="width:100%;border-collapse:collapse;margin:24px 0;font-size:0.95rem;">
+  <thead>
+    <tr>
+      <th style="background:#f1ab13;color:#0d0d0d;padding:12px 16px;text-align:left;font-weight:700;border:1px solid #e0ddd8;">Factor</th>
+      <th style="background:#f1ab13;color:#0d0d0d;padding:12px 16px;text-align:left;font-weight:700;border:1px solid #e0ddd8;">Upwork</th>
+      <th style="background:#f1ab13;color:#0d0d0d;padding:12px 16px;text-align:left;font-weight:700;border:1px solid #e0ddd8;">HYVE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;font-weight:600;">Service fee (freelancer)</td>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;">10% flat</td>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;">Lower for Indian freelancers</td>
+    </tr>
+    <tr style="background:#faf8f4;">
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;font-weight:600;">Currency</td>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;">USD (conversion fees apply)</td>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;">INR — no conversion loss</td>
+    </tr>
+    <tr>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;font-weight:600;">Withdrawal fee</td>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;">Yes (varies by method)</td>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;">Integrated with Indian payment rails</td>
+    </tr>
+    <tr style="background:#faf8f4;">
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;font-weight:600;">Client posting fee</td>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;">Free (limited) to paid plans</td>
+      <td style="padding:12px 16px;border:1px solid #e0ddd8;vertical-align:top;">Free to post projects</td>
+    </tr>
+  </tbody>
+</table>
 
 The currency difference matters more than most people realise. When you earn in USD on Upwork and withdraw to an Indian bank account, you lose money on the conversion rate and pay additional transfer fees. Over a year of freelancing, this can add up to thousands of rupees in unnecessary loss.
 
