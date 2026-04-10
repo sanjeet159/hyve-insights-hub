@@ -16,7 +16,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-      <ScrollToTop />
+      <ScrollToTop/>
   <Routes>
     <Route path="/" element={<Index />} />
     <Route path="/blog/:slug" element={<BlogPost />} />
