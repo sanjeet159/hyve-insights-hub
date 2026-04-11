@@ -13,22 +13,13 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Helping Youth Venture Everywhere
             </p>
-            <div className="space-y-2">
-              <p className="text-xs font-medium text-muted-foreground">Recognised by:</p>
-              <div className="text-xs text-muted-foreground/70 leading-relaxed">
-                <p>Government of India</p>
-                <p>Ministry of Commerce and Industry</p>
-                <p>Department for Promotion of Industry and Internal Trade</p>
-              </div>
-
-              {/* Startup India Logo */}
-              <div className="mt-3">
-                <img
-                  src="/startup-india.png"
-                  alt="Startup India"
-                  className="h-10 w-auto object-contain"
-                />
-              </div>
+            {/* Startup India Logo only — no text */}
+            <div className="mt-3">
+              <img
+                src="/startup-india.png"
+                alt="Startup India"
+                className="h-16 w-auto object-contain"
+              />
             </div>
           </div>
 
