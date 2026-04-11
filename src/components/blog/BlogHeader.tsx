@@ -180,7 +180,8 @@ const BlogHeader = () => {
                 rel="noopener noreferrer"
                 className="rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-foreground transition-all duration-200 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.02] active:scale-[0.98] flex items-center gap-1.5 border border-primary"
               >
-                Sign up <span className="text-xs">→</span>
+                Sign up
+                <span className="text-sm font-bold">↗</span>
               </a>
             </div>
 
