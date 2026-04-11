@@ -21,6 +21,27 @@ const BlogHeader = () => {
 
   return (
     <>
+      {/* Animated gradient button styles */}
+      <style>{`
+        .signup-btn {
+          background: linear-gradient(135deg, hsl(40, 88%, 51%), hsl(35, 95%, 60%));
+          background-size: 200% 200%;
+          background-position: 0% 50%;
+          transition: background-position 0.4s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+          color: white;
+        }
+        .signup-btn:hover {
+          background-position: 100% 50%;
+          background: linear-gradient(135deg, hsl(35, 95%, 65%), hsl(45, 100%, 55%), hsl(30, 90%, 55%));
+          color: #1a1a1a;
+          box-shadow: 0 8px 24px rgba(230, 160, 40, 0.45);
+          transform: scale(1.03);
+        }
+        .signup-btn:active {
+          transform: scale(0.97);
+        }
+      `}</style>
+
       {/* ── MOBILE FULLSCREEN MENU OVERLAY ── */}
       <AnimatePresence>
         {mobileOpen && (
@@ -35,7 +56,7 @@ const BlogHeader = () => {
               onClick={() => setMobileOpen(false)}
             />
 
-            {/* White card menu — looks exactly like the screenshot */}
+            {/* White card menu */}
             <motion.div
               initial={{ opacity: 0, scale: 0.97, y: -10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -99,9 +120,9 @@ const BlogHeader = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-xl bg-primary px-5 py-3.5 text-center text-sm font-semibold text-white hover:bg-primary/90 transition-colors"
+                  className="signup-btn rounded-full px-5 py-3.5 text-center text-sm font-semibold"
                 >
-                  Sign up →
+                  Sign up ↗
                 </a>
               </div>
             </motion.div>
@@ -109,7 +130,7 @@ const BlogHeader = () => {
         )}
       </AnimatePresence>
 
-      {/* ── DESKTOP + TABLET HEADER (unchanged) ── */}
+      {/* ── DESKTOP + TABLET HEADER ── */}
       <div
         className="fixed top-0 z-50 w-full flex justify-center transition-all duration-500 ease-in-out"
         style={{ padding: scrolled ? "8px 16px" : "8px 24px" }}
@@ -178,17 +199,14 @@ const BlogHeader = () => {
                 href="https://hyvefreelance.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:text-foreground hover:scale-[1.02] active:scale-[0.98] flex items-center gap-1.5 border border-primary/40"
-                style={{
-                background: "linear-gradient(135deg, hsl(40 88% 51%), hsl(35 95% 60%))",
-                }}
+                className="signup-btn rounded-full px-6 py-2.5 text-sm font-semibold flex items-center gap-1.5"
               >
                 Sign up
                 <span className="text-sm font-bold">↗</span>
               </a>
             </div>
 
-            {/* Mobile hamburger — only shows on mobile */}
+            {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(true)}
               className="flex items-center justify-center rounded-lg p-2 text-foreground md:hidden hover:bg-accent/60 transition-colors"
