@@ -90,7 +90,7 @@ const PopularTopics = () => {
         >
           {sorted.map((topic, i) => {
             const count = counts[topic] || 0;
-            const isHot = count > 0 && count === maxCount;
+            const isHot = count >= 10;
 
             return (
               <motion.button
