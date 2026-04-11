@@ -2,36 +2,61 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { TrendingUp, Hash, Flame } from "lucide-react";
 import { popularTopics } from "@/data/blogData";
+import { supabase } from "@/lib/supabaseClient";
 
 const PopularTopics = () => {
-  const [clicks, setClicks] = useState<Record<string, number>>({});
+  const [counts, setCounts] = useState<Record<string, number>>({});
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const stored = localStorage.getItem("hyve-topic-clicks");
-    if (stored) setClicks(JSON.parse(stored));
-  }, []);
+  const fetchCounts = async () => {
+    const { data, error } = await supabase
+      .from("topic_clicks")
+      .select("topic");
 
-  const handleClick = (topic: string) => {
-    const updated = { ...clicks, [topic]: (clicks[topic] || 0) + 1 };
-    setClicks(updated);
-    localStorage.setItem("hyve-topic-clicks", JSON.stringify(updated));
-
-    // Send to Google Analytics if available
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "topic_click", {
-        event_category: "Popular Topics",
-        event_label: topic,
+    if (!error && data) {
+      const tally: Record<string, number> = {};
+      data.forEach(({ topic }) => {
+        tally[topic] = (tally[topic] || 0) + 1;
       });
+      setCounts(tally);
     }
-    // No navigation — just count the click
+    setLoading(false);
   };
 
-  // Sort topics by click count descending
+  useEffect(() => {
+    fetchCounts();
+
+    // Live updates — when anyone clicks, all users see it update
+    const channel = supabase
+      .channel("topic_clicks_changes")
+      .on(
+        "postgres_changes",
+        { event: "INSERT", schema: "public", table: "topic_clicks" },
+        (payload) => {
+          const topic = payload.new.topic as string;
+          setCounts((prev) => ({
+            ...prev,
+            [topic]: (prev[topic] || 0) + 1,
+          }));
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
+  }, []);
+
+  const handleClick = async (topic: string) => {
+    // Each click = one row in database, no localStorage
+    await supabase.from("topic_clicks").insert({ topic });
+  };
+
   const sorted = [...popularTopics].sort(
-    (a, b) => (clicks[b] || 0) - (clicks[a] || 0)
+    (a, b) => (counts[b] || 0) - (counts[a] || 0)
   );
 
-  const maxClicks = Math.max(...Object.values(clicks), 0);
+  const maxCount = Math.max(...Object.values(counts), 0);
 
   return (
     <section className="relative overflow-hidden bg-secondary/40 py-20">
@@ -56,7 +81,6 @@ const PopularTopics = () => {
           </p>
         </motion.div>
 
-        {/* Topic buttons only — no bar chart */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -65,8 +89,9 @@ const PopularTopics = () => {
           className="mx-auto mt-10 flex max-w-3xl flex-wrap justify-center gap-3"
         >
           {sorted.map((topic, i) => {
-            const count = clicks[topic] || 0;
-            const isHot = count > 0 && count === maxClicks;
+            const count = counts[topic] || 0;
+            const isHot = count > 0 && count === maxCount;
+
             return (
               <motion.button
                 key={topic}
@@ -77,6 +102,7 @@ const PopularTopics = () => {
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={() => handleClick(topic)}
+                disabled={loading}
                 className={`relative flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium transition-all duration-250 hover:shadow-sm ${
                   isHot
                     ? "border-primary/60 bg-primary/10 text-primary hover:bg-primary/15"
