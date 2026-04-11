@@ -13,12 +13,12 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Helping Youth Venture Everywhere
             </p>
-            {/* Startup India Logo only — no text */}
-            <div className="mt-3">
+            <p className="text-xs font-medium text-muted-foreground">Recognised by:</p>
+            <div className="mt-2">
               <img
                 src="/startup-india.png"
                 alt="Startup India"
-                className="h-16 w-auto object-contain"
+                className="h-24 w-auto object-contain"
               />
             </div>
           </div>
