@@ -115,11 +115,6 @@ const PopularTopics = () => {
                   <Hash className="h-3.5 w-3.5 text-primary/60" />
                 )}
                 {topic}
-                {count > 0 && (
-                  <span className="ml-1 rounded-full bg-primary/15 px-1.5 py-0.5 text-[10px] font-semibold text-primary">
-                    {count}
-                  </span>
-                )}
               </motion.button>
             );
           })}
