@@ -27,16 +27,21 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-foreground">Company</h3>
             <ul className="space-y-3">
-              {["About Us", "How HYVE Works", "Contact Us", "Join Our Community"].map((item) => (
-                <li key={item}>
-                  <a
-                    href="https://hyvefreelance.com"
+              {[
+              { label: "About Us", href: "https://www.hyvefreelance.com/about" },
+              { label: "How HYVE Works", href: "https://www.hyvefreelance.com/#how-it-works" },
+              { label: "Contact Us", href: "https://www.hyvefreelance.com/contact" },
+              { label: "Join Our Community", href: "https://chat.whatsapp.com/BQFm77OF85BD9MJsBTXMP6" },
+              ].map((item) => (
+              <li key={item.label}>
+    
+              href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
                   >
-                    {item}
-                    {item === "Join Our Community" && (
+                    {item.label}
+                    {item.label === "Join Our Community" && (
                       <svg className="h-3 w-3" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
                         <path d="M3 9L9 3M9 3H4M9 3v5" />
                       </svg>
