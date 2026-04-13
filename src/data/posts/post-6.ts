@@ -106,31 +106,17 @@ const post: BlogPostWithContent = {
   <li>Sounds like a real person, not a marketing brochure</li>
 </ul>
 
-<h2>Frequently Asked Questions</h2>
+<h2>Frequently asked questions</h2>
 
-<div style="margin-top:32px;">
-  <div style="border:1px solid #e8e4dc;border-radius:10px;padding:20px 24px;margin-bottom:16px;background:#faf8f4;">
-    <p style="font-weight:700;color:#0d0d0d;margin:0 0 8px 0;">How many projects should my portfolio have?</p>
-    <p style="color:#444444;margin:0;line-height:1.7;">Quality over quantity always. Three to five exceptional case studies are more effective than ten mediocre ones. As you grow, replace weaker samples with stronger ones rather than adding indefinitely.</p>
+<details style="border:.5px solid #e8e4dc;border-radius:10px;padding:0;margin-bottom:10px;overflow:hidden">
+  <summary style="padding:16px 20px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px;color:#0d0d0d">
+    How many projects should my portfolio have?
+    <span style="font-size:20px;color:#EF9F27;flex-shrink:0">+</span>
+  </summary>
+  <div style="padding:0 20px 16px;color:#444;font-size:14px;line-height:1.75;border-top:.5px solid #e8e4dc">
+    Three to five exceptional case studies are more effective than ten mediocre ones. Replace weaker samples with stronger ones as you grow.
   </div>
-  <div style="border:1px solid #e8e4dc;border-radius:10px;padding:20px 24px;margin-bottom:16px;background:#faf8f4;">
-    <p style="font-weight:700;color:#0d0d0d;margin:0 0 8px 0;">Do I need a personal website or will a platform profile work?</p>
-    <p style="color:#444444;margin:0;line-height:1.7;">A platform profile is fine to start with — especially on HYVE, Behance, or GitHub. A personal website adds credibility as you grow, but it should not be a barrier to getting started. Launch with what you have and upgrade later.</p>
-  </div>
-  <div style="border:1px solid #e8e4dc;border-radius:10px;padding:20px 24px;margin-bottom:16px;background:#faf8f4;">
-    <p style="font-weight:700;color:#0d0d0d;margin:0 0 8px 0;">Can I include work done as a full-time employee?</p>
-    <p style="color:#444444;margin:0;line-height:1.7;">Yes, as long as you were a primary contributor and your employment contract does not prohibit it. Be transparent about your role — "I led the redesign of X as part of the product team at Y" is honest and still impressive.</p>
-  </div>
-  <div style="border:1px solid #e8e4dc;border-radius:10px;padding:20px 24px;margin-bottom:16px;background:#faf8f4;">
-    <p style="font-weight:700;color:#0d0d0d;margin:0 0 8px 0;">How often should I update my portfolio?</p>
-    <p style="color:#444444;margin:0;line-height:1.7;">Review it every three months. Replace your weakest sample whenever you complete a project you are proud of. Your portfolio should reflect your current skill level, not where you were two years ago.</p>
-  </div>
-  <div style="border:1px solid #e8e4dc;border-radius:10px;padding:20px 24px;margin-bottom:16px;background:#faf8f4;">
-    <p style="font-weight:700;color:#0d0d0d;margin:0 0 8px 0;">What if a client wants to see work under NDA?</p>
-    <p style="color:#444444;margin:0;line-height:1.7;">Describe the project without showing the actual work — explain the problem, your approach, and the outcome. Many experienced freelancers have strong portfolios built largely on anonymised case studies. The thinking matters more than the visuals.</p>
-  </div>
-</div>
-
+</details>
 <hr />
 
 <p><em>Ready to put your portfolio in front of the right Indian clients? <a href="https://hyvefreelance.com">Create your HYVE profile →</a> 🐝</em></p>
