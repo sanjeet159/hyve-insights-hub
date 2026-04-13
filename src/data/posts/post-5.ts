@@ -1,4 +1,4 @@
-import blogFeatured from "@/assets/blog-featured.jpg";
+import blog4 from "@/assets/blog-4.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "6 min read",
-  image: blogFeatured,
+  image: blog4,
   featured: false,
   content: `## Top 7 Freelancing Skills in Demand for Indian Startups in 2025
 
