@@ -158,7 +158,7 @@ const BlogHeader = () => {
         >
           <div
             className="flex items-center justify-between px-6 transition-all duration-500 ease-in-out"
-            style={{ height: scrolled ? "48px" : "72px" }}
+            style={{ height: scrolled ? "56px" : "80px" }}
           >
             {/* Logo */}
             <a
