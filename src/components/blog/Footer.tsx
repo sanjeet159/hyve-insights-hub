@@ -1,6 +1,44 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
+import { supabase } from "@/lib/supabaseClient";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleSubscribe = async () => {
+    if (!email) return;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email.");
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+
+    const { error: supabaseError } = await supabase
+      .from("newsletter_subscribers")
+      .insert({ email: email.toLowerCase().trim() });
+
+    setLoading(false);
+
+    if (supabaseError) {
+      if (supabaseError.code === "23505") {
+        setError("Already subscribed!");
+      } else {
+        setError("Something went wrong. Try again.");
+      }
+      return;
+    }
+
+    setSubmitted(true);
+    setEmail("");
+  };
+
   return (
     <footer className="border-t border-border bg-background">
       <div className="container mx-auto px-4 py-16">
@@ -83,34 +121,64 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-foreground">Newsletter</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Receive product updates news, exclusive discounts and early access.
+              Receive product updates, exclusive discounts and early access.
             </p>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex items-center gap-0 rounded-full border border-border bg-card overflow-hidden shadow-sm transition-all focus-within:border-primary/40 focus-within:shadow-md"
-            >
-              <div className="flex items-center gap-2 pl-4 text-muted-foreground/50">
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <rect x="2" y="4" width="20" height="16" rx="3" />
-                  <path d="M2 7l10 6 10-6" />
-                </svg>
-              </div>
-              <input
-                type="email"
-                placeholder="Enter your email..."
-                className="flex-1 bg-transparent px-3 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 outline-none"
-              />
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                type="submit"
-                className="m-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors hover:bg-primary/90"
+
+            {!submitted ? (
+              <>
+                <form
+                  onSubmit={(e) => { e.preventDefault(); handleSubscribe(); }}
+                  className="flex items-center gap-0 rounded-full border border-border bg-card overflow-hidden shadow-sm transition-all focus-within:border-primary/40 focus-within:shadow-md"
+                >
+                  <div className="flex items-center gap-2 pl-4 text-muted-foreground/50">
+                    <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                      <rect x="2" y="4" width="20" height="16" rx="3" />
+                      <path d="M2 7l10 6 10-6" />
+                    </svg>
+                  </div>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => { setEmail(e.target.value); setError(""); }}
+                    placeholder="Enter your email..."
+                    disabled={loading}
+                    className="flex-1 bg-transparent px-3 py-3 text-sm text-foreground placeholder:text-muted-foreground/50 outline-none disabled:opacity-60"
+                  />
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    type="submit"
+                    disabled={loading || !email}
+                    className="m-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors hover:bg-primary/90 disabled:opacity-60"
+                  >
+                    {loading ? (
+                      <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-primary-foreground border-t-transparent" />
+                    ) : (
+                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                      </svg>
+                    )}
+                  </motion.button>
+                </form>
+
+                {/* Error message */}
+                {error && (
+                  <p className="text-xs text-red-500 mt-1 pl-1">{error}</p>
+                )}
+              </>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0, y: 4 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="flex items-center gap-2 text-sm font-medium text-primary"
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
+                  <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                  <path d="M22 4L12 14.01l-3-3" />
                 </svg>
-              </motion.button>
-            </form>
+                Thanks for subscribing! ✅
+              </motion.div>
+            )}
           </div>
 
         </div>
