@@ -1,13 +1,44 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Send, CheckCircle } from "lucide-react";
+import { Mail, Send, CheckCircle, AlertCircle } from "lucide-react";
+import { supabase } from "@/lib/supabaseClient";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
-  const handleSubmit = () => {
-    if (email) setSubmitted(true);
+  const handleSubmit = async () => {
+    if (!email) return;
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+
+    const { error: supabaseError } = await supabase
+      .from("newsletter_subscribers")
+      .insert({ email: email.toLowerCase().trim() });
+
+    setLoading(false);
+
+    if (supabaseError) {
+      if (supabaseError.code === "23505") {
+        // Unique constraint — already subscribed
+        setError("You are already subscribed!");
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+      return;
+    }
+
+    setSubmitted(true);
   };
 
   return (
@@ -43,6 +74,7 @@ const Newsletter = () => {
           >
             <Mail className="h-7 w-7 text-primary" />
           </motion.div>
+
           <h2 className="font-heading text-2xl font-bold text-background md:text-3xl">
             Stay Updated with HYVE
           </h2>
@@ -61,15 +93,30 @@ const Newsletter = () => {
               <input
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setError("");
+                }}
+                onKeyDown={(e) => e.key === "Enter" && handleSubmit()}
                 placeholder="Enter your email"
-                className="w-full sm:w-64 rounded-xl border border-background/10 bg-background/10 px-5 py-3.5 text-background outline-none placeholder:text-background/35 transition-all duration-300 focus:ring-2 focus:ring-primary/50 focus:bg-background/15"
+                disabled={loading}
+                className="w-full sm:w-64 rounded-xl border border-background/10 bg-background/10 px-5 py-3.5 text-background outline-none placeholder:text-background/35 transition-all duration-300 focus:ring-2 focus:ring-primary/50 focus:bg-background/15 disabled:opacity-60"
               />
               <button
                 onClick={handleSubmit}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3.5 font-semibold text-primary-foreground transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.02] active:scale-[0.98]"
+                disabled={loading || !email}
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3.5 font-semibold text-primary-foreground transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
-                Subscribe <Send className="h-4 w-4" />
+                {loading ? (
+                  <>
+                    <span className="h-4 w-4 animate-spin rounded-full border-2 border-primary-foreground border-t-transparent" />
+                    Subscribing...
+                  </>
+                ) : (
+                  <>
+                    Subscribe <Send className="h-4 w-4" />
+                  </>
+                )}
               </button>
             </motion.div>
           ) : (
@@ -80,6 +127,18 @@ const Newsletter = () => {
             >
               <CheckCircle className="h-5 w-5" />
               <span className="font-medium">Thanks for subscribing!</span>
+            </motion.div>
+          )}
+
+          {/* Error message */}
+          {error && (
+            <motion.div
+              initial={{ opacity: 0, y: 4 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-3 flex items-center justify-center gap-1.5 text-sm text-red-400"
+            >
+              <AlertCircle className="h-4 w-4" />
+              {error}
             </motion.div>
           )}
         </div>
