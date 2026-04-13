@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "7 min read",
-  image: blog-1.jpg,
+  image: blog-1,
   featured: false,
   content: `## How to Hire a Freelance Team in India for Your Startup
 
