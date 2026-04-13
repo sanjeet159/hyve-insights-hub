@@ -1,5 +1,5 @@
 import blogFeatured from "@/assets/blog-featured.jpg";
-import blog1 from "@/assets/blog-2.jpg";
+import blog2 from "@/assets/blog-2.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
