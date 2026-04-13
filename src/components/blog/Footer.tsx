@@ -52,9 +52,9 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-foreground">Socials</h3>
             <ul className="space-y-3">
               {[
-                { name: "LinkedIn", href: "#" },
-                { name: "Instagram", href: "#" },
-                { name: "F6S", href: "#" },
+                { name: "LinkedIn", href: "https://www.linkedin.com/company/hyve-freelance/?viewAsMember=true" },
+                { name: "Instagram", href: "https://www.instagram.com/hyvefreelance/?hl=en" },
+                { name: "F6S", href: "https://www.f6s.com/hyvefreelance" },
               ].map((item) => (
                 <li key={item.name}>
                   <a
