@@ -1,4 +1,3 @@
-import blogFeatured from "@/assets/blog-featured.jpg";
 import blog2 from "@/assets/blog-2.jpg";
 import type { BlogPostWithContent } from "./types";
 
@@ -24,6 +23,7 @@ const post: BlogPostWithContent = {
   date: "Apr 10, 2026",
   readTime: "6 min read",
   image: blog2,
+  imagePosition: "center",
   featured: false,
   content: `
 <h2>Upwork vs HYVE: Which is Better for Indian Freelancers in 2025?</h2>
