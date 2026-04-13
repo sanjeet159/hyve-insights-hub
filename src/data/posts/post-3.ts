@@ -1,4 +1,5 @@
 import blogFeatured from "@/assets/blog-featured.jpg";
+import blog1 from "@/assets/blog-2.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -22,7 +23,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "6 min read",
-  image: blogFeatured,
+  image: blog2,
   featured: false,
   content: `
 <h2>Upwork vs HYVE: Which is Better for Indian Freelancers in 2025?</h2>
