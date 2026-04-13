@@ -6,6 +6,10 @@ export const categories = [
   "Escrow & Payments",
   "Remote Work",
   "Productivity",
+  "For Clients",
+  "Platform Comparisons",
+  "Education",
+  "Freelancing Tips",
 ] as const;
 
 export type Category = (typeof categories)[number];
@@ -24,6 +28,7 @@ export interface BlogPost {
   readTime: string;
   image: string;
   featured?: boolean;
+  imagePosition?: "top" | "center" | "bottom" | "left" | "right";
 }
 
 export interface BlogPostWithContent extends BlogPost {
