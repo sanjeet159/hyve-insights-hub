@@ -1,4 +1,4 @@
-import blogFeatured from "@/assets/blog-featured.jpg";
+import escrow from "@/assets/escrow.png";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "5 min read",
-  image: blogFeatured,
+  image: escrow,
   featured: false,
   content: `## What Is Escrow in Freelancing?
 
