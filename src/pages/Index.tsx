@@ -130,6 +130,7 @@ const Index = () => {
       </section>
 
       <PopularTopics />
+      <BlogFAQ /> 
       <Newsletter />
       <FooterCTA />
       <Footer />
