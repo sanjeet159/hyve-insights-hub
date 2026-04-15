@@ -168,6 +168,24 @@ const post: BlogPostWithContent = {
   <a href="https://hyvefreelance.com" style="background:#f1ab13;color:#fff;padding:10px 22px;border-radius:20px;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap">Create your profile →</a>
 </div>
 `,
+faqs: [
+  {
+    question: "Which skill has the highest earning potential right now?",
+    answer: "Full-stack development and mobile app development command the highest per-project rates. Performance marketing specialists often earn more monthly via retainers.",
+  },
+  {
+    question: "Should I go deep in one skill or learn multiple?",
+    answer: "Go deep in one primary skill, then develop one complementary skill. A T-shaped profile — deep in one area, broad awareness across adjacent areas — is what startups value most.",
+  },
+  {
+    question: "How quickly can I get matched to projects on HYVE?",
+    answer: "Most freelancers with a complete profile receive their first match within 48 hours. Specific niches and portfolio case studies get matched faster than general profiles.",
+  },
+  {
+    question: "Should I work solo or as part of a team on HYVE?",
+    answer: "Teams consistently win larger projects. Start solo to build your reputation, then form a team with a complementary skill. Teams get access to enterprise-grade projects solo freelancers cannot qualify for.",
+  },
+],
 };
 
 export default post;
