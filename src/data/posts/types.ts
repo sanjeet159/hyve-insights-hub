@@ -34,3 +34,13 @@ export interface BlogPost {
 export interface BlogPostWithContent extends BlogPost {
   content: string;
 }
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
+export interface BlogPostWithContent extends BlogPost {
+  content: string;
+  faqs?: FAQ[];   // ← add this
+}
