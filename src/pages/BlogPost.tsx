@@ -7,6 +7,7 @@ import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
 import Footer from "@/components/blog/Footer";
 import BlogCard from "@/components/blog/BlogCard";
+import PostFAQ from "@/components/blog/PostFAQ";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
 import { useMemo, useState } from "react";
 
@@ -31,6 +32,20 @@ const BlogPost = () => {
 
   const articleContent = post.content;
 
+  {/* Article body */}
+<motion.article ...>
+  ...
+</motion.article>
+
+{/* Post FAQs */}
+{post.faqs && post.faqs.length > 0 && (
+  <div className="container mx-auto px-4">
+    <PostFAQ faqs={post.faqs} />
+  </div>
+)}
+
+{/* Author card */}
+<div className="container mx-auto px-4 pb-16">
   // ── Button handlers ──────────────────────────────────────────────
   const handleOpenTab = () => {
     window.open(window.location.href, "_blank");
