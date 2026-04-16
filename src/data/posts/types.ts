@@ -10,9 +10,15 @@ export const categories = [
   "Platform Comparisons",
   "Education",
   "Freelancing Tips",
+  "Career Growth",
 ] as const;
 
 export type Category = (typeof categories)[number];
+
+export interface FAQ {
+  question: string;
+  answer: string;
+}
 
 export interface BlogPost {
   id: string;
@@ -33,14 +39,5 @@ export interface BlogPost {
 
 export interface BlogPostWithContent extends BlogPost {
   content: string;
-}
-
-export interface FAQ {
-  question: string;
-  answer: string;
-}
-
-export interface BlogPostWithContent extends BlogPost {
-  content: string;
-  faqs?: FAQ[];   // ← add this
+  faqs?: FAQ[];
 }
