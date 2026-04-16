@@ -5,17 +5,15 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { motion } from "framer-motion";
-
-interface FAQ {
-  question: string;
-  answer: string;
-}
+import type { FAQ } from "@/data/posts/types";
 
 interface PostFAQProps {
   faqs: FAQ[];
 }
 
 const PostFAQ = ({ faqs }: PostFAQProps) => {
+  if (!faqs || faqs.length === 0) return null;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 16 }}
@@ -36,9 +34,9 @@ const PostFAQ = ({ faqs }: PostFAQProps) => {
           <AccordionItem
             key={i}
             value={`faq-${i}`}
-            className="border border-border/60 rounded-xl px-5 bg-card shadow-sm"
+            className="border border-border/60 rounded-xl px-5 bg-card shadow-sm data-[state=open]:border-primary/30 data-[state=open]:shadow-md transition-all duration-200"
           >
-            <AccordionTrigger className="text-sm font-semibold text-foreground hover:text-primary hover:no-underline py-4 text-left">
+            <AccordionTrigger className="text-sm font-semibold text-foreground hover:text-primary hover:no-underline py-4 text-left gap-4">
               {faq.question}
             </AccordionTrigger>
             <AccordionContent className="text-sm text-muted-foreground leading-relaxed pb-4">
