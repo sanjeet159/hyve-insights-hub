@@ -15,11 +15,6 @@ export const categories = [
 
 export type Category = (typeof categories)[number];
 
-export interface FAQ {
-  question: string;
-  answer: string;
-}
-
 export interface BlogPost {
   id: string;
   slug: string;
@@ -39,5 +34,4 @@ export interface BlogPost {
 
 export interface BlogPostWithContent extends BlogPost {
   content: string;
-  faqs?: FAQ[];
 }
