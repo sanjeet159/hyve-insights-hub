@@ -11,7 +11,6 @@ import Footer from "@/components/blog/Footer";
 import { featuredPost, blogPosts, type Category } from "@/data/blogData";
 import { motion, AnimatePresence } from "framer-motion";
 import { Newspaper, ChevronDown } from "lucide-react";
-import BlogFAQ from "@/components/blog/BlogFAQ";
 
 const POSTS_PER_PAGE = 3;
 
