@@ -7,7 +7,6 @@ import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
 import Footer from "@/components/blog/Footer";
 import BlogCard from "@/components/blog/BlogCard";
-import PostFAQ from "@/components/blog/PostFAQ";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
 import { useMemo, useState } from "react";
 
