@@ -128,8 +128,7 @@ const Index = () => {
         )}
       </section>
 
-      <PopularTopics />
-      <BlogFAQ /> 
+      <PopularTopics /> 
       <Newsletter />
       <FooterCTA />
       <Footer />
