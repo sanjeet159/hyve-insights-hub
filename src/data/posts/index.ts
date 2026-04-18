@@ -11,12 +11,12 @@ export { categories } from "./types";
 
 // All posts in order (first is featured)
 export const allPosts = [
+  post6,
   post1,
   post2,
   post3,
   post4,
   post5,
-  post6,
 ];
 
 // Featured post is the first one (or any with featured: true)
