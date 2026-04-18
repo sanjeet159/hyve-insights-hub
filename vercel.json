@@ -1,5 +1,22 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/top-freelancing-platfor/:path*",
+      "destination": "/blog/top-freelancing-skills-demand-india-startups-2025",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-become-a-freel/:path*",
+      "destination": "/blog/why-indian-freelancers-dont-get-paid-on-time",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-start-freelancin/:path*",
+      "destination": "/blog/why-indian-freelancers-dont-get-paid-on-time",
+      "permanent": true
+    }
   ]
 }
