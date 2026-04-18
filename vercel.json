@@ -1,7 +1,8 @@
 {
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ],
+  ]
+}
   "redirects": [
     {
       "source": "/top-freelancing-platfor/:path*",
