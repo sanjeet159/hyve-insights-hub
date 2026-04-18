@@ -140,10 +140,10 @@ const post: BlogPostWithContent = {
     <p style="font-weight:700;color:#0d0d0d;font-size:14px;margin:0 0 4px 0">Developer</p>
     <p style="color:#777;font-size:12px;line-height:1.5;margin:0">React, Node, mobile apps</p>
   </div>
-  <div style="border:1px solid #f1ab13;border-radius:12px;padding:16px;background:#FAEEDA;text-align:center">
+  <div style="border:1px solid #e8e4dc;border-radius:12px;padding:16px;background:#fff;text-align:center">
     <div style="font-size:28px;margin-bottom:8px">📢</div>
-    <p style="font-weight:700;color:#412402;font-size:14px;margin:0 0 4px 0">Marketer</p>
-    <p style="color:#633806;font-size:12px;line-height:1.5;margin:0">Content, SEO, performance ads</p>
+    <p style="font-weight:700;color:#0d0d0d;font-size:14px;margin:0 0 4px 0">Marketer</p>
+    <p style="color:#777;font-size:12px;line-height:1.5;margin:0">Content, SEO, performance ads</p>
   </div>
 </div>
 
