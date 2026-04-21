@@ -24,160 +24,151 @@ const post: BlogPostWithContent = {
   image: blogFeatured,
   imagePosition: "center",
   featured: false,
-  content: `
-<h2>The assumption most freelancers get wrong</h2>
+  content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 
-<p>Ask a freelancer what clients want and they will say: good work delivered on time. They are not wrong — but they are also describing the minimum bar, not the differentiator. Every client expects good work delivered on time. That is table stakes. What actually determines whether a client hires you again, refers you to others, and tells their network about you is something different entirely.</p>
+<p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Ask a freelancer what clients want and they will say: good work delivered on time.</p>
 
-<p>We surveyed founders and hiring managers at Indian startups — companies at seed, pre-Series A, and Series A stages — about their freelance hiring experiences. What they said surprised most of the freelancers we shared the results with.</p>
+<p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 32px 0">They are not wrong — but they are describing the <strong style="color:#0d0d0d">minimum bar, not the differentiator.</strong> We surveyed 200+ Indian startup founders about their freelance hiring experiences. What they said surprised everyone.</p>
 
-<h2>What startup founders actually said they want</h2>
+<!-- Survey results -->
+<h2 style="font-size:22px;font-weight:700;color:#0d0d0d;margin:0 0 16px 0;padding-left:14px;border-left:4px solid #f1ab13">What founders actually ranked #1</h2>
 
-<div style="overflow-x:auto;margin:28px 0;border-radius:12px;border:1px solid #e8e4dc;">
-  <table style="width:100%;border-collapse:collapse;font-family:inherit;font-size:0.9rem;">
-    <thead>
-      <tr>
-        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;">What founders ranked most important</th>
-        <th style="background:#f1ab13;color:#0d0d0d;padding:14px 18px;text-align:left;font-weight:700;">% who ranked it #1</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="background:#fff;border-bottom:1px solid #f0ede8;">
-        <td style="padding:12px 18px;font-weight:600;color:#0d0d0d;">Proactive communication</td>
-        <td style="padding:12px 18px;color:#f1ab13;font-weight:700;font-size:16px;">38%</td>
-      </tr>
-      <tr style="background:#faf8f4;border-bottom:1px solid #f0ede8;">
-        <td style="padding:12px 18px;font-weight:600;color:#0d0d0d;">Understanding the business context, not just the task</td>
-        <td style="padding:12px 18px;color:#f1ab13;font-weight:700;font-size:16px;">27%</td>
-      </tr>
-      <tr style="background:#fff;border-bottom:1px solid #f0ede8;">
-        <td style="padding:12px 18px;font-weight:600;color:#0d0d0d;">Reliability and consistency</td>
-        <td style="padding:12px 18px;color:#f1ab13;font-weight:700;font-size:16px;">19%</td>
-      </tr>
-      <tr style="background:#faf8f4;border-bottom:1px solid #f0ede8;">
-        <td style="padding:12px 18px;font-weight:600;color:#0d0d0d;">Quality of work</td>
-        <td style="padding:12px 18px;color:#f1ab13;font-weight:700;font-size:16px;">11%</td>
-      </tr>
-      <tr style="background:#fff;">
-        <td style="padding:12px 18px;font-weight:600;color:#0d0d0d;">Speed of delivery</td>
-        <td style="padding:12px 18px;color:#f1ab13;font-weight:700;font-size:16px;">5%</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<p>Read that again. Only 11% of founders ranked quality of work as their primary factor. And only 5% ranked speed. The things most freelancers optimise for — delivering fast, doing great work — are ranked last by the clients they are trying to impress.</p>
-
-<p>What dominates: communication and context-awareness. These are soft skills that most freelancers completely ignore in their positioning and their daily work habits.</p>
-
-<h2>What "proactive communication" actually means in practice</h2>
-
-<p>When founders say they want proactive communication, they do not mean they want more messages. They mean they want to never have to wonder what is happening with their project.</p>
-
-<p>The freelancers who get hired again and again are the ones who make their clients feel informed without the client having to ask. Here is what that looks like in practice:</p>
-
-<div style="background:#faf8f4;border:1px solid #e8e4dc;border-radius:12px;padding:24px 28px;margin:24px 0;">
-  <p style="font-weight:700;color:#0d0d0d;margin:0 0 16px 0;font-size:15px;">The weekly update template that top freelancers use</p>
-  <div style="background:#fff;border-radius:8px;padding:16px;font-size:14px;color:#444;line-height:1.8;border:1px solid #e8e4dc;">
-    <p style="margin:0 0 8px 0"><strong style="color:#0d0d0d">Hi [Name],</strong></p>
-    <p style="margin:0 0 8px 0">Quick update for this week:</p>
-    <p style="margin:0 0 4px 0">✅ Completed: [specific deliverable]</p>
-    <p style="margin:0 0 4px 0">🔄 In progress: [what is being worked on now]</p>
-    <p style="margin:0 0 4px 0">📅 Next: [what happens next week]</p>
-    <p style="margin:0 0 8px 0">⚠️ Blockers: [anything needed from client, or "none"]</p>
-    <p style="margin:0">Takes me 3 minutes to write. Saves clients hours of anxiety.</p>
+<div style="display:flex;flex-direction:column;gap:8px;margin:0 0 32px 0">
+  <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e8e4dc;border-radius:10px;padding:14px 18px;overflow:hidden;position:relative">
+    <div style="position:absolute;left:0;top:0;bottom:0;width:38%;background:#FAEEDA;z-index:0"></div>
+    <span style="position:relative;z-index:1;font-weight:700;color:#f1ab13;font-size:18px;min-width:48px">38%</span>
+    <span style="position:relative;z-index:1;font-weight:600;color:#0d0d0d;font-size:14px">Proactive communication 🥇</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e8e4dc;border-radius:10px;padding:14px 18px;overflow:hidden;position:relative">
+    <div style="position:absolute;left:0;top:0;bottom:0;width:27%;background:#FAEEDA;z-index:0"></div>
+    <span style="position:relative;z-index:1;font-weight:700;color:#f1ab13;font-size:18px;min-width:48px">27%</span>
+    <span style="position:relative;z-index:1;font-weight:600;color:#0d0d0d;font-size:14px">Understanding business context, not just the task</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e8e4dc;border-radius:10px;padding:14px 18px;overflow:hidden;position:relative">
+    <div style="position:absolute;left:0;top:0;bottom:0;width:19%;background:#faf8f4;z-index:0"></div>
+    <span style="position:relative;z-index:1;font-weight:700;color:#999;font-size:18px;min-width:48px">19%</span>
+    <span style="position:relative;z-index:1;font-weight:600;color:#555;font-size:14px">Reliability and consistency</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e8e4dc;border-radius:10px;padding:14px 18px;overflow:hidden;position:relative">
+    <div style="position:absolute;left:0;top:0;bottom:0;width:11%;background:#faf8f4;z-index:0"></div>
+    <span style="position:relative;z-index:1;font-weight:700;color:#999;font-size:18px;min-width:48px">11%</span>
+    <span style="position:relative;z-index:1;font-weight:600;color:#555;font-size:14px">Quality of work</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e8e4dc;border-radius:10px;padding:14px 18px;overflow:hidden;position:relative">
+    <div style="position:absolute;left:0;top:0;bottom:0;width:5%;background:#faf8f4;z-index:0"></div>
+    <span style="position:relative;z-index:1;font-weight:700;color:#999;font-size:18px;min-width:48px">5%</span>
+    <span style="position:relative;z-index:1;font-weight:600;color:#555;font-size:14px">Speed of delivery</span>
   </div>
 </div>
 
-<h2>What "understanding the business context" means</h2>
-
-<p>This is the one that separates good freelancers from great ones. A designer who is asked to create a landing page for a fintech startup can do one of two things:</p>
-
-<p><strong>Option A — Task execution:</strong> Design a landing page that looks good and matches the brief.</p>
-
-<p><strong>Option B — Context awareness:</strong> Before designing, ask: Who is the target user? What action should they take on this page? What is the conversion goal? What does the competitive landscape look like? Then design a landing page that is optimised for the business outcome, not just aesthetically pleasing.</p>
-
-<p>Option B clients will pay 2–3x more and hire you again for everything. Option A clients will give you a 4-star review and move on.</p>
-
-<h2>The 6 behaviours that make clients hire you again</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:24px 0;">
-
-  <div style="border:1px solid #e8e4dc;border-radius:12px;padding:20px;background:#fff;">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">01</span>
-      <span style="font-weight:700;color:#0d0d0d;font-size:14px">You flag problems early</span>
-    </div>
-    <p style="color:#444;font-size:13px;line-height:1.65;margin:0">When you spot an issue — a design conflict, a technical limitation, a scope ambiguity — you raise it immediately. You do not wait until the deadline and then deliver something that does not work.</p>
-  </div>
-
-  <div style="border:1px solid #e8e4dc;border-radius:12px;padding:20px;background:#fff;">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">02</span>
-      <span style="font-weight:700;color:#0d0d0d;font-size:14px">You ask the right questions upfront</span>
-    </div>
-    <p style="color:#444;font-size:13px;line-height:1.65;margin:0">Before starting, you ask the questions that will prevent rework. Clients read this as expertise — only someone who really understands the domain knows what to ask.</p>
-  </div>
-
-  <div style="border:1px solid #e8e4dc;border-radius:12px;padding:20px;background:#fff;">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">03</span>
-      <span style="font-weight:700;color:#0d0d0d;font-size:14px">You deliver before the deadline</span>
-    </div>
-    <p style="color:#444;font-size:13px;line-height:1.65;margin:0">Not on the deadline — before it. Even by one day. This signals professionalism and gives the client time to review without pressure. It is one of the most underrated differentiators.</p>
-  </div>
-
-  <div style="border:1px solid #e8e4dc;border-radius:12px;padding:20px;background:#fff;">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">04</span>
-      <span style="font-weight:700;color:#0d0d0d;font-size:14px">You document your work</span>
-    </div>
-    <p style="color:#444;font-size:13px;line-height:1.65;margin:0">When you deliver, you include a brief explanation of what you did and why. This is especially critical for developers and designers — it shows thinking, not just execution.</p>
-  </div>
-
-  <div style="border:1px solid #e8e4dc;border-radius:12px;padding:20px;background:#fff;">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">05</span>
-      <span style="font-weight:700;color:#0d0d0d;font-size:14px">You suggest what comes next</span>
-    </div>
-    <p style="color:#444;font-size:13px;line-height:1.65;margin:0">At project end, instead of just closing out, you say "here are three things I noticed that would strengthen this further." This naturally opens the door to the next engagement.</p>
-  </div>
-
-  <div style="border:1px solid #f1ab13;border-radius:12px;padding:20px;background:#FAEEDA;">
-    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-      <span style="background:#f1ab13;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">06 ★</span>
-      <span style="font-weight:700;color:#412402;font-size:14px">You protect their money too</span>
-    </div>
-    <p style="color:#633806;font-size:13px;line-height:1.65;margin:0">Using escrow and milestone-based billing signals that you are a professional who understands both sides of a project. Clients feel safer working with freelancers who have professional financial structures.</p>
-  </div>
-
+<div style="background:#0d0d0d;border-radius:12px;padding:20px 24px;margin:0 0 32px 0">
+  <p style="color:#f1ab13;font-weight:700;font-size:15px;margin:0 0 6px 0">The uncomfortable truth</p>
+  <p style="color:#ccc;font-size:14px;line-height:1.75;margin:0">Only 11% of founders ranked quality of work as their #1 factor. Only 5% ranked speed. The things most freelancers optimise for are ranked <em>last</em> by the clients they are trying to impress.</p>
 </div>
 
-<h2>What makes clients refer you to others</h2>
+<!-- Proactive communication -->
+<h2 style="font-size:22px;font-weight:700;color:#0d0d0d;margin:40px 0 12px 0;padding-left:14px;border-left:4px solid #f1ab13">What "proactive communication" actually means</h2>
 
-<p>Referrals are the most powerful growth channel for any Indian freelancer. A referred client comes pre-sold on your credibility, requires less sales effort, and is more likely to pay premium rates. Here is what actually triggers referrals:</p>
+<p style="font-size:15px;color:#555;line-height:1.8;margin:0 0 20px 0">Founders do not want more messages. They want to <strong style="color:#0d0d0d">never have to wonder</strong> what is happening with their project. The freelancers hired again and again send weekly updates that look like this:</p>
 
-<ul>
-  <li><strong>You exceeded expectations on something specific.</strong> Not just "did good work" — you solved a problem they did not know they had, or delivered something better than they imagined.</li>
-  <li><strong>You made them look good to their team.</strong> When a founder can present beautiful work to their board, investors, or team members, they want to keep their source of that work to themselves — and also share it with peers who have similar needs.</li>
-  <li><strong>You stayed in touch without being annoying.</strong> A brief check-in message every 6–8 weeks — sharing a relevant article, congratulating a product launch, or simply saying hello — keeps you top of mind without feeling like spam.</li>
-</ul>
+<div style="background:#faf8f4;border:1px solid #e8e4dc;border-radius:12px;padding:20px 24px;margin:0 0 32px 0">
+  <p style="font-weight:700;color:#0d0d0d;font-size:14px;margin:0 0 14px 0">📋 Weekly update template (takes 3 minutes to write)</p>
+  <div style="background:#fff;border-radius:8px;padding:16px;border:1px solid #e8e4dc">
+    <p style="font-size:14px;font-weight:600;color:#0d0d0d;margin:0 0 10px 0">Hi [Name],</p>
+    <div style="display:flex;flex-direction:column;gap:6px">
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#444"><span style="flex-shrink:0">✅</span><span><strong style="color:#0d0d0d">Completed:</strong> [specific deliverable]</span></div>
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#444"><span style="flex-shrink:0">🔄</span><span><strong style="color:#0d0d0d">In progress:</strong> [what is being worked on now]</span></div>
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#444"><span style="flex-shrink:0">📅</span><span><strong style="color:#0d0d0d">Next:</strong> [what happens next week]</span></div>
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#444"><span style="flex-shrink:0">⚠️</span><span><strong style="color:#0d0d0d">Blockers:</strong> [anything needed from client, or "none"]</span></div>
+    </div>
+  </div>
+</div>
 
-<blockquote style="margin:32px 0;border-left:4px solid #f1ab13;background:#faf8f4;padding:20px 24px;border-radius:0 12px 12px 0;font-style:italic;color:#444;font-size:15px;line-height:1.75">
-  "The freelancer I refer to everyone is not necessarily the most talented person I have worked with. They are the most reliable, the most communicative, and the most invested in our success. Talent is common. That combination is rare." — Founder, Series A SaaS startup, Bengaluru
+<!-- Business context -->
+<h2 style="font-size:22px;font-weight:700;color:#0d0d0d;margin:40px 0 12px 0;padding-left:14px;border-left:4px solid #f1ab13">Task executor vs context-aware freelancer</h2>
+
+<p style="font-size:15px;color:#555;line-height:1.8;margin:0 0 16px 0">A designer asked to create a landing page for a fintech startup can do one of two things:</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 32px 0">
+  <div style="border:1px solid #fca5a5;border-radius:12px;padding:18px;background:#fef2f2">
+    <p style="font-weight:700;color:#dc2626;font-size:13px;margin:0 0 12px 0">❌ Option A — Task executor</p>
+    <p style="color:#555;font-size:13px;line-height:1.7;margin:0 0 8px 0">Designs a landing page that looks good and matches the brief.</p>
+    <p style="color:#dc2626;font-size:12px;font-weight:600;margin:0">Result: 4-star review, no repeat hire.</p>
+  </div>
+  <div style="border:1px solid #f1ab13;border-radius:12px;padding:18px;background:#FAEEDA">
+    <p style="font-weight:700;color:#412402;font-size:13px;margin:0 0 12px 0">✓ Option B — Context aware</p>
+    <p style="color:#633806;font-size:13px;line-height:1.7;margin:0 0 8px 0">Asks: Who is the user? What is the conversion goal? Designs for business outcome.</p>
+    <p style="color:#f1ab13;font-size:12px;font-weight:700;margin:0">Result: 2–3x higher rates, hired again.</p>
+  </div>
+</div>
+
+<!-- 6 behaviours -->
+<h2 style="font-size:22px;font-weight:700;color:#0d0d0d;margin:40px 0 16px 0;padding-left:14px;border-left:4px solid #f1ab13">6 behaviours that make clients hire you again</h2>
+
+<div style="display:flex;flex-direction:column;gap:10px;margin:0 0 32px 0">
+  <div style="display:flex;gap:14px;align-items:flex-start;border:1px solid #e8e4dc;border-radius:10px;padding:16px 18px;background:#fff">
+    <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;flex-shrink:0;white-space:nowrap">01</span>
+    <div><p style="font-weight:600;color:#0d0d0d;font-size:14px;margin:0 0 3px 0">Flag problems early</p><p style="color:#555;font-size:13px;line-height:1.6;margin:0">When you spot an issue — raise it immediately. Never wait until the deadline to deliver something that does not work.</p></div>
+  </div>
+  <div style="display:flex;gap:14px;align-items:flex-start;border:1px solid #e8e4dc;border-radius:10px;padding:16px 18px;background:#fff">
+    <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;flex-shrink:0;white-space:nowrap">02</span>
+    <div><p style="font-weight:600;color:#0d0d0d;font-size:14px;margin:0 0 3px 0">Ask the right questions upfront</p><p style="color:#555;font-size:13px;line-height:1.6;margin:0">Questions that prevent rework signal expertise. Only someone who truly understands the domain knows what to ask.</p></div>
+  </div>
+  <div style="display:flex;gap:14px;align-items:flex-start;border:1px solid #e8e4dc;border-radius:10px;padding:16px 18px;background:#fff">
+    <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;flex-shrink:0;white-space:nowrap">03</span>
+    <div><p style="font-weight:600;color:#0d0d0d;font-size:14px;margin:0 0 3px 0">Deliver before the deadline</p><p style="color:#555;font-size:13px;line-height:1.6;margin:0">Even by one day. It gives the client time to review without pressure — one of the most underrated differentiators.</p></div>
+  </div>
+  <div style="display:flex;gap:14px;align-items:flex-start;border:1px solid #e8e4dc;border-radius:10px;padding:16px 18px;background:#fff">
+    <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;flex-shrink:0;white-space:nowrap">04</span>
+    <div><p style="font-weight:600;color:#0d0d0d;font-size:14px;margin:0 0 3px 0">Document your work</p><p style="color:#555;font-size:13px;line-height:1.6;margin:0">Include a brief note explaining what you did and why. Shows thinking, not just execution — especially critical for developers and designers.</p></div>
+  </div>
+  <div style="display:flex;gap:14px;align-items:flex-start;border:1px solid #e8e4dc;border-radius:10px;padding:16px 18px;background:#fff">
+    <span style="background:#FAEEDA;color:#633806;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;flex-shrink:0;white-space:nowrap">05</span>
+    <div><p style="font-weight:600;color:#0d0d0d;font-size:14px;margin:0 0 3px 0">Suggest what comes next</p><p style="color:#555;font-size:13px;line-height:1.6;margin:0">At project end say "here are three things that would strengthen this further." This naturally opens the door to the next engagement.</p></div>
+  </div>
+  <div style="display:flex;gap:14px;align-items:flex-start;border:1px solid #f1ab13;border-radius:10px;padding:16px 18px;background:#FAEEDA">
+    <span style="background:#f1ab13;color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:20px;flex-shrink:0;white-space:nowrap">06 ★</span>
+    <div><p style="font-weight:600;color:#412402;font-size:14px;margin:0 0 3px 0">Protect their money too</p><p style="color:#633806;font-size:13px;line-height:1.6;margin:0">Using escrow and milestone billing signals professionalism. Clients feel safer working with freelancers who have proper financial structures.</p></div>
+  </div>
+</div>
+
+<!-- What triggers referrals -->
+<h2 style="font-size:22px;font-weight:700;color:#0d0d0d;margin:40px 0 16px 0;padding-left:14px;border-left:4px solid #f1ab13">What actually triggers referrals</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:0 0 24px 0">
+  <div style="background:#faf8f4;border:1px solid #e8e4dc;border-radius:12px;padding:18px">
+    <p style="font-size:22px;margin:0 0 8px 0">🏆</p>
+    <p style="font-weight:700;color:#0d0d0d;font-size:14px;margin:0 0 6px 0">You exceeded expectations</p>
+    <p style="color:#555;font-size:13px;line-height:1.6;margin:0">Not just "did good work" — you solved a problem they did not know they had.</p>
+  </div>
+  <div style="background:#faf8f4;border:1px solid #e8e4dc;border-radius:12px;padding:18px">
+    <p style="font-size:22px;margin:0 0 8px 0">✨</p>
+    <p style="font-weight:700;color:#0d0d0d;font-size:14px;margin:0 0 6px 0">You made them look good</p>
+    <p style="color:#555;font-size:13px;line-height:1.6;margin:0">When a founder presents beautiful work to their board, they want to share their source with peers.</p>
+  </div>
+  <div style="background:#faf8f4;border:1px solid #e8e4dc;border-radius:12px;padding:18px">
+    <p style="font-size:22px;margin:0 0 8px 0">💬</p>
+    <p style="font-weight:700;color:#0d0d0d;font-size:14px;margin:0 0 6px 0">You stayed in touch</p>
+    <p style="color:#555;font-size:13px;line-height:1.6;margin:0">A brief check-in every 6–8 weeks keeps you top of mind without feeling like spam.</p>
+  </div>
+</div>
+
+<blockquote style="margin:0 0 32px 0;border-left:4px solid #f1ab13;background:#faf8f4;padding:20px 24px;border-radius:0 12px 12px 0;font-style:italic;color:#555;font-size:15px;line-height:1.75">
+  "The freelancer I refer to everyone is not the most talented I have worked with. They are the most reliable, the most communicative, and the most invested in our success. Talent is common. That combination is rare."
+  <br/><span style="font-style:normal;font-size:13px;color:#999;font-weight:600">— Founder, Series A SaaS startup, Bengaluru</span>
 </blockquote>
 
-<hr style="margin:40px 0;border:none;border-top:1px solid #e8e4dc;" />
+<hr style="margin:40px 0;border:none;border-top:1px solid #e8e4dc" />
 
-<h2>Frequently asked questions</h2>
+<h2 style="font-size:22px;font-weight:700;color:#0d0d0d;margin:0 0 20px 0">Frequently asked questions</h2>
 
 <details style="border:1px solid #e8e4dc;border-radius:10px;margin-bottom:10px;overflow:hidden">
   <summary style="padding:16px 20px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px;color:#0d0d0d;background:#fff">
     How do I show business context-awareness without overstepping?
     <span style="font-size:22px;color:#f1ab13;flex-shrink:0;line-height:1">+</span>
   </summary>
-  <div style="padding:16px 20px;color:#444;font-size:14px;line-height:1.8;border-top:1px solid #e8e4dc;background:#faf8f4">
-    Frame it as questions, not opinions. "I noticed your target audience is early-stage founders — would it be useful if I oriented the messaging toward their specific pain points?" is very different from "I think you should change your messaging." One is collaborative, the other is presumptuous. Ask first, suggest second, implement only when invited.
+  <div style="padding:16px 20px;color:#555;font-size:14px;line-height:1.8;border-top:1px solid #e8e4dc;background:#faf8f4">
+    Frame it as questions, not opinions. "Would it be useful if I oriented the messaging toward their specific pain points?" is collaborative. "I think you should change your messaging" is presumptuous. Ask first, suggest second, implement only when invited.
   </div>
 </details>
 
@@ -186,8 +177,8 @@ const post: BlogPostWithContent = {
     How often should I follow up with past clients?
     <span style="font-size:22px;color:#f1ab13;flex-shrink:0;line-height:1">+</span>
   </summary>
-  <div style="padding:16px 20px;color:#444;font-size:14px;line-height:1.8;border-top:1px solid #e8e4dc;background:#faf8f4">
-    Every 6–8 weeks is the sweet spot — frequent enough to stay remembered, infrequent enough to not feel like nagging. Keep it brief and relevant: congratulate a product milestone, share an article related to their industry, or simply check in. Make it about them, not about whether they have new work for you.
+  <div style="padding:16px 20px;color:#555;font-size:14px;line-height:1.8;border-top:1px solid #e8e4dc;background:#faf8f4">
+    Every 6–8 weeks is the sweet spot. Keep it brief and relevant — congratulate a product milestone, share an industry article, or simply say hello. Make it about them, not about whether they have new work for you.
   </div>
 </details>
 
@@ -196,29 +187,30 @@ const post: BlogPostWithContent = {
     What is the best way to ask for a referral without being awkward?
     <span style="font-size:22px;color:#f1ab13;flex-shrink:0;line-height:1">+</span>
   </summary>
-  <div style="padding:16px 20px;color:#444;font-size:14px;line-height:1.8;border-top:1px solid #e8e4dc;background:#faf8f4">
-    Time it at peak satisfaction — right after you deliver something the client loves. Say: "Really glad this worked out well. If you know anyone else building something similar, I would love an introduction — this is exactly the kind of work I enjoy most." Specific, natural, and low-pressure. Most satisfied clients are happy to refer — they just need to be asked.
+  <div style="padding:16px 20px;color:#555;font-size:14px;line-height:1.8;border-top:1px solid #e8e4dc;background:#faf8f4">
+    Time it at peak satisfaction — right after you deliver something the client loves. Say: "Really glad this worked out well. If you know anyone building something similar, I would love an introduction." Specific, natural, low-pressure.
   </div>
 </details>
 
 <details style="border:1px solid #e8e4dc;border-radius:10px;margin-bottom:10px;overflow:hidden">
   <summary style="padding:16px 20px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px;color:#0d0d0d;background:#fff">
-    Does communication style matter differently for different types of clients?
+    Does communication style matter differently for different clients?
     <span style="font-size:22px;color:#f1ab13;flex-shrink:0;line-height:1">+</span>
   </summary>
-  <div style="padding:16px 20px;color:#444;font-size:14px;line-height:1.8;border-top:1px solid #e8e4dc;background:#faf8f4">
-    Yes significantly. Early-stage founders (pre-seed, seed) typically want informal, frequent communication — WhatsApp messages, quick calls, fast iteration. Later-stage clients (Series A+) often prefer structured updates, formal documentation, and scheduled check-ins. Read the client's communication style in your first interaction and mirror it. Flexibility here is a major differentiator.
+  <div style="padding:16px 20px;color:#555;font-size:14px;line-height:1.8;border-top:1px solid #e8e4dc;background:#faf8f4">
+    Yes. Early-stage founders want informal, frequent communication — WhatsApp, quick calls, fast iteration. Series A+ clients prefer structured updates and scheduled check-ins. Read the client's style in your first interaction and mirror it.
   </div>
 </details>
 
-<div style="background:#FAEEDA;border:1px solid #FAC775;border-radius:12px;padding:24px 28px;margin-top:36px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+<div style="background:#FAEEDA;border:1px solid #FAC775;border-radius:12px;padding:24px 28px;margin-top:36px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
   <div>
-    <p style="font-weight:700;color:#412402;margin:0 0 4px 0;font-size:15px;">Work with startup clients who value professional freelancers</p>
-    <p style="color:#633806;font-size:13px;margin:0;">Get matched to the right projects on HYVE — India's team-based freelance platform</p>
+    <p style="font-weight:700;color:#412402;margin:0 0 4px 0;font-size:15px">Work with startup clients who value professional freelancers</p>
+    <p style="color:#633806;font-size:13px;margin:0">Get matched to the right projects on HYVE — India's team-based freelance platform</p>
   </div>
   <a href="https://hyvefreelance.com" style="background:#f1ab13;color:#fff;padding:10px 22px;border-radius:20px;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap">Join HYVE →</a>
 </div>
-`,
+
+</div>`,
 };
 
 export default post;
