@@ -4,20 +4,20 @@ import type { BlogPostWithContent } from "./types";
 const post: BlogPostWithContent = {
   id: "3",
   slug: "upwork-vs-hyve-india-freelancers-2025",
-  title: "Upwork vs HYVE: Which is Better for Indian Freelancers in 2025?",
-  metaTitle: "Upwork vs HYVE: Which is Better for Indian Freelancers in 2025? | HYVE Blog",
+  title: "Upwork vs HYVE: Which is Better for Indian Freelancers in 2026?",
+  metaTitle: "Upwork vs HYVE: Which is Better for Indian Freelancers in 2026? | HYVE Blog",
   metaDescription:
-    "Comparing Upwork vs HYVE for Indian freelancers in 2025? We break down fees, payment protection, project matching, and which platform actually puts Indian freelancers first.",
+    "Comparing Upwork vs HYVE for Indian freelancers in 2026? We break down fees, payment protection, project matching, and which platform actually puts Indian freelancers first.",
   keywords: [
     "Upwork vs Hyve India",
-    "best freelance platform India 2025",
+    "best freelance platform India 2026",
     "Upwork alternative India",
     "Indian freelance platform comparison",
     "Upwork India fees",
     "freelance platform for Indian startups",
   ],
   excerpt:
-    "Comparing Upwork vs HYVE for Indian freelancers in 2025? We break down fees, payment protection, project matching, and which platform actually puts Indian freelancers first.",
+    "Comparing Upwork vs HYVE for Indian freelancers in 2026? We break down fees, payment protection, project matching, and which platform actually puts Indian freelancers first.",
   category: "Platform Comparisons",
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
