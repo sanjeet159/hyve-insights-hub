@@ -5,7 +5,7 @@ import type { BlogPostWithContent } from "./types";
 const post: BlogPostWithContent = {
   id: "2",
   slug: "how-to-hire-freelance-team-india-startup",
-  title: "How to Hire a Freelance Team in India for Your Startup (2025 Guide)",
+  title: "How to Hire a Freelance Team in India for Your Startup (2026 Guide)",
   metaTitle: "How to Hire a Freelance Team in India for Your Startup | HYVE Blog",
   metaDescription:
     "Hiring a freelance team in India? This complete 2025 guide covers where to find pre-vetted teams, how escrow protects your budget, and why teams beat solo freelancers for startup projects.",
@@ -14,7 +14,7 @@ const post: BlogPostWithContent = {
     "freelance team for startup India",
     "how to hire freelancers India",
     "pre-vetted freelancers India",
-    "best freelance platform for startups India 2025",
+    "best freelance platform for startups India 2026",
   ],
   excerpt:
     "Hiring a freelance team in India? This complete guide covers where to find pre-vetted teams, how escrow protects your budget, and why teams beat solo freelancers for startup projects.",
