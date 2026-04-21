@@ -8,7 +8,7 @@ const post: BlogPostWithContent = {
   title: "How to Hire a Freelance Team in India for Your Startup (2026 Guide)",
   metaTitle: "How to Hire a Freelance Team in India for Your Startup | HYVE Blog",
   metaDescription:
-    "Hiring a freelance team in India? This complete 2025 guide covers where to find pre-vetted teams, how escrow protects your budget, and why teams beat solo freelancers for startup projects.",
+    "Hiring a freelance team in India? This complete 2026 guide covers where to find pre-vetted teams, how escrow protects your budget, and why teams beat solo freelancers for startup projects.",
   keywords: [
     "hire freelance team India startup",
     "freelance team for startup India",
@@ -26,7 +26,7 @@ const post: BlogPostWithContent = {
   featured: false,
   content: `## How to Hire a Freelance Team in India for Your Startup
 
-Building a startup is expensive. Full-time hires carry salary commitments, equity expectations, and infrastructure costs that early-stage founders cannot always justify. This is why the smartest Indian startup founders in 2025 are not building large in-house teams — they are building with flexible, expert freelance teams that they can scale up or down based on project needs.
+Building a startup is expensive. Full-time hires carry salary commitments, equity expectations, and infrastructure costs that early-stage founders cannot always justify. This is why the smartest Indian startup founders in 2026 are not building large in-house teams — they are building with flexible, expert freelance teams that they can scale up or down based on project needs.
 
 But hiring freelancers comes with its own set of challenges. Finding reliable talent, managing multiple individuals, protecting your budget, and ensuring quality are all real concerns. This guide covers exactly how to do it right.
 
@@ -72,7 +72,7 @@ Never agree to a single large payment at the end of a project. Break every engag
 
 ## How Much Does It Cost to Hire a Freelance Team in India?
 
-Costs vary significantly based on skill, experience, and team size. As a rough guide for Indian startup founders in 2025:
+Costs vary significantly based on skill, experience, and team size. As a rough guide for Indian startup founders in 2026:
 
 - **Design + Development team (MVP):** ₹80,000 – ₹2,50,000
 - **Content + Digital Marketing team (3-month campaign):** ₹40,000 – ₹1,20,000
