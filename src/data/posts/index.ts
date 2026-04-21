@@ -6,6 +6,7 @@ import post4 from "./post-4";
 import post5 from "./post-5";
 import post6 from "./post-6";
 import post7 from "./post-7";
+import post8 from "./post-8";
 
 export type { BlogPost, BlogPostWithContent, Category } from "./types";
 export { categories } from "./types";
@@ -19,6 +20,7 @@ export const allPosts = [
   post3,
   post4,
   post5,
+  post8,
 ];
 
 // Featured post is the first one (or any with featured: true)
