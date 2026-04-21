@@ -3,7 +3,7 @@ import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "3",
-  slug: "upwork-vs-hyve-india-freelancers-2025",
+  slug: "upwork-vs-hyve-india-freelancers-2026",
   title: "Upwork vs HYVE: Which is Better for Indian Freelancers in 2026?",
   metaTitle: "Upwork vs HYVE: Which is Better for Indian Freelancers in 2026? | HYVE Blog",
   metaDescription:
@@ -26,9 +26,9 @@ const post: BlogPostWithContent = {
   imagePosition: "center",
   featured: false,
   content: `
-<h2>Upwork vs HYVE: Which is Better for Indian Freelancers in 2025?</h2>
+<h2>Upwork vs HYVE: Which is Better for Indian Freelancers in 2026?</h2>
 
-<p>Upwork is the most well-known freelance platform in the world. It has been around since 2003 and processes billions of dollars in freelance payments every year. So why are thousands of Indian freelancers looking for alternatives in 2025?</p>
+<p>Upwork is the most well-known freelance platform in the world. It has been around since 2003 and processes billions of dollars in freelance payments every year. So why are thousands of Indian freelancers looking for alternatives in 2026?</p>
 
 <p>The answer is simple: Upwork was built for a global market, primarily optimised for Western clients and freelancers. The specific pain points of Indian freelancers — local payment methods, INR transactions, team-based work, and escrow for the Indian market — were never its priority. HYVE was built specifically to fill that gap.</p>
 
