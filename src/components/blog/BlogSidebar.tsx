@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Sparkles, Star, ArrowRight, Briefcase, Users, Mail, Send, Zap } from "lucide-react";
-import { useState } from "react";
+import { Sparkles, Star, ArrowRight, Briefcase, Users, Zap } from "lucide-react";
 import { blogPosts, type BlogPost } from "@/data/posts";
 
 interface BlogSidebarProps {
@@ -9,18 +8,10 @@ interface BlogSidebarProps {
 }
 
 const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
   // Pick top 3 featured/recent posts excluding current
   const featuredPosts = blogPosts
     .filter((p) => p.id !== currentPostId)
     .slice(0, 3);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) setSubscribed(true);
-  };
 
   return (
     <aside className="space-y-6">
@@ -99,51 +90,6 @@ const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
             <ArrowRight className="h-3.5 w-3.5" />
           </a>
         </div>
-      </motion.div>
-
-      {/* Newsletter Signup */}
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.1 }}
-        className="rounded-2xl border border-primary/20 bg-gradient-to-br from-accent/60 to-card p-6 shadow-sm"
-      >
-        <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-          <Mail className="h-5 w-5 text-primary" />
-        </div>
-        <h3 className="font-heading text-base font-bold text-foreground">
-          Weekly Freelance Tips
-        </h3>
-        <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-          Get insights on freelancing, hiring, and team collaboration — delivered every Tuesday.
-        </p>
-        {!subscribed ? (
-          <form onSubmit={handleSubscribe} className="mt-4 space-y-2">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="your@email.com"
-              required
-              className="w-full rounded-lg border border-border/60 bg-background px-3 py-2.5 text-sm text-foreground outline-none transition-all placeholder:text-muted-foreground/50 focus:border-primary/40 focus:ring-2 focus:ring-primary/10"
-            />
-            <button
-              type="submit"
-              className="flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-bold text-primary-foreground transition-all duration-300 hover:shadow-md hover:shadow-primary/20"
-            >
-              Subscribe
-              <Send className="h-3.5 w-3.5" />
-            </button>
-          </form>
-        ) : (
-          <div className="mt-4 rounded-lg bg-primary/10 p-3 text-center text-sm font-semibold text-primary">
-            ✓ Welcome aboard!
-          </div>
-        )}
-        <p className="mt-3 text-[10px] text-muted-foreground/70 text-center">
-          Join 2,500+ Indian freelancers · No spam, unsubscribe anytime
-        </p>
       </motion.div>
 
       {/* Marketing CTA — For Freelancers */}
