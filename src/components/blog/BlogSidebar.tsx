@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Sparkles, Star, ArrowRight, Briefcase, Users, Mail, Send, Zap } from "lucide-react";
-import { useState } from "react";
+import { Sparkles, Star, ArrowRight, Briefcase, Users, Zap } from "lucide-react";
 import { blogPosts, type BlogPost } from "@/data/posts";
 
 interface BlogSidebarProps {
@@ -9,18 +8,10 @@ interface BlogSidebarProps {
 }
 
 const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
   // Pick top 3 featured/recent posts excluding current
   const featuredPosts = blogPosts
     .filter((p) => p.id !== currentPostId)
     .slice(0, 3);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) setSubscribed(true);
-  };
 
   return (
     <aside className="space-y-6">
