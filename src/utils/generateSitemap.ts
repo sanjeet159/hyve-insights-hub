@@ -4,7 +4,7 @@ export const generateSitemapXML = (): string => {
   const baseUrl = "https://blog.hyvefreelance.com";
   const today = new Date().toISOString().split("T")[0];
 
-  const staticUrls = [
+  const staticUrls: Array<{ loc: string; priority: string; changefreq: string; lastmod?: string }> = [
     { loc: baseUrl, priority: "1.0", changefreq: "daily" },
   ];
 

@@ -2,51 +2,67 @@ import { useParams, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { motion, useScroll, useSpring } from "framer-motion";
 import {
-  ArrowLeft,
+  ChevronRight,
   Clock,
   Calendar,
   Share2,
   ExternalLink,
   LinkIcon,
-  BookOpen,
+  Home,
 } from "lucide-react";
 import BlogHeader from "@/components/blog/BlogHeader";
 import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
 import Footer from "@/components/blog/Footer";
 import BlogCard from "@/components/blog/BlogCard";
+import BlogSidebar from "@/components/blog/BlogSidebar";
+import TableOfContents from "@/components/blog/TableOfContents";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
 import { useMemo, useState } from "react";
 
 // Detect if content is HTML or plain markdown
 const isHTML = (str: string) => /<\s*[a-z][\s\S]*>/i.test(str.trim());
 
-// Markdown renderer for old posts (posts 1-4)
+const slugify = (text: string) =>
+  text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+
+// Markdown renderer
 const renderMarkdown = (content: string) =>
   content.split("\n").map((line, i) => {
     const t = line.trim();
     if (!t) return <div key={i} className="h-3" />;
 
-    if (t.startsWith("### "))
+    if (t.startsWith("### ")) {
+      const text = t.slice(4);
       return (
         <h3
           key={i}
-          className="mb-4 mt-10 font-heading text-xl font-bold text-foreground"
+          id={slugify(text)}
+          className="mb-4 mt-10 font-heading text-xl font-bold text-foreground scroll-mt-24"
         >
-          {t.slice(4)}
+          {text}
         </h3>
       );
+    }
 
-    if (t.startsWith("## "))
+    if (t.startsWith("## ")) {
+      const text = t.slice(3);
       return (
         <h2
           key={i}
-          className="mb-5 mt-12 font-heading text-2xl font-bold text-foreground relative"
+          id={slugify(text)}
+          className="mb-5 mt-12 font-heading text-2xl font-bold text-foreground relative scroll-mt-24"
         >
           <span className="absolute -left-4 top-1 w-1 h-6 rounded-full bg-primary hidden lg:block" />
-          {t.slice(3)}
+          {text}
         </h2>
       );
+    }
 
     if (t.startsWith("> "))
       return (
@@ -92,7 +108,7 @@ const renderMarkdown = (content: string) =>
     return (
       <p
         key={i}
-        className="mb-5 text-foreground/70 leading-[1.85] text-[15.5px]"
+        className="mb-5 text-foreground/75 leading-[1.85] text-[15.5px]"
         dangerouslySetInnerHTML={{
           __html: t
             .replace(
@@ -210,106 +226,120 @@ const BlogPost = () => {
 
       <BlogHeader />
 
-      {/* Hero section */}
-      <div className="pt-16">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6 }}
-          className="relative"
+      {/* Main 2-column container */}
+      <div className="container mx-auto px-4 pt-24 md:pt-28">
+        {/* Breadcrumbs */}
+        <motion.nav
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          aria-label="Breadcrumb"
+          className="mb-6 flex items-center gap-1.5 text-sm"
         >
-          <div className="relative h-[280px] md:h-[380px] lg:h-[440px] w-full overflow-hidden">
-            <motion.img
-              initial={{ scale: 1.05 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              src={post.image}
-              alt={post.title}
-              className={`h-full w-full object-cover object-${post.imagePosition || "center"}`}
-              width={1200}
-              height={640}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/10" />
-          </div>
-        </motion.div>
+          <Link
+            to="/"
+            className="flex items-center gap-1 text-primary transition-colors hover:text-primary/80"
+          >
+            <Home className="h-3.5 w-3.5" />
+            Home
+          </Link>
+          <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/50" />
+          <Link
+            to="/"
+            className="text-primary transition-colors hover:text-primary/80"
+          >
+            Blogs
+          </Link>
+          <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/50" />
+          <span className="text-muted-foreground line-clamp-1">
+            {post.title}
+          </span>
+        </motion.nav>
 
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-3xl -mt-28 relative z-10">
+        <div className="grid gap-10 lg:grid-cols-[1fr_340px]">
+          {/* Main column */}
+          <article className="min-w-0">
+            {/* Hero Image */}
             <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              className="flex items-center gap-3 mb-5"
+              initial={{ opacity: 0, scale: 0.99 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              className="relative overflow-hidden rounded-2xl shadow-md"
             >
-              <Link
-                to="/"
-                className="inline-flex items-center gap-1.5 rounded-full bg-background/90 backdrop-blur-sm border border-border/50 px-3.5 py-1.5 text-xs font-medium text-muted-foreground shadow-sm transition-all duration-200 hover:text-foreground hover:border-primary/30 hover:shadow-md group"
-              >
-                <ArrowLeft className="h-3.5 w-3.5 transition-transform group-hover:-translate-x-0.5" />
-                Back
-              </Link>
-              <span className="inline-block rounded-full bg-primary/10 border border-primary/20 px-3.5 py-1.5 text-xs font-semibold text-primary">
+              <img
+                src={post.image}
+                alt={post.title}
+                className={`h-[260px] w-full object-cover md:h-[400px] lg:h-[460px] object-${post.imagePosition || "center"}`}
+                width={1200}
+                height={640}
+              />
+            </motion.div>
+
+            {/* Meta row above title */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.15, duration: 0.4 }}
+              className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm"
+            >
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
                 {post.category}
+              </span>
+              <span className="flex items-center gap-1.5 text-muted-foreground">
+                <Clock className="h-3.5 w-3.5" />
+                {post.readTime}
+              </span>
+              <span className="flex items-center gap-1.5 text-muted-foreground">
+                <Calendar className="h-3.5 w-3.5" />
+                Last updated on {post.date}
               </span>
             </motion.div>
 
+            {/* Title */}
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="font-heading text-3xl font-extrabold leading-[1.12] text-foreground md:text-4xl lg:text-[2.65rem]"
+              transition={{ delay: 0.2, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              className="mt-4 font-heading text-3xl font-extrabold leading-[1.15] text-foreground md:text-4xl lg:text-[2.5rem]"
             >
               {post.title}
             </motion.h1>
 
+            {/* Subtitle / excerpt */}
             <motion.p
-              initial={{ opacity: 0, y: 12 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="mt-4 text-base text-muted-foreground leading-relaxed md:text-lg max-w-2xl"
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="mt-4 text-lg font-medium text-foreground/80 leading-relaxed"
             >
               {post.excerpt}
             </motion.p>
 
+            {/* Author + share row */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.4 }}
-              className="mt-7 flex flex-wrap items-center gap-4 pb-8 border-b border-border/50"
+              transition={{ delay: 0.4, duration: 0.4 }}
+              className="mt-6 flex items-center justify-between gap-4 border-y border-border/50 py-4"
             >
-              <div className="flex items-center gap-2.5">
-                <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/80 text-sm font-bold text-primary-foreground shadow-sm">
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/80 text-base font-bold text-primary-foreground shadow-sm">
                   {post.author.charAt(0)}
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-foreground leading-none">
                     {post.author}
                   </p>
-                  <p className="text-xs text-muted-foreground mt-0.5">
-                    Contributing Writer
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Contributing Writer at HYVE
                   </p>
                 </div>
               </div>
 
-              <span className="hidden sm:block h-5 w-px bg-border/60" />
-
-              <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                <span className="flex items-center gap-1.5">
-                  <Calendar className="h-3.5 w-3.5" />
-                  {post.date}
+              <div className="flex items-center gap-1.5">
+                <span className="hidden sm:inline-block mr-1 text-xs font-medium text-muted-foreground">
+                  Share:
                 </span>
-                <span className="flex items-center gap-1.5">
-                  <Clock className="h-3.5 w-3.5" />
-                  {post.readTime}
-                </span>
-                <span className="hidden sm:flex items-center gap-1.5">
-                  <BookOpen className="h-3.5 w-3.5" />
-                  {post.category}
-                </span>
-              </div>
-
-              {/* Share buttons */}
-              <div className="ml-auto flex items-center gap-1.5">
                 <motion.button
                   whileHover={{ scale: 1.06 }}
                   whileTap={{ scale: 0.94 }}
@@ -319,7 +349,6 @@ const BlogPost = () => {
                 >
                   <ExternalLink className="h-3.5 w-3.5" />
                 </motion.button>
-
                 <motion.button
                   whileHover={{ scale: 1.06 }}
                   whileTap={{ scale: 0.94 }}
@@ -329,7 +358,6 @@ const BlogPost = () => {
                 >
                   <Share2 className="h-3.5 w-3.5" />
                 </motion.button>
-
                 <motion.button
                   whileHover={{ scale: 1.06 }}
                   whileTap={{ scale: 0.94 }}
@@ -347,58 +375,104 @@ const BlogPost = () => {
                 </motion.button>
               </div>
             </motion.div>
+
+            {/* Mobile-only TOC */}
+            <div className="mt-8 lg:hidden">
+              <TableOfContents content={post.content} />
+            </div>
+
+            {/* Article body */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="mt-10"
+            >
+              {htmlContent ? (
+                <div dangerouslySetInnerHTML={{ __html: post.content }} />
+              ) : (
+                renderMarkdown(post.content)
+              )}
+            </motion.div>
+
+            {/* Inline mid-article CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mt-12 relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-accent/80 via-accent/50 to-card p-6 md:p-8"
+            >
+              <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-primary/15 blur-3xl" />
+              <div className="relative flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+                <div className="flex-1">
+                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
+                    💡 Ready to take action?
+                  </p>
+                  <h3 className="font-heading text-xl md:text-2xl font-bold text-foreground leading-tight">
+                    Stop chasing payments. Start working with security.
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Join 2,500+ Indian freelancers who get paid on time, every time, with HYVE's escrow protection.
+                  </p>
+                </div>
+                <a
+                  href="https://hyvefreelance.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-md transition-all duration-300 hover:gap-3 hover:shadow-lg hover:shadow-primary/25"
+                >
+                  Get Started Free
+                  <ChevronRight className="h-4 w-4" />
+                </a>
+              </div>
+            </motion.div>
+
+            {/* Author card */}
+            <motion.div
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mt-12 rounded-2xl border border-border/40 bg-gradient-to-br from-accent/60 to-accent/30 p-6 md:p-7"
+            >
+              <div className="flex items-start gap-4 md:gap-5">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/80 text-lg font-bold text-primary-foreground shadow-md shadow-primary/15">
+                  {post.author.charAt(0)}
+                </div>
+                <div className="flex-1">
+                  <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
+                    Written by
+                  </p>
+                  <p className="font-heading text-lg font-bold text-foreground mt-1">
+                    {post.author}
+                  </p>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    Contributing writer at HYVE, covering freelancing trends, team
+                    collaboration, and the future of work in India.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </article>
+
+          {/* Sticky sidebar */}
+          <div className="hidden lg:block">
+            <div className="sticky top-24 space-y-6">
+              <TableOfContents content={post.content} />
+              <BlogSidebar currentPostId={post.id} />
+            </div>
+          </div>
+
+          {/* Mobile sidebar (below article) */}
+          <div className="lg:hidden">
+            <BlogSidebar currentPostId={post.id} />
           </div>
         </div>
-      </div>
-
-      {/* Article body */}
-      <motion.article
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
-        className="container mx-auto px-4 py-12"
-      >
-        <div className="mx-auto max-w-3xl">
-          {htmlContent ? (
-            <div dangerouslySetInnerHTML={{ __html: post.content }} />
-          ) : (
-            renderMarkdown(post.content)
-          )}
-        </div>
-      </motion.article>
-
-      {/* Author card */}
-      <div className="container mx-auto px-4 pb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mx-auto max-w-3xl rounded-2xl border border-border/40 bg-gradient-to-br from-accent/60 to-accent/30 p-6 md:p-8"
-        >
-          <div className="flex items-start gap-4 md:gap-5">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/80 text-lg font-bold text-primary-foreground shadow-md shadow-primary/15">
-              {post.author.charAt(0)}
-            </div>
-            <div className="flex-1">
-              <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
-                Written by
-              </p>
-              <p className="font-heading text-lg font-bold text-foreground mt-1">
-                {post.author}
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                Contributing writer at HYVE, covering freelancing trends, team
-                collaboration, and the future of work in India.
-              </p>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       {/* Related articles */}
       {fallbackRelated.length > 0 && (
-        <section className="border-t border-border/40 bg-accent/20 py-20">
+        <section className="mt-16 border-t border-border/40 bg-accent/20 py-16">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -408,7 +482,7 @@ const BlogPost = () => {
             >
               <div className="h-5 w-1 rounded-full bg-primary" />
               <h2 className="font-heading text-2xl font-bold text-foreground">
-                Related Articles
+                Keep Reading
               </h2>
             </motion.div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
