@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Clock, User, Sparkles } from "lucide-react";
+import { ArrowRight, Clock, User, Sparkles, Calendar } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
 
 interface FeaturedPostProps {
@@ -14,59 +14,89 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-8 flex items-center gap-2"
+        className="mb-8 flex items-center justify-between gap-4"
       >
-        <Sparkles className="h-5 w-5 text-primary" />
-        <h2 className="font-heading text-2xl font-bold text-foreground">Featured Article</h2>
+        <div className="flex items-center gap-2">
+          <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+            Editor's Pick
+          </span>
+        </div>
+        <div className="hidden h-px flex-1 bg-gradient-to-r from-border via-border/40 to-transparent md:block" />
       </motion.div>
 
-      <Link to={`/blog/${post.slug}`}>
+      <Link to={`/blog/${post.slug}`} aria-label={`Read featured article: ${post.title}`}>
         <motion.article
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="group relative grid overflow-hidden rounded-3xl bg-card border border-border/50 shadow-[var(--shadow-card)] transition-all duration-500 hover:shadow-[var(--shadow-featured)] hover:border-primary/30 md:grid-cols-2"
+          className="group relative overflow-hidden rounded-3xl border border-border/60 bg-card shadow-[var(--shadow-card)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[var(--shadow-featured)] hover:border-primary/40"
         >
-          {/* Glow effect on hover */}
-          <div className="pointer-events-none absolute -inset-px rounded-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" style={{
-            background: 'radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsl(40 88% 51% / 0.06), transparent 40%)'
-          }} />
+          <div className="grid md:grid-cols-[1.15fr_1fr]">
+            {/* Image side with overlay tag */}
+            <div className="relative overflow-hidden">
+              <img
+                src={post.image}
+                alt={post.title}
+                width={1200}
+                height={800}
+                className="h-72 w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06] md:h-full"
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-foreground/40 via-foreground/10 to-transparent" />
 
-          <div className="relative overflow-hidden">
-            <img
-              src={post.image}
-              alt={post.title}
-              width={1200}
-              height={640}
-              className="h-64 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 md:h-full"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 to-transparent" />
-          </div>
+              {/* Floating category */}
+              <div className="absolute top-5 left-5">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-background/95 backdrop-blur-md px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary shadow-md">
+                  <Sparkles className="h-3 w-3" />
+                  {post.category}
+                </span>
+              </div>
 
-          <div className="relative flex flex-col justify-center p-8 md:p-12 lg:p-14">
-            <span className="mb-5 w-fit rounded-full bg-primary/10 border border-primary/20 px-3.5 py-1 text-xs font-semibold text-accent-foreground">
-              {post.category}
-            </span>
-            <h3 className="font-heading text-2xl font-bold leading-tight text-foreground md:text-3xl lg:text-[2rem] transition-colors duration-300 group-hover:text-primary/90">
-              {post.title}
-            </h3>
-            <p className="mt-4 text-muted-foreground leading-relaxed line-clamp-3">
-              {post.excerpt}
-            </p>
-            <div className="mt-6 flex items-center gap-4 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1.5">
-                <User className="h-4 w-4" /> {post.author}
-              </span>
-              <span>{post.date}</span>
-              <span className="flex items-center gap-1.5">
-                <Clock className="h-4 w-4" /> {post.readTime}
-              </span>
+              {/* Featured badge bottom */}
+              <div className="absolute bottom-5 left-5 hidden md:flex items-center gap-2 rounded-full bg-foreground/85 backdrop-blur-md px-4 py-2 text-xs font-medium text-background">
+                <span className="flex h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
+                Most read this week
+              </div>
             </div>
-            <div className="mt-8">
-              <span className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all duration-300 group-hover:gap-3 group-hover:shadow-lg group-hover:shadow-primary/25">
-                Read Article <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
-              </span>
+
+            {/* Content side */}
+            <div className="relative flex flex-col justify-center p-8 md:p-10 lg:p-14">
+              {/* Decorative accent */}
+              <div className="absolute top-0 left-0 h-1 w-20 bg-gradient-to-r from-primary to-primary/0 md:hidden" />
+
+              <h2 className="font-heading text-2xl font-extrabold leading-[1.15] tracking-tight text-foreground md:text-3xl lg:text-[2.25rem] transition-colors duration-300 group-hover:text-primary">
+                {post.title}
+              </h2>
+
+              <p className="mt-5 text-muted-foreground leading-relaxed line-clamp-3 md:text-[15px]">
+                {post.excerpt}
+              </p>
+
+              {/* Meta strip */}
+              <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground border-t border-border/50 pt-5">
+                <span className="flex items-center gap-1.5 font-medium text-foreground">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/15 text-primary">
+                    <User className="h-3.5 w-3.5" />
+                  </span>
+                  {post.author}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="h-3.5 w-3.5" /> {post.date}
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <Clock className="h-3.5 w-3.5" /> {post.readTime}
+                </span>
+              </div>
+
+              <div className="mt-8 flex items-center justify-between gap-4">
+                <span className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition-all duration-300 group-hover:gap-3 group-hover:shadow-xl group-hover:shadow-primary/30">
+                  Read full story <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                </span>
+                <span className="hidden text-xs font-medium uppercase tracking-wider text-muted-foreground sm:inline">
+                  Free read · No signup
+                </span>
+              </div>
             </div>
           </div>
         </motion.article>
