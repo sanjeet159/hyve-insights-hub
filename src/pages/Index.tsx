@@ -82,12 +82,19 @@ const Index = () => {
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-10 flex items-center gap-2"
+          className="mb-10 flex items-end justify-between gap-4 border-b border-border/60 pb-5"
         >
-          <Newspaper className="h-5 w-5 text-primary" />
-          <h2 className="font-heading text-2xl font-bold text-foreground">Latest Articles</h2>
-          <span className="ml-2 rounded-full bg-accent px-3 py-0.5 text-xs font-medium text-accent-foreground">
-            {filteredPosts.length} posts
+          <div className="flex items-center gap-3">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <Newspaper className="h-5 w-5" />
+            </span>
+            <div>
+              <h2 className="font-heading text-2xl font-bold text-foreground md:text-3xl">Latest Articles</h2>
+              <p className="text-xs text-muted-foreground mt-0.5">Fresh insights from the HYVE community</p>
+            </div>
+          </div>
+          <span className="rounded-full bg-accent px-3 py-1 text-xs font-semibold text-accent-foreground whitespace-nowrap">
+            {filteredPosts.length} {filteredPosts.length === 1 ? "post" : "posts"}
           </span>
         </motion.div>
 

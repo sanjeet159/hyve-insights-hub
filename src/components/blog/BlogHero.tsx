@@ -1,4 +1,4 @@
-import { Search, Sparkles } from "lucide-react";
+import { Search, Sparkles, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { categories, type Category } from "@/data/blogData";
 
@@ -11,9 +11,9 @@ interface BlogHeroProps {
 
 const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChange }: BlogHeroProps) => {
   return (
-    <section className="relative overflow-hidden pb-16 pt-28 md:pt-36 md:pb-20">
+    <section className="relative overflow-hidden pb-12 pt-28 md:pt-36 md:pb-16">
       {/* Warm gradient background */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-accent/60 via-accent/30 to-background" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-accent/70 via-accent/25 to-background" />
 
       {/* Animated floating orbs */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -21,19 +21,13 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
           animate={{ x: [0, 40, -20, 0], y: [0, -30, 20, 0], scale: [1, 1.1, 0.9, 1] }}
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
           className="absolute -top-20 -left-20 h-[32rem] w-[32rem] rounded-full"
-          style={{ background: "radial-gradient(circle, hsl(40 88% 51% / 0.12), transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, hsl(40 88% 51% / 0.14), transparent 70%)" }}
         />
         <motion.div
           animate={{ x: [0, -30, 20, 0], y: [0, 25, -15, 0], scale: [1, 0.92, 1.08, 1] }}
           transition={{ duration: 22, repeat: Infinity, ease: "easeInOut", delay: 3 }}
           className="absolute top-0 -right-20 h-[28rem] w-[28rem] rounded-full"
-          style={{ background: "radial-gradient(circle, hsl(35 95% 55% / 0.1), transparent 70%)" }}
-        />
-        <motion.div
-          animate={{ x: [0, 20, -30, 0], y: [0, -20, 25, 0] }}
-          transition={{ duration: 24, repeat: Infinity, ease: "easeInOut", delay: 6 }}
-          className="absolute -bottom-10 left-1/4 h-80 w-80 rounded-full"
-          style={{ background: "radial-gradient(circle, hsl(40 88% 51% / 0.08), transparent 70%)" }}
+          style={{ background: "radial-gradient(circle, hsl(35 95% 55% / 0.12), transparent 70%)" }}
         />
       </div>
 
@@ -54,7 +48,7 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mx-auto max-w-3xl text-center"
+          className="mx-auto max-w-4xl text-center"
         >
           {/* Badge */}
           <motion.div
@@ -74,7 +68,7 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="font-heading text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-[3.5rem] leading-[1.08]"
+            className="font-heading text-4xl font-extrabold tracking-tight text-foreground md:text-6xl lg:text-[4rem] leading-[1.04]"
           >
             Insights for the Future of
             <br />
@@ -86,28 +80,53 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.6 }}
-            className="mt-5 text-base text-muted-foreground md:text-lg leading-relaxed max-w-xl mx-auto"
+            className="mt-6 text-base text-muted-foreground md:text-lg leading-relaxed max-w-2xl mx-auto"
           >
-            Explore tips, guides, and stories around freelancing, startup hiring,
-            remote teams, escrow payments, and collaboration.
+            Real playbooks on freelancing, startup hiring, remote teams, escrow payments
+            and team collaboration — written for India's new generation of independent talent.
           </motion.p>
+
+          {/* Stats strip */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.55, duration: 0.6 }}
+            className="mx-auto mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm"
+          >
+            <div className="flex items-center gap-2">
+              <span className="font-heading text-xl font-bold text-foreground">50+</span>
+              <span className="text-muted-foreground">in-depth articles</span>
+            </div>
+            <div className="hidden h-4 w-px bg-border sm:block" />
+            <div className="flex items-center gap-2">
+              <span className="font-heading text-xl font-bold text-foreground">12</span>
+              <span className="text-muted-foreground">expert categories</span>
+            </div>
+            <div className="hidden h-4 w-px bg-border sm:block" />
+            <div className="flex items-center gap-2 text-primary">
+              <TrendingUp className="h-4 w-4" />
+              <span className="font-medium">Updated weekly</span>
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* Search */}
         <motion.div
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.55 }}
-          className="mx-auto mt-10 max-w-lg"
+          transition={{ duration: 0.6, delay: 0.65 }}
+          className="mx-auto mt-10 max-w-xl"
         >
           <div className="relative group">
-            <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-primary opacity-100 stroke-[2.5]" />
+            <Search className="absolute left-5 top-1/2 h-5 w-5 -translate-y-1/2 text-primary stroke-[2.5]" />
             <input
               type="text"
-              placeholder="Search articles..."
+              placeholder="Search articles, topics, guides..."
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
-              className="w-full rounded-full border border-border/70 bg-background/90 backdrop-blur-sm py-3.5 pl-12 pr-5 text-sm text-foreground shadow-sm outline-none transition-all duration-300 placeholder:text-muted-foreground/40 focus:border-primary/50 focus:ring-2 focus:ring-primary/20"/>
+              aria-label="Search articles"
+              className="w-full rounded-full border border-border/70 bg-background/95 backdrop-blur-sm py-4 pl-14 pr-6 text-sm text-foreground shadow-[0_8px_30px_-8px_rgba(0,0,0,0.08)] outline-none transition-all duration-300 placeholder:text-muted-foreground/50 focus:border-primary/50 focus:ring-4 focus:ring-primary/15"
+            />
           </div>
         </motion.div>
 
@@ -115,20 +134,20 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.65 }}
-          className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-2"
+          transition={{ duration: 0.5, delay: 0.75 }}
+          className="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-2"
         >
           {categories.map((cat, i) => (
             <motion.button
               key={cat}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.7 + i * 0.04, duration: 0.3 }}
+              transition={{ delay: 0.8 + i * 0.03, duration: 0.3 }}
               onClick={() => onCategoryChange(cat)}
               className={`rounded-full px-4 py-2 text-[13px] font-medium transition-all duration-200 ${
                 activeCategory === cat
-                  ? "bg-primary text-primary-foreground shadow-md shadow-primary/25"
-                  : "bg-background/80 text-muted-foreground border border-border/60 hover:border-primary/30 hover:text-foreground hover:bg-accent/50"
+                  ? "bg-primary text-primary-foreground shadow-md shadow-primary/30 scale-105"
+                  : "bg-background/90 text-muted-foreground border border-border/60 hover:border-primary/40 hover:text-foreground hover:bg-accent/60"
               }`}
             >
               {cat}
