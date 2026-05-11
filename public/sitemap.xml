@@ -5,7 +5,7 @@
     <loc>https://blog.hyvefreelance.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2026-04-18</lastmod>
+    <lastmod>2026-05-11</lastmod>
   </url>
 
   <url>
@@ -54,7 +54,28 @@
     <loc>https://blog.hyvefreelance.com/blog/indian-startup-hiring-freelancers-wrong-costly-mistakes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://blog.hyvefreelance.com/blog/what-indian-clients-actually-want-from-freelancers-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-04-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://blog.hyvefreelance.com/blog/how-to-price-freelance-services-india-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://blog.hyvefreelance.com/blog/remote-team-management-startups-distributed-freelance-teams</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2026-05-05</lastmod>
   </url>
 
 </urlset>
