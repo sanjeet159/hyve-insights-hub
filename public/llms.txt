@@ -1,0 +1,20 @@
+# HYVE Blog
+
+> Insights, guides and stories on freelancing, startup hiring, remote teams and escrow payments — by HYVE, India's team-based freelancing platform.
+
+## Pages
+
+- [Home](/): Latest articles, featured post and category browser.
+
+## Blog
+
+- [Why Indian Freelancers Don't Get Paid On Time](/blog/why-indian-freelancers-dont-get-paid-on-time): How escrow protects against late payments.
+- [How to Hire a Freelance Team in India for Your Startup](/blog/how-to-hire-freelance-team-india-startup): Hiring pre-vetted teams in 2026.
+- [Upwork vs HYVE for Indian Freelancers in 2026](/blog/upwork-vs-hyve-india-freelancers-2025): Fees, payment protection and project matching.
+- [What Is Escrow in Freelancing](/blog/what-is-escrow-freelancing-india-guide): Complete escrow guide for Indian freelancers.
+- [Top 7 Freelancing Skills in Demand](/blog/top-freelancing-skills-demand-india-startups-2025): Skills Indian startups hire for in 2026.
+- [How I Made ₹1 Lakh/Month Freelancing in India](/blog/i-made-1-lakh-month-freelancing-india-heres-exactly-how): A real freelancer's journey.
+- [5 Costly Mistakes Indian Startups Make Hiring Freelancers](/blog/indian-startup-hiring-freelancers-wrong-costly-mistakes): Avoidable hiring mistakes.
+- [What Indian Clients Want From Freelancers in 2026](/blog/what-indian-clients-actually-want-from-freelancers-2026): Insights from 200+ founders.
+- [How to Price Freelance Services in India 2026](/blog/how-to-price-freelance-services-india-2026): Hourly, fixed and value-based pricing frameworks.
+- [Remote Team Management for Startups](/blog/remote-team-management-startups-distributed-freelance-teams): Managing distributed freelance teams.

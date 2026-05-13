@@ -5,9 +5,9 @@ const post: BlogPostWithContent = {
   id: "8",
   slug: "what-indian-clients-actually-want-from-freelancers-2026",
   title: "What Indian Startup Clients Actually Want From Freelancers in 2026 (Not What You Think)",
-  metaTitle: "What Indian Startup Clients Want From Freelancers 2026 | HYVE Blog",
+  metaTitle: "What Indian Clients Want From Freelancers in 2026 | HYVE",
   metaDescription:
-    "Most Indian freelancers guess what clients want. Here is what 200+ startup founders actually said they look for — and what makes them hire the same freelancer again and again.",
+    "What 200+ Indian startup founders actually said they look for in freelancers — and what makes them hire the same person again and again.",
   keywords: [
     "what clients want from freelancers India",
     "how to get repeat clients India freelancing",

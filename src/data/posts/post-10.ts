@@ -5,9 +5,9 @@ const post: BlogPostWithContent = {
   id: "10",
   slug: "remote-team-management-startups-distributed-freelance-teams",
   title: "Remote Team Management for Startups: How to Lead Distributed Freelance Teams in 2026",
-  metaTitle: "Remote Team Management for Startups | Lead Freelance Teams | HYVE",
+  metaTitle: "Remote Team Management for Startups in India | HYVE",
   metaDescription:
-    "A practical playbook for Indian startup founders managing distributed freelance teams in 2026 — async workflows, accountability rituals, tools and the metrics that actually matter.",
+    "A practical playbook for Indian founders managing distributed freelance teams — async workflows, rituals, tools and metrics that matter.",
   keywords: [
     "remote team management startup India",
     "how to manage distributed freelance team",

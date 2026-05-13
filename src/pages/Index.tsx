@@ -53,8 +53,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>HYVE Blog — Freelancing, Startup Hiring & Remote Work Insights</title>
-        <meta name="description" content="Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration. Grow your freelance career with HYVE." />
+        <title>HYVE Blog — Freelancing, Hiring & Remote Work Insights</title>
+        <meta name="description" content="Expert tips and guides on freelancing, startup hiring, remote teams and escrow payments. Grow your freelance career with HYVE." />
         <meta name="keywords" content="freelancing tips India, startup hiring, remote work guide, escrow payments, freelance team collaboration, HYVE blog, freelancer productivity" />
         <link rel="canonical" href="https://hyveblogs.lovable.app/" />
         <meta property="og:type" content="website" />
@@ -68,13 +68,14 @@ const Index = () => {
       </Helmet>
 
       <BlogHeader />
-      <BlogHero
-        activeCategory={activeCategory}
-        onCategoryChange={setActiveCategory}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-      />
-      <FeaturedPost post={featuredPost} />
+      <main>
+        <BlogHero
+          activeCategory={activeCategory}
+          onCategoryChange={setActiveCategory}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+        />
+        <FeaturedPost post={featuredPost} />
 
       {/* Latest Articles */}
       <section className="container mx-auto px-4 pb-20">
@@ -133,7 +134,8 @@ const Index = () => {
             <p className="mt-1 text-sm text-muted-foreground/70">Try a different search or category.</p>
           </motion.div>
         )}
-      </section>
+        </section>
+      </main>
 
       <PopularTopics /> 
       <Newsletter />

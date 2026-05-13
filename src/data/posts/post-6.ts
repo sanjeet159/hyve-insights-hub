@@ -5,9 +5,9 @@ const post: BlogPostWithContent = {
   id: "6",
   slug: "i-made-1-lakh-month-freelancing-india-heres-exactly-how",
   title: "I Made ₹1 Lakh/Month Freelancing in India — Here's Exactly How I Did It",
-  metaTitle: "How I Made ₹1 Lakh/Month Freelancing in India (Real Story) | HYVE Blog",
+  metaTitle: "How I Made ₹1 Lakh/Month Freelancing in India | HYVE",
   metaDescription:
-    "A real account of how one Indian freelancer went from ₹15,000/month to ₹1 lakh/month in under 18 months — the exact skills, clients, platforms, and decisions that made the difference.",
+    "How one Indian freelancer went from ₹15,000 to ₹1 lakh/month in 18 months — the skills, clients, and decisions that made the difference.",
   keywords: [
     "how to make 1 lakh month freelancing India",
     "freelancing income India 1 lakh",

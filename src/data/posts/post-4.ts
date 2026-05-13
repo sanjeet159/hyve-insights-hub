@@ -5,9 +5,9 @@ const post: BlogPostWithContent = {
   id: "4",
   slug: "what-is-escrow-freelancing-india-guide",
   title: "What Is Escrow in Freelancing? A Complete Guide for Indian Freelancers",
-  metaTitle: "What Is Escrow in Freelancing? Complete Guide for Indian Freelancers | HYVE Blog",
+  metaTitle: "What Is Escrow in Freelancing? India Guide | HYVE Blog",
   metaDescription:
-    "What is escrow and how does it protect freelancers? This complete guide explains how escrow payments work, why every Indian freelancer needs it, and how HYVE uses escrow to guarantee your income.",
+    "What is escrow and how does it protect freelancers? Learn how escrow payments work and how HYVE guarantees your income on every project.",
   keywords: [
     "what is escrow for freelancers India",
     "escrow payment freelancing explained",

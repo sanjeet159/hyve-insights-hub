@@ -6,9 +6,9 @@ const post: BlogPostWithContent = {
   id: "2",
   slug: "how-to-hire-freelance-team-india-startup",
   title: "How to Hire a Freelance Team in India for Your Startup (2026 Guide)",
-  metaTitle: "How to Hire a Freelance Team in India for Your Startup | HYVE Blog",
+  metaTitle: "Hire a Freelance Team in India for Your Startup | HYVE",
   metaDescription:
-    "Hiring a freelance team in India? This complete 2026 guide covers where to find pre-vetted teams, how escrow protects your budget, and why teams beat solo freelancers for startup projects.",
+    "Hiring a freelance team in India? 2026 guide on pre-vetted teams, escrow protection, and why teams beat solo freelancers for startups.",
   keywords: [
     "hire freelance team India startup",
     "freelance team for startup India",

@@ -7,7 +7,7 @@ const post: BlogPostWithContent = {
   title: "Why Indian Freelancers Don't Get Paid On Time (And How to Fix It)",
   metaTitle: "Why Indian Freelancers Don't Get Paid On Time | HYVE Blog",
   metaDescription:
-    "Unpaid invoices are killing Indian freelancers. Learn why payment delays happen, how escrow protects you, and how HYVE guarantees payment before work even starts.",
+    "Unpaid invoices hurt Indian freelancers. Learn why payment delays happen and how HYVE's escrow guarantees payment before work starts.",
   keywords: [
     "freelancer payment protection India",
     "escrow for freelancers India",
