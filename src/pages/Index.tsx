@@ -134,7 +134,8 @@ const Index = () => {
             <p className="mt-1 text-sm text-muted-foreground/70">Try a different search or category.</p>
           </motion.div>
         )}
-      </section>
+        </section>
+      </main>
 
       <PopularTopics /> 
       <Newsletter />
