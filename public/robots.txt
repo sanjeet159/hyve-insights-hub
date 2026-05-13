@@ -14,4 +14,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://blog.hyvefreelance.com/sitemap.xml
+Sitemap: https://hyveblogs.lovable.app/sitemap.xml
