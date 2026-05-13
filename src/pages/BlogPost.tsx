@@ -226,6 +226,7 @@ const BlogPost = () => {
 
       <BlogHeader />
 
+      <main>
       {/* Main 2-column container */}
       <div className="container mx-auto px-4 pt-24 md:pt-28">
         {/* Breadcrumbs */}
