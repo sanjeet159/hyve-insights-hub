@@ -5,9 +5,9 @@ const post: BlogPostWithContent = {
   id: "5",
   slug: "top-freelancing-skills-demand-india-startups-2026",
   title: "Top 7 Freelancing Skills in Demand for Indian Startups in 2026",
-  metaTitle: "Top 7 Freelancing Skills in Demand for Indian Startups in 2026 | HYVE Blog",
+  metaTitle: "Top 7 Freelancing Skills in Demand in India 2026 | HYVE",
   metaDescription:
-    "Discover the 7 most in-demand freelancing skills that Indian startups are hiring for in 2026. Learn how to position yourself on HYVE to get matched to high-paying projects.",
+    "The 7 most in-demand freelancing skills Indian startups are hiring for in 2026 — and how to position yourself on HYVE for top projects.",
   keywords: [
     "top freelancing skills in demand India 2026",
     "freelance skills startups hire India",

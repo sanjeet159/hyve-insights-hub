@@ -5,9 +5,9 @@ const post: BlogPostWithContent = {
   id: "3",
   slug: "upwork-vs-hyve-india-freelancers-2026",
   title: "Upwork vs HYVE: Which is Better for Indian Freelancers in 2026?",
-  metaTitle: "Upwork vs HYVE: Which is Better for Indian Freelancers in 2026? | HYVE Blog",
+  metaTitle: "Upwork vs HYVE for Indian Freelancers in 2026 | HYVE Blog",
   metaDescription:
-    "Comparing Upwork vs HYVE for Indian freelancers in 2026? We break down fees, payment protection, project matching, and which platform actually puts Indian freelancers first.",
+    "Upwork vs HYVE for Indian freelancers in 2026 — fees, payment protection, project matching, and which platform puts India first.",
   keywords: [
     "Upwork vs Hyve India",
     "best freelance platform India 2026",

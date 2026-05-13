@@ -7,7 +7,7 @@ const post: BlogPostWithContent = {
   title: "How to Price Your Freelance Services in India: The 2026 Pricing Playbook",
   metaTitle: "How to Price Freelance Services in India 2026 | HYVE Blog",
   metaDescription:
-    "Stop undercharging. Learn the exact frameworks Indian freelancers use to price hourly, fixed and value-based projects in 2026 — with real rate benchmarks for design, dev, writing and marketing.",
+    "Stop undercharging. The exact frameworks Indian freelancers use to price hourly, fixed and value-based projects in 2026, with real benchmarks.",
   keywords: [
     "how to price freelance services India",
     "freelance pricing guide India 2026",

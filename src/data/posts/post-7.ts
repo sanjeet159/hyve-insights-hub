@@ -5,9 +5,9 @@ const post: BlogPostWithContent = {
   id: "7",
   slug: "indian-startup-hiring-freelancers-wrong-costly-mistakes",
   title: "5 Costly Mistakes Indian Startups Make When Hiring Freelancers (And How to Avoid Them)",
-  metaTitle: "5 Costly Mistakes Indian Startups Make Hiring Freelancers | HYVE Blog",
+  metaTitle: "5 Costly Mistakes Startups Make Hiring Freelancers | HYVE",
   metaDescription:
-    "Indian startups lose lakhs every year making the same freelancer hiring mistakes. Here are the 5 most expensive ones — and exactly how to avoid them in 2026.",
+    "Indian startups lose lakhs making the same freelancer hiring mistakes. Here are the 5 most expensive ones — and how to avoid them in 2026.",
   keywords: [
     "hiring freelancers India startup mistakes",
     "how to hire freelancers India startup",
