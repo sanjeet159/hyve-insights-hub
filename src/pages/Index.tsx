@@ -68,13 +68,14 @@ const Index = () => {
       </Helmet>
 
       <BlogHeader />
-      <BlogHero
-        activeCategory={activeCategory}
-        onCategoryChange={setActiveCategory}
-        searchQuery={searchQuery}
-        onSearchChange={setSearchQuery}
-      />
-      <FeaturedPost post={featuredPost} />
+      <main>
+        <BlogHero
+          activeCategory={activeCategory}
+          onCategoryChange={setActiveCategory}
+          searchQuery={searchQuery}
+          onSearchChange={setSearchQuery}
+        />
+        <FeaturedPost post={featuredPost} />
 
       {/* Latest Articles */}
       <section className="container mx-auto px-4 pb-20">
