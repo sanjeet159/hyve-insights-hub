@@ -9,6 +9,7 @@ import post7 from "./post-7";
 import post8 from "./post-8";
 import post9 from "./post-9";
 import post10 from "./post-10";
+import post11 from "./post-11";
 
 export type { BlogPost, BlogPostWithContent, Category } from "./types";
 export { categories } from "./types";
@@ -16,6 +17,7 @@ export { categories } from "./types";
 // All posts in order (first is featured)
 export const allPosts = [
   post6,
+  post11,
   post7,
   post9,
   post10,
