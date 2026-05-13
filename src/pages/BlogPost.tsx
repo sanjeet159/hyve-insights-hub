@@ -494,6 +494,7 @@ const BlogPost = () => {
           </div>
         </section>
       )}
+      </main>
 
       <Newsletter />
       <FooterCTA />
