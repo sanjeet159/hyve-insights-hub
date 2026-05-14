@@ -32,7 +32,7 @@ const post: BlogPostWithContent = {
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 32px 0">There's a new answer emerging in India — <strong>teamlancing</strong>. One brief. One team. One invoice. Shipped.</p>
 
 <div style="background:#0d0d0d;border-radius:14px;padding:24px 28px;margin:0 0 36px 0;color:#fff">
-  <p style="color:#f1ab13;font-weight:700;font-size:12px;margin:0 0 10px 0;text-transform:uppercase;letter-spacing:1.5px">TL;DR — What is teamlancing?</p>
+  <p style="color:#f1ab13;font-weight:700;font-size:12px;margin:0 0 10px 0;text-transform:uppercase;letter-spacing:1.5px">What is teamlancing?</p>
   <p style="color:#fff;font-size:15px;line-height:1.75;margin:0">Teamlancing is hiring a small, pre-formed team of freelancers — designer, developer, writer, PM — as a single unit through one contract, one timeline, and one escrow payment. It's faster than freelancing, lighter than an agency, and built for how products actually ship in 2026.</p>
 </div>
 
