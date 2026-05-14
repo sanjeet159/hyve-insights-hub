@@ -38,7 +38,7 @@ const post: BlogPostWithContent = {
 
 <h2 style="font-size:28px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0;line-height:1.25">Defining teamlancing</h2>
 
-<p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 16px 0"><strong>Teamlancing</strong> /ˈtiːmˌlænsɪŋ/ — the practice of working as, or hiring, a team of independent freelancers who collaborate as a single unit on a project, governed by one brief, one timeline, and one payment contract.</p>
+<p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 16px 0"><strong>Teamlancing</strong> — the practice of working as, or hiring, a team of independent freelancers who collaborate as a single unit on a project, governed by one brief, one timeline, and one payment contract.</p>
 
 <p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 32px 0">It is not a freelancer subletting work. It is not an agency with overhead. It is a third option — and the one most modern product teams are quietly converging on.</p>
 
