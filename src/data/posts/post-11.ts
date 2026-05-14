@@ -33,7 +33,7 @@ const post: BlogPostWithContent = {
 
 <!-- Quick answer box -->
 <div style="background:#0d0d0d;border-radius:14px;padding:24px 28px;margin:0 0 36px 0;color:#fff">
-  <p style="color:#f1ab13;font-weight:700;font-size:12px;margin:0 0 10px 0;text-transform:uppercase;letter-spacing:1.5px">TL;DR — Hire freelancers in India</p>
+  <p style="color:#f1ab13;font-weight:700;font-size:12px;margin:0 0 10px 0;text-transform:uppercase;letter-spacing:1.5px">Hire freelancers in India</p>
   <p style="color:#fff;font-size:15px;line-height:1.75;margin:0">Use a vetted platform with escrow (HYVE), write a 1-page brief, shortlist 3 freelancers, run a paid 2-hour test task, then release payment in milestones. Total time: under 5 days.</p>
 </div>
 
