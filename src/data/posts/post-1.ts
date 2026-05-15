@@ -96,6 +96,24 @@ You built your skills. You put in the hours. You deserve to get paid — every t
 ---
 
 *Ready to work with guaranteed payments? [Join HYVE](https://hyvefreelance.com) and get escrow protection on every project you take. 🐝*`,
+  faqs: [
+    {
+      question: "Why do Indian freelancers often get paid late?",
+      answer: "Most Indian freelance arrangements are informal — no contract, no advance, and no escrow. Once work is delivered, the freelancer has no leverage, so clients delay or dispute payment. The fix is to move money before work moves, using escrow or a platform-backed milestone system.",
+    },
+    {
+      question: "What is the safest way for an Indian freelancer to get paid?",
+      answer: "Use a platform with built-in escrow such as HYVE. The client deposits funds before work begins, the money is locked, and it's released to your wallet the moment a milestone is approved — no chasing, no disputes over whether the client 'will pay'.",
+    },
+    {
+      question: "Should I always ask for an upfront payment?",
+      answer: "Yes. A 25–30% advance or a fully funded escrow milestone is standard for serious clients globally. Any client who refuses any form of upfront commitment is a payment-risk red flag.",
+    },
+    {
+      question: "What can I do if a client refuses to pay after delivery?",
+      answer: "Without escrow, your only options are repeated follow-ups, legal notice, or small-claims action — all slow and expensive. With escrow on HYVE, the funds are already secured and a neutral dispute team reviews the brief, deliverables, and chat history to release payment fairly.",
+    },
+  ],
 };
 
 export default post;

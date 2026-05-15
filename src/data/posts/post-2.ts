@@ -89,6 +89,24 @@ You get the flexibility of freelancers with the reliability of an agency. At a f
 ---
 
 *Post your project on HYVE and get matched with a pre-vetted team in 48 hours. [Get Started →](https://hyvefreelance.com) 🐝*`,
+  faqs: [
+    {
+      question: "Why hire a freelance team instead of individual freelancers?",
+      answer: "A freelance team already has shared workflows, internal communication, and complementary skills — design, dev, QA, marketing — under one point of contact. Hiring solo freelancers means you become the project manager bridging gaps. Teams ship faster and remove that overhead.",
+    },
+    {
+      question: "How much does it cost to hire a freelance team in India in 2026?",
+      answer: "Typical ranges on HYVE: ₹80k–₹2.5L for a design + dev MVP, ₹40k–₹1.2L for a 3-month content + marketing campaign, and ₹2L–₹8L for a full product build (design + dev + QA). Significantly cheaper than agencies and more reliable than scattered solo freelancers.",
+    },
+    {
+      question: "How do I make sure a freelance team is actually qualified?",
+      answer: "Hire only from pre-vetted platforms. Star ratings on open marketplaces are easily gamed. On HYVE, every team is vetted before they can take projects, so you're choosing from a curated pool — not sifting unqualified applicants.",
+    },
+    {
+      question: "How should I structure payments when hiring a freelance team?",
+      answer: "Always milestone-based with escrow. Break the project into 3–5 milestones, fund each one into escrow before work starts, and release payment only after deliverables are reviewed. Never agree to one large payment at the end.",
+    },
+  ],
 };
 
 export default post;

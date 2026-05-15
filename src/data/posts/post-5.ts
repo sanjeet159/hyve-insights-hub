@@ -97,6 +97,24 @@ Having the skill is only half the equation. Here is how to maximise your chances
 ---
 
 *Build your HYVE profile today and get matched to startup projects in 48 hours. [Create your profile →](https://hyvefreelance.com) 🐝*`,
+  faqs: [
+    {
+      question: "What are the most in-demand freelancing skills in India in 2026?",
+      answer: "The top seven on HYVE: Product UI/UX design, full-stack web development (React + Node, Next.js), performance marketing (Meta + Google Ads), SEO content strategy, mobile app development (React Native / Flutter), brand identity design, and no-code / automation development.",
+    },
+    {
+      question: "Which freelance skill pays the most in India?",
+      answer: "Mobile app development and full-stack development command the highest project rates — ₹1.2L–₹5L per app and ₹80k–₹3.5L per web product. Performance marketers also earn strong monthly retainers (₹25k–₹80k+) when they can show ROAS data.",
+    },
+    {
+      question: "Do I need a team to get hired by Indian startups?",
+      answer: "Not strictly, but teams are heavily preferred. Startups want one point of contact for design + dev + content. A solo designer who partners with a developer is far more attractive than either freelancer alone, and HYVE actively matches teams over individuals.",
+    },
+    {
+      question: "How do I position my profile to get more startup projects?",
+      answer: "Niche down (e.g. 'full-stack developer for SaaS startups using React + Node'), show measurable outcomes instead of tasks, join or form a team, and keep your HYVE profile and reputation score active by completing projects on-platform.",
+    },
+  ],
 };
 
 export default post;
