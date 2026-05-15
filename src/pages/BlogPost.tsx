@@ -212,6 +212,22 @@ const BlogPost = () => {
         <meta name="twitter:description" content={post.metaDescription} />
         <meta name="twitter:image" content={post.image} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        {post.faqs && post.faqs.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: post.faqs.map((f) => ({
+                "@type": "Question",
+                name: f.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: f.answer,
+                },
+              })),
+            })}
+          </script>
+        )}
       </Helmet>
 
       {/* Reading progress bar */}
