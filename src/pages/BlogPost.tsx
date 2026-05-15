@@ -212,6 +212,22 @@ const BlogPost = () => {
         <meta name="twitter:description" content={post.metaDescription} />
         <meta name="twitter:image" content={post.image} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        {post.faqs && post.faqs.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: post.faqs.map((f) => ({
+                "@type": "Question",
+                name: f.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: f.answer,
+                },
+              })),
+            })}
+          </script>
+        )}
       </Helmet>
 
       {/* Reading progress bar */}
@@ -454,6 +470,46 @@ const BlogPost = () => {
                 </div>
               </div>
             </motion.div>
+
+            {/* FAQ section — also emits FAQPage JSON-LD for Google rich results */}
+            {post.faqs && post.faqs.length > 0 && (
+              <motion.section
+                initial={{ opacity: 0, y: 14 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="mt-12"
+                aria-labelledby="faq-heading"
+              >
+                <div className="mb-6 flex items-center gap-3">
+                  <div className="h-5 w-1 rounded-full bg-primary" />
+                  <h2
+                    id="faq-heading"
+                    className="font-heading text-2xl font-bold text-foreground"
+                  >
+                    Frequently Asked Questions
+                  </h2>
+                </div>
+                <div className="divide-y divide-border/50 rounded-2xl border border-border/50 bg-card/40 overflow-hidden">
+                  {post.faqs.map((faq, i) => (
+                    <details
+                      key={i}
+                      className="group p-5 md:p-6 [&_summary::-webkit-details-marker]:hidden"
+                    >
+                      <summary className="flex cursor-pointer items-start justify-between gap-4 list-none">
+                        <h3 className="font-semibold text-foreground text-base md:text-[17px] leading-snug">
+                          {faq.question}
+                        </h3>
+                        <ChevronRight className="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-open:rotate-90" />
+                      </summary>
+                      <p className="mt-3 text-foreground/75 leading-relaxed text-[15px]">
+                        {faq.answer}
+                      </p>
+                    </details>
+                  ))}
+                </div>
+              </motion.section>
+            )}
           </article>
 
           {/* Sticky sidebar */}
