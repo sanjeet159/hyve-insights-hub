@@ -100,6 +100,24 @@ HYVE exists to change that. Every project on our platform, regardless of size, c
 ---
 
 *Work with confidence. Every project on HYVE is escrow-protected. [Start your free profile →](https://hyvefreelance.com) 🐝*`,
+  faqs: [
+    {
+      question: "What is escrow in freelancing?",
+      answer: "Escrow is a financial arrangement where a neutral third party — usually the freelance platform — holds the client's payment until pre-agreed milestones are delivered and approved. The client cannot withdraw the funds and the freelancer cannot access them until conditions are met. It removes payment risk for both sides.",
+    },
+    {
+      question: "Is the money in escrow actually safe?",
+      answer: "Yes. On HYVE, escrow runs on Razorpay — a regulated and trusted Indian payment infrastructure. Funds are held in a segregated structure specifically for the transaction, not in HYVE's operating accounts.",
+    },
+    {
+      question: "What happens if the client and freelancer disagree?",
+      answer: "Either side can raise a dispute. HYVE's resolution team reviews the brief, the delivered work, and the platform communications, then makes a fair determination. The escrow stays locked until the dispute is resolved — neither party can withdraw it unilaterally.",
+    },
+    {
+      question: "Does using escrow cost extra?",
+      answer: "No. Escrow protection is built into HYVE's standard platform fee. There is no additional escrow charge that appears later.",
+    },
+  ],
 };
 
 export default post;

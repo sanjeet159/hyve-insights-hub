@@ -34,4 +34,5 @@ export interface BlogPost {
 
 export interface BlogPostWithContent extends BlogPost {
   content: string;
+  faqs?: Array<{ question: string; answer: string }>;
 }

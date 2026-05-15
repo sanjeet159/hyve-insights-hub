@@ -152,6 +152,24 @@ const post: BlogPostWithContent = {
 
 <p><em>Join 1,000+ Indian freelancers already building on HYVE. <a href="https://hyvefreelance.com">Create your free profile →</a> 🐝</em></p>
 `,
+  faqs: [
+    {
+      question: "Is HYVE better than Upwork for Indian freelancers?",
+      answer: "For freelancers serving Indian clients, yes. HYVE pays in INR with no FX loss, integrates with Indian payment rails, matches you to projects (no bidding wars), and is built for teams. Upwork is stronger if you want global clients and are comfortable invoicing in USD.",
+    },
+    {
+      question: "Why do Indian freelancers lose money on Upwork?",
+      answer: "Earnings are paid in USD, then converted to INR with both an exchange-rate spread and a withdrawal fee. On a steady freelance income, this conversion drag adds up to thousands of rupees lost per year compared to billing directly in INR.",
+    },
+    {
+      question: "Do I have to bid for projects on HYVE?",
+      answer: "No. HYVE matches projects to teams based on skills, experience, and team composition. You're notified when you're a strong fit — no writing the same proposal template fifty times.",
+    },
+    {
+      question: "Can I be on both Upwork and HYVE at the same time?",
+      answer: "Yes. Many Indian freelancers use HYVE for Indian clients and team projects, and Upwork for international solo work. They serve different markets and don't conflict.",
+    },
+  ],
 };
 
 export default post;
