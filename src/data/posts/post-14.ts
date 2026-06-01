@@ -150,10 +150,13 @@ const post: BlogPostWithContent = {
 
 <p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 32px 0">If any of those answers feel ugly, you're better off hiring a team than four individuals.</p>
 
-<div style="background:linear-gradient(135deg,#f1ab13,#d99500);border-radius:16px;padding:32px;margin:32px 0;text-align:center;color:#0d0d0d">
-  <p style="font-size:13px;font-weight:800;margin:0 0 10px 0;text-transform:uppercase;letter-spacing:2px">Stop paying for the gap</p>
-  <p style="font-size:18px;font-weight:700;margin:0 0 18px 0;line-height:1.4">Hire a pre-formed HYVE team. One brief, one timeline, one invoice — zero handoff gap.</p>
-  <a href="https://hyvefreelance.com" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#0d0d0d;color:#fff;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px">Hire a HYVE team →</a>
+<div style="position:relative;overflow:hidden;background:linear-gradient(135deg,#fdf5e1 0%,#faecc6 55%,#ffffff 100%);border:1px solid rgba(241,171,19,0.25);border-radius:16px;padding:28px 32px;margin:32px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
+  <div style="flex:1;min-width:240px">
+    <p style="font-size:12px;font-weight:800;margin:0 0 8px 0;text-transform:uppercase;letter-spacing:2px;color:#f1ab13">💡 Stop paying for the gap</p>
+    <p style="font-size:20px;font-weight:800;margin:0 0 6px 0;line-height:1.3;color:#0d0d0d">Hire a pre-formed HYVE team.</p>
+    <p style="font-size:14px;color:#555;line-height:1.6;margin:0">One brief, one timeline, one invoice — zero handoff gap.</p>
+  </div>
+  <a href="https://hyvefreelance.com" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;display:inline-flex;align-items:center;gap:8px;background:#f1ab13;color:#fff;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:14px;box-shadow:0 8px 20px -8px rgba(241,171,19,0.5)">Hire a HYVE team →</a>
 </div>
 
 </div>`,

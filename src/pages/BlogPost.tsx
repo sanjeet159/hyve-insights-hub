@@ -412,37 +412,6 @@ const BlogPost = () => {
               )}
             </motion.div>
 
-            {/* Inline mid-article CTA */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mt-12 relative overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-br from-accent/80 via-accent/50 to-card p-6 md:p-8"
-            >
-              <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-primary/15 blur-3xl" />
-              <div className="relative flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
-                <div className="flex-1">
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">
-                    💡 Ready to take action?
-                  </p>
-                  <h3 className="font-heading text-xl md:text-2xl font-bold text-foreground leading-tight">
-                    Stop chasing payments. Start working with security.
-                  </h3>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                    Join 2,500+ Indian freelancers who get paid on time, every time, with HYVE's escrow protection.
-                  </p>
-                </div>
-                <a
-                  href="https://hyvefreelance.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="shrink-0 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-md transition-all duration-300 hover:gap-3 hover:shadow-lg hover:shadow-primary/25"
-                >
-                  Get Started Free
-                  <ChevronRight className="h-4 w-4" />
-                </a>
-              </div>
-            </motion.div>
 
             {/* Author card */}
             <motion.div
