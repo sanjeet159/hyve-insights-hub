@@ -16,6 +16,7 @@ const BlogHeader = () => {
     { label: "How It Works", href: "https://hyvefreelance.com/#how-it-works" },
     { label: "Features", href: "https://hyvefreelance.com/#features" },
     { label: "About", href: "https://hyvefreelance.com/#about" },
+    { label: "Blog", href: "https://blog.hyvefreelance.com/" },
     { label: "FAQs", href: "https://hyvefreelance.com/#faqs" },
   ];
 
