@@ -107,7 +107,7 @@ const BlogHeader = () => {
               {/* Login + Sign up */}
               <div className="px-4 pb-5 flex flex-col gap-2 border-t border-gray-100 pt-3">
                 <a
-                  href="https://hyvefreelance.com"
+                  href="https://app.hyvefreelance.com/auth/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
@@ -116,7 +116,7 @@ const BlogHeader = () => {
                   Login
                 </a>
                 <a
-                  href="https://hyvefreelance.com"
+                  href="https://app.hyvefreelance.com/auth/login"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
