@@ -196,7 +196,7 @@ const BlogHeader = () => {
                 Login
               </a>
               <a
-                href="https://hyvefreelance.com"
+                href="https://app.hyvefreelance.com/auth/login"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="signup-btn rounded-full px-6 py-2.5 text-sm font-semibold flex items-center gap-1.5"
