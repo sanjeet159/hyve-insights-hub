@@ -14,15 +14,27 @@ import post12 from "./post-12";
 import post13 from "./post-13";
 import post14 from "./post-14";
 import post15 from "./post-15";
+import post16 from "./post-16";
+import post17 from "./post-17";
+import post18 from "./post-18";
+import post19 from "./post-19";
+import post20 from "./post-20";
+import post21 from "./post-21";
 
 export type { BlogPost, BlogPostWithContent, Category } from "./types";
 export { categories } from "./types";
 
 // All posts in order (first is featured)
 export const allPosts = [
+  post16,
+  post17,
   post15,
+  post18,
   post14,
+  post19,
   post13,
+  post20,
+  post21,
   post6,
   post12,
   post11,
@@ -36,6 +48,7 @@ export const allPosts = [
   post5,
   post8,
 ];
+
 
 // Featured post is the first one (or any with featured: true)
 export const featuredPost = allPosts.find((p) => p.featured) || allPosts[0];
