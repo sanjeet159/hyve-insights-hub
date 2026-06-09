@@ -171,20 +171,46 @@ const BlogPost = () => {
     });
   };
 
+  const postUrl = `https://blog.hyvefreelance.com/blog/${post.slug}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.metaDescription,
-    author: { "@type": "Person", name: post.author },
+    author: {
+      "@type": "Person",
+      name: post.author,
+      url: "https://blog.hyvefreelance.com",
+    },
     datePublished: post.date,
-    image: post.image,
+    dateModified: post.date,
+    image: post.image?.startsWith("http")
+      ? post.image
+      : `https://blog.hyvefreelance.com${post.image}`,
     keywords: post.keywords?.join(", "),
+    articleSection: post.category,
+    inLanguage: "en-IN",
+    mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
     publisher: {
       "@type": "Organization",
       name: "HYVE",
       url: "https://hyvefreelance.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://blog.hyvefreelance.com/logo.png",
+      },
     },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://blog.hyvefreelance.com/" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://blog.hyvefreelance.com/" },
+      { "@type": "ListItem", position: 3, name: post.title, item: postUrl },
+    ],
   };
 
   const htmlContent = isHTML(post.content);
@@ -195,23 +221,30 @@ const BlogPost = () => {
         <title>{post.metaTitle}</title>
         <meta name="description" content={post.metaDescription} />
         <meta name="keywords" content={post.keywords?.join(", ")} />
-        <link
-          rel="canonical"
-          href={`https://blog.hyvefreelance.com/blog/${post.slug}`}
-        />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+        <meta name="author" content={post.author} />
+        <link rel="canonical" href={postUrl} />
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="HYVE Blog" />
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.metaDescription} />
         <meta property="og:image" content={post.image} />
-        <meta
-          property="og:url"
-          content={`https://blog.hyvefreelance.com/blog/${post.slug}`}
-        />
+        <meta property="og:url" content={postUrl} />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="article:published_time" content={post.date} />
+        <meta property="article:modified_time" content={post.date} />
+        <meta property="article:author" content={post.author} />
+        <meta property="article:section" content={post.category} />
+        {post.keywords?.map((k) => (
+          <meta key={k} property="article:tag" content={k} />
+        ))}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@HYVEfreelance" />
         <meta name="twitter:title" content={post.metaTitle} />
         <meta name="twitter:description" content={post.metaDescription} />
         <meta name="twitter:image" content={post.image} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
         {post.faqs && post.faqs.length > 0 && (
           <script type="application/ld+json">
             {JSON.stringify({
@@ -220,15 +253,13 @@ const BlogPost = () => {
               mainEntity: post.faqs.map((f) => ({
                 "@type": "Question",
                 name: f.question,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: f.answer,
-                },
+                acceptedAnswer: { "@type": "Answer", text: f.answer },
               })),
             })}
           </script>
         )}
       </Helmet>
+
 
       {/* Reading progress bar */}
       <motion.div
