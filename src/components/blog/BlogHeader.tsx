@@ -172,14 +172,14 @@ const BlogHeader = () => {
             </a>
 
             {/* Desktop Nav */}
-            <nav className="hidden items-center gap-1 md:flex">
+            <nav className={`hidden items-center md:flex transition-all duration-500 ${scrolled ? "gap-0" : "gap-1"}`}>
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground hover:bg-accent/60"
+                  className={`rounded-lg text-sm font-medium text-muted-foreground transition-all duration-500 hover:text-foreground hover:bg-accent/60 ${scrolled ? "px-2 py-1.5" : "px-4 py-2"}`}
                 >
                   {link.label}
                 </a>
