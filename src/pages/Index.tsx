@@ -42,30 +42,46 @@ const Index = () => {
     "@type": "Blog",
     name: "HYVE Blog",
     description: "Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration in India.",
-    url: "https://hyveblogs.lovable.app",
+    url: "https://blog.hyvefreelance.com",
+    inLanguage: "en-IN",
     publisher: {
       "@type": "Organization",
       name: "HYVE",
       url: "https://hyvefreelance.com",
+      logo: "https://blog.hyvefreelance.com/logo.png",
+    },
+  };
+
+  const websiteLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "HYVE Blog",
+    url: "https://blog.hyvefreelance.com",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://blog.hyvefreelance.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string",
     },
   };
 
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>HYVE Blog — Freelancing, Hiring & Remote Work Insights</title>
-        <meta name="description" content="Expert tips and guides on freelancing, startup hiring, remote teams and escrow payments. Grow your freelance career with HYVE." />
-        <meta name="keywords" content="freelancing tips India, startup hiring, remote work guide, escrow payments, freelance team collaboration, HYVE blog, freelancer productivity" />
-        <link rel="canonical" href="https://hyveblogs.lovable.app/" />
+        <title>HYVE Blog — Freelancing, Startup Hiring & Remote Work in India</title>
+        <meta name="description" content="Expert guides on freelancing in India, startup hiring, remote teams, escrow payments and team-based freelancing — fresh insights weekly from HYVE." />
+        <meta name="keywords" content="freelancing India, freelance jobs India, startup hiring, remote work India, escrow payments, teamlancing, freelance team, HYVE blog" />
+        <link rel="canonical" href="https://blog.hyvefreelance.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="HYVE Blog — Freelancing, Startup Hiring & Remote Work Insights" />
-        <meta property="og:description" content="Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration." />
-        <meta property="og:url" content="https://hyveblogs.lovable.app/" />
+        <meta property="og:title" content="HYVE Blog — Freelancing, Startup Hiring & Remote Work in India" />
+        <meta property="og:description" content="Expert guides on freelancing in India, startup hiring, remote teams, escrow payments and team-based freelancing." />
+        <meta property="og:url" content="https://blog.hyvefreelance.com/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="HYVE Blog — Freelancing, Startup Hiring & Remote Work Insights" />
-        <meta name="twitter:description" content="Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration." />
+        <meta name="twitter:title" content="HYVE Blog — Freelancing, Startup Hiring & Remote Work in India" />
+        <meta name="twitter:description" content="Expert guides on freelancing in India, startup hiring, remote teams, escrow payments and team-based freelancing." />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteLd)}</script>
       </Helmet>
+
 
       <BlogHeader />
       <main>
