@@ -20,12 +20,18 @@ import post18 from "./post-18";
 import post19 from "./post-19";
 import post20 from "./post-20";
 import post21 from "./post-21";
+import post22 from "./post-22";
+import post23 from "./post-23";
+import post24 from "./post-24";
 
 export type { BlogPost, BlogPostWithContent, Category } from "./types";
 export { categories } from "./types";
 
 // All posts in order (first is featured)
 export const allPosts = [
+  post24,
+  post23,
+  post22,
   post16,
   post17,
   post15,
