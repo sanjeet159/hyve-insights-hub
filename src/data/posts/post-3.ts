@@ -49,7 +49,7 @@ const post: BlogPostWithContent = {
       <tr style="background:#ffffff;border-bottom:1px solid #f0ede8;">
         <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">Service fee (freelancer)</td>
         <td style="padding:14px 18px;color:#444444;">10% flat</td>
-        <td style="padding:14px 18px;color:#444444;">Lower for Indian freelancers</td>
+        <td style="padding:14px 18px;color:#444444;">10% flat — no FX or withdrawal cost</td>
       </tr>
       <tr style="background:#faf8f4;border-bottom:1px solid #f0ede8;">
         <td style="padding:14px 18px;font-weight:600;color:#0d0d0d;">Currency</td>
