@@ -138,7 +138,7 @@ const post: BlogPostWithContent = {
     {
       question: "What fees do freelancing platforms charge Indian freelancers?",
       answer:
-        "HYVE charges ~5%. Upwork charges 10% plus a Payoneer/FX cost, so the effective loss is around 15%. Fiverr charges 20%. Toptal doesn't take a cut from freelancers directly but marks up client billing. Freelancer.com adds project fees plus withdrawal fees and is generally not recommended.",
+        "HYVE charges a flat 10% with no additional withdrawal or FX cost. Upwork charges 10% plus a Payoneer/FX cost, so the effective loss is around 15%. Fiverr charges 20%. Toptal doesn't take a cut from freelancers directly but marks up client billing. Freelancer.com adds project fees plus withdrawal fees and is generally not recommended.",
     },
     {
       question: "How fast do Pune freelancers get paid on these platforms?",
