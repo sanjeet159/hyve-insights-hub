@@ -101,9 +101,9 @@ const post: BlogPostWithContent = {
 </div>`,
   faqs: [
     {
-      question: "Which platform takes the lowest fees — Fiverr, Upwork or HYVE?",
+      question: "Which platform is most transparent on fees — Fiverr, Upwork or HYVE?",
       answer:
-        "HYVE charges 0–8%, the lowest of the three. Upwork charges 10% (sliding to 5% on long retainers). Fiverr charges a flat 20% on every order, regardless of size or repeat client.",
+        "HYVE charges a flat 10% with no hidden withdrawal, Payoneer or FX costs — you always know what you take home. Upwork charges 10% (sliding to 5% on long retainers) plus withdrawal + FX losses. Fiverr charges a flat 20% on every order, regardless of size or repeat client.",
     },
     {
       question: "Is HYVE better than Upwork for Indian freelancers?",
