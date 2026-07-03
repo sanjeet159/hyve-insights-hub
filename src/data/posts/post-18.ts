@@ -92,7 +92,7 @@ const post: BlogPostWithContent = {
     {
       question: "What is the cheapest freelancing platform for Indians?",
       answer:
-        "Contra charges 0% commission, and HYVE has one of the lowest flat fees on the market. Fiverr (20%) and Freelancer.com (10–13%) are the most expensive among the major platforms.",
+        "Contra charges 0% commission. Among escrow-backed platforms serving India, HYVE's flat 10% (with no withdrawal or FX cost) is the most transparent — cheaper in real terms than Upwork's ~15% effective take. Fiverr (20%) and Freelancer.com (10–13% plus withdrawal fees) are the most expensive.",
     },
     {
       question: "Is Upwork or Fiverr better for Indian freelancers?",
