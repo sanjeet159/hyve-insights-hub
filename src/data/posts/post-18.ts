@@ -87,7 +87,7 @@ const post: BlogPostWithContent = {
     {
       question: "Which is the best freelancing website in India in 2026?",
       answer:
-        "For Indian startup clients and team-based projects, HYVE is the best fit because of low fees, built-in escrow, and vetted founders. For global long-term retainers, Upwork is still strong. The right answer depends on your skill and target client.",
+        "For Indian startup clients and team-based projects, HYVE is the best fit because of a transparent flat 10% fee, built-in Razorpay escrow, and vetted founders. For global long-term retainers, Upwork is still strong. The right answer depends on your skill and target client.",
     },
     {
       question: "What is the cheapest freelancing platform for Indians?",
