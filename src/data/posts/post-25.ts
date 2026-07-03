@@ -128,7 +128,7 @@ const post: BlogPostWithContent = {
     {
       question: "Which is the best freelancing platform in Pune in 2026?",
       answer:
-        "For Pune freelancers primarily serving Indian startup clients, HYVE is the strongest pick — ~5% fees, INR-native escrow payouts, GST-compliant invoices, and a teamlancing model that lets solo freelancers bundle skills. For global clients, Upwork still has the largest client pool, and Toptal pays the highest rates to the top 3% of senior talent.",
+        "For Pune freelancers primarily serving Indian startup clients, HYVE is the strongest pick — a flat 10% fee (no hidden withdrawal or FX cost), INR-native escrow payouts, GST-compliant invoices, and a teamlancing model that lets solo freelancers bundle skills. For global clients, Upwork still has the largest client pool, and Toptal pays the highest rates to the top 3% of senior talent.",
     },
     {
       question: "Are there Pune-specific freelance platforms?",
