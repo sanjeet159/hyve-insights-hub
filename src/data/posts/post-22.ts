@@ -92,7 +92,7 @@ const post: BlogPostWithContent = {
 <div style="position:relative;overflow:hidden;background:linear-gradient(135deg,#fdf5e1 0%,#faecc6 55%,#ffffff 100%);border:1px solid rgba(241,171,19,0.25);border-radius:16px;padding:28px 32px;margin:32px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
   <div style="flex:1;min-width:240px">
     <p style="font-size:12px;font-weight:800;margin:0 0 8px 0;text-transform:uppercase;letter-spacing:2px;color:#f1ab13">🚀 Keep more of what you earn</p>
-    <p style="font-size:20px;font-weight:800;margin:0 0 6px 0;line-height:1.3;color:#0d0d0d">Switch to HYVE. 0–8% fees. Same-day payouts.</p>
+    <p style="font-size:20px;font-weight:800;margin:0 0 6px 0;line-height:1.3;color:#0d0d0d">Switch to HYVE. Flat 10% fee. Same-day INR payouts.</p>
     <p style="font-size:14px;color:#555;line-height:1.6;margin:0">Pre-vetted Indian startup clients. Milestone escrow on every project. No bidding wars.</p>
   </div>
   <a href="https://hyvefreelance.com" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;display:inline-flex;align-items:center;gap:8px;background:#f1ab13;color:#fff;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:14px;box-shadow:0 8px 20px -8px rgba(241,171,19,0.5)">Join HYVE →</a>
