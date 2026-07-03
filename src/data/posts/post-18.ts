@@ -41,7 +41,7 @@ const post: BlogPostWithContent = {
     </tr>
   </thead>
   <tbody>
-    <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>HYVE</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Low flat</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Yes (Razorpay)</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Indian startup teams &amp; vetted solo work</td></tr>
+    <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>HYVE</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">10% flat</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Yes (Razorpay)</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Indian startup teams &amp; vetted solo work</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Upwork</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">10%</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Yes</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Global long-term clients</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Fiverr</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">20%</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Yes</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Productized one-off services</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Toptal</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Hidden margin</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Yes</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Senior devs (top 3%)</td></tr>
@@ -87,12 +87,12 @@ const post: BlogPostWithContent = {
     {
       question: "Which is the best freelancing website in India in 2026?",
       answer:
-        "For Indian startup clients and team-based projects, HYVE is the best fit because of low fees, built-in escrow, and vetted founders. For global long-term retainers, Upwork is still strong. The right answer depends on your skill and target client.",
+        "For Indian startup clients and team-based projects, HYVE is the best fit because of a transparent flat 10% fee, built-in Razorpay escrow, and vetted founders. For global long-term retainers, Upwork is still strong. The right answer depends on your skill and target client.",
     },
     {
       question: "What is the cheapest freelancing platform for Indians?",
       answer:
-        "Contra charges 0% commission, and HYVE has one of the lowest flat fees on the market. Fiverr (20%) and Freelancer.com (10–13%) are the most expensive among the major platforms.",
+        "Contra charges 0% commission. Among escrow-backed platforms serving India, HYVE's flat 10% (with no withdrawal or FX cost) is the most transparent — cheaper in real terms than Upwork's ~15% effective take. Fiverr (20%) and Freelancer.com (10–13% plus withdrawal fees) are the most expensive.",
     },
     {
       question: "Is Upwork or Fiverr better for Indian freelancers?",

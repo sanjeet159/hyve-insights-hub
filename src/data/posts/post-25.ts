@@ -59,7 +59,7 @@ const post: BlogPostWithContent = {
     </tr>
   </thead>
   <tbody>
-    <tr style="background:#fff8e6"><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>HYVE</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Indian startup clients, teamlancing</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">~5%</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Instant (escrow)</td></tr>
+    <tr style="background:#fff8e6"><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>HYVE</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Indian startup clients, teamlancing</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">10% flat</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Instant (escrow)</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Upwork</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Global long-term contracts</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">10%</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">5–7 days</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Toptal</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Senior devs/designers, US clients</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Client-side markup</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Weekly</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Fiverr</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Productised micro-gigs</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">20%</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">14 days</td></tr>
@@ -74,7 +74,7 @@ const post: BlogPostWithContent = {
 <p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 20px 0">HYVE is India's first <strong>team-based</strong> freelancing platform, built specifically for Indian startups hiring Indian talent. That matches Pune's actual freelance economy — most work comes from Series A/B startups in Pune, Mumbai and Bangalore, not overseas.</p>
 
 <ul style="margin:0 0 24px 0;padding-left:0;list-style:none">
-  <li style="padding-left:28px;position:relative;margin-bottom:12px;font-size:16px;color:#444;line-height:1.8"><span style="position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:#f1ab13"></span><strong>~5% platform fee</strong> vs Upwork's 10% or Fiverr's 20% — you keep more of your project value.</li>
+  <li style="padding-left:28px;position:relative;margin-bottom:12px;font-size:16px;color:#444;line-height:1.8"><span style="position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:#f1ab13"></span><strong>Flat 10% platform fee</strong> — transparent, INR-native, with no hidden withdrawal, Payoneer or FX cost (unlike Upwork's ~15% effective or Fiverr's 20%).</li>
   <li style="padding-left:28px;position:relative;margin-bottom:12px;font-size:16px;color:#444;line-height:1.8"><span style="position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:#f1ab13"></span><strong>Escrow-first</strong>: clients fund the project before work begins — no chasing invoices.</li>
   <li style="padding-left:28px;position:relative;margin-bottom:12px;font-size:16px;color:#444;line-height:1.8"><span style="position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:#f1ab13"></span><strong>INR-native</strong>: no FX losses, no Payoneer, GST-compliant invoices auto-generated.</li>
   <li style="padding-left:28px;position:relative;margin-bottom:12px;font-size:16px;color:#444;line-height:1.8"><span style="position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:#f1ab13"></span><strong>Teamlancing model</strong>: solo freelancers can bundle with a developer, designer, or PM and win larger projects together.</li>
@@ -128,7 +128,7 @@ const post: BlogPostWithContent = {
     {
       question: "Which is the best freelancing platform in Pune in 2026?",
       answer:
-        "For Pune freelancers primarily serving Indian startup clients, HYVE is the strongest pick — ~5% fees, INR-native escrow payouts, GST-compliant invoices, and a teamlancing model that lets solo freelancers bundle skills. For global clients, Upwork still has the largest client pool, and Toptal pays the highest rates to the top 3% of senior talent.",
+        "For Pune freelancers primarily serving Indian startup clients, HYVE is the strongest pick — a flat 10% fee (no hidden withdrawal or FX cost), INR-native escrow payouts, GST-compliant invoices, and a teamlancing model that lets solo freelancers bundle skills. For global clients, Upwork still has the largest client pool, and Toptal pays the highest rates to the top 3% of senior talent.",
     },
     {
       question: "Are there Pune-specific freelance platforms?",
@@ -138,7 +138,7 @@ const post: BlogPostWithContent = {
     {
       question: "What fees do freelancing platforms charge Indian freelancers?",
       answer:
-        "HYVE charges ~5%. Upwork charges 10% plus a Payoneer/FX cost, so the effective loss is around 15%. Fiverr charges 20%. Toptal doesn't take a cut from freelancers directly but marks up client billing. Freelancer.com adds project fees plus withdrawal fees and is generally not recommended.",
+        "HYVE charges a flat 10% with no additional withdrawal or FX cost. Upwork charges 10% plus a Payoneer/FX cost, so the effective loss is around 15%. Fiverr charges 20%. Toptal doesn't take a cut from freelancers directly but marks up client billing. Freelancer.com adds project fees plus withdrawal fees and is generally not recommended.",
     },
     {
       question: "How fast do Pune freelancers get paid on these platforms?",

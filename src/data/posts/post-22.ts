@@ -48,7 +48,7 @@ const post: BlogPostWithContent = {
     </tr>
   </thead>
   <tbody>
-    <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Platform fee</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">20% flat</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">10% (slides to 5%)</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">0–8% (lowest in India)</td></tr>
+    <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Platform fee</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">20% flat</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">10% (slides to 5%)</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">10% flat (transparent, INR-native)</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Payout speed</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">14 days</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">5–10 days</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Same day (escrow release)</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Payment protection</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Limited</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Hourly only</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Milestone escrow on every project</td></tr>
     <tr><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3"><strong>Client quality</strong></td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">High-volume, low-budget</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Mixed, global</td><td style="padding:14px 16px;border-bottom:1px solid #f3f3f3;color:#555">Vetted Indian startups</td></tr>
@@ -92,7 +92,7 @@ const post: BlogPostWithContent = {
 <div style="position:relative;overflow:hidden;background:linear-gradient(135deg,#fdf5e1 0%,#faecc6 55%,#ffffff 100%);border:1px solid rgba(241,171,19,0.25);border-radius:16px;padding:28px 32px;margin:32px 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px">
   <div style="flex:1;min-width:240px">
     <p style="font-size:12px;font-weight:800;margin:0 0 8px 0;text-transform:uppercase;letter-spacing:2px;color:#f1ab13">🚀 Keep more of what you earn</p>
-    <p style="font-size:20px;font-weight:800;margin:0 0 6px 0;line-height:1.3;color:#0d0d0d">Switch to HYVE. 0–8% fees. Same-day payouts.</p>
+    <p style="font-size:20px;font-weight:800;margin:0 0 6px 0;line-height:1.3;color:#0d0d0d">Switch to HYVE. Flat 10% fee. Same-day INR payouts.</p>
     <p style="font-size:14px;color:#555;line-height:1.6;margin:0">Pre-vetted Indian startup clients. Milestone escrow on every project. No bidding wars.</p>
   </div>
   <a href="https://hyvefreelance.com" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;display:inline-flex;align-items:center;gap:8px;background:#f1ab13;color:#fff;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:14px;box-shadow:0 8px 20px -8px rgba(241,171,19,0.5)">Join HYVE →</a>
@@ -101,9 +101,9 @@ const post: BlogPostWithContent = {
 </div>`,
   faqs: [
     {
-      question: "Which platform takes the lowest fees — Fiverr, Upwork or HYVE?",
+      question: "Which platform is most transparent on fees — Fiverr, Upwork or HYVE?",
       answer:
-        "HYVE charges 0–8%, the lowest of the three. Upwork charges 10% (sliding to 5% on long retainers). Fiverr charges a flat 20% on every order, regardless of size or repeat client.",
+        "HYVE charges a flat 10% with no hidden withdrawal, Payoneer or FX costs — you always know what you take home. Upwork charges 10% (sliding to 5% on long retainers) plus withdrawal + FX losses. Fiverr charges a flat 20% on every order, regardless of size or repeat client.",
     },
     {
       question: "Is HYVE better than Upwork for Indian freelancers?",
