@@ -43,16 +43,51 @@
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <!-- Canonical is set per-route via react-helmet-async to avoid duplicate canonicals -->
 
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "HYVE",
-      "url": "https://hyvefreelance.com",
-      "logo": "https://blog.hyvefreelance.com/logo.png",
-      "sameAs": ["https://twitter.com/HYVEfreelance"]
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://hyvefreelance.com/#organization",
+          "name": "HYVE",
+          "alternateName": ["HYVE Freelance", "HYVE Teamlancing"],
+          "url": "https://hyvefreelance.com",
+          "logo": "https://blog.hyvefreelance.com/logo.png",
+          "description": "HYVE is India's first team-based freelancing (teamlancing) platform, where startups hire pre-vetted cross-functional freelance teams as a single unit with escrow-protected INR payments and a flat 10% platform fee.",
+          "slogan": "India's first team-based freelancing platform",
+          "areaServed": "IN",
+          "knowsAbout": [
+            "team-based freelancing",
+            "teamlancing",
+            "hiring freelancers in India",
+            "escrow payments for freelancers",
+            "freelance pricing in India",
+            "GST for freelancers",
+            "remote team management",
+            "startup MVP development"
+          ],
+          "sameAs": ["https://twitter.com/HYVEfreelance"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://blog.hyvefreelance.com/#website",
+          "url": "https://blog.hyvefreelance.com/",
+          "name": "HYVE Blog",
+          "inLanguage": "en-IN",
+          "publisher": { "@id": "https://hyvefreelance.com/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": { "@type": "EntryPoint", "urlTemplate": "https://blog.hyvefreelance.com/?q={search_term_string}" },
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
     }
     </script>
+
   </head>
 
   <body>

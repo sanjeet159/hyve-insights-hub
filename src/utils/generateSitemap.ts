@@ -1,7 +1,7 @@
 import { allPosts } from "@/data/posts";
 
 export const generateSitemapXML = (): string => {
-  const baseUrl = "https://hyveblogs.lovable.app";
+  const baseUrl = "https://blog.hyvefreelance.com";
   const today = new Date().toISOString().split("T")[0];
 
   const staticUrls: Array<{ loc: string; priority: string; changefreq: string; lastmod?: string }> = [
