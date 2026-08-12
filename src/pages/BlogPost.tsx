@@ -436,6 +436,9 @@ const BlogPost = () => {
               <TableOfContents content={post.content} />
             </div>
 
+            {/* Audio Voiceover Section */}
+            <AudioVoiceover content={post.content} title={post.title} />
+
             {/* Article body */}
             <motion.div
               initial={{ opacity: 0 }}
