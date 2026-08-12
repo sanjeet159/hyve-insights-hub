@@ -18,7 +18,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // Strip HTML from content for a cleaner speech input
-  const cleanContent = content.replace(/<[^>]*>?/gm, ' ').substring(0, 4000); // Limit for text-to-speech
+  const cleanContent = content.replace(/<[^>]*>?/gm, ' ').substring(0, 4000);
 
   const generateAudio = async () => {
     if (audioUrl) {
@@ -27,8 +27,8 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
     }
 
     setIsLoading(true);
+    setError(null);
     try {
-      setError(null);
       const response = await fetch('https://api.lovable.dev/v1/ai/text-to-speech', {
         method: 'POST',
         headers: {
@@ -36,7 +36,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
         },
         body: JSON.stringify({
           text: `Now listening to: ${title}. ${cleanContent}`,
-          voice: 'alloy', // natural, neutral voice
+          voice: 'alloy',
           model: 'tts-1'
         })
       });
@@ -51,11 +51,9 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
       
       const url = URL.createObjectURL(blob);
       setAudioUrl(url);
-      
-      // The audio element will handle the rest via useEffect when audioUrl changes
     } catch (error: any) {
       console.error('Audio generation failed:', error);
-      setError(error.message || 'Connection error. Please check your internet.');
+      setError(error.message || 'Connection error. Please try again later.');
     } finally {
       setIsLoading(false);
     }
@@ -66,7 +64,11 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
       if (isPlaying) {
         audioRef.current.pause();
       } else {
-        audioRef.current.play();
+        audioRef.current.play().catch(e => {
+          console.error("Playback failed:", e);
+          setError("Playback failed. Please try again.");
+          setIsPlaying(false);
+        });
       }
       setIsPlaying(!isPlaying);
     }
@@ -76,7 +78,9 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
     if (audioRef.current) {
       const current = audioRef.current.currentTime;
       const total = audioRef.current.duration;
-      setProgress((current / total) * 100);
+      if (total > 0) {
+        setProgress((current / total) * 100);
+      }
     }
   };
 
@@ -87,7 +91,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
   };
 
   const handleSliderChange = (value: number[]) => {
-    if (audioRef.current) {
+    if (audioRef.current && duration > 0) {
       const newTime = (value[0] / 100) * duration;
       audioRef.current.currentTime = newTime;
       setProgress(value[0]);
@@ -95,6 +99,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
   };
 
   const formatTime = (time: number) => {
+    if (isNaN(time)) return "0:00";
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
     return `${minutes}:${seconds.toString().padStart(2, '0')}`;
@@ -108,7 +113,10 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
 
   useEffect(() => {
     if (audioUrl && audioRef.current) {
-      audioRef.current.play();
+      audioRef.current.play().catch(e => {
+        console.error("Initial playback failed:", e);
+        setIsPlaying(false);
+      });
       setIsPlaying(true);
     }
   }, [audioUrl]);
