@@ -556,7 +556,10 @@ const BlogPost = () => {
         </section>
       )}
       </main>
-
+      
+      <div className="mt-8">
+        <PopularTopics />
+      </div>
       <Newsletter />
       <FooterCTA />
       <Footer />
