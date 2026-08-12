@@ -31,7 +31,6 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${process.env.LOVABLE_API_KEY}`
         },
         body: JSON.stringify({
           text: `Now listening to: ${title}. ${cleanContent}`,
@@ -49,7 +48,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
       // The audio element will handle the rest via useEffect when audioUrl changes
     } catch (error) {
       console.error('Audio generation failed:', error);
-      // Fallback or error state could be added here
+      alert('Audio generation failed. Please try again later.');
     } finally {
       setIsLoading(false);
     }
