@@ -17,6 +17,7 @@ import Footer from "@/components/blog/Footer";
 import BlogCard from "@/components/blog/BlogCard";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 import TableOfContents from "@/components/blog/TableOfContents";
+import PopularTopics from "@/components/blog/PopularTopics";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
 import { useMemo, useState } from "react";
 
@@ -176,41 +177,45 @@ const BlogPost = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: post.title,
-    description: post.metaDescription,
-    author: {
+    "@id": `${postUrl}#post`,
+    "headline": post.title,
+    "description": post.metaDescription,
+    "author": {
       "@type": "Person",
-      name: post.author,
-      url: "https://blog.hyvefreelance.com",
+      "name": post.author,
+      "url": "https://blog.hyvefreelance.com"
     },
-    datePublished: post.date,
-    dateModified: post.date,
-    image: post.image?.startsWith("http")
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "image": post.image?.startsWith("http")
       ? post.image
       : `https://blog.hyvefreelance.com${post.image}`,
-    keywords: post.keywords?.join(", "),
-    articleSection: post.category,
-    inLanguage: "en-IN",
-    mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
-    publisher: {
+    "keywords": post.keywords?.join(", "),
+    "articleSection": post.category,
+    "inLanguage": "en-IN",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": postUrl },
+    "wordCount": post.content.split(/\s+/).length,
+    "timeRequired": `PT${post.readTime.split(" ")[0]}M`,
+    "publisher": {
       "@type": "Organization",
-      name: "HYVE",
-      url: "https://hyvefreelance.com",
-      logo: {
+      "@id": "https://hyvefreelance.com/#organization",
+      "name": "HYVE",
+      "url": "https://hyvefreelance.com",
+      "logo": {
         "@type": "ImageObject",
-        url: "https://blog.hyvefreelance.com/logo.png",
-      },
-    },
+        "url": "https://blog.hyvefreelance.com/logo.png"
+      }
+    }
   };
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://blog.hyvefreelance.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://blog.hyvefreelance.com/" },
-      { "@type": "ListItem", position: 3, name: post.title, item: postUrl },
-    ],
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://blog.hyvefreelance.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://blog.hyvefreelance.com/" },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": postUrl }
+    ]
   };
 
   const htmlContent = isHTML(post.content);
@@ -221,8 +226,9 @@ const BlogPost = () => {
         <title>{post.metaTitle}</title>
         <meta name="description" content={post.metaDescription} />
         <meta name="keywords" content={post.keywords?.join(", ")} />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <meta name="author" content={post.author} />
+        <meta name="publisher" content="HYVE" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <link rel="canonical" href={postUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="HYVE Blog" />
@@ -551,7 +557,10 @@ const BlogPost = () => {
         </section>
       )}
       </main>
-
+      
+      <div className="mt-8">
+        <PopularTopics />
+      </div>
       <Newsletter />
       <FooterCTA />
       <Footer />

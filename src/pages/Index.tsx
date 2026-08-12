@@ -40,28 +40,38 @@ const Index = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    name: "HYVE Blog",
-    description: "Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration in India.",
-    url: "https://blog.hyvefreelance.com",
-    inLanguage: "en-IN",
-    publisher: {
+    "@id": "https://blog.hyvefreelance.com/#blog",
+    "name": "HYVE Blog",
+    "description": "Expert tips, guides and stories on freelancing, startup hiring, remote teams, escrow payments and team collaboration in India.",
+    "url": "https://blog.hyvefreelance.com",
+    "inLanguage": "en-IN",
+    "publisher": {
       "@type": "Organization",
-      name: "HYVE",
-      url: "https://hyvefreelance.com",
-      logo: "https://blog.hyvefreelance.com/logo.png",
+      "@id": "https://hyvefreelance.com/#organization",
+      "name": "HYVE",
+      "url": "https://hyvefreelance.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://blog.hyvefreelance.com/logo.png"
+      }
     },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://blog.hyvefreelance.com/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   };
 
   const websiteLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "HYVE Blog",
-    url: "https://blog.hyvefreelance.com",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://blog.hyvefreelance.com/?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
+    "@id": "https://blog.hyvefreelance.com/#website",
+    "name": "HYVE Blog",
+    "url": "https://blog.hyvefreelance.com",
+    "publisher": { "@id": "https://hyvefreelance.com/#organization" }
   };
 
   return (
