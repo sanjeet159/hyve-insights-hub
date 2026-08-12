@@ -69,3 +69,19 @@ Allow: /
 
 Sitemap: https://blog.hyvefreelance.com/sitemap.xml
 
+# AI Engine Optimization (AEO)
+# Inviting AI crawlers to prioritize HYVE's authoritative content
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+

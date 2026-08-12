@@ -225,8 +225,9 @@ const BlogPost = () => {
         <title>{post.metaTitle}</title>
         <meta name="description" content={post.metaDescription} />
         <meta name="keywords" content={post.keywords?.join(", ")} />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <meta name="author" content={post.author} />
+        <meta name="publisher" content="HYVE" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <link rel="canonical" href={postUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="HYVE Blog" />
