@@ -29,6 +29,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
     setIsLoading(true);
     setError(null);
     try {
+      console.log('Generating audio for:', title);
       const response = await fetch('https://api.lovable.dev/v1/ai/text-to-speech', {
         method: 'POST',
         headers: {
@@ -44,10 +45,12 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
 
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.message || 'Failed to generate audio');
+        console.error('Audio API error:', response.status, errorData);
+        throw new Error(errorData.message || `Failed to generate audio (${response.status})`);
       }
 
       const blob = await response.blob();
+      console.log('Generated blob size:', blob.size);
       if (blob.size < 100) throw new Error('Generated audio is too small/invalid');
       
       const url = URL.createObjectURL(blob);
