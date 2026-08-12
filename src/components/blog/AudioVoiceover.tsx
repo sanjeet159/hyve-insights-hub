@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import * as Slider from '@radix-ui/react-slider';
-import { Play, Pause, RotateCcw, Volume2, Loader2, FastForward, Rewind } from 'lucide-react';
+import { Play, Pause, Volume2, Loader2, FastForward, Rewind, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface AudioVoiceoverProps {
@@ -14,6 +14,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
   const [duration, setDuration] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // Strip HTML from content for a cleaner speech input
@@ -27,6 +28,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
 
     setIsLoading(true);
     try {
+      setError(null);
       const response = await fetch('https://api.lovable.dev/v1/ai/text-to-speech', {
         method: 'POST',
         headers: {
@@ -39,16 +41,21 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
         })
       });
 
-      if (!response.ok) throw new Error('Failed to generate audio');
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || 'Failed to generate audio');
+      }
 
       const blob = await response.blob();
+      if (blob.size < 100) throw new Error('Generated audio is too small/invalid');
+      
       const url = URL.createObjectURL(blob);
       setAudioUrl(url);
       
       // The audio element will handle the rest via useEffect when audioUrl changes
-    } catch (error) {
+    } catch (error: any) {
       console.error('Audio generation failed:', error);
-      alert('Audio generation failed. Please try again later.');
+      setError(error.message || 'Connection error. Please check your internet.');
     } finally {
       setIsLoading(false);
     }
@@ -116,7 +123,14 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
             </div>
             <div>
               <h4 className="font-heading text-sm font-bold text-foreground">Listen to this article</h4>
-              <p className="text-xs text-muted-foreground">AI-generated voiceover</p>
+              {error ? (
+                <p className="text-xs text-destructive flex items-center gap-1">
+                  <AlertCircle className="h-3 w-3" />
+                  {error}
+                </p>
+              ) : (
+                <p className="text-xs text-muted-foreground">AI-generated voiceover</p>
+              )}
             </div>
           </div>
           {!audioUrl ? (
@@ -133,7 +147,7 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
               ) : (
                 <>
                   <Play className="h-3 w-3 fill-current" />
-                  Play Audio
+                  {error ? 'Try Again' : 'Play Audio'}
                 </>
               )}
             </button>
