@@ -1,4 +1,4 @@
-import mumbaiSkylineAsset from "@/assets/mumbai-skyline.jpg.asset.json";
+import blog15jpg from "@/assets/blog-15.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "10 min read",
-  image: mumbaiSkylineAsset.url,
+  image: blog15jpg,
   imagePosition: "center",
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">

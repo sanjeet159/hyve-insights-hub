@@ -1,4 +1,4 @@
-import blogFeatured from "@/assets/blog-featured.jpg";
+import blog2jpg from "@/assets/blog-2.jpg";
 import blog1 from "@/assets/blog-1.jpg";
 import type { BlogPostWithContent } from "./types";
 
@@ -22,7 +22,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "7 min read",
-  image: blog1,
+  image: blog2jpg,
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
     <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Looking into <strong>How to Hire a Freelance Team in India for Your Startup (2026 Guide)</strong> is essential for any modern professional or founder in 2026.</p>

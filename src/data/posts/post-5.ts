@@ -1,4 +1,4 @@
-import blog4 from "@/assets/blog-4.jpg";
+import blog5jpg from "@/assets/blog-5.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "6 min read",
-  image: blog4,
+  image: blog5jpg,
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
     <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Looking into <strong>Top 7 Freelancing Skills in Demand for Indian Startups in 2026</strong> is essential for any modern professional or founder in 2026.</p>

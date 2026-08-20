@@ -1,4 +1,4 @@
-import blogFeatured from "@/assets/blog-featured.jpg";
+import blog1jpg from "@/assets/blog-1.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "6 min read",
-  image: blogFeatured,
+  image: blog1jpg,
   featured: true,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
     <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Looking into <strong>Why Indian Freelancers Don</strong> is essential for any modern professional or founder in 2026.</p>
