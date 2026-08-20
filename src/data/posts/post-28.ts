@@ -1,4 +1,4 @@
-import blog28 from "@/assets/blog-11.jpg";
+import blog28 from "@/assets/startups-hiring-freelancers.png.asset.json";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -22,7 +22,7 @@ const post: BlogPostWithContent = {
   author: "HYVE Team",
   date: "July 20, 2026",
   readTime: "8 min read",
-  image: blog28,
+  image: blog28.url,
   imagePosition: "center",
   featured: true,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
