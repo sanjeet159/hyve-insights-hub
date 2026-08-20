@@ -1,4 +1,4 @@
-import blog18 from "@/assets/blog-18.jpg";
+import blog18jpg from "@/assets/blog-18.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "May 10, 2026",
   readTime: "7 min read",
-  image: blog18,
+  image: blog18jpg,
   imagePosition: "center",
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">

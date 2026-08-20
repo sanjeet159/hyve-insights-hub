@@ -1,4 +1,4 @@
-import escrow from "@/assets/escrow.png";
+import blog4jpg from "@/assets/blog-4.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "5 min read",
-  image: escrow,
+  image: blog4jpg,
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
     <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Looking into <strong>What Is Escrow in Freelancing? A Complete Guide for Indian Freelancers</strong> is essential for any modern professional or founder in 2026.</p>
