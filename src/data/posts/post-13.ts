@@ -188,8 +188,8 @@ const post: BlogPostWithContent = {
   <p style="font-size:17px;font-weight:600;margin:0 0 18px 0;line-height:1.5">HYVE matches early-stage Indian startups with pre-formed, pre-vetted teams — designer + developer + marketer, already working together. Milestone-based escrow payments. No coordination chaos. No hidden costs.</p>
   <a href="https://hyvefreelance.com" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#0d0d0d;color:#fff;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px">Join the HYVE waitlist →</a>
 </div>
-
 </div>`,
+
   faqs: [
     {
       question: "How much does it really cost to build an MVP in India in 2026?",

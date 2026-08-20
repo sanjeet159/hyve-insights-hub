@@ -37,8 +37,8 @@ const post: BlogPostWithContent = {
 <div style="background:#fdf5e1;padding:20px;border-radius:8px;margin:24px 0">
 <p style="margin:0"><strong>Pro-Tip:</strong> HYVE is built differently. We don't just host profiles; we curate teams. If you're a founder tired of the 'bidding war' on other sites, try our pre-vetted team approach.</p>
 </div>
-
 </div>`,
+
   faqs: [
     { question: "Which is the best freelancing site in India?", answer: "There is no single 'best' site. It depends on your skill set. For general work, Upwork and Fiverr are popular, but for curated team-based work, HYVE is the emerging leader in 2026." },
   ],

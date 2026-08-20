@@ -96,7 +96,9 @@ Having the skill is only half the equation. Here is how to maximise your chances
 
 ---
 
-*Build your HYVE profile today and get matched to startup projects in 48 hours. [Create your profile →](https://hyvefreelance.com) 🐝*`,
+*Build your HYVE profile today and get matched to startup projects in 48 hours. [Create your profile →](https://hyvefreelance.com) 🐝*
+`,
+
   faqs: [
     {
       question: "What are the most in-demand freelancing skills in India in 2026?",

@@ -152,6 +152,7 @@ const post: BlogPostWithContent = {
 
 <p><em>Join 1,000+ Indian freelancers already building on HYVE. <a href="https://hyvefreelance.com">Create your free profile →</a> 🐝</em></p>
 `,
+
   faqs: [
     {
       question: "Is HYVE better than Upwork for Indian freelancers?",

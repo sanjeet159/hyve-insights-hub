@@ -96,6 +96,7 @@ You built your skills. You put in the hours. You deserve to get paid — every t
 ---
 
 *Ready to work with guaranteed payments? [Join HYVE](https://hyvefreelance.com) and get escrow protection on every project you take. 🐝*`,
+
   faqs: [
     {
       question: "Why do Indian freelancers often get paid late?",

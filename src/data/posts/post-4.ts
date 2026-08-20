@@ -99,7 +99,9 @@ HYVE exists to change that. Every project on our platform, regardless of size, c
 
 ---
 
-*Work with confidence. Every project on HYVE is escrow-protected. [Start your free profile →](https://hyvefreelance.com) 🐝*`,
+*Work with confidence. Every project on HYVE is escrow-protected. [Start your free profile →](https://hyvefreelance.com) 🐝*
+`,
+
   faqs: [
     {
       question: "What is escrow in freelancing?",

@@ -122,8 +122,8 @@ const post: BlogPostWithContent = {
 </div>
 
 <p style="font-size:13px;color:#888;line-height:1.7;margin:24px 0 0 0;font-style:italic">Rates, fees and platform policies change frequently. Always confirm current terms on each platform before signing up.</p>
-
 </div>`,
+
   faqs: [
     {
       question: "Which is the best freelancing platform in Pune in 2026?",

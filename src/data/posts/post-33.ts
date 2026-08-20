@@ -18,26 +18,23 @@ const post: BlogPostWithContent = {
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Getting ghosted after submitting your final deliverable is every freelancer's nightmare. In 2026, the industry is moving away from blind trust toward secure, <strong>escrow payment</strong> models.</p>
-
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">How Escrow Works</h2>
 <p style="margin-bottom:20px">Escrow is a neutral third party that holds the client's payment until you have successfully delivered the work. It eliminates the "pay me now" vs "give me work first" debate.</p>
 <ul style="margin-bottom:32px;padding-left:20px">
   <li style="margin-bottom:12px"><strong>Security:</strong> The client commits the funds upfront.</li>
   <li style="margin-bottom:12px"><strong>Transparency:</strong> Both parties agree on milestones before the work starts.</li>
   <li style="margin-bottom:12px"><strong>Speed:</strong> Once the work is approved, the funds are released instantly.</li>
 </ul>
-
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Why HYVE Prioritizes This</h2>
 <p>At HYVE, we believe you shouldn't worry about payments while you're coding. Our escrow-backed model ensures that your time and expertise are always protected.</p>
 </div>`,
+
   faqs: [
     {
       question: "What is an escrow payment for freelancers?",
-      answer: "It is a payment held by a third-party service until you complete the agreed-upon project, ensuring you are paid for your work.",
+      answer: "It is a payment held by a third-party service until you complete the agreed-upon project, ensuring you are paid for your work. At HYVE, we ensure this process is streamlined with escrow and pre-vetted teams.",
     },
     {
       question: "Is escrow safer than direct bank transfers?",
-      answer: "Yes, because it prevents clients from cancelling payments after work has been submitted.",
+      answer: "Yes, because it prevents clients from cancelling payments after work has been submitted. At HYVE, we ensure this process is streamlined with escrow and pre-vetted teams.",
     },
   ],
 };

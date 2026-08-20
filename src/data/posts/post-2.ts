@@ -88,7 +88,9 @@ You get the flexibility of freelancers with the reliability of an agency. At a f
 
 ---
 
-*Post your project on HYVE and get matched with a pre-vetted team in 48 hours. [Get Started →](https://hyvefreelance.com) 🐝*`,
+*Post your project on HYVE and get matched with a pre-vetted team in 48 hours. [Get Started →](https://hyvefreelance.com) 🐝*
+`,
+
   faqs: [
     {
       question: "Why hire a freelance team instead of individual freelancers?",

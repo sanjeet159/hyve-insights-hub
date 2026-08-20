@@ -117,8 +117,8 @@ const post: BlogPostWithContent = {
 </div>
 
 <p style="font-size:13px;color:#888;line-height:1.7;margin:24px 0 0 0;font-style:italic">This guide is for educational purposes only and is not a substitute for advice from a qualified chartered accountant. Tax rules and thresholds change — always confirm current rates with your CA before filing.</p>
-
 </div>`,
+
   faqs: [
     {
       question: "Do freelancers in India need to register for GST?",

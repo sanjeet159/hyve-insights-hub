@@ -140,8 +140,8 @@ const post: BlogPostWithContent = {
   </div>
   <a href="https://hyvefreelance.com" target="_blank" rel="noopener noreferrer" style="flex-shrink:0;display:inline-flex;align-items:center;gap:8px;background:#f1ab13;color:#fff;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:14px;box-shadow:0 8px 20px -8px rgba(241,171,19,0.5)">Find your team →</a>
 </div>
-
 </div>`,
+
   faqs: [
     {
       question: "What is the difference between an agency, freelancers, and teamlancing?",

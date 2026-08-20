@@ -511,7 +511,8 @@ const BlogPost = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="mt-12"
+                className="mt-12 scroll-mt-24"
+                id="faq"
                 aria-labelledby="faq-heading"
               >
                 <div className="mb-6 flex items-center gap-3">
@@ -520,7 +521,7 @@ const BlogPost = () => {
                     id="faq-heading"
                     className="font-heading text-2xl font-bold text-foreground"
                   >
-                    Frequently Asked Questions
+                    Common Questions about {post.title}
                   </h2>
                 </div>
                 <div className="divide-y divide-border/50 rounded-2xl border border-border/50 bg-card/40 overflow-hidden">
