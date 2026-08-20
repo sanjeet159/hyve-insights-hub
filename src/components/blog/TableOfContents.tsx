@@ -97,7 +97,7 @@ const TableOfContents = ({ content }: TableOfContentsProps) => {
   };
 
   return (
-    <nav className="rounded-2xl border border-[#E5E2DD] bg-[#F9F8F6] p-7 shadow-sm">
+    <nav className="rounded-2xl border-t-2 border-t-primary border-x border-b border-[#E5E2DD] bg-[#F9F8F6] p-7 shadow-sm shadow-primary/5">
       <h3 className="mb-6 font-heading text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60">
         Contents
       </h3>

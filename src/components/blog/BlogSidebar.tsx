@@ -21,7 +21,7 @@ const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="rounded-2xl border border-[#E5E2DD] bg-[#F9F8F6] p-7 shadow-sm"
+        className="rounded-2xl border-t-2 border-t-primary border-x border-b border-[#E5E2DD] bg-[#F9F8F6] p-7 shadow-sm shadow-primary/5"
       >
         <div className="mb-6 flex items-center gap-2">
           <h3 className="font-heading text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60">
