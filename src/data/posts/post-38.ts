@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Explore the evolution of freelancing in India in 2026. From teamlancing to specialized tech hubs, discover how the market is changing for everyone.",
   keywords: ["freelancing in india 2026", "freelance trends india", "freelancing career guide india", "future of freelancing india", "hiring freelancers india"],
   excerpt: "The Indian freelancing market is undergoing a massive transformation. Here is what you need to know to stay ahead in 2026.",
-  category: "Industry Insights",
+  category: "Freelancing",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "6 min read",
