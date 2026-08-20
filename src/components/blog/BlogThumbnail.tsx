@@ -35,22 +35,21 @@ export const BlogThumbnail = ({ post, className = "", size = "md", hideImage = f
 
   return (
     <div className={`relative overflow-hidden flex flex-col items-center justify-center transition-all duration-500 ${bgColor} ${className}`}>
-      <span className={`font-heading font-extrabold tracking-tighter text-foreground/5 select-none ${
-        isSm ? "text-xl" : isLg ? "text-[8rem] md:text-[12rem] lg:text-[14rem]" : "text-7xl"
-      }`}>
-        HYVE
-      </span>
+      <img 
+        src={post.image} 
+        alt={post.title}
+        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        loading="lazy"
+      />
       
-      {!hideImage && (
-        <div className="absolute inset-0 z-0 opacity-[0.03] grayscale transition-all duration-700 pointer-events-none group-hover:opacity-[0.05]">
-          <img 
-            src={post.image} 
-            alt="" 
-            className="h-full w-full object-cover" 
-            loading="lazy"
-          />
-        </div>
-      )}
+      {/* Overlay for HYVE text if needed by some designs, but reference shows real images */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+        <span className={`font-heading font-extrabold tracking-tighter text-foreground select-none ${
+          isSm ? "text-xl" : isLg ? "text-[8rem] md:text-[12rem] lg:text-[14rem]" : "text-7xl"
+        }`}>
+          HYVE
+        </span>
+      </div>
     </div>
   );
 };
