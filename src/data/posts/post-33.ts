@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Learn how escrow payments protect your hard-earned money. A simple guide for Indian freelancers to ensure you never get ghosted by clients again.",
   keywords: ["escrow payments for freelancers", "freelance payment security", "how to get paid as a freelancer", "freelance safety tips", "HYVE escrow"],
   excerpt: "The single biggest fear for any freelancer is non-payment. Escrow payments solve this by building trust. Here’s why it’s the standard you should demand.",
-  category: "Escrow & Payments",
+  category: "Freelancing Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "5 min read",

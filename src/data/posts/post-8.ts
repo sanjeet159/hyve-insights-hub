@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Most Indian freelancers guess what clients want. Here is what 200+ startup founders actually said they look for — and what makes them hire the same freelancer again and again.",
-  category: "Freelancing Tips",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "Apr 18, 2026",
   readTime: "10 min read",

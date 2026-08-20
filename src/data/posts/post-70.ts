@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Navigating Freelance Taxes in India (2026 Edition). Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "navigating freelance taxes in india (2026 edition)", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Navigating Freelance Taxes in India (2026 Edition) in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "July 25, 2026",
   readTime: "8 min read",

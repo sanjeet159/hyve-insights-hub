@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Indian startups lose lakhs every year making the same freelancer hiring mistakes. Here are the 5 most expensive ones — and exactly how to avoid them in 2026.",
-  category: "Startup Hiring",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "Apr 18, 2026",
   readTime: "9 min read",

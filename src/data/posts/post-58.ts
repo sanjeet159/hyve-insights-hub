@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Managing Client Expectations: The Freelancer's Playbook. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "managing client expectations: the freelancer's playbook", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Managing Client Expectations: The Freelancer's Playbook in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "August 6, 2026",
   readTime: "8 min read",

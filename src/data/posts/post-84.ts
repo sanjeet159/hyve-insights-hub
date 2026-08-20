@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on The Impact of 5G on Remote Work in India. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "the impact of 5g on remote work in india", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about The Impact of 5G on Remote Work in India in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "July 11, 2026",
   readTime: "8 min read",

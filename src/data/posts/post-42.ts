@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Discover why Indian startups are shifting from full-time hiring to team-based freelance models in 2026.",
   keywords: ["why startups hire freelancers", "startup hiring trends 2026", "freelancer vs employee", "teamlancing benefits for startups"],
   excerpt: "The traditional full-time hiring model is being disrupted. Here is why startups are embracing freelance teams.",
-  category: "For Clients",
+  category: "Startup Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "5 min read",

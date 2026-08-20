@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Fifteen real freelance jobs Indian beginners can start in 2026 with zero experience — with honest pay ranges, time-to-first-rupee, and the skills you actually need.",
-  category: "Freelancing",
+  category: "Freelancing Guide",
   author: "HYVE Team",
   date: "May 18, 2026",
   readTime: "8 min read",

@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Why Founders are Moving Away from Traditional Agencies. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "why founders are moving away from traditional agencies", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Why Founders are Moving Away from Traditional Agencies in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "July 16, 2026",
   readTime: "8 min read",

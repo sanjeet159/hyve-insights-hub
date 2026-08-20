@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Confused about pricing? Learn how to calculate your hourly, daily, or project-based rates as a professional freelancer in India.",
   keywords: ["freelancer rates in india", "how to price freelance projects", "freelance pricing guide", "indian freelancer rates", "what to charge as a freelancer"],
   excerpt: "Pricing is the difference between a side hustle and a serious career. Use our simple framework to set rates that clients respect.",
-  category: "Career Growth",
+  category: "Finance Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "6 min read",

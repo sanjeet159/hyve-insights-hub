@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Freelancing kya hota hai? Understand the freelance economy, how it works in India, and how you can start your career today.",
   keywords: ["freelancing kya hota hai", "what is freelancing in hindi", "freelancing meaning in hindi", "freelance work in india hindi guide"],
   excerpt: "Agar aap janna chahte hain ki freelancing kya hota hai, toh yeh guide aapke liye hai. Hum cover karenge freelancing ka basic concept.",
-  category: "Education",
+  category: "Finance Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "4 min read",

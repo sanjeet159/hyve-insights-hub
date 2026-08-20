@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Freelance Contract Templates: What Every Founder Needs. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "freelance contract templates: what every founder needs", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Freelance Contract Templates: What Every Founder Needs in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "July 29, 2026",
   readTime: "8 min read",

@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Best Freelancing Platform in Delhi NCR for Tech Talent. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "best freelancing platform in delhi ncr for tech talent", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Best Freelancing Platform in Delhi NCR for Tech Talent in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "July 23, 2026",
   readTime: "8 min read",

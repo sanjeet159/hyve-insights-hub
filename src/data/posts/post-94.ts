@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on The Ultimate Guide to Hiring Indian Talent in 2026. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "the ultimate guide to hiring indian talent in 2026", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about The Ultimate Guide to Hiring Indian Talent in 2026 in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "July 1, 2026",
   readTime: "8 min read",

@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Hiring remote talent is a superpower for startups. Learn the best strategies for onboarding, communication, and team culture in 2026.",
   keywords: ["remote hiring for startups", "hiring freelance teams", "startup team building", "how to manage remote teams", "global talent acquisition"],
   excerpt: "Don't limit your growth to your local talent pool. Building a high-performance remote team requires a new approach to communication and hiring.",
-  category: "Startup Hiring",
+  category: "Startup Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "6 min read",

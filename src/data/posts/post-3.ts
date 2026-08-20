@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Comparing Upwork vs HYVE for Indian freelancers in 2026? We break down fees, payment protection, project matching, and which platform actually puts Indian freelancers first.",
-  category: "Platform Comparisons",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "6 min read",

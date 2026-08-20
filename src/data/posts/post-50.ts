@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Start Freelancing in Pune with No Experience. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to start freelancing in pune with no experience", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Start Freelancing in Pune with No Experience in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "August 14, 2026",
   readTime: "8 min read",

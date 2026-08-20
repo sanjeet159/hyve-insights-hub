@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Handle Difficult Clients: A Survival Guide. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to handle difficult clients: a survival guide", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Handle Difficult Clients: A Survival Guide in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "July 12, 2026",
   readTime: "8 min read",

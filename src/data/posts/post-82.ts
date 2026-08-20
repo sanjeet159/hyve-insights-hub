@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Freelancing in Tier-2 Cities in India: The Opportunity. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "freelancing in tier-2 cities in india: the opportunity", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Freelancing in Tier-2 Cities in India: The Opportunity in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "July 13, 2026",
   readTime: "8 min read",

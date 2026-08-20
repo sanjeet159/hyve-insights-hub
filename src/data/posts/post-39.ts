@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Struggling to hire quality freelancers? Here is how to filter for the best talent in India and ensure project success.",
   keywords: ["hire freelancers india", "find best freelancers india", "how to hire talent india", "freelance hiring guide founders", "quality freelance hiring"],
   excerpt: "Hiring the right talent is hard. Learn the proven framework to find and retain top-tier Indian freelancers.",
-  category: "Startup Hiring",
+  category: "Support Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "7 min read",

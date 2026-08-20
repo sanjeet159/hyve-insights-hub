@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Why HYVE is the Best Upwork Alternative in India. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "why hyve is the best upwork alternative in india", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Why HYVE is the Best Upwork Alternative in India in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "July 28, 2026",
   readTime: "8 min read",

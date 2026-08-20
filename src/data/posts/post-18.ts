@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "An honest 2026 comparison of the top 10 freelancing websites for Indians — real fee structures, payment protection, client quality, and which platform fits your skill and stage.",
-  category: "Platform Comparisons",
+  category: "Startup Guide",
   author: "HYVE Team",
   date: "May 10, 2026",
   readTime: "7 min read",

@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Best Freelancing Platform for UI/UX Designers in India. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "best freelancing platform for ui/ux designers in india", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Best Freelancing Platform for UI/UX Designers in India in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "August 5, 2026",
   readTime: "8 min read",

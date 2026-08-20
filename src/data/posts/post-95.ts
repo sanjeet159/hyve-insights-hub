@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Why HYVE's 10% Fee is the Most Competitive in the Market. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "why hyve's 10% fee is the most competitive in the market", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Why HYVE's 10% Fee is the Most Competitive in the Market in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "June 30, 2026",
   readTime: "8 min read",

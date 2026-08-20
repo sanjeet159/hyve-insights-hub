@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Freelancing built one person at a time. Agencies built one invoice at a time. Teamlancing builds the way modern products actually get shipped — small, vetted, cross-functional teams hired as a single unit. Here's what it is and why it's emerging in India first.",
-  category: "Freelancing",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "May 14, 2026",
   readTime: "11 min read",

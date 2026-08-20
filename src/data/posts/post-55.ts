@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Hire a Content Marketing Team on HYVE. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to hire a content marketing team on hyve", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Hire a Content Marketing Team on HYVE in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "August 9, 2026",
   readTime: "8 min read",

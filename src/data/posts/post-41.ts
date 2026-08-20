@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Looking for the best freelancing sites in India? We compare top platforms including Upwork, Fiverr, and HYVE to help you choose the best.",
   keywords: ["best freelancing sites in india", "top freelance websites 2026", "upwork vs fiverr vs hyve", "freelance platform comparison"],
   excerpt: "Finding the right platform is key. Here is a breakdown of the best freelancing sites in India in 2026.",
-  category: "Platform Comparisons",
+  category: "Freelancing Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "8 min read",

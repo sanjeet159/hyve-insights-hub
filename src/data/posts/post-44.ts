@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Scaling a startup no longer requires a 50-person office. In 2026, the fastest-growing companies are built using elite freelance teams. But building one isn't just about hiring five people—it's about building a system. Here is the detailed playbook.",
-  category: "Team Collaboration",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "12 min read",

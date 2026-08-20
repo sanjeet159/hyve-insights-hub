@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Stop undercharging. Learn the exact frameworks Indian freelancers use to price hourly, fixed and value-based projects in 2026 — with real rate benchmarks for design, dev, writing and marketing.",
-  category: "Career Growth",
+  category: "Freelancing Guide",
   author: "Sanjeet Kumar",
   date: "May 02, 2026",
   readTime: "11 min read",

@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on The Legal Side of Freelancing in India: A Guide. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "the legal side of freelancing in india: a guide", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about The Legal Side of Freelancing in India: A Guide in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "July 20, 2026",
   readTime: "8 min read",
