@@ -97,13 +97,10 @@ const TableOfContents = ({ content }: TableOfContentsProps) => {
   };
 
   return (
-    <div className="rounded-2xl border border-border/50 bg-card p-5 shadow-sm">
+    <div className="rounded-2xl border border-border/40 bg-[#F3F0EC] p-6 shadow-sm">
       <div className="mb-4 flex items-center gap-2">
-        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary/10">
-          <List className="h-3.5 w-3.5 text-primary" />
-        </div>
-        <h3 className="font-heading text-sm font-bold text-foreground">
-          Table of Contents
+        <h3 className="font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground/80">
+          Contents
         </h3>
       </div>
       <nav className="space-y-1 max-h-[60vh] overflow-y-auto pr-2">
