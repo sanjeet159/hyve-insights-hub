@@ -29,14 +29,14 @@ interface BlogThumbnailProps {
 }
 
 export const BlogThumbnail = ({ post, className = "", size = "md", hideImage = false }: BlogThumbnailProps) => {
-  const bgColor = getCategoryColor(post.category);
+  const bgColor = hideImage ? "bg-[#F5F3EF]" : getCategoryColor(post.category);
   const isSm = size === "sm";
   const isLg = size === "lg";
 
   return (
-    <div className={`relative overflow-hidden flex flex-col items-center justify-center transition-colors duration-500 ${bgColor} ${className}`}>
-      <span className={`font-heading font-medium tracking-tight text-foreground/10 select-none ${
-        isSm ? "text-xl" : isLg ? "text-7xl md:text-8xl" : "text-5xl"
+    <div className={`relative overflow-hidden flex flex-col items-center justify-center transition-all duration-500 ${bgColor} ${className}`}>
+      <span className={`font-heading font-extrabold tracking-tighter text-foreground/5 select-none ${
+        isSm ? "text-xl" : isLg ? "text-[8rem] md:text-[12rem] lg:text-[14rem]" : "text-7xl"
       }`}>
         HYVE
       </span>
