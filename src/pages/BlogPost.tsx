@@ -72,7 +72,7 @@ const renderMarkdown = (content: string) =>
       return (
         <blockquote
           key={i}
-          className="my-8 border-l-[3px] border-primary bg-accent/50 py-5 pl-6 pr-5 text-foreground/80 italic rounded-r-xl text-[15px] leading-relaxed"
+          className="my-8 border-l-[3px] border-primary bg-primary/5 py-5 pl-6 pr-5 text-foreground/80 italic rounded-r-xl text-[15px] leading-relaxed shadow-sm shadow-primary/5"
         >
           {t.slice(2).replace(/\*/g, "")}
         </blockquote>
@@ -310,7 +310,7 @@ const BlogPost = () => {
       <main>
         <div className="pt-20">
           {/* Typographic Hero Section - Centered with beige background */}
-          <section className="relative overflow-hidden bg-[#F5F3EF] py-20 md:py-32 border-b border-[#E5E2DD]/50">
+          <section className="relative overflow-hidden bg-[#F5F3EF] py-20 md:py-32 border-b-2 border-primary/20">
             <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center opacity-[0.03]">
               <BlogThumbnail post={post} size="lg" className="w-full h-full bg-transparent" hideImage />
             </div>
