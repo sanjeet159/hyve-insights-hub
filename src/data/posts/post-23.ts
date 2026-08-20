@@ -23,7 +23,7 @@ const post: BlogPostWithContent = {
   readTime: "9 min read",
   image: blog23,
   imagePosition: "center",
-  featured: false,
+  featured: true,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Most freelance proposals get rejected in the first 8 seconds. Not because the freelancer isn't good — but because the proposal opens with "I hope this message finds you well" and immediately loses the client.</p>

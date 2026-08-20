@@ -24,7 +24,7 @@ const post: BlogPostWithContent = {
   readTime: "8 min read",
   image: blog28.url,
   imagePosition: "center",
-  featured: true,
+  featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">India now has one of the largest freelance workforces in the world. Millions of designers, developers, writers, and marketers are choosing project-based work over the traditional 9-to-6. For early-stage startups, that should be great news: more talent, more flexibility, lower cost. So why does hiring a freelancer still feel like a gamble?</p>
