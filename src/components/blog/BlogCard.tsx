@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Clock, ArrowRight } from "lucide-react";
-import type { BlogPost } from "@/data/blogData";
+import { ArrowRight } from "lucide-react";
+import type { BlogPost } from "@/data/posts/types";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -25,7 +25,7 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
       "Career Growth": "bg-violet-50/50",
       "Freelancing Guide": "bg-slate-50/50",
     };
-    return colors[category] || "bg-slate-50/50";
+    return colors[category as string] || "bg-slate-50/50";
   };
 
   const bgColor = getBgColor(post.category);
