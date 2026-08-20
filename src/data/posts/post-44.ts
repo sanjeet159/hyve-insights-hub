@@ -131,6 +131,16 @@ const post: BlogPostWithContent = {
       answer:
         "While a team's combined rate might look higher, it is usually 30-50% cheaper than hiring an agency and much more efficient than hiring individuals who need you to manage their every move. The 'management overhead' you save is the biggest ROI.",
     },
+    {
+      question: "What are the common mistakes when building a freelance team?",
+      answer:
+        "The most common mistakes include hiring individuals without a shared workflow, not having a 'Single Source of Truth' for tasks, failing to use an escrow system for payment security, and acting as a bottleneck/middleman instead of a leader. Teamlancing avoids these by hiring pre-integrated pods.",
+    },
+    {
+      question: "Which tools are best for managing freelance team collaboration?",
+      answer:
+        "For high-performing teams, we recommend Linear or Notion for task management, Loom for asynchronous video feedback, Slack or Discord for quick comms (sparingly), and HYVE for integrated team billing and escrow protection.",
+    },
   ],
 };
 
