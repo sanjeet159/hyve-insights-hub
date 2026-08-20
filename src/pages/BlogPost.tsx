@@ -505,6 +505,8 @@ const BlogPost = () => {
           </div>
         </div>
       </div>
+      </div>
+
 
       {/* Related articles */}
       {fallbackRelated.length > 0 && (
