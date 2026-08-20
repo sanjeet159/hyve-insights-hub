@@ -41,12 +41,14 @@ import post39 from "./post-39";
 import post40 from "./post-40";
 import post41 from "./post-41";
 import post42 from "./post-42";
+import post43 from "./post-43";
 
 export type { BlogPost, BlogPostWithContent, Category } from "./types";
 export { categories } from "./types";
 
 // All posts in order (first is featured)
 export const allPosts = [
+  post43,
   post42,
   post41,
   post40,
