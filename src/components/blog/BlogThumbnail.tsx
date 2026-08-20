@@ -29,7 +29,7 @@ interface BlogThumbnailProps {
 }
 
 export const BlogThumbnail = ({ post, className = "", size = "md", hideImage = false }: BlogThumbnailProps) => {
-  const bgColor = hideImage ? "bg-transparent" : getCategoryColor(post.category);
+  const bgColor = hideImage ? "bg-[#F5F3EF]" : getCategoryColor(post.category);
   const isSm = size === "sm";
   const isLg = size === "lg";
 
