@@ -95,8 +95,7 @@ You built your skills. You put in the hours. You deserve to get paid — every t
 
 ---
 
-*Ready to work with guaranteed payments? [Join HYVE](https://hyvefreelance.com) and get escrow protection on every project you take. 🐝*`,
-  content: `${post.content}
+*Ready to work with guaranteed payments? [Join HYVE](https://hyvefreelance.com) and get escrow protection on every project you take. 🐝*
 <h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 1</h2>`,
 
   faqs: [
