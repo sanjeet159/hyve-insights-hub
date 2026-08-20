@@ -18,9 +18,7 @@ const post: BlogPostWithContent = {
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Stop guessing your rates. <strong>Freelancer rates in India</strong> should be based on value delivered, not just time spent.</p>
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">The Pricing Framework</h2>
 <p>First, calculate your 'break-even' rate: (Total Monthly Costs) / (Billable Hours). Then, add a premium for your expertise. Never charge based solely on the market floor—charge based on the quality you bring to the table.</p>
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 36</h2>
 </div>`,
 
   faqs: [

@@ -37,8 +37,6 @@ const post: BlogPostWithContent = {
 <div style="background:#fdf5e1;padding:20px;border-radius:8px;margin:24px 0">
 <p style="margin:0"><strong>Pro-Tip:</strong> HYVE is built differently. We don't just host profiles; we curate teams. If you're a founder tired of the 'bidding war' on other sites, try our pre-vetted team approach.</p>
 </div>
-
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 30</h2>
 </div>`,
 
   faqs: [

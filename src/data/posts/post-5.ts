@@ -97,8 +97,6 @@ Having the skill is only half the equation. Here is how to maximise your chances
 ---
 
 *Build your HYVE profile today and get matched to startup projects in 48 hours. [Create your profile →](https://hyvefreelance.com) 🐝*
-
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 5</h2>
 `,
 
   faqs: [

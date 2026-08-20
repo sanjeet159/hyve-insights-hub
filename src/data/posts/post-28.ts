@@ -86,8 +86,6 @@ const post: BlogPostWithContent = {
 </div>
 
 <p style="font-size:16px;color:#444;line-height:1.85;margin:0">Freelancing in India isn't short on talent. It's short on structure. Solve that, and the freelance economy stops being a workaround for startups — and starts being the default way early teams get built.</p>
-
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 28</h2>
 </div>`,
 
   faqs: [

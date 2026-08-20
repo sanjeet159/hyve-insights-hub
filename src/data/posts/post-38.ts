@@ -18,14 +18,12 @@ const post: BlogPostWithContent = {
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">India is becoming the world's freelance hub. In 2026, the focus is shifting from single-talent hiring to collaborative team-based builds.</p>
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Key Trends Shaping the Market</h2>
 <ul style="margin-bottom:32px;padding-left:20px">
   <li style="margin-bottom:12px"><strong>Shift to Teamlancing:</strong> Startups now prefer pre-assembled teams over individual freelancers.</li>
   <li style="margin-bottom:12px"><strong>Localized Tech Hubs:</strong> Bangalore, Pune, and Hyderabad are driving local freelance economies.</li>
   <li style="margin-bottom:12px"><strong>Trust-First Hiring:</strong> Escrow and verified profiles are mandatory for high-ticket projects.</li>
 </ul>
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Whether you are a founder looking to hire or a freelancer wanting to scale, adapting to these trends is no longer optional.</p>
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 38</h2>
 </div>`,
 
   faqs: [

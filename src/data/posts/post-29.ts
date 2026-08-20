@@ -88,8 +88,6 @@ const post: BlogPostWithContent = {
 </div>
 
 <p style="font-size:16px;color:#444;line-height:1.85;margin:0">Freelancing is no longer a temporary solution—it's the backbone of the new economy. By understanding the fundamentals of trust, teamwork, and technology, both founders and freelancers can build the future together.</p>
-
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 29</h2>
 </div>`,
 
   faqs: [
