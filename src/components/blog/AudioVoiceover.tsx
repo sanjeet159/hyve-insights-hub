@@ -34,7 +34,6 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-Lovable-Proxy': 'true'
         },
         body: JSON.stringify({
           text: `Now listening to: ${title}. ${cleanContent}`,
