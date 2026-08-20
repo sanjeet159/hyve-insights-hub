@@ -63,8 +63,8 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
           {/* Footer meta */}
           <div className="mt-auto pt-5 flex items-center justify-between border-t border-border/50">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/70 text-[11px] font-bold text-primary-foreground">
-                {initials}
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden p-1">
+                <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
               </span>
               <div className="flex flex-col leading-tight">
                 <span className="text-xs font-semibold text-foreground">{post.author}</span>

@@ -76,8 +76,8 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
               {/* Meta strip */}
               <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground border-t border-border/50 pt-5">
                 <span className="flex items-center gap-1.5 font-medium text-foreground">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/15 text-primary">
-                    <User className="h-3.5 w-3.5" />
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden p-1">
+                    <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
                   </span>
                   {post.author}
                 </span>
