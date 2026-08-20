@@ -20,7 +20,7 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import PopularTopics from "@/components/blog/PopularTopics";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
 import { useMemo, useState } from "react";
-import AudioVoiceover from "@/components/blog/AudioVoiceover";
+
 
 // Detect if content is HTML or plain markdown
 const isHTML = (str: string) => /<\s*[a-z][\s\S]*>/i.test(str.trim());
@@ -436,8 +436,6 @@ const BlogPost = () => {
               <TableOfContents content={post.content} />
             </div>
 
-            {/* Audio Voiceover Section */}
-            <AudioVoiceover content={post.content} title={post.title} />
 
             {/* Article body */}
             <motion.div
