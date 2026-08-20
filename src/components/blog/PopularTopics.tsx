@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { TrendingUp, Hash, Flame } from "lucide-react";
+import { useSearchParams } from "react-router-dom";
 import { popularTopics } from "@/data/blogData";
 import { supabase } from "@/lib/supabaseClient";
 
 const PopularTopics = () => {
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [loading, setLoading] = useState(true);
+  const [searchParams, setSearchParams] = useSearchParams();
 
   const fetchCounts = async () => {
     if (!supabase) {
@@ -55,7 +57,16 @@ const PopularTopics = () => {
   }, []);
 
   const handleClick = async (topic: string) => {
-    // Each click = one row in database, no localStorage
+    // 1. Update URL to trigger search
+    const params = new URLSearchParams(searchParams);
+    params.set("q", topic);
+    params.set("page", "1");
+    setSearchParams(params);
+    
+    // 2. Smooth scroll to top to see results
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // 3. Log interaction in database
     if (!supabase) return;
     await supabase.from("topic_clicks").insert({ topic });
   };

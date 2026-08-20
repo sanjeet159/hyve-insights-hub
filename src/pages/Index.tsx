@@ -155,6 +155,18 @@ const Index = () => {
         </section>
       </main>
 
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": visiblePosts.map((post, i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "url": `https://blog.hyvefreelance.com/blog/${post.slug}`
+          }))
+        })}
+      </script>
+
       <PopularTopics /> 
       <Newsletter />
       <FooterCTA />
