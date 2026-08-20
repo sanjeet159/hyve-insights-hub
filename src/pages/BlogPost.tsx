@@ -367,8 +367,8 @@ const BlogPost = () => {
           </section>
 
           {/* Article content area */}
-          <div className="container mx-auto px-4 py-16 max-w-7xl">
-            <div className="grid gap-12 lg:grid-cols-[1fr_340px]">
+          <div className="container mx-auto px-4 py-20 max-w-7xl">
+            <div className="grid gap-16 lg:grid-cols-[1fr_360px]">
               {/* Main column */}
               <div className="min-w-0">
                 <article>
