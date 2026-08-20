@@ -15,7 +15,7 @@ const AISearchOverview = ({ summary, takeaways }: AISearchOverviewProps) => {
       className="mb-12 overflow-hidden rounded-2xl border-l-4 border-l-primary border-y border-r border-[#E5E2DD] bg-[#F9F8F6] shadow-sm shadow-primary/5"
     >
       <div className="flex items-center gap-2 px-8 py-4 border-b border-[#E5E2DD]">
-        <Sparkles className="h-3.5 w-3.5 text-muted-foreground/60" />
+        <Sparkles className="h-3.5 w-3.5 text-primary" />
         <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60">
           AI Search Overview
         </span>

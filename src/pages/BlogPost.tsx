@@ -72,7 +72,7 @@ const renderMarkdown = (content: string) =>
       return (
         <blockquote
           key={i}
-          className="my-8 border-l-[3px] border-primary bg-accent/50 py-5 pl-6 pr-5 text-foreground/80 italic rounded-r-xl text-[15px] leading-relaxed"
+          className="my-8 border-l-[3px] border-primary bg-primary/5 py-5 pl-6 pr-5 text-foreground/80 italic rounded-r-xl text-[15px] leading-relaxed shadow-sm shadow-primary/5"
         >
           {t.slice(2).replace(/\*/g, "")}
         </blockquote>
