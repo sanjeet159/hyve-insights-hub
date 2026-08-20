@@ -426,10 +426,10 @@ const BlogPost = () => {
                         Written by
                       </p>
                       <p className="font-heading text-lg font-bold text-foreground mt-1">
-                        {post.author}
+                        Sanjeet Kumar
                       </p>
                       <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                        Contributing writer at HYVE, covering freelancing trends, team
+                        Co-founder at HYVE, covering freelancing trends, team
                         collaboration, and the future of work in India.
                       </p>
                     </div>
