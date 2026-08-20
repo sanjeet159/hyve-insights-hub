@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import type { BlogPost } from "@/data/posts/types";
+import { BlogThumbnail } from "./BlogThumbnail";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -9,30 +10,6 @@ interface BlogCardProps {
 }
 
 const BlogCard = ({ post, index }: BlogCardProps) => {
-  // Exact pastel colors from the reference image
-  const getBgColor = (category: string) => {
-    const colors: Record<string, string> = {
-      "Freelancing Guide": "bg-[#E6F9F0]", // Mint
-      "Startup Guide": "bg-[#E6EEFB]", // Blue
-      "Support Guide": "bg-[#FCE7F3]", // Pink
-      "Finance Guide": "bg-[#FFF4E6]", // Peach
-      "Freelancing": "bg-[#E6F9F0]",
-      "Startup Hiring": "bg-[#E6EEFB]",
-      "Team Collaboration": "bg-[#FCE7F3]",
-      "Escrow & Payments": "bg-[#FFF4E6]",
-      "Remote Work": "bg-[#E6EEFB]",
-      "Productivity": "bg-[#E6F9F0]",
-      "For Clients": "bg-[#FFF4E6]",
-      "Platform Comparisons": "bg-[#FCE7F3]",
-      "Education": "bg-[#E6EEFB]",
-      "Freelancing Tips": "bg-[#E6F9F0]",
-      "Career Growth": "bg-[#FCE7F3]",
-    };
-    return colors[category] || "bg-[#F3F4F6]";
-  };
-
-  const bgColor = getBgColor(post.category);
-
   return (
     <Link to={`/blog/${post.slug}`} className="block h-full" aria-label={`Read article: ${post.title}`}>
       <motion.article
@@ -43,27 +20,13 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
         className="group flex h-full flex-col overflow-hidden rounded-[20px] border border-border/40 bg-card shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
       >
         {/* Top visual section - Matches the reference image exactly */}
-        <div className={`relative flex h-60 w-full flex-col items-start justify-start p-6 transition-colors duration-500 ${bgColor}`}>
-          <div className="flex items-center gap-2">
+        <div className="relative">
+          <BlogThumbnail post={post} className="h-60 w-full" />
+          
+          <div className="absolute top-6 left-6 z-10">
             <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground/70">
               {post.category} • {post.readTime}
             </span>
-          </div>
-          
-          <div className="flex flex-1 w-full items-center justify-center">
-            <span className="font-heading text-5xl font-medium tracking-tight text-foreground/10 transition-all duration-700 group-hover:text-foreground/20 group-hover:scale-105 select-none">
-              HYVE
-            </span>
-          </div>
-          
-          {/* Subtle background image watermark - kept very faint as requested earlier */}
-          <div className="absolute inset-0 z-0 opacity-[0.02] grayscale transition-all duration-700 group-hover:opacity-[0.04] pointer-events-none">
-            <img 
-              src={post.image} 
-              alt="" 
-              className="h-full w-full object-cover" 
-              loading="lazy"
-            />
           </div>
         </div>
 

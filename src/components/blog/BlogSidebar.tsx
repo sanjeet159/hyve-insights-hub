@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Sparkles, Star, ArrowRight, Briefcase, Users, Zap } from "lucide-react";
 import { blogPosts, type BlogPost } from "@/data/posts";
+import { BlogThumbnail } from "./BlogThumbnail";
 
 interface BlogSidebarProps {
   currentPostId: string;
@@ -35,14 +36,13 @@ const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
               to={`/blog/${p.slug}`}
               className="group flex gap-3"
             >
-              <img
-                src={p.image}
-                alt={p.title}
-                className="h-16 w-16 flex-shrink-0 rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
+              <BlogThumbnail 
+                post={p} 
+                size="sm" 
+                className="h-16 w-16 flex-shrink-0 rounded-lg shadow-sm" 
               />
               <div className="flex-1 min-w-0">
-                <span className="inline-block rounded-full bg-accent px-2 py-0.5 text-[10px] font-semibold text-accent-foreground">
+                <span className="inline-block rounded-full bg-accent/60 px-2 py-0.5 text-[10px] font-semibold text-accent-foreground">
                   {p.category}
                 </span>
                 <h4 className="mt-1 line-clamp-2 text-sm font-semibold text-foreground leading-snug transition-colors group-hover:text-primary">
