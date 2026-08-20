@@ -12,11 +12,11 @@ const AISearchOverview = ({ summary, takeaways }: AISearchOverviewProps) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="mb-10 overflow-hidden rounded-2xl border border-indigo-100 bg-white shadow-sm"
+      className="mb-10 overflow-hidden rounded-2xl border border-indigo-50 bg-white shadow-sm"
     >
-      <div className="flex items-center gap-2 bg-indigo-50/50 px-6 py-3 border-bottom border-indigo-100/50">
-        <Sparkles className="h-4 w-4 text-indigo-500" />
-        <span className="text-[11px] font-bold uppercase tracking-widest text-indigo-600/80">
+      <div className="flex items-center gap-2 bg-indigo-50/30 px-6 py-2.5 border-b border-indigo-50">
+        <Sparkles className="h-3.5 w-3.5 text-indigo-400" />
+        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-indigo-500/80">
           AI Search Overview
         </span>
       </div>
