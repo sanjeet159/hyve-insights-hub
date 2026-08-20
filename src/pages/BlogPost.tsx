@@ -310,7 +310,7 @@ const BlogPost = () => {
       <main>
         <div className="pt-20">
           {/* Typographic Hero Section - Centered with beige background */}
-          <section className="relative overflow-hidden bg-[#F5F3EF] py-20 md:py-32">
+          <section className="relative overflow-hidden bg-[#F5F3EF] py-20 md:py-32 border-b border-[#E5E2DD]/50">
             <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center opacity-[0.03]">
               <BlogThumbnail post={post} size="lg" className="w-full h-full bg-transparent" hideImage />
             </div>
