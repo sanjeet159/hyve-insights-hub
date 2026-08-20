@@ -1,5 +1,5 @@
-import * as fs from 'fs';
-import * as path from 'path';
+const fs = require('fs');
+const path = require('path');
 
 const topics = [
   "Best Freelancing Platform in Mumbai 2026",
@@ -55,49 +55,49 @@ const topics = [
   "Why HYVE's 10% Fee is the Most Competitive in the Market"
 ];
 
-const postTemplate = (id, title, slug, date) => `
+const postTemplate = (id, title, slug, date) => \`
 import blog14 from "@/assets/blog-14.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
-  id: "${id}",
-  slug: "${slug}",
-  title: "${title}",
-  metaTitle: "${title} | HYVE Blogs",
-  metaDescription: "Read our comprehensive guide on ${title}. Learn how to leverage the best freelancing strategies in India for 2026.",
-  keywords: ["freelancing", "India", "${title.toLowerCase()}", "HYVE", "remote work"],
-  excerpt: "Discover everything you need to know about ${title} in our latest comprehensive guide for 2026.",
+  id: "\${id}",
+  slug: "\${slug}",
+  title: "\${title}",
+  metaTitle: "\${title} | HYVE Blogs",
+  metaDescription: "Read our comprehensive guide on \${title}. Learn how to leverage the best freelancing strategies in India for 2026.",
+  keywords: ["freelancing", "India", "\${title.toLowerCase()}", "HYVE", "remote work"],
+  excerpt: "Discover everything you need to know about \${title} in our latest comprehensive guide for 2026.",
   category: "Freelancing Guide",
   author: "Sanjeet Kumar",
-  date: "${date}",
+  date: "\${date}",
   readTime: "8 min read",
   image: blog14,
   imagePosition: "center",
   featured: false,
-  content: \`<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
-    <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Looking into <strong>${title}</strong> is essential for any modern professional or founder in 2026.</p>
-    <h2 style="font-size:24px;font-weight:800;color:#0d0d0d;margin:32px 0 16px 0">${title}: The Complete Overview</h2>
-    <p>The freelance landscape in India has evolved rapidly. Whether you are in a major metro or a growing hub, understanding ${title} is key to success.</p>
+  content: \\\`<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
+    <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Looking into <strong>\${title}</strong> is essential for any modern professional or founder in 2026.</p>
+    <h2 style="font-size:24px;font-weight:800;color:#0d0d0d;margin:32px 0 16px 0">\${title}: The Complete Overview</h2>
+    <p>The freelance landscape in India has evolved rapidly. Whether you are in a major metro or a growing hub, understanding \${title} is key to success.</p>
     <p>At HYVE, we believe in empowering both freelancers and founders through transparent systems like teamlancing and escrow payments.</p>
     <div style="background:#f1ab13;color:#fff;padding:20px;border-radius:12px;margin:24px 0">
       <h3 style="margin-top:0">Key Takeaway</h3>
-      <p style="margin-bottom:0">${title} is about more than just finding work; it is about building sustainable professional relationships in a digital-first economy.</p>
+      <p style="margin-bottom:0">\${title} is about more than just finding work; it is about building sustainable professional relationships in a digital-first economy.</p>
     </div>
-  </div>\`,
+  </div>\\\`,
   faqs: [
     {
-      question: "Why is ${title} important in 2026?",
-      answer: "As the digital economy grows, ${title} provides the necessary framework for scaling and professional growth in the Indian market."
+      question: "Why is \${title} important in 2026?",
+      answer: "As the digital economy grows, \${title} provides the necessary framework for scaling and professional growth in the Indian market."
     },
     {
-      question: "How does HYVE help with ${title}?",
-      answer: "HYVE provides a secure platform with escrow payments and teamlancing capabilities to make ${title} seamless for everyone."
+      question: "How does HYVE help with \${title}?",
+      answer: "HYVE provides a secure platform with escrow payments and teamlancing capabilities to make \${title} seamless for everyone."
     }
   ]
 };
 
 export default post;
-`;
+\`;
 
 const postsDir = path.join(process.cwd(), 'src/data/posts');
 const startDate = new Date('2026-08-20');
@@ -110,7 +110,7 @@ topics.forEach((title, index) => {
   const dateString = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   
   const content = postTemplate(id, title, slug, dateString);
-  fs.writeFileSync(path.join(postsDir, \`post-\${id}.ts\`), content);
+  fs.writeFileSync(path.join(postsDir, 'post-' + id + '.ts'), content);
 });
 
-console.log(\`Successfully generated \${topics.length} blog posts.\`);
+console.log('Successfully generated ' + topics.length + ' blog posts.');
