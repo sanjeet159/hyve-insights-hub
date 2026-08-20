@@ -1,5 +1,5 @@
 import startups_hiring_freelancers from "@/assets/startups-hiring-freelancers.png.asset.json";
-import type { BlogPostWithContent } from "../types";
+import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "74",

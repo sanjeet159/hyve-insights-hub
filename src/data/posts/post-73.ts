@@ -1,5 +1,5 @@
 import maharashtra_blog_thumbnail from "@/assets/maharashtra-blog-thumbnail.png.asset.json";
-import type { BlogPostWithContent } from "../types";
+import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "73",
