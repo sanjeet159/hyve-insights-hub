@@ -461,8 +461,8 @@ const BlogPost = () => {
               className="mt-12 rounded-2xl border border-border/40 bg-gradient-to-br from-accent/60 to-accent/30 p-6 md:p-7"
             >
               <div className="flex items-start gap-4 md:gap-5">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/80 text-lg font-bold text-primary-foreground shadow-md shadow-primary/15">
-                  {post.author.charAt(0)}
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-background border border-border/50 shadow-md overflow-hidden p-2">
+                  <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
                 </div>
                 <div className="flex-1">
                   <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
