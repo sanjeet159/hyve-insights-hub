@@ -49,6 +49,7 @@ const PopularTopics = () => {
 
   const handleClick = async (topic: string) => {
     // Each click = one row in database, no localStorage
+    if (!supabase) return;
     await supabase.from("topic_clicks").insert({ topic });
   };
 
