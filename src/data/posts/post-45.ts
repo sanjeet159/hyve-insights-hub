@@ -1,5 +1,5 @@
 import blog_1 from "@/assets/blog-1.jpg";
-import type { BlogPostWithContent } from "../types";
+import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
   id: "45",
