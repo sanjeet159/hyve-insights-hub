@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   readTime: "5 min read",
   image: blog31,
   imagePosition: "center",
-  featured: false,
+  featured: true,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 <p>In simple terms, <strong>Freelancing ka matlab hai</strong> ki aap kisi ek company ke employee nahi hain, balki aap apna kaam khud karte hain aur alag-alag clients ko services dete hain.</p>
 
