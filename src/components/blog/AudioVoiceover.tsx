@@ -30,10 +30,11 @@ const AudioVoiceover: React.FC<AudioVoiceoverProps> = ({ content, title }) => {
     setError(null);
     try {
       console.log('Generating audio for:', title);
-      const response = await fetch('/api/ai/text-to-speech', {
+      const response = await fetch('https://api.lovable.dev/v1/ai/text-to-speech', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': 'Bearer ' + ((window as any).LOVABLE_API_KEY || 'lovable')
         },
         body: JSON.stringify({
           text: `Now listening to: ${title}. ${cleanContent}`,
