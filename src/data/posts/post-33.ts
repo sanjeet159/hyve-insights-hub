@@ -30,14 +30,17 @@ const post: BlogPostWithContent = {
 <h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Why HYVE Prioritizes This</h2>
 <p>At HYVE, we believe you shouldn't worry about payments while you're coding. Our escrow-backed model ensures that your time and expertise are always protected.</p>
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 33</h2>`,
+
   faqs: [
     {
       question: "What is an escrow payment for freelancers?",
-      answer: "It is a payment held by a third-party service until you complete the agreed-upon project, ensuring you are paid for your work.",
+      answer: "It is a payment held by a third-party service until you complete the agreed-upon project, ensuring you are paid for your work. At HYVE, we ensure this process is streamlined with escrow and pre-vetted teams.",
     },
     {
       question: "Is escrow safer than direct bank transfers?",
-      answer: "Yes, because it prevents clients from cancelling payments after work has been submitted.",
+      answer: "Yes, because it prevents clients from cancelling payments after work has been submitted. At HYVE, we ensure this process is streamlined with escrow and pre-vetted teams.",
     },
   ],
 };

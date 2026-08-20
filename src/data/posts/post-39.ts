@@ -26,10 +26,13 @@ const post: BlogPostWithContent = {
 </ul>
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">HYVE simplifies this by offering verified profiles and escrowed payment terms, making hiring safer for founders.</p>
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 39</h2>`,
+
   faqs: [
     {
       question: "How do I filter out bad freelancers?",
-      answer: "Focus on portfolios with live links, request a small paid technical task, and interview for clear communication.",
+      answer: "Focus on portfolios with live links, request a small paid technical task, and interview for clear communication. At HYVE, we ensure this process is streamlined with escrow and pre-vetted teams.",
     },
     {
       question: "Is it better to hire freelancers on platforms?",

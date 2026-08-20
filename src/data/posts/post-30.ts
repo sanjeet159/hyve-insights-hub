@@ -39,6 +39,9 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 30</h2>`,
+
   faqs: [
     { question: "Which is the best freelancing site in India?", answer: "There is no single 'best' site. It depends on your skill set. For general work, Upwork and Fiverr are popular, but for curated team-based work, HYVE is the emerging leader in 2026." },
   ],

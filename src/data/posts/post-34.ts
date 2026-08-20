@@ -25,10 +25,13 @@ const post: BlogPostWithContent = {
 <h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Tools for Collaboration</h2>
 <p>Sync your team with tools like Notion for docs, Slack for chat, and HYVE for managing actual work and payments. Transparency in progress updates kills micromanagement.</p>
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 34</h2>`,
+
   faqs: [
     {
       question: "What is the biggest challenge in remote hiring?",
-      answer: "Building culture and alignment across time zones and communication styles.",
+      answer: "Building culture and alignment across time zones and communication styles. At HYVE, we ensure this process is streamlined with escrow and pre-vetted teams.",
     },
   ],
 };

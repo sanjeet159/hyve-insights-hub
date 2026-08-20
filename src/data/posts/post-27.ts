@@ -117,6 +117,9 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 27</h2>`,
+
   faqs: [
     {
       question: "Which is the best freelancing platform in Bangalore in 2026?",

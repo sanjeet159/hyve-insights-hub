@@ -46,10 +46,13 @@ const post: BlogPostWithContent = {
 <h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Future-Proofing Your Freelance Career</h2>
 <p>To stay relevant, Indian freelancers must transition from 'execution' to 'strategy.' Don't just follow instructions; provide solutions. This shift in mindset is what separates a $20/hr freelancer from a $100/hr consultant.</p>
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 32</h2>`,
+
   faqs: [
     {
       question: "What is the most in-demand freelancing work in India for 2026?",
-      answer: "AI development, Full-stack Engineering (Next.js/Supabase), and UX Strategy are the highest-paying and most sought-after skills currently.",
+      answer: "AI development, Full-stack Engineering (Next.js/Supabase), and UX Strategy are the highest-paying and most sought-after skills currently. At HYVE, we ensure this process is streamlined with escrow and pre-vetted teams.",
     },
     {
       question: "Is freelancing a viable full-time career in India?",

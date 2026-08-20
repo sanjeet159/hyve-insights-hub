@@ -26,6 +26,9 @@ const post: BlogPostWithContent = {
 </ul>
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">This is the rise of the flexible, high-output startup.</p>
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 42</h2>`,
+
   faqs: [
     {
       question: "Are freelancers as reliable as employees?",

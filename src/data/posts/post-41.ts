@@ -26,6 +26,9 @@ const post: BlogPostWithContent = {
 </ul>
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Agar aap Indian startup ecosystem mein kaam karna chahte hain, toh HYVE ek behtar aur specialized option hai.</p>
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 41</h2>`,
+
   faqs: [
     {
       question: "Which site is best for Indian freelancers?",

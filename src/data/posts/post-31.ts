@@ -28,8 +28,11 @@ const post: BlogPostWithContent = {
 <li>Skills improve hoti hain kyunki har project naya hota hai.</li>
 </ul>
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 31</h2>`,
+
   faqs: [
-    { question: "Freelancing kya hota hai?", answer: "Freelancing ek aisa kaam hai jisme aap kisi company ke permanent employee bane bina alag-alag clients ke liye projects par kaam karte hain." },
+    { question: "Freelancing kya hota hai?", answer: "Freelancing ek aisa kaam hai jisme aap kisi company ke permanent employee bane bina alag-alag clients ke liye projects par kaam karte hain. At HYVE, we ensure this process is streamlined with escrow and pre-vetted teams." },
   ],
 };
 export default post;

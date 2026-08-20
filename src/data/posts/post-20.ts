@@ -84,6 +84,9 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  content: `${post.content}
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 20</h2>`,
+
   faqs: [
     {
       question: "Which AI tools should every Indian freelancer use in 2026?",
