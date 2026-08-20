@@ -23,7 +23,7 @@ const post: BlogPostWithContent = {
   readTime: "7 min read",
   image: blog32,
   imagePosition: "center",
-  featured: true,
+  featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">India is no longer just a destination for low-cost outsourcing. In 2026, Indian freelancers are leading global projects in AI, blockchain, and high-end UX design. If you are looking for <strong>freelancing work in India</strong>, the opportunities have never been more lucrative—or more competitive.</p>
 <p style="margin-bottom:20px">The market has moved away from generic roles. Today, founders are looking for:</p>
