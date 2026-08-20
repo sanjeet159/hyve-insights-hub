@@ -27,12 +27,14 @@ import post25 from "./post-25";
 import post26 from "./post-26";
 import post27 from "./post-27";
 import post28 from "./post-28";
+import post29 from "./post-29";
 
 export type { BlogPost, BlogPostWithContent, Category } from "./types";
 export { categories } from "./types";
 
 // All posts in order (first is featured)
 export const allPosts = [
+  post29,
   post28,
   post27,
   post26,
