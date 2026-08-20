@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Discover the 7 most in-demand freelancing skills that Indian startups are hiring for in 2026. Learn how to position yourself on HYVE to get matched to high-paying projects.",
-  category: "Career Growth",
+  category: "Freelancing Guide",
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "6 min read",

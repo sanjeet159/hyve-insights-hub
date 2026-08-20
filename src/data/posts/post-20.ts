@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "The AI tools Indian freelancers are actually using in 2026 to deliver 3x faster — across writing, design, code, video, sales, and admin. Free and paid picks, with real workflows.",
-  category: "Productivity",
+  category: "Finance Guide",
   author: "HYVE Team",
   date: "Apr 15, 2026",
   readTime: "8 min read",

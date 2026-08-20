@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Build a Portfolio that Gets High-Ticket Clients. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to build a portfolio that gets high-ticket clients", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Build a Portfolio that Gets High-Ticket Clients in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "August 12, 2026",
   readTime: "8 min read",

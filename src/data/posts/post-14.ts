@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "It's not the freelancers. It's not the brief. It's the gap between them. The moment one freelancer hands work to the next is where Indian startup projects quietly die — 2 to 4 weeks at a time. Here's the framework to spot it, measure it, and kill it.",
-  category: "Team Collaboration",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "May 20, 2026",
   readTime: "9 min read",

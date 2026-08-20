@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Manage Multiple Freelance Projects Without Burnout. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to manage multiple freelance projects without burnout", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Manage Multiple Freelance Projects Without Burnout in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "July 27, 2026",
   readTime: "8 min read",

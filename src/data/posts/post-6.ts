@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "A real account of how one Indian freelancer went from ₹15,000/month to ₹1 lakh/month in under 18 months — the exact skills, clients, platforms, and decisions that made the difference.",
-  category: "Freelancing Tips",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "Apr 18, 2026",
   readTime: "11 min read",

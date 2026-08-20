@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Hire Developers in India: A Founder's Guide. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to hire developers in india: a founder's guide", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Hire Developers in India: A Founder's Guide in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "August 18, 2026",
   readTime: "8 min read",

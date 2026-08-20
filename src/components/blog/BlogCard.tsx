@@ -12,10 +12,14 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
   // Exact pastel colors from the reference image
   const getBgColor = (category: string) => {
     const colors: Record<string, string> = {
-      "Freelancing": "bg-[#E6F9F0]", // Mint
-      "Startup Hiring": "bg-[#E6EEFB]", // Blue
-      "Team Collaboration": "bg-[#FCE7F3]", // Pink
-      "Escrow & Payments": "bg-[#FFF4E6]", // Peach
+      "Freelancing Guide": "bg-[#E6F9F0]", // Mint
+      "Startup Guide": "bg-[#E6EEFB]", // Blue
+      "Support Guide": "bg-[#FCE7F3]", // Pink
+      "Finance Guide": "bg-[#FFF4E6]", // Peach
+      "Freelancing": "bg-[#E6F9F0]",
+      "Startup Hiring": "bg-[#E6EEFB]",
+      "Team Collaboration": "bg-[#FCE7F3]",
+      "Escrow & Payments": "bg-[#FFF4E6]",
       "Remote Work": "bg-[#E6EEFB]",
       "Productivity": "bg-[#E6F9F0]",
       "For Clients": "bg-[#FFF4E6]",
@@ -23,7 +27,6 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
       "Education": "bg-[#E6EEFB]",
       "Freelancing Tips": "bg-[#E6F9F0]",
       "Career Growth": "bg-[#FCE7F3]",
-      "Freelancing Guide": "bg-[#FFF4E6]",
     };
     return colors[category] || "bg-[#F3F4F6]";
   };

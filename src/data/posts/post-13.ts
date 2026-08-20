@@ -20,7 +20,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Most 'MVP cost in India' answers online are vague, outdated, or written for the US market. Here's the real, India-specific 2026 breakdown — rupee ranges, hidden costs, and where founders actually lose money when building their first product.",
-  category: "Startup Hiring",
+  category: "Freelancing Guide",
   author: "HYVE Team",
   date: "May 17, 2026",
   readTime: "6 min read",

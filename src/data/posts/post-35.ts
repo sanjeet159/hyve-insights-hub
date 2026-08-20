@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Solo freelancing is hard to scale. Learn why freelancers are teaming up into small, agile pods to handle bigger projects.",
   keywords: ["freelance team collaboration", "freelancer teams", "scaling freelance business", "how to form a freelance team", "teamlancing"],
   excerpt: "The future of freelancing isn't solo—it's collaborative. Here is how you can team up to win larger, more profitable contracts.",
-  category: "Team Collaboration",
+  category: "Support Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "5 min read",

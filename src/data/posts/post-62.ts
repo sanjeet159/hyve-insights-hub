@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Common Freelancing Scams in India and How to Avoid Them. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "common freelancing scams in india and how to avoid them", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Common Freelancing Scams in India and How to Avoid Them in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "August 2, 2026",
   readTime: "8 min read",

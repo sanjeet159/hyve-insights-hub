@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Build a Personal Brand as a Freelancer. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to build a personal brand as a freelancer", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Build a Personal Brand as a Freelancer in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "July 24, 2026",
   readTime: "8 min read",

@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "What is escrow and how does it protect freelancers? This complete guide explains how escrow payments work, why every Indian freelancer needs it, and how HYVE uses escrow to guarantee your income.",
-  category: "Education",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "5 min read",

@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Pune has India's densest cluster of designers, developers and marketers outside Bangalore — but most global platforms don't serve them well. Here's the honest 2026 breakdown of which platforms actually work for Punekar freelancers.",
-  category: "Platform Comparisons",
+  category: "Freelancing Guide",
   author: "HYVE Team",
   date: "June 12, 2026",
   readTime: "9 min read",

@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on GST for Freelancers in India: A Simplified Guide. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "gst for freelancers in india: a simplified guide", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about GST for Freelancers in India: A Simplified Guide in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "August 13, 2026",
   readTime: "8 min read",

@@ -1,5 +1,9 @@
 export const categories = [
   "All",
+  "Freelancing Guide",
+  "Startup Guide",
+  "Support Guide",
+  "Finance Guide",
   "Freelancing",
   "Startup Hiring",
   "Team Collaboration",
@@ -11,7 +15,6 @@ export const categories = [
   "Education",
   "Freelancing Tips",
   "Career Growth",
-  "Freelancing Guide",
 ] as const;
 
 export type Category = (typeof categories)[number];

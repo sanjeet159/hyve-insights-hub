@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Freelance Escrow Payments: How They Work in India. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "freelance escrow payments: how they work in india", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Freelance Escrow Payments: How They Work in India in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "August 17, 2026",
   readTime: "8 min read",

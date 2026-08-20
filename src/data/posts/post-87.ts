@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Freelance Networking: How to Find Clients on LinkedIn. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "freelance networking: how to find clients on linkedin", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Freelance Networking: How to Find Clients on LinkedIn in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "July 8, 2026",
   readTime: "8 min read",

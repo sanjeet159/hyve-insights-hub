@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Top 10 High-Paying Freelance Skills in 2026. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "top 10 high-paying freelance skills in 2026", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Top 10 High-Paying Freelance Skills in 2026 in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "August 16, 2026",
   readTime: "8 min read",

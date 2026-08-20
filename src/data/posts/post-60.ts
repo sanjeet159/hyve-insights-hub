@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Scaling Your Agency Using Freelance Pods. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "scaling your agency using freelance pods", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Scaling Your Agency Using Freelance Pods in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "August 4, 2026",
   readTime: "8 min read",

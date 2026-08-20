@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Unpaid invoices are killing Indian freelancers. Learn why payment delays happen, how escrow protects you, and how HYVE guarantees payment before work even starts.",
-  category: "Freelancing Tips",
+  category: "Freelancing Guide",
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "6 min read",

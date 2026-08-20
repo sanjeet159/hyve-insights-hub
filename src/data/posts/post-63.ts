@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Use AI to Boost Your Freelance Productivity. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to use ai to boost your freelance productivity", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Use AI to Boost Your Freelance Productivity in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "August 1, 2026",
   readTime: "8 min read",

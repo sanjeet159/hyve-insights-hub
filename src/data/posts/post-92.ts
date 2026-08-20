@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Freelance Retirement Planning in India: A Starter Guide. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "freelance retirement planning in india: a starter guide", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Freelance Retirement Planning in India: A Starter Guide in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "July 3, 2026",
   readTime: "8 min read",

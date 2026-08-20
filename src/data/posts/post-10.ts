@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "A practical playbook for Indian startup founders managing distributed freelance teams in 2026 — async workflows, accountability rituals, tools and the metrics that actually matter.",
-  category: "Remote Work",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "May 05, 2026",
   readTime: "10 min read",

@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Hiring a freelance team in India? This complete guide covers where to find pre-vetted teams, how escrow protects your budget, and why teams beat solo freelancers for startup projects.",
-  category: "For Clients",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "Apr 10, 2026",
   readTime: "7 min read",

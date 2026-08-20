@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Freelancing in 2026: Trends to Watch in the Indian Market. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "freelancing in 2026: trends to watch in the indian market", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Freelancing in 2026: Trends to Watch in the Indian Market in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "August 8, 2026",
   readTime: "8 min read",

@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Where to find them, what to pay, how to vet in 30 minutes, and how escrow keeps your money safe. The 2026 founder's playbook for hiring freelancers in India — without getting burned.",
-  category: "Startup Hiring",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "May 13, 2026",
   readTime: "10 min read",

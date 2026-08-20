@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Why Teamlancing is the Future of Product Development. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "why teamlancing is the future of product development", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Why Teamlancing is the Future of Product Development in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "July 7, 2026",
   readTime: "8 min read",

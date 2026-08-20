@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Every 'top freelancing platforms in India' list online is a copy-paste of the same global names. This one isn't. Here's the honest 2026 ranking — fees, payout speed, INR support, and who actually wins for Indian freelancers and startups.",
-  category: "Platform Comparisons",
+  category: "Startup Guide",
   author: "HYVE Team",
   date: "July 8, 2026",
   readTime: "10 min read",

@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Create a Freelance Website That Converts. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to create a freelance website that converts", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Create a Freelance Website That Converts in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "July 9, 2026",
   readTime: "8 min read",

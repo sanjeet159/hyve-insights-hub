@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on How to Scale from Solo Freelancer to Team Leader. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "how to scale from solo freelancer to team leader", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about How to Scale from Solo Freelancer to Team Leader in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Finance Guide",
   author: "Sanjeet Kumar",
   date: "July 19, 2026",
   readTime: "8 min read",

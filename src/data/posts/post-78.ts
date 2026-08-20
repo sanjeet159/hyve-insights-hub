@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Building Trust with Remote Clients: A Practical Guide. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "building trust with remote clients: a practical guide", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Building Trust with Remote Clients: A Practical Guide in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "July 17, 2026",
   readTime: "8 min read",

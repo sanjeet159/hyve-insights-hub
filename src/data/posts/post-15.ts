@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Agencies are expensive. Freelancers are chaotic. Teamlancing is the new middle path Indian startups are quietly switching to. Here's the honest, no-fluff breakdown of which model fits your stage, budget, and timeline.",
-  category: "Startup Hiring",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "May 24, 2026",
   readTime: "8 min read",

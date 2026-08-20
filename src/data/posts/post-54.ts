@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on The Rise of Teamlancing: Why Solo Freelancing is Evolving. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "the rise of teamlancing: why solo freelancing is evolving", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about The Rise of Teamlancing: Why Solo Freelancing is Evolving in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Startup Guide",
   author: "Sanjeet Kumar",
   date: "August 10, 2026",
   readTime: "8 min read",

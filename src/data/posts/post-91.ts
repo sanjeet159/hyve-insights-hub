@@ -9,7 +9,7 @@ const post: BlogPostWithContent = {
   metaDescription: "Read our comprehensive guide on Mastering Asynchronous Communication for Remote Teams. Learn how to leverage the best freelancing strategies in India for 2026.",
   keywords: ["freelancing", "India", "mastering asynchronous communication for remote teams", "HYVE", "remote work"],
   excerpt: "Discover everything you need to know about Mastering Asynchronous Communication for Remote Teams in our latest comprehensive guide for 2026.",
-  category: "Freelancing Guide",
+  category: "Support Guide",
   author: "Sanjeet Kumar",
   date: "July 4, 2026",
   readTime: "8 min read",

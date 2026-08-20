@@ -11,7 +11,7 @@ const post: BlogPostWithContent = {
   keywords: ["freelancing meaning in hindi", "freelancing kya hota hai", "what is freelancing"],
   excerpt:
     "Ever wondered what freelancing actually means? We break it down in simple Hindi and English to help you start your independent work journey.",
-  category: "Education",
+  category: "Support Guide",
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "5 min read",

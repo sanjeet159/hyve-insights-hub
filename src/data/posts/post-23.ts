@@ -17,7 +17,7 @@ const post: BlogPostWithContent = {
   ],
   excerpt:
     "Most freelance proposals get ignored in 8 seconds. Here is the exact 5-part proposal structure that converts in 2026 — with real openers, pricing language, and a copy-paste template.",
-  category: "Freelancing Tips",
+  category: "Support Guide",
   author: "HYVE Team",
   date: "May 18, 2026",
   readTime: "9 min read",
