@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, Sparkles, Calendar } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
-import teamLogoAsset from "@/assets/hyve-team-logo.jpg.asset.json";
+import teamLogoAsset from "@/assets/hyve-full-logo.jpg.asset.json";
 
 interface FeaturedPostProps {
   post: BlogPost;

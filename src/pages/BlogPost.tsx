@@ -19,7 +19,7 @@ import BlogSidebar from "@/components/blog/BlogSidebar";
 import TableOfContents from "@/components/blog/TableOfContents";
 import PopularTopics from "@/components/blog/PopularTopics";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
-import teamLogoAsset from "@/assets/hyve-team-logo.jpg.asset.json";
+import teamLogoAsset from "@/assets/hyve-full-logo.jpg.asset.json";
 import { useMemo, useState } from "react";
 
 
