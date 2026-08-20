@@ -99,9 +99,10 @@ HYVE exists to change that. Every project on our platform, regardless of size, c
 
 ---
 
-*Work with confidence. Every project on HYVE is escrow-protected. [Start your free profile →](https://hyvefreelance.com) 🐝*`,
-  content: `${post.content}
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 4</h2>`,
+*Work with confidence. Every project on HYVE is escrow-protected. [Start your free profile →](https://hyvefreelance.com) 🐝*
+
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 4</h2>
+`,
 
   faqs: [
     {

@@ -189,9 +189,8 @@ const post: BlogPostWithContent = {
   <a href="https://hyvefreelance.com" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#0d0d0d;color:#fff;padding:14px 28px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px">Join the HYVE waitlist →</a>
 </div>
 
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 13</h2>
 </div>`,
-  content: `${post.content}
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 13</h2>`,
 
   faqs: [
     {

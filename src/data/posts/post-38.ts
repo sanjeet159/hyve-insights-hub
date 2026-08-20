@@ -25,9 +25,8 @@ const post: BlogPostWithContent = {
   <li style="margin-bottom:12px"><strong>Trust-First Hiring:</strong> Escrow and verified profiles are mandatory for high-ticket projects.</li>
 </ul>
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">Whether you are a founder looking to hire or a freelancer wanting to scale, adapting to these trends is no longer optional.</p>
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 38</h2>
 </div>`,
-  content: `${post.content}
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 38</h2>`,
 
   faqs: [
     {

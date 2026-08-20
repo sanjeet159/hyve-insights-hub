@@ -118,9 +118,8 @@ const post: BlogPostWithContent = {
 
 <p style="font-size:13px;color:#888;line-height:1.7;margin:24px 0 0 0;font-style:italic">This guide is for educational purposes only and is not a substitute for advice from a qualified chartered accountant. Tax rules and thresholds change — always confirm current rates with your CA before filing.</p>
 
+<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 24</h2>
 </div>`,
-  content: `${post.content}
-<h2 style="font-size:26px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0">Common Questions About 24</h2>`,
 
   faqs: [
     {
