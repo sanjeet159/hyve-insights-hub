@@ -24,7 +24,7 @@ const post: BlogPostWithContent = {
   readTime: "12 min read",
   image: blog14,
   imagePosition: "center",
-  featured: true,
+  featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
 
 <p style="font-size:17px;color:#444;line-height:1.85;margin:0 0 16px 0">In the old world, you built a company by hiring employees. In the 2026 economy, you build a company by assembling <strong>specialized teams</strong>. The most successful Indian startups today aren't looking for 'an employee who can do a bit of everything'; they are looking for a team that has already mastered one thing.</p>

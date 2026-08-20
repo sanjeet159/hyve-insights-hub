@@ -1,4 +1,4 @@
-import blog28 from "@/assets/blog-11.jpg";
+import blog28 from "@/assets/startups-hiring-freelancers.png.asset.json";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
