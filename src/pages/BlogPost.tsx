@@ -187,7 +187,7 @@ const BlogPost = () => {
       "@type": "Person",
       "name": post.author,
       "url": "https://blog.hyvefreelance.com",
-      "jobTitle": "Contributing Writer",
+      "jobTitle": "Co-founder",
       "worksFor": {
         "@type": "Organization",
         "@id": "https://hyvefreelance.com/#organization",
