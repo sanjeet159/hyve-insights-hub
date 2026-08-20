@@ -184,7 +184,12 @@ const BlogPost = () => {
     "author": {
       "@type": "Person",
       "name": post.author,
-      "url": "https://blog.hyvefreelance.com"
+      "url": "https://blog.hyvefreelance.com",
+      "jobTitle": "Contributing Writer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "HYVE"
+      }
     },
     "datePublished": post.date,
     "dateModified": post.date,
@@ -194,7 +199,10 @@ const BlogPost = () => {
     "keywords": post.keywords?.join(", "),
     "articleSection": post.category,
     "inLanguage": "en-IN",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": postUrl },
+    "mainEntityOfPage": { 
+      "@type": "WebPage", 
+      "@id": postUrl 
+    },
     "wordCount": post.content.split(/\s+/).length,
     "timeRequired": `PT${post.readTime.split(" ")[0]}M`,
     "publisher": {
@@ -213,9 +221,24 @@ const BlogPost = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://blog.hyvefreelance.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://blog.hyvefreelance.com/" },
-      { "@type": "ListItem", "position": 3, "name": post.title, "item": postUrl }
+      { 
+        "@type": "ListItem", 
+        "position": 1, 
+        "name": "Home", 
+        "item": "https://blog.hyvefreelance.com/" 
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 2, 
+        "name": post.category, 
+        "item": `https://blog.hyvefreelance.com/?category=${encodeURIComponent(post.category)}` 
+      },
+      { 
+        "@type": "ListItem", 
+        "position": 3, 
+        "name": post.title, 
+        "item": postUrl 
+      }
     ]
   };
 

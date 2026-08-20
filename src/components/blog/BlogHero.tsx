@@ -82,7 +82,13 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
 
         {/* Search */}
         <div className="mx-auto mt-14 max-w-2xl">
-          <div className="relative group">
+          <form 
+            onSubmit={(e) => {
+              e.preventDefault();
+              // The state is already updated via onSearchChange
+            }}
+            className="relative group"
+          >
             <div className="absolute -inset-1 rounded-full bg-primary/20 opacity-0 blur-lg transition duration-500 group-focus-within:opacity-100" />
             <div className="relative flex items-center bg-background rounded-full border border-border shadow-lg overflow-hidden">
               <Search className="absolute left-6 h-5 w-5 text-muted-foreground" />
@@ -93,12 +99,15 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
                 placeholder="Search articles, topics, guides..."
                 className="w-full bg-transparent py-5 pl-16 pr-32 text-base outline-none placeholder:text-muted-foreground"
               />
-              <button className="absolute right-2 bg-foreground text-background px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-all flex items-center gap-2">
+              <button 
+                type="submit"
+                className="absolute right-2 bg-foreground text-background px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-primary hover:text-primary-foreground transition-all flex items-center gap-2"
+              >
                 Search
                 <ArrowRight className="h-4 w-4" />
               </button>
             </div>
-          </div>
+          </form>
 
           {/* Trending Chips */}
           <div className="mt-5 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-xs text-muted-foreground">

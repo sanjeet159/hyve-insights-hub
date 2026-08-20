@@ -1,4 +1,4 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogHero from "@/components/blog/BlogHero";
@@ -8,47 +8,33 @@ import PopularTopics from "@/components/blog/PopularTopics";
 import Newsletter from "@/components/blog/Newsletter";
 import FooterCTA from "@/components/blog/FooterCTA";
 import Footer from "@/components/blog/Footer";
-import { allPosts, featuredPost, blogPosts, type Category } from "@/data/posts";
+import { featuredPost, allPosts } from "@/data/posts";
 import { motion, AnimatePresence } from "framer-motion";
 import { Newspaper, ChevronDown } from "lucide-react";
+import { useBlogFilters } from "@/hooks/useBlogFilters";
 
 const POSTS_PER_PAGE = 6;
 
 const Index = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>("All");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
+  const {
+    activeCategory,
+    searchQuery,
+    page,
+    filteredPosts,
+    visiblePosts,
+    hasMore,
+    setCategory,
+    setSearch,
+    setPage,
+  } = useBlogFilters(POSTS_PER_PAGE);
 
   useEffect(() => {
     console.log("Index mounted, total posts:", allPosts.length);
-    console.log("Featured Post ID:", featuredPost?.id);
-    console.log("Blog Posts count:", blogPosts.length);
   }, []);
-
-  const filteredPosts = useMemo(() => {
-    return allPosts.filter((post) => {
-      // Logic for filtering
-      const matchesCategory = activeCategory === "All" || post.category === activeCategory;
-      const matchesSearch =
-        !searchQuery ||
-        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-      
-      // Exclude featured post from grid unless there's a search/category filter active
-      const isNotFeatured = (activeCategory !== "All" || searchQuery !== "") 
-        ? true 
-        : post.id !== featuredPost?.id;
-
-      return matchesCategory && matchesSearch && isNotFeatured;
-    });
-  }, [activeCategory, searchQuery]);
-
-  const visiblePosts = filteredPosts.slice(0, visibleCount);
-  const hasMore = visibleCount < filteredPosts.length;
 
   const handleShowMore = useCallback(() => {
-    setVisibleCount((prev) => prev + POSTS_PER_PAGE);
-  }, []);
+    setPage(page + 1);
+  }, [page, setPage]);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -73,9 +59,20 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>HYVE Blog — India's Premier Freelancing & Hiring Insights</title>
-        <meta name="description" content="Master freelancing and hiring in India. Expert guides on teamlancing, escrow, and remote teams." />
-        <link rel="canonical" href="https://blog.hyvefreelance.com/" />
+        <title>
+          {searchQuery 
+            ? `Search results for "${searchQuery}" | HYVE Blog` 
+            : activeCategory !== "All" 
+              ? `${activeCategory} Articles | HYVE Blog` 
+              : "HYVE Blog — India's Premier Freelancing & Hiring Insights"}
+        </title>
+        <meta 
+          name="description" 
+          content={searchQuery 
+            ? `Browse search results for "${searchQuery}" on the HYVE Blog. Expert insights on freelancing and hiring.` 
+            : "Master freelancing and hiring in India. Expert guides on teamlancing, escrow, and remote teams."} 
+        />
+        <link rel="canonical" href={`https://blog.hyvefreelance.com/${activeCategory !== "All" ? `?category=${activeCategory}` : ""}`} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
@@ -83,15 +80,9 @@ const Index = () => {
       <main className="relative">
         <BlogHero
           activeCategory={activeCategory}
-          onCategoryChange={(cat) => {
-            setActiveCategory(cat);
-            setVisibleCount(POSTS_PER_PAGE);
-          }}
+          onCategoryChange={setCategory}
           searchQuery={searchQuery}
-          onSearchChange={(q) => {
-            setSearchQuery(q);
-            setVisibleCount(POSTS_PER_PAGE);
-          }}
+          onSearchChange={setSearch}
         />
         
         {activeCategory === "All" && !searchQuery && featuredPost && (
@@ -163,6 +154,18 @@ const Index = () => {
           )}
         </section>
       </main>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": visiblePosts.map((post, i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "url": `https://blog.hyvefreelance.com/blog/${post.slug}`
+          }))
+        })}
+      </script>
 
       <PopularTopics /> 
       <Newsletter />
