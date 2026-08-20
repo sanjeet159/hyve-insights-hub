@@ -21,9 +21,9 @@ const post: BlogPostWithContent = {
     <h2 style="font-size:24px;font-weight:800;color:#0d0d0d;margin:32px 0 16px 0">Freelance Contract Templates: What Every Founder Needs: The Complete Overview</h2>
     <p>The freelance landscape in India has evolved rapidly. Whether you are in a major metro or a growing hub, understanding Freelance Contract Templates: What Every Founder Needs is key to success.</p>
     <p>At HYVE, we believe in empowering both freelancers and founders through transparent systems like teamlancing and escrow payments.</p>
-    <div style="background:#f1ab13;color:#fff;padding:20px;border-radius:12px;margin:24px 0">
-      <h3 style="margin-top:0">Key Takeaway</h3>
-      <p style="margin-bottom:0">Freelance Contract Templates: What Every Founder Needs is about more than just finding work; it is about building sustainable professional relationships in a digital-first economy.</p>
+    <div style="background:#f1ab13;color:#fff;padding:24px;border-radius:12px;margin:32px 0">
+      <h3 style="margin-top:0;font-size:18px;font-weight:700">Key Takeaway</h3>
+      <p style="margin-bottom:0;opacity:0.95">Freelance Contract Templates: What Every Founder Needs is about more than just finding work; it is about building sustainable professional relationships in a digital-first economy.</p>
     </div>
   </div>`,
   faqs: [
