@@ -310,8 +310,8 @@ const BlogPost = () => {
       <main>
         <div className="pt-20">
           {/* Typographic Hero Section - Centered with beige background */}
-          <section className="relative overflow-hidden bg-[#F5F3EF] py-20 md:py-32">
-            <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center opacity-[0.04]">
+          <section className="relative overflow-hidden bg-[#F5F3EF] py-20 md:py-32 border-b border-[#E5E2DD]/50">
+            <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center opacity-[0.03]">
               <BlogThumbnail post={post} size="lg" className="w-full h-full bg-transparent" hideImage />
             </div>
             <div className="container relative z-10 mx-auto px-4 text-center max-w-4xl">
@@ -367,8 +367,8 @@ const BlogPost = () => {
           </section>
 
           {/* Article content area */}
-          <div className="container mx-auto px-4 py-16 max-w-7xl">
-            <div className="grid gap-12 lg:grid-cols-[1fr_340px]">
+          <div className="container mx-auto px-4 py-20 max-w-7xl">
+            <div className="grid gap-16 lg:grid-cols-[1fr_360px]">
               {/* Main column */}
               <div className="min-w-0">
                 <article>
@@ -499,20 +499,19 @@ const BlogPost = () => {
 
         {/* Related articles */}
         {fallbackRelated.length > 0 && (
-          <section className="mt-16 border-t border-border/40 bg-accent/20 py-16">
+          <section className="mt-16 bg-[#F5F3EF] py-24">
             <div className="container mx-auto px-4">
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="mb-10 flex items-center gap-3"
+                className="mb-12 text-center"
               >
-                <div className="h-5 w-1 rounded-full bg-primary" />
-                <h2 className="font-heading text-2xl font-bold text-foreground">
-                  Keep Reading
+                <h2 className="font-heading text-4xl font-bold text-foreground">
+                  Keep reading
                 </h2>
               </motion.div>
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {fallbackRelated.map((p, i) => (
                   <BlogCard post={p} index={i} key={p.id} />
                 ))}

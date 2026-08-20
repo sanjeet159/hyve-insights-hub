@@ -24,27 +24,30 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
           <BlogThumbnail post={post} className="h-60 w-full" />
           
           <div className="absolute top-6 left-6 z-10">
-            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground/70">
+            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground/60">
               {post.category} • {post.readTime}
             </span>
           </div>
         </div>
 
         {/* Content area - clean white/card background */}
-        <div className="flex flex-1 flex-col p-8 bg-card">
-          <h3 className="font-heading text-[22px] font-semibold leading-[1.3] text-foreground transition-colors duration-300 group-hover:text-primary line-clamp-2">
+        <div className="flex flex-1 flex-col p-8 bg-white relative">
+          <div className="absolute top-0 left-8 -translate-y-1/2">
+            <span className="text-[14px] font-bold text-foreground">Sanjeet Kumar</span>
+          </div>
+          <h3 className="font-heading text-[18px] font-bold leading-[1.3] text-foreground transition-colors duration-300 group-hover:text-primary line-clamp-2">
             {post.title}
           </h3>
-          <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground/80 line-clamp-2">
+          <p className="mt-4 text-[14px] leading-relaxed text-muted-foreground/70 line-clamp-2">
             {post.excerpt}
           </p>
 
-          <div className="mt-auto pt-8 flex items-center justify-between">
-            <time className="text-[14px] text-muted-foreground/60">
+          <div className="mt-auto pt-8 flex items-center justify-between border-t border-border/20">
+            <time className="text-[11px] font-bold text-muted-foreground/50 uppercase tracking-wider">
               {post.date}
             </time>
-            <div className="flex items-center gap-2 text-[14px] font-medium text-foreground transition-all duration-300 group-hover:text-primary group-hover:translate-x-1">
-              Read <ArrowRight className="h-4 w-4" />
+            <div className="flex items-center gap-1 text-[11px] font-bold text-muted-foreground/50 uppercase tracking-wider transition-all duration-300 group-hover:text-primary">
+              Read <ArrowRight className="h-3 w-3" />
             </div>
           </div>
         </div>

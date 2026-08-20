@@ -21,11 +21,10 @@ const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="rounded-2xl border border-border/50 bg-card p-5 shadow-sm"
+        className="rounded-2xl border border-[#E5E2DD] bg-[#F9F8F6] p-7 shadow-sm"
       >
-        <div className="mb-5 flex items-center gap-2">
-          <Star className="h-4 w-4 fill-primary text-primary" />
-          <h3 className="font-heading text-xs font-bold uppercase tracking-widest text-foreground">
+        <div className="mb-6 flex items-center gap-2">
+          <h3 className="font-heading text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60">
             Featured Blogs
           </h3>
         </div>
@@ -67,21 +66,21 @@ const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
       >
         <div className="relative">
           <div className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white/70">
-            Get TYPPOUT
+            HYVE FOR TEAMS
           </div>
           <h3 className="font-heading text-xl font-bold leading-tight mb-3">
-            Turn social conversations into booked meetings.
+            Build and manage your freelance teams at scale.
           </h3>
           <p className="text-xs text-white/60 leading-relaxed mb-6">
-            Starts 7-day free trial. No credit card required.
+            Get started with India's first team-based freelancing platform.
           </p>
           <a
             href="https://hyvefreelance.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#8b5cf6] px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:bg-[#7c3aed]"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#F1AB13] px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:bg-[#d99a11]"
           >
-            Get started — it's free
+            Hire a Team
           </a>
         </div>
       </motion.div>
@@ -92,15 +91,15 @@ const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.1 }}
-        className="rounded-2xl border border-border/40 bg-white p-6 shadow-sm"
+        className="rounded-2xl border border-[#E5E2DD] bg-[#F9F8F6] p-7 shadow-sm"
       >
-        <div className="mb-4">
-          <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60">Share</h3>
+        <div className="mb-5">
+          <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/40">Share</h3>
         </div>
-        <div className="flex gap-2">
-          <button className="h-8 w-8 flex items-center justify-center rounded-lg border border-border/50 text-muted-foreground hover:bg-accent transition-colors"><LinkIcon className="h-3.5 w-3.5" /></button>
-          <button className="h-8 w-8 flex items-center justify-center rounded-lg border border-border/50 text-muted-foreground hover:bg-accent transition-colors"><Zap className="h-3.5 w-3.5" /></button>
-          <button className="h-8 w-8 flex items-center justify-center rounded-lg border border-border/50 text-muted-foreground hover:bg-accent transition-colors"><Users className="h-3.5 w-3.5" /></button>
+        <div className="flex gap-2.5">
+          <button className="h-9 w-9 flex items-center justify-center rounded-lg border border-[#E5E2DD] bg-white text-muted-foreground/60 hover:bg-accent transition-colors"><LinkIcon className="h-3.5 w-3.5" /></button>
+          <button className="h-9 w-9 flex items-center justify-center rounded-lg border border-[#E5E2DD] bg-white text-muted-foreground/60 hover:bg-accent transition-colors"><Zap className="h-3.5 w-3.5" /></button>
+          <button className="h-9 w-9 flex items-center justify-center rounded-lg border border-[#E5E2DD] bg-white text-muted-foreground/60 hover:bg-accent transition-colors"><Users className="h-3.5 w-3.5" /></button>
         </div>
       </motion.div>
     </aside>
