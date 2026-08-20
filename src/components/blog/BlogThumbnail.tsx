@@ -29,39 +29,29 @@ interface BlogThumbnailProps {
 }
 
 export const BlogThumbnail = ({ post, className = "", size = "md", hideImage = false }: BlogThumbnailProps) => {
-  const thumbnailStyle = post.image?.includes('user-uploads') ? 'image' : 'minimal';
-
   const bgColor = hideImage ? "bg-[#F5F3EF]" : getCategoryColor(post.category);
   const isSm = size === "sm";
   const isLg = size === "lg";
 
   return (
     <div className={`relative overflow-hidden flex flex-col items-center justify-center transition-all duration-500 ${bgColor} ${className}`}>
-      {thumbnailStyle === 'image' && !hideImage ? (
+      {!hideImage && post.image && (
         <img 
           src={post.image} 
-          alt={post.title}
+          alt={post.title} 
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
         />
-      ) : (
-        <span className={`font-heading font-extrabold tracking-tighter text-foreground/5 select-none ${
+      )}
+      
+      {/* Subtle HYVE watermark overlay */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+        <span className={`font-heading font-extrabold tracking-tighter text-foreground select-none ${
           isSm ? "text-xl" : isLg ? "text-[8rem] md:text-[12rem] lg:text-[14rem]" : "text-7xl"
         }`}>
           HYVE
         </span>
-      )}
-      
-      {thumbnailStyle === 'minimal' && !hideImage && (
-        <div className="absolute inset-0 z-0 opacity-[0.03] grayscale transition-all duration-700 pointer-events-none group-hover:opacity-[0.05]">
-          <img 
-            src={post.image} 
-            alt="" 
-            className="h-full w-full object-cover" 
-            loading="lazy"
-          />
-        </div>
-      )}
+      </div>
     </div>
   );
 };
