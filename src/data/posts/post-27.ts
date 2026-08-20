@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "Bangalore has India's densest concentration of designers, developers and product folks — most moonlighting after 8pm. Here's the honest 2026 breakdown of which platforms actually work for Bengaluru freelancers and the startups hiring them.",
   category: "Support Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "July 17, 2026",
   readTime: "9 min read",
   image: blog27,

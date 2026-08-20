@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["freelancing in india 2026", "freelance trends india", "freelancing career guide india", "future of freelancing india", "hiring freelancers india"],
   excerpt: "The Indian freelancing market is undergoing a massive transformation. Here is what you need to know to stay ahead in 2026.",
   category: "Startup Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "6 min read",
   image: blog38,

@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["hire freelancers india", "find best freelancers india", "how to hire talent india", "freelance hiring guide founders", "quality freelance hiring"],
   excerpt: "Hiring the right talent is hard. Learn the proven framework to find and retain top-tier Indian freelancers.",
   category: "Support Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "7 min read",
   image: blog39,

@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "Fiverr, Upwork or HYVE — which one actually pays Indian freelancers fastest, takes the smallest cut, and brings real startup clients? Here is the honest 2026 breakdown.",
   category: "Startup Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "May 14, 2026",
   readTime: "8 min read",
   image: blog22,

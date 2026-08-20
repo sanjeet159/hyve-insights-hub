@@ -19,7 +19,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "Freelancing has evolved far beyond 'gigs.' In 2026, it's a structured way to build companies and careers. Here is everything you need to know to get started.",
   category: "Freelancing Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "7 min read",
   image: blog29,

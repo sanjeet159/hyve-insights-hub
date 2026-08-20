@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["escrow payments for freelancers", "freelance payment security", "how to get paid as a freelancer", "freelance safety tips", "HYVE escrow"],
   excerpt: "The single biggest fear for any freelancer is non-payment. Escrow payments solve this by building trust. Here’s why it’s the standard you should demand.",
   category: "Freelancing Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "5 min read",
   image: blog33,

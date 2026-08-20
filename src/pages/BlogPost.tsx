@@ -187,7 +187,7 @@ const BlogPost = () => {
       "@type": "Person",
       "name": post.author,
       "url": "https://blog.hyvefreelance.com",
-      "jobTitle": "Contributing Writer",
+      "jobTitle": "Co-founder",
       "worksFor": {
         "@type": "Organization",
         "@id": "https://hyvefreelance.com/#organization",
@@ -355,9 +355,9 @@ const BlogPost = () => {
                   <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain rounded-full" />
                 </div>
                 <div className="text-center">
-                  <p className="text-base font-bold text-foreground">Suresh</p>
+                  <p className="text-base font-bold text-foreground">Sanjeet Kumar</p>
                   <div className="mt-1.5 flex items-center justify-center gap-2 text-[13px] font-medium text-muted-foreground/60">
-                    <span>Founder, Typpout</span>
+                    <span>Co-founder, HYVE</span>
                     <span className="h-1 w-1 rounded-full bg-border/80" />
                     <span>{post.date}</span>
                   </div>
@@ -426,10 +426,10 @@ const BlogPost = () => {
                         Written by
                       </p>
                       <p className="font-heading text-lg font-bold text-foreground mt-1">
-                        {post.author}
+                        Sanjeet Kumar
                       </p>
                       <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                        Contributing writer at HYVE, covering freelancing trends, team
+                        Co-founder at HYVE, covering freelancing trends, team
                         collaboration, and the future of work in India.
                       </p>
                     </div>

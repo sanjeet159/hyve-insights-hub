@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "The honest 2026 breakdown of freelance vs full-time in India — actual take-home pay, hidden costs, tax differences, benefits, lifestyle, and which one wins for your skill and stage.",
   category: "Freelancing Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "Apr 2, 2026",
   readTime: "7 min read",
   image: blog21,

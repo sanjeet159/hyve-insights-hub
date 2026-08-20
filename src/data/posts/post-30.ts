@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "Navigating the freelance marketplace in India can be overwhelming. From global giants to localized platforms, here’s how to choose the right site for your skills and goals.",
   category: "Startup Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "6 min read",
   image: blog30,

@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "Want to start a tech startup in India in 2026? Here is the no-fluff, founder-tested playbook — from validation and MVP to incorporation, hiring, and your first ₹1 crore in revenue.",
   category: "Support Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "Apr 28, 2026",
   readTime: "10 min read",
   image: blog19,
