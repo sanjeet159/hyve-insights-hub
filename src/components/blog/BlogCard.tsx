@@ -9,27 +9,6 @@ interface BlogCardProps {
 }
 
 const BlogCard = ({ post, index }: BlogCardProps) => {
-  // Use category to determine a light background color for the top section
-  const getBgColor = (category: string) => {
-    const colors: Record<string, string> = {
-      "Freelancing": "bg-emerald-50/50",
-      "Startup Hiring": "bg-blue-50/50",
-      "Team Collaboration": "bg-purple-50/50",
-      "Escrow & Payments": "bg-amber-50/50",
-      "Remote Work": "bg-indigo-50/50",
-      "Productivity": "bg-rose-50/50",
-      "For Clients": "bg-orange-50/50",
-      "Platform Comparisons": "bg-sky-50/50",
-      "Education": "bg-cyan-50/50",
-      "Freelancing Tips": "bg-teal-50/50",
-      "Career Growth": "bg-violet-50/50",
-      "Freelancing Guide": "bg-slate-50/50",
-    };
-    return colors[category as string] || "bg-slate-50/50";
-  };
-
-  const bgColor = getBgColor(post.category);
-
   return (
     <Link to={`/blog/${post.slug}`} className="block h-full" aria-label={`Read article: ${post.title}`}>
       <motion.article
@@ -39,19 +18,19 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
         transition={{ duration: 0.5, delay: index * 0.05 }}
         className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-border/40 bg-card shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1"
       >
-        {/* Top visual section - minimalist with text overlay */}
-        <div className={`relative flex h-64 w-full items-center justify-center p-8 transition-colors duration-500 ${bgColor} group-hover:bg-opacity-80`}>
-          <div className="text-center relative z-10">
-            <span className="mb-4 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/80">
+        {/* Top visual section - Clean, Subtle, Minimalist */}
+        <div className="relative flex h-64 w-full items-center justify-center overflow-hidden bg-slate-50/80 transition-colors duration-500 group-hover:bg-slate-100/80">
+          <div className="text-center relative z-10 p-8">
+            <span className="mb-4 block text-[10px] font-bold uppercase tracking-[0.25em] text-muted-foreground/60">
               {post.category} • {post.readTime}
             </span>
-            <span className="block font-heading text-4xl font-bold tracking-tight text-foreground/20 transition-all duration-700 group-hover:text-primary/30 group-hover:scale-105">
+            <span className="block font-heading text-5xl font-black tracking-tighter text-foreground/[0.04] transition-all duration-700 group-hover:text-primary/[0.08] group-hover:scale-105">
               HYVE
             </span>
           </div>
           
-          {/* Subtle background image as a watermark */}
-          <div className="absolute inset-0 z-0 opacity-[0.04] grayscale transition-all duration-700 group-hover:opacity-[0.08] group-hover:scale-110">
+          {/* Extremely subtle watermark pattern */}
+          <div className="absolute inset-0 z-0 opacity-[0.03] grayscale transition-all duration-700 group-hover:opacity-[0.05] group-hover:scale-110 pointer-events-none">
             <img 
               src={post.image} 
               alt="" 
@@ -59,6 +38,9 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
               loading="lazy"
             />
           </div>
+          
+          {/* Subtle vignette */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/5 opacity-50" />
         </div>
 
         {/* Content area */}
@@ -66,16 +48,16 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
           <h3 className="font-heading text-xl font-bold leading-[1.3] text-foreground transition-colors duration-300 group-hover:text-primary line-clamp-2">
             {post.title}
           </h3>
-          <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground line-clamp-2">
+          <p className="mt-4 text-[14px] leading-relaxed text-muted-foreground/80 line-clamp-2">
             {post.excerpt}
           </p>
 
-          <div className="mt-auto pt-8 flex items-center justify-between border-t border-border/10">
-            <time className="text-sm font-medium text-muted-foreground/70">
+          <div className="mt-auto pt-8 flex items-center justify-between">
+            <time className="text-xs font-medium text-muted-foreground/60 tracking-wide uppercase">
               {post.date}
             </time>
-            <div className="flex items-center gap-1 text-sm font-bold text-foreground transition-colors group-hover:text-primary">
-              Read <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+            <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-foreground/80 transition-all duration-300 group-hover:text-primary group-hover:gap-2">
+              Read <ArrowRight className="h-3.5 w-3.5" />
             </div>
           </div>
         </div>
