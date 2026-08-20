@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Clock, ArrowUpRight } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
+import { useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -9,6 +11,7 @@ interface BlogCardProps {
 }
 
 const BlogCard = ({ post, index }: BlogCardProps) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   // Generate consistent author initials
   const initials = post.author
     .split(" ")
@@ -27,13 +30,19 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
       >
         {/* Image */}
         <div className="relative overflow-hidden">
+          {!imageLoaded && (
+            <Skeleton className="h-52 w-full animate-pulse bg-muted/20" />
+          )}
           <img
             src={post.image}
             alt={post.title}
             loading="lazy"
+            onLoad={() => setImageLoaded(true)}
             width={768}
             height={512}
-            className="h-52 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
+            className={`h-52 w-full object-cover transition-all duration-700 ease-out group-hover:scale-[1.07] ${
+              imageLoaded ? "opacity-100 scale-100" : "opacity-0 scale-[1.02]"
+            }`}
           />
           {/* Gradient bottom shadow */}
           <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-foreground/30 to-transparent opacity-60" />

@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, User, Sparkles, Calendar } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
+import { useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 interface FeaturedPostProps {
   post: BlogPost;
 }
 
 const FeaturedPost = ({ post }: FeaturedPostProps) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <section className="container mx-auto px-4 py-16">
       <motion.div
@@ -36,12 +39,18 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
           <div className="grid md:grid-cols-[1.15fr_1fr]">
             {/* Image side with overlay tag */}
             <div className="relative overflow-hidden">
+              {!imageLoaded && (
+                <Skeleton className="h-72 w-full md:h-full animate-pulse bg-muted/20" />
+              )}
               <img
                 src={post.image}
                 alt={post.title}
                 width={1200}
                 height={800}
-                className="h-72 w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.06] md:h-full"
+                onLoad={() => setImageLoaded(true)}
+                className={`h-72 w-full object-cover transition-all duration-[900ms] ease-out group-hover:scale-[1.06] md:h-full ${
+                  imageLoaded ? "opacity-100 scale-100" : "opacity-0 scale-[1.02]"
+                }`}
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-foreground/40 via-foreground/10 to-transparent" />
 
