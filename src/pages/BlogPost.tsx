@@ -19,6 +19,7 @@ import BlogSidebar from "@/components/blog/BlogSidebar";
 import TableOfContents from "@/components/blog/TableOfContents";
 import PopularTopics from "@/components/blog/PopularTopics";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
+import teamLogoAsset from "@/assets/hyve-team-logo.jpg.asset.json";
 import { useMemo, useState } from "react";
 
 
@@ -401,8 +402,8 @@ const BlogPost = () => {
               className="mt-6 flex items-center justify-between gap-4 border-y border-border/50 py-4"
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden p-1.5">
-                  <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden">
+                  <img src={teamLogoAsset.url} alt="HYVE" className="h-full w-full object-cover" />
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-foreground leading-none">
@@ -484,8 +485,8 @@ const BlogPost = () => {
               className="mt-12 rounded-2xl border border-border/40 bg-gradient-to-br from-accent/60 to-accent/30 p-6 md:p-7"
             >
               <div className="flex items-start gap-4 md:gap-5">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-background border border-border/50 shadow-md overflow-hidden p-2">
-                  <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-background border border-border/50 shadow-md overflow-hidden">
+                  <img src={teamLogoAsset.url} alt="HYVE" className="h-full w-full object-cover" />
                 </div>
                 <div className="flex-1">
                   <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
