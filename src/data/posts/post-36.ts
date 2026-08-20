@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["freelancer rates in india", "how to price freelance projects", "freelance pricing guide", "indian freelancer rates", "what to charge as a freelancer"],
   excerpt: "Pricing is the difference between a side hustle and a serious career. Use our simple framework to set rates that clients respect.",
   category: "Finance Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "6 min read",
   image: blog36,

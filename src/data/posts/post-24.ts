@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "Do freelancers need GST in India? What about export clients? This is the complete, no-jargon 2026 guide — thresholds, LUT, invoicing, returns and the rules that save you tax.",
   category: "Finance Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "May 22, 2026",
   readTime: "10 min read",
   image: blog24,

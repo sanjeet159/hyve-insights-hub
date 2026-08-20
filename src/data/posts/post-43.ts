@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "Maharashtra is India's economic engine, and its freelance economy is no different. Whether you are a designer in Mumbai, a dev in Pune, or a marketer in Nagpur, here are the platforms that actually pay in 2026.",
   category: "Support Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "10 min read",
   image: mumbaiSkylineAsset.url,

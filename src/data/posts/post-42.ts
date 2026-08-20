@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["why startups hire freelancers", "startup hiring trends 2026", "freelancer vs employee", "teamlancing benefits for startups"],
   excerpt: "The traditional full-time hiring model is being disrupted. Here is why startups are embracing freelance teams.",
   category: "Startup Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "5 min read",
   image: blog42,

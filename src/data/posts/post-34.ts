@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["remote hiring for startups", "hiring freelance teams", "startup team building", "how to manage remote teams", "global talent acquisition"],
   excerpt: "Don't limit your growth to your local talent pool. Building a high-performance remote team requires a new approach to communication and hiring.",
   category: "Startup Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "6 min read",
   image: blog34,

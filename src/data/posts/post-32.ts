@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "The landscape of freelance work in India is shifting toward high-value, specialized projects. Here is your roadmap to finding and winning the best work in 2026.",
   category: "Finance Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "7 min read",
   image: blog32,

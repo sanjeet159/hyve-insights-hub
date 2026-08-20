@@ -18,7 +18,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "A practical, no-fluff 2026 roadmap to becoming a freelancer in India — pick the right skill, build a portfolio in 30 days, land your first 3 clients, and get paid on time with escrow.",
   category: "Finance Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "Jun 1, 2026",
   readTime: "9 min read",
   image: blog16,

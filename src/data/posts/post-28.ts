@@ -19,7 +19,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "India has one of the largest freelance workforces in the world, yet hiring still feels like a gamble for startups. The answer isn't a talent problem—it's a structure problem.",
   category: "Finance Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "July 20, 2026",
   readTime: "8 min read",
   image: blog28,

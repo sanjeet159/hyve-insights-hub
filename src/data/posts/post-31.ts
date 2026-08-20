@@ -12,7 +12,7 @@ const post: BlogPostWithContent = {
   excerpt:
     "Ever wondered what freelancing actually means? We break it down in simple Hindi and English to help you start your independent work journey.",
   category: "Support Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "5 min read",
   image: blog31,

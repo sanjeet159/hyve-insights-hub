@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["freelancing skills india", "profitable freelance skills", "in demand tech skills 2026", "what skills are in demand for freelancers", "high paying freelance skills"],
   excerpt: "The market changes fast. Here are the 5 skills that will define the Indian freelancing landscape in 2026.",
   category: "Freelancing Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "5 min read",
   image: blog37,

@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["freelance team collaboration", "freelancer teams", "scaling freelance business", "how to form a freelance team", "teamlancing"],
   excerpt: "The future of freelancing isn't solo—it's collaborative. Here is how you can team up to win larger, more profitable contracts.",
   category: "Support Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "5 min read",
   image: blog35,

@@ -10,7 +10,7 @@ const post: BlogPostWithContent = {
   keywords: ["freelancing kya hota hai", "what is freelancing in hindi", "freelancing meaning in hindi", "freelance work in india hindi guide"],
   excerpt: "Agar aap janna chahte hain ki freelancing kya hota hai, toh yeh guide aapke liye hai. Hum cover karenge freelancing ka basic concept.",
   category: "Finance Guide",
-  author: "HYVE Team",
+  author: "Sanjeet Kumar",
   date: "August 20, 2026",
   readTime: "4 min read",
   image: blog40,
