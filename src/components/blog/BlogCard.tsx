@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Clock, ArrowUpRight } from "lucide-react";
+import { Clock, ArrowRight } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
 
 interface BlogCardProps {
@@ -9,71 +9,71 @@ interface BlogCardProps {
 }
 
 const BlogCard = ({ post, index }: BlogCardProps) => {
-  // Generate consistent author initials
-  const initials = post.author
-    .split(" ")
-    .map((n) => n[0])
-    .slice(0, 2)
-    .join("");
+  // Use category to determine a light background color for the top section
+  const getBgColor = (category: string) => {
+    const colors: Record<string, string> = {
+      "Freelancing": "bg-emerald-50/50",
+      "Startups": "bg-blue-50/50",
+      "Guides": "bg-rose-50/50",
+      "Productivity": "bg-amber-50/50",
+      "Case Studies": "bg-purple-50/50",
+      "Hiring": "bg-indigo-50/50",
+      "Scaling": "bg-orange-50/50",
+      "Mumbai": "bg-sky-50/50",
+      "Maharashtra": "bg-cyan-50/50",
+    };
+    return colors[category] || "bg-slate-50/50";
+  };
+
+  const bgColor = getBgColor(post.category);
 
   return (
-    <Link to={`/blog/${post.slug}`} aria-label={`Read article: ${post.title}`}>
+    <Link to={`/blog/${post.slug}`} className="block h-full" aria-label={`Read article: ${post.title}`}>
       <motion.article
-        initial={{ opacity: 0, y: 24 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-40px" }}
-        transition={{ duration: 0.5, delay: index * 0.06, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="group blog-card relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-all duration-400 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-[var(--shadow-card-hover)]"
+        transition={{ duration: 0.5, delay: index * 0.05 }}
+        className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-border/40 bg-card shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-1"
       >
-        {/* Image */}
-        <div className="relative overflow-hidden">
-          <img
-            src={post.image}
-            alt={post.title}
-            loading="lazy"
-            width={768}
-            height={512}
-            className="h-52 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.07]"
-          />
-          {/* Gradient bottom shadow */}
-          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-foreground/30 to-transparent opacity-60" />
-
-          {/* Category pill bottom-left */}
-          <div className="absolute bottom-3 left-3">
-            <span className="inline-block rounded-full bg-background/95 backdrop-blur-md px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-primary shadow-md">
-              {post.category}
+        {/* Top visual section - minimalist with text overlay */}
+        <div className={`relative flex h-64 w-full items-center justify-center p-8 transition-colors duration-500 ${bgColor} group-hover:bg-opacity-80`}>
+          <div className="text-center">
+            <span className="mb-4 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/80">
+              {post.category} • {post.readTime}
+            </span>
+            <span className="block font-heading text-4xl font-bold tracking-tight text-foreground/20 transition-all duration-700 group-hover:text-primary/30 group-hover:scale-105">
+              HYVE
             </span>
           </div>
-
-          {/* Hover arrow */}
-          <div className="absolute top-3 right-3 flex h-9 w-9 items-center justify-center rounded-full bg-primary text-primary-foreground opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 shadow-lg shadow-primary/30">
-            <ArrowUpRight className="h-4 w-4" />
+          
+          {/* Subtle background image as a watermark if needed, or just stay minimal */}
+          <div className="absolute inset-0 z-0 opacity-[0.03] grayscale transition-all duration-700 group-hover:opacity-[0.06] group-hover:scale-110">
+            <img 
+              src={post.image} 
+              alt="" 
+              className="h-full w-full object-cover" 
+              loading="lazy"
+            />
           </div>
         </div>
 
-        {/* Body */}
-        <div className="flex flex-1 flex-col p-6">
-          <h3 className="font-heading text-lg font-bold leading-snug text-foreground line-clamp-2 transition-colors duration-200 group-hover:text-primary">
+        {/* Content area */}
+        <div className="flex flex-1 flex-col p-8">
+          <h3 className="font-heading text-xl font-bold leading-[1.3] text-foreground transition-colors duration-300 group-hover:text-primary">
             {post.title}
           </h3>
-          <p className="mt-2.5 text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+          <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground line-clamp-2">
             {post.excerpt}
           </p>
 
-          {/* Footer meta */}
-          <div className="mt-auto pt-5 flex items-center justify-between border-t border-border/50">
-            <div className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden p-1">
-                <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
-              </span>
-              <div className="flex flex-col leading-tight">
-                <span className="text-xs font-semibold text-foreground">{post.author}</span>
-                <span className="text-[11px] text-muted-foreground">{post.date}</span>
-              </div>
+          <div className="mt-auto pt-8 flex items-center justify-between">
+            <time className="text-sm font-medium text-muted-foreground/70">
+              {post.date}
+            </time>
+            <div className="flex items-center gap-1 text-sm font-bold text-foreground transition-colors group-hover:text-primary">
+              Read <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </div>
-            <span className="flex items-center gap-1 text-[11px] font-medium text-muted-foreground">
-              <Clock className="h-3 w-3" /> {post.readTime}
-            </span>
           </div>
         </div>
       </motion.article>
