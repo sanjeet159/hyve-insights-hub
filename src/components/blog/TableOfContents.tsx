@@ -97,31 +97,37 @@ const TableOfContents = ({ content }: TableOfContentsProps) => {
   };
 
   return (
-    <nav className="rounded-2xl border-t-2 border-t-primary border-x border-b border-[#E5E2DD] bg-[#F9F8F6] p-7 shadow-sm shadow-primary/5">
-      <h3 className="mb-6 font-heading text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60">
-        Contents
-      </h3>
-      <ul className="space-y-3.5">
+    <div className="rounded-2xl border border-border/50 bg-card p-5 shadow-sm">
+      <div className="mb-4 flex items-center gap-2">
+        <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary/10">
+          <List className="h-3.5 w-3.5 text-primary" />
+        </div>
+        <h3 className="font-heading text-sm font-bold text-foreground">
+          Table of Contents
+        </h3>
+      </div>
+      <nav className="space-y-1 max-h-[60vh] overflow-y-auto pr-2">
         {items.map((item) => {
           const isActive = activeId === item.id;
           return (
-            <li key={item.id} className={item.level === 3 ? "pl-4" : ""}>
-              <a
-                href={`#${item.id}`}
-                onClick={(e) => handleClick(e, item.id)}
-                className={`block text-[13px] font-medium transition-all duration-200 leading-snug ${
-                  isActive
-                    ? "text-primary font-bold"
-                    : "text-muted-foreground/70 hover:text-primary"
-                }`}
-              >
-                {item.text}
-              </a>
-            </li>
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              onClick={(e) => handleClick(e, item.id)}
+              className={`block rounded-md text-sm transition-all duration-200 ${
+                item.level === 3 ? "pl-5" : "pl-2"
+              } py-1.5 pr-2 leading-snug ${
+                isActive
+                  ? "bg-primary/10 text-primary font-semibold border-l-2 border-primary"
+                  : "text-muted-foreground hover:text-foreground hover:bg-accent/50 border-l-2 border-transparent"
+              }`}
+            >
+              {item.text}
+            </a>
           );
         })}
-      </ul>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

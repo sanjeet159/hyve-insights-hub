@@ -1,9 +1,5 @@
 export const categories = [
   "All",
-  "Freelancing Guide",
-  "Startup Guide",
-  "Support Guide",
-  "Finance Guide",
   "Freelancing",
   "Startup Hiring",
   "Team Collaboration",
