@@ -499,20 +499,19 @@ const BlogPost = () => {
 
         {/* Related articles */}
         {fallbackRelated.length > 0 && (
-          <section className="mt-16 border-t border-border/40 bg-accent/20 py-16">
+          <section className="mt-16 bg-[#F5F3EF] py-24">
             <div className="container mx-auto px-4">
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="mb-10 flex items-center gap-3"
+                className="mb-12 text-center"
               >
-                <div className="h-5 w-1 rounded-full bg-primary" />
-                <h2 className="font-heading text-2xl font-bold text-foreground">
-                  Keep Reading
+                <h2 className="font-heading text-4xl font-bold text-foreground">
+                  Keep reading
                 </h2>
               </motion.div>
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {fallbackRelated.map((p, i) => (
                   <BlogCard post={p} index={i} key={p.id} />
                 ))}
