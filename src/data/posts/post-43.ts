@@ -1,4 +1,4 @@
-import blog43Asset from "@/assets/maharashtra-blog-thumbnail.png.asset.json";
+import mumbaiSkylineAsset from "@/assets/mumbai-skyline.jpg.asset.json";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -21,7 +21,7 @@ const post: BlogPostWithContent = {
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "10 min read",
-  image: blog43Asset.url,
+  image: mumbaiSkylineAsset.url,
   imagePosition: "center",
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
