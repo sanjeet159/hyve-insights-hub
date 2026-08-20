@@ -188,7 +188,9 @@ const BlogPost = () => {
       "jobTitle": "Contributing Writer",
       "worksFor": {
         "@type": "Organization",
-        "name": "HYVE"
+        "@id": "https://hyvefreelance.com/#organization",
+        "name": "HYVE",
+        "url": "https://hyvefreelance.com"
       }
     },
     "datePublished": post.date,
