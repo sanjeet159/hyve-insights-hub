@@ -21,6 +21,7 @@ import PopularTopics from "@/components/blog/PopularTopics";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
 import { useMemo, useState } from "react";
 import { BlogThumbnail } from "@/components/blog/BlogThumbnail";
+import AISearchOverview from "@/components/blog/AISearchOverview";
 
 
 // Detect if content is HTML or plain markdown
@@ -307,284 +308,232 @@ const BlogPost = () => {
       <BlogHeader />
 
       <main>
-      {/* Main 2-column container */}
-      <div className="container mx-auto px-4 pt-24 md:pt-28">
-        {/* Breadcrumbs */}
-        <motion.nav
-          initial={{ opacity: 0, y: -8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          aria-label="Breadcrumb"
-          className="mb-6 flex items-center gap-1.5 text-sm"
-        >
-          <Link
-            to="/"
-            className="flex items-center gap-1 text-primary transition-colors hover:text-primary/80"
-          >
-            <Home className="h-3.5 w-3.5" />
-            Home
-          </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/50" />
-          <Link
-            to="/"
-            className="text-primary transition-colors hover:text-primary/80"
-          >
-            Blogs
-          </Link>
-          <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/50" />
-          <span className="text-muted-foreground line-clamp-1">
-            {post.title}
-          </span>
-        </motion.nav>
-
-        <div className="grid gap-10 lg:grid-cols-[1fr_340px]">
-          {/* Main column */}
-          <article className="min-w-0">
-            {/* Hero Image */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.99 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="relative overflow-hidden rounded-2xl shadow-md group"
-            >
-              <BlogThumbnail 
-                post={post} 
-                size="lg" 
-                className="h-[260px] w-full md:h-[400px] lg:h-[460px]" 
-              />
-            </motion.div>
-
-            {/* Meta row above title */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.15, duration: 0.4 }}
-              className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm"
-            >
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-                {post.category}
-              </span>
-              <span className="flex items-center gap-1.5 text-muted-foreground">
-                <Clock className="h-3.5 w-3.5" />
-                {post.readTime}
-              </span>
-              <span className="flex items-center gap-1.5 text-muted-foreground">
-                <Calendar className="h-3.5 w-3.5" />
-                Last updated on {post.date}
-              </span>
-            </motion.div>
-
-            {/* Title */}
-            <motion.h1
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-4 font-heading text-3xl font-extrabold leading-[1.15] text-foreground md:text-4xl lg:text-[2.5rem]"
-            >
-              {post.title}
-            </motion.h1>
-
-            {/* Subtitle / excerpt */}
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.5 }}
-              className="mt-4 text-lg font-medium text-foreground/80 leading-relaxed"
-            >
-              {post.excerpt}
-            </motion.p>
-
-            {/* Author + share row */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.4 }}
-              className="mt-6 flex items-center justify-between gap-4 border-y border-border/50 py-4"
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden p-1.5">
-                  <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-foreground leading-none">
-                    {post.author}
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-1">
-                    Contributing Writer at HYVE
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-1.5">
-                <span className="hidden sm:inline-block mr-1 text-xs font-medium text-muted-foreground">
-                  Share:
-                </span>
-                <motion.button
-                  whileHover={{ scale: 1.06 }}
-                  whileTap={{ scale: 0.94 }}
-                  onClick={handleOpenTab}
-                  className="rounded-lg border border-border/50 bg-accent/40 p-2 text-muted-foreground transition-colors duration-200 hover:bg-accent hover:text-foreground hover:border-primary/20"
-                  title="Open in new tab"
-                >
-                  <ExternalLink className="h-3.5 w-3.5" />
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.06 }}
-                  whileTap={{ scale: 0.94 }}
-                  onClick={handleShare}
-                  className="rounded-lg border border-border/50 bg-accent/40 p-2 text-muted-foreground transition-colors duration-200 hover:bg-accent hover:text-foreground hover:border-primary/20"
-                  title="Share"
-                >
-                  <Share2 className="h-3.5 w-3.5" />
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.06 }}
-                  whileTap={{ scale: 0.94 }}
-                  onClick={handleCopyLink}
-                  className="rounded-lg border border-border/50 bg-accent/40 p-2 text-muted-foreground transition-colors duration-200 hover:bg-accent hover:text-foreground hover:border-primary/20"
-                  title={copied ? "Copied!" : "Copy link"}
-                >
-                  {copied ? (
-                    <span className="text-[10px] font-semibold text-primary px-0.5">
-                      ✓
-                    </span>
-                  ) : (
-                    <LinkIcon className="h-3.5 w-3.5" />
-                  )}
-                </motion.button>
-              </div>
-            </motion.div>
-
-            {/* Mobile-only TOC */}
-            <div className="mt-8 lg:hidden">
-              <TableOfContents content={post.content} />
-            </div>
-
-
-            {/* Article body */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-              className="mt-10"
-            >
-              {htmlContent ? (
-                <div dangerouslySetInnerHTML={{ __html: post.content }} />
-              ) : (
-                renderMarkdown(post.content)
-              )}
-            </motion.div>
-
-
-            {/* Author card */}
-            <motion.div
-              initial={{ opacity: 0, y: 14 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="mt-12 rounded-2xl border border-border/40 bg-gradient-to-br from-accent/60 to-accent/30 p-6 md:p-7"
-            >
-              <div className="flex items-start gap-4 md:gap-5">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-background border border-border/50 shadow-md overflow-hidden p-2">
-                  <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
-                    Written by
-                  </p>
-                  <p className="font-heading text-lg font-bold text-foreground mt-1">
-                    {post.author}
-                  </p>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                    Contributing writer at HYVE, covering freelancing trends, team
-                    collaboration, and the future of work in India.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* FAQ section — also emits FAQPage JSON-LD for Google rich results */}
-            {post.faqs && post.faqs.length > 0 && (
-              <motion.section
-                initial={{ opacity: 0, y: 14 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="mt-12 scroll-mt-24"
-                id="faq"
-                aria-labelledby="faq-heading"
+        <div className="pt-20">
+          {/* Typographic Hero Section - Centered with beige background */}
+          <section className="bg-[#F5F3EF] py-16 md:py-24">
+            <div className="container mx-auto px-4 text-center max-w-4xl">
+              {/* Breadcrumbs */}
+              <motion.nav
+                initial={{ opacity: 0, y: -8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                aria-label="Breadcrumb"
+                className="mb-8 flex items-center justify-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-primary/70"
               >
-                <div className="mb-6 flex items-center gap-3">
-                  <div className="h-5 w-1 rounded-full bg-primary" />
-                  <h2
-                    id="faq-heading"
-                    className="font-heading text-2xl font-bold text-foreground"
-                  >
-                    Common Questions about {post.title}
-                  </h2>
-                </div>
-                <div className="divide-y divide-border/50 rounded-2xl border border-border/50 bg-card/40 overflow-hidden">
-                  {post.faqs.map((faq, i) => (
-                    <details
-                      key={i}
-                      className="group p-5 md:p-6 [&_summary::-webkit-details-marker]:hidden"
-                    >
-                      <summary className="flex cursor-pointer items-start justify-between gap-4 list-none">
-                        <h3 className="font-semibold text-foreground text-base md:text-[17px] leading-snug">
-                          {faq.question}
-                        </h3>
-                        <ChevronRight className="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-open:rotate-90" />
-                      </summary>
-                      <p className="mt-3 text-foreground/75 leading-relaxed text-[15px]">
-                        {faq.answer}
-                      </p>
-                    </details>
-                  ))}
-                </div>
-              </motion.section>
-            )}
-          </article>
+                <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+                <ChevronRight className="h-3 w-3 opacity-50" />
+                <Link to="/" className="hover:text-primary transition-colors">Blogs</Link>
+                <ChevronRight className="h-3 w-3 opacity-50" />
+                <span className="text-muted-foreground/60">{post.category}</span>
+              </motion.nav>
 
-          {/* Sticky sidebar */}
-          <div className="hidden lg:block">
-            <div className="sticky top-24 space-y-6">
-              <TableOfContents content={post.content} />
-              <BlogSidebar currentPostId={post.id} />
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4 }}
+                className="mb-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60"
+              >
+                <span>{post.category}</span>
+                <span className="h-1 w-1 rounded-full bg-border" />
+                <span>{post.readTime}</span>
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                className="font-heading text-4xl font-extrabold leading-[1.1] text-foreground md:text-5xl lg:text-[3.5rem]"
+              >
+                {post.title}
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                className="mt-6 text-xl font-medium text-foreground/70 max-w-2xl mx-auto leading-relaxed"
+              >
+                {post.excerpt}
+              </motion.p>
+
+              {/* Author Info */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                className="mt-10 flex flex-col items-center justify-center gap-4"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white border border-border/50 shadow-sm overflow-hidden p-2">
+                  <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
+                </div>
+                <div className="text-center">
+                  <p className="text-sm font-bold text-foreground">{post.author}</p>
+                  <div className="mt-1 flex items-center justify-center gap-2 text-[11px] font-medium text-muted-foreground">
+                    <span>Founder, HYVE</span>
+                    <span className="h-1 w-1 rounded-full bg-border" />
+                    <span>{post.date}</span>
+                  </div>
+                </div>
+              </motion.div>
             </div>
-          </div>
+          </section>
 
-          {/* Mobile sidebar (below article) */}
-          <div className="lg:hidden">
-            <BlogSidebar currentPostId={post.id} />
+          {/* Article content area */}
+          <div className="container mx-auto px-4 py-16 max-w-7xl">
+            <div className="grid gap-12 lg:grid-cols-[1fr_340px]">
+              {/* Main column */}
+              <div className="min-w-0">
+                <article>
+                  {/* AI Overview Box */}
+                  <AISearchOverview 
+                    summary={post.excerpt}
+                    takeaways={[
+                      "The Core Challenges in B2B Outbound",
+                      "Strategic Overview of Lusha API in Clay",
+                      "Comparative Performance Analysis",
+                      "Tactical Action Plan: Building the Pipeline"
+                    ]}
+                  />
+
+                  {/* Body Content */}
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.4, duration: 0.5 }}
+                    className="mt-2"
+                  >
+                    {htmlContent ? (
+                      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+                    ) : (
+                      renderMarkdown(post.content)
+                    )}
+                  </motion.div>
+
+                  {/* Share buttons row */}
+                  <div className="mt-12 flex items-center justify-between border-y border-border/50 py-6">
+                    <div className="flex items-center gap-4">
+                      <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground/60">Share</span>
+                      <div className="flex gap-2">
+                        <button onClick={handleShare} className="h-9 w-9 flex items-center justify-center rounded-lg border border-border/50 bg-accent/20 text-muted-foreground hover:bg-primary hover:text-white transition-all"><Share2 className="h-4 w-4" /></button>
+                        <button onClick={handleCopyLink} className="h-9 w-9 flex items-center justify-center rounded-lg border border-border/50 bg-accent/20 text-muted-foreground hover:bg-primary hover:text-white transition-all"><LinkIcon className="h-4 w-4" /></button>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                {/* Author card */}
+                <motion.div
+                  initial={{ opacity: 0, y: 14 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="mt-12 rounded-2xl border border-border/40 bg-gradient-to-br from-accent/60 to-accent/30 p-6 md:p-7"
+                >
+                  <div className="flex items-start gap-4 md:gap-5">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-background border border-border/50 shadow-md overflow-hidden p-2">
+                      <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
+                        Written by
+                      </p>
+                      <p className="font-heading text-lg font-bold text-foreground mt-1">
+                        {post.author}
+                      </p>
+                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                        Contributing writer at HYVE, covering freelancing trends, team
+                        collaboration, and the future of work in India.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* FAQ section */}
+                {post.faqs && post.faqs.length > 0 && (
+                  <motion.section
+                    initial={{ opacity: 0, y: 14 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="mt-12 scroll-mt-24"
+                    id="faq"
+                    aria-labelledby="faq-heading"
+                  >
+                    <div className="mb-6 flex items-center gap-3">
+                      <div className="h-5 w-1 rounded-full bg-primary" />
+                      <h2
+                        id="faq-heading"
+                        className="font-heading text-2xl font-bold text-foreground"
+                      >
+                        Common Questions about {post.title}
+                      </h2>
+                    </div>
+                    <div className="divide-y divide-border/50 rounded-2xl border border-border/50 bg-card/40 overflow-hidden">
+                      {post.faqs.map((faq, i) => (
+                        <details
+                          key={i}
+                          className="group p-5 md:p-6 [&_summary::-webkit-details-marker]:hidden"
+                        >
+                          <summary className="flex cursor-pointer items-start justify-between gap-4 list-none">
+                            <h3 className="font-semibold text-foreground text-base md:text-[17px] leading-snug">
+                              {faq.question}
+                            </h3>
+                            <ChevronRight className="h-5 w-5 shrink-0 text-primary transition-transform duration-300 group-open:rotate-90" />
+                          </summary>
+                          <p className="mt-3 text-foreground/75 leading-relaxed text-[15px]">
+                            {faq.answer}
+                          </p>
+                        </details>
+                      ))}
+                    </div>
+                  </motion.section>
+                )}
+              </div>
+
+              {/* Sidebar */}
+              <aside className="space-y-8">
+                {/* Sticky sidebar */}
+                <div className="hidden lg:block">
+                  <div className="sticky top-24 space-y-8">
+                    <TableOfContents content={post.content} />
+                    <BlogSidebar currentPostId={post.id} />
+                  </div>
+                </div>
+
+                {/* Mobile sidebar (below article) */}
+                <div className="lg:hidden">
+                  <BlogSidebar currentPostId={post.id} />
+                </div>
+              </aside>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Related articles */}
-      {fallbackRelated.length > 0 && (
-        <section className="mt-16 border-t border-border/40 bg-accent/20 py-16">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mb-10 flex items-center gap-3"
-            >
-              <div className="h-5 w-1 rounded-full bg-primary" />
-              <h2 className="font-heading text-2xl font-bold text-foreground">
-                Keep Reading
-              </h2>
-            </motion.div>
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {fallbackRelated.map((p, i) => (
-                <BlogCard post={p} index={i} key={p.id} />
-              ))}
+        {/* Related articles */}
+        {fallbackRelated.length > 0 && (
+          <section className="mt-16 border-t border-border/40 bg-accent/20 py-16">
+            <div className="container mx-auto px-4">
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="mb-10 flex items-center gap-3"
+              >
+                <div className="h-5 w-1 rounded-full bg-primary" />
+                <h2 className="font-heading text-2xl font-bold text-foreground">
+                  Keep Reading
+                </h2>
+              </motion.div>
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                {fallbackRelated.map((p, i) => (
+                  <BlogCard post={p} index={i} key={p.id} />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        )}
       </main>
-      
+
       <div className="mt-8">
         <PopularTopics />
       </div>
@@ -594,5 +543,6 @@ const BlogPost = () => {
     </div>
   );
 };
+
 
 export default BlogPost;
