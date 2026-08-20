@@ -24,7 +24,7 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
           <BlogThumbnail post={post} className="h-60 w-full" />
           
           <div className="absolute top-6 left-6 z-10">
-            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground/70">
+            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-muted-foreground/60">
               {post.category} • {post.readTime}
             </span>
           </div>
