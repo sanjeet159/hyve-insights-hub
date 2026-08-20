@@ -312,26 +312,11 @@ const BlogPost = () => {
           {/* Typographic Hero Section - Centered with beige background */}
           <section className="bg-[#F5F3EF] py-16 md:py-24">
             <div className="container mx-auto px-4 text-center max-w-4xl">
-              {/* Breadcrumbs */}
-              <motion.nav
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4 }}
-                aria-label="Breadcrumb"
-                className="mb-8 flex items-center justify-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-primary/70"
-              >
-                <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-                <ChevronRight className="h-3 w-3 opacity-50" />
-                <Link to="/" className="hover:text-primary transition-colors">Blogs</Link>
-                <ChevronRight className="h-3 w-3 opacity-50" />
-                <span className="text-muted-foreground/60">{post.category}</span>
-              </motion.nav>
-
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4 }}
-                className="mb-6 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60"
+                className="mb-8 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground/60"
               >
                 <span>{post.category}</span>
                 <span className="h-1 w-1 rounded-full bg-border" />
@@ -342,7 +327,7 @@ const BlogPost = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="font-heading text-4xl font-extrabold leading-[1.1] text-foreground md:text-5xl lg:text-[3.5rem]"
+                className="font-heading text-4xl font-extrabold leading-[1.15] text-foreground md:text-5xl lg:text-[4.2rem]"
               >
                 {post.title}
               </motion.h1>
@@ -351,7 +336,7 @@ const BlogPost = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="mt-6 text-xl font-medium text-foreground/70 max-w-2xl mx-auto leading-relaxed"
+                className="mt-8 text-xl font-medium text-foreground/70 max-w-2xl mx-auto leading-relaxed"
               >
                 {post.excerpt}
               </motion.p>
@@ -361,16 +346,16 @@ const BlogPost = () => {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                className="mt-10 flex flex-col items-center justify-center gap-4"
+                className="mt-12 flex flex-col items-center justify-center gap-4"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white border border-border/50 shadow-sm overflow-hidden p-2">
-                  <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white border border-border/50 shadow-sm overflow-hidden p-0.5">
+                  <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain rounded-full" />
                 </div>
                 <div className="text-center">
-                  <p className="text-sm font-bold text-foreground">{post.author}</p>
-                  <div className="mt-1 flex items-center justify-center gap-2 text-[11px] font-medium text-muted-foreground">
-                    <span>Founder, HYVE</span>
-                    <span className="h-1 w-1 rounded-full bg-border" />
+                  <p className="text-base font-bold text-foreground">Suresh</p>
+                  <div className="mt-1.5 flex items-center justify-center gap-2 text-[13px] font-medium text-muted-foreground/60">
+                    <span>Founder, Typpout</span>
+                    <span className="h-1 w-1 rounded-full bg-border/80" />
                     <span>{post.date}</span>
                   </div>
                 </div>
