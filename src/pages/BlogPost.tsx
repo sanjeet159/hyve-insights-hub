@@ -20,6 +20,7 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import PopularTopics from "@/components/blog/PopularTopics";
 import { allPosts, blogPosts, getPostBySlug } from "@/data/posts";
 import { useMemo, useState } from "react";
+import { BlogThumbnail } from "@/components/blog/BlogThumbnail";
 
 
 // Detect if content is HTML or plain markdown
@@ -344,14 +345,12 @@ const BlogPost = () => {
               initial={{ opacity: 0, scale: 0.99 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="relative overflow-hidden rounded-2xl shadow-md"
+              className="relative overflow-hidden rounded-2xl shadow-md group"
             >
-              <img
-                src={post.image}
-                alt={post.title}
-                className={`h-[260px] w-full object-cover md:h-[400px] lg:h-[460px] object-${post.imagePosition || "center"}`}
-                width={1200}
-                height={640}
+              <BlogThumbnail 
+                post={post} 
+                size="lg" 
+                className="h-[260px] w-full md:h-[400px] lg:h-[460px]" 
               />
             </motion.div>
 
