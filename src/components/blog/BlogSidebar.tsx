@@ -67,21 +67,21 @@ const BlogSidebar = ({ currentPostId }: BlogSidebarProps) => {
       >
         <div className="relative">
           <div className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-white/70">
-            Get TYPPOUT
+            HYVE FOR TEAMS
           </div>
           <h3 className="font-heading text-xl font-bold leading-tight mb-3">
-            Turn social conversations into booked meetings.
+            Build and manage your freelance teams at scale.
           </h3>
           <p className="text-xs text-white/60 leading-relaxed mb-6">
-            Starts 7-day free trial. No credit card required.
+            Get started with India's first team-based freelancing platform.
           </p>
           <a
             href="https://hyvefreelance.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#8b5cf6] px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:bg-[#7c3aed]"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#F1AB13] px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-300 hover:bg-[#d99a11]"
           >
-            Get started — it's free
+            Hire a Team
           </a>
         </div>
       </motion.div>
