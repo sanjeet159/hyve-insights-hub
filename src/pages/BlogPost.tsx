@@ -259,7 +259,7 @@ const BlogPost = () => {
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="HYVE Blog" />
         <meta property="og:title" content={post.metaTitle} />
-        <meta property="og:description" content={post.metaDescription} />
+        <meta property="og:description" content={post.excerpt || post.metaDescription} />
         <meta property="og:image" content={post.image} />
         <meta property="og:url" content={postUrl} />
         <meta property="og:locale" content="en_IN" />
@@ -273,7 +273,7 @@ const BlogPost = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@HYVEfreelance" />
         <meta name="twitter:title" content={post.metaTitle} />
-        <meta name="twitter:description" content={post.metaDescription} />
+        <meta name="twitter:description" content={post.excerpt || post.metaDescription} />
         <meta name="twitter:image" content={post.image} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
