@@ -20,7 +20,7 @@ const post: BlogPostWithContent = {
   author: "HYVE Team",
   date: "August 20, 2026",
   readTime: "8 min read",
-  image: maharashtra_blog_thumbnail,
+  image: maharashtra_blog_thumbnail.url,
   imagePosition: "center",
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">
