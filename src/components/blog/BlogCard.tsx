@@ -13,14 +13,17 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
   const getBgColor = (category: string) => {
     const colors: Record<string, string> = {
       "Freelancing": "bg-emerald-50/50",
-      "Startups": "bg-blue-50/50",
-      "Guides": "bg-rose-50/50",
-      "Productivity": "bg-amber-50/50",
-      "Case Studies": "bg-purple-50/50",
-      "Hiring": "bg-indigo-50/50",
-      "Scaling": "bg-orange-50/50",
-      "Mumbai": "bg-sky-50/50",
-      "Maharashtra": "bg-cyan-50/50",
+      "Startup Hiring": "bg-blue-50/50",
+      "Team Collaboration": "bg-purple-50/50",
+      "Escrow & Payments": "bg-amber-50/50",
+      "Remote Work": "bg-indigo-50/50",
+      "Productivity": "bg-rose-50/50",
+      "For Clients": "bg-orange-50/50",
+      "Platform Comparisons": "bg-sky-50/50",
+      "Education": "bg-cyan-50/50",
+      "Freelancing Tips": "bg-teal-50/50",
+      "Career Growth": "bg-violet-50/50",
+      "Freelancing Guide": "bg-slate-50/50",
     };
     return colors[category] || "bg-slate-50/50";
   };
@@ -38,7 +41,7 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
       >
         {/* Top visual section - minimalist with text overlay */}
         <div className={`relative flex h-64 w-full items-center justify-center p-8 transition-colors duration-500 ${bgColor} group-hover:bg-opacity-80`}>
-          <div className="text-center">
+          <div className="text-center relative z-10">
             <span className="mb-4 block text-[10px] font-bold uppercase tracking-[0.2em] text-muted-foreground/80">
               {post.category} • {post.readTime}
             </span>
@@ -47,8 +50,8 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
             </span>
           </div>
           
-          {/* Subtle background image as a watermark if needed, or just stay minimal */}
-          <div className="absolute inset-0 z-0 opacity-[0.03] grayscale transition-all duration-700 group-hover:opacity-[0.06] group-hover:scale-110">
+          {/* Subtle background image as a watermark */}
+          <div className="absolute inset-0 z-0 opacity-[0.04] grayscale transition-all duration-700 group-hover:opacity-[0.08] group-hover:scale-110">
             <img 
               src={post.image} 
               alt="" 
@@ -59,15 +62,15 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
         </div>
 
         {/* Content area */}
-        <div className="flex flex-1 flex-col p-8">
-          <h3 className="font-heading text-xl font-bold leading-[1.3] text-foreground transition-colors duration-300 group-hover:text-primary">
+        <div className="flex flex-1 flex-col p-8 bg-card">
+          <h3 className="font-heading text-xl font-bold leading-[1.3] text-foreground transition-colors duration-300 group-hover:text-primary line-clamp-2">
             {post.title}
           </h3>
           <p className="mt-3 text-[15px] leading-relaxed text-muted-foreground line-clamp-2">
             {post.excerpt}
           </p>
 
-          <div className="mt-auto pt-8 flex items-center justify-between">
+          <div className="mt-auto pt-8 flex items-center justify-between border-t border-border/10">
             <time className="text-sm font-medium text-muted-foreground/70">
               {post.date}
             </time>
