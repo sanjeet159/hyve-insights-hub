@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Clock, ArrowUpRight } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
-import teamLogoAsset from "@/assets/hyve-yellow-flaticon.jpg.asset.json";
 
 interface BlogCardProps {
   post: BlogPost;
@@ -64,8 +63,8 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
           {/* Footer meta */}
           <div className="mt-auto pt-5 flex items-center justify-between border-t border-border/50">
             <div className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden">
-                <img src={teamLogoAsset.url} alt="HYVE" className="h-full w-full object-cover" />
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden p-1">
+                <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
               </span>
               <div className="flex flex-col leading-tight">
                 <span className="text-xs font-semibold text-foreground">{post.author}</span>

@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Clock, Sparkles, Calendar } from "lucide-react";
+import { ArrowRight, Clock, User, Sparkles, Calendar } from "lucide-react";
 import type { BlogPost } from "@/data/blogData";
-import teamLogoAsset from "@/assets/hyve-yellow-flaticon.jpg.asset.json";
 
 interface FeaturedPostProps {
   post: BlogPost;
@@ -77,8 +76,8 @@ const FeaturedPost = ({ post }: FeaturedPostProps) => {
               {/* Meta strip */}
               <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground border-t border-border/50 pt-5">
                 <span className="flex items-center gap-1.5 font-medium text-foreground">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden">
-                    <img src={teamLogoAsset.url} alt="HYVE" className="h-full w-full object-cover" />
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-background border border-border/50 shadow-sm overflow-hidden p-1">
+                    <img src="/favicon.ico" alt="HYVE" className="h-full w-full object-contain" />
                   </span>
                   {post.author}
                 </span>
