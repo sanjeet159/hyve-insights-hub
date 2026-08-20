@@ -5,15 +5,15 @@ const post: BlogPostWithContent = {
   id: "24",
   slug: "gst-for-freelancers-india-complete-guide-2026",
   title: "GST for Freelancers in India: The Complete 2026 Guide",
-  metaTitle: "GST for Freelancers in India 2026: Registration, Rates & Filing | HYVE",
+  metaTitle: "GST for Indian Freelancers 2026: The Ultimate Compliance Guide",
   metaDescription:
-    "Complete 2026 guide to GST for Indian freelancers — when to register, rates, LUT for exports, invoicing, returns, and the tax rules that actually save you money.",
+    "Stay compliant with GST in 2026. A comprehensive guide for Indian freelancers on registration thresholds, LUT for exports, and tax-saving strategies.",
   keywords: [
-    "gst for freelancers",
-    "gst for freelancers in india",
-    "freelancer gst registration",
-    "gst on freelance income",
-    "freelancer tax india 2026",
+    "gst compliance for indian freelancers 2026",
+    "how to file gst for freelance income india",
+    "gst export services india guide",
+    "tax registration for freelancers india",
+    "lut for freelance exports india",
   ],
   excerpt:
     "Do freelancers need GST in India? What about export clients? This is the complete, no-jargon 2026 guide — thresholds, LUT, invoicing, returns and the rules that save you tax.",

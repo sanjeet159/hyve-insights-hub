@@ -5,15 +5,15 @@ const post: BlogPostWithContent = {
   id: "26",
   slug: "best-freelancing-platform-in-india-2026",
   title: "Best Freelancing Platform in India 2026 (Honest Ranked List)",
-  metaTitle: "Best Freelancing Platform in India 2026 | Honest Guide | HYVE",
+  metaTitle: "10 Best Freelancing Platforms in India 2026 (Ranked by Payouts)",
   metaDescription:
-    "The honest 2026 ranking of the best freelancing platforms in India — fees, payout speed, INR + GST support, client quality, and which one actually wins for your skill.",
+    "Compare the top 10 freelancing platforms in India for 2026. Detailed analysis of fees, INR support, payment protection, and client quality for Indian pros.",
   keywords: [
-    "best freelancing platform in india",
-    "best freelancing platforms india 2026",
-    "top freelance sites india",
-    "freelance websites india",
-    "hire freelancers india",
+    "top 10 freelancing platforms india 2026",
+    "best sites to hire indian freelancers",
+    "freelance payment methods india",
+    "highest paying freelance sites india",
+    "upwork vs fiverr vs hyve india",
   ],
   excerpt:
     "Every 'top freelancing platforms in India' list online is a copy-paste of the same global names. This one isn't. Here's the honest 2026 ranking — fees, payout speed, INR support, and who actually wins for Indian freelancers and startups.",
