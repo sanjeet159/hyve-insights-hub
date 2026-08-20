@@ -9,13 +9,18 @@ const PopularTopics = () => {
   const [loading, setLoading] = useState(true);
 
   const fetchCounts = async () => {
+    if (!supabase) {
+      setLoading(false);
+      return;
+    }
+
     const { data, error } = await supabase
       .from("topic_clicks")
       .select("topic");
 
     if (!error && data) {
       const tally: Record<string, number> = {};
-      data.forEach(({ topic }) => {
+      data.forEach(({ topic }: { topic: string }) => {
         tally[topic] = (tally[topic] || 0) + 1;
       });
       setCounts(tally);
@@ -26,13 +31,15 @@ const PopularTopics = () => {
   useEffect(() => {
     fetchCounts();
 
+    if (!supabase) return;
+
     // Live updates — when anyone clicks, all users see it update
     const channel = supabase
       .channel("topic_clicks_changes")
       .on(
         "postgres_changes",
         { event: "INSERT", schema: "public", table: "topic_clicks" },
-        (payload) => {
+        (payload: any) => {
           const topic = payload.new.topic as string;
           setCounts((prev) => ({
             ...prev,
@@ -49,14 +56,13 @@ const PopularTopics = () => {
 
   const handleClick = async (topic: string) => {
     // Each click = one row in database, no localStorage
+    if (!supabase) return;
     await supabase.from("topic_clicks").insert({ topic });
   };
 
   const sorted = [...popularTopics].sort(
     (a, b) => (counts[b] || 0) - (counts[a] || 0)
   );
-
-  const maxCount = Math.max(...Object.values(counts), 0);
 
   return (
     <section className="relative overflow-hidden bg-secondary/40 py-20">

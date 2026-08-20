@@ -20,6 +20,12 @@ const Footer = () => {
     setLoading(true);
     setError("");
 
+    if (!supabase) {
+      setError("Subscription service unavailable.");
+      setLoading(false);
+      return;
+    }
+
     const { error: supabaseError } = await supabase
       .from("newsletter_subscribers")
       .insert({ email: email.toLowerCase().trim() });

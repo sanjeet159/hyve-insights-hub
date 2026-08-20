@@ -23,7 +23,7 @@ const BlogCard = ({ post, index }: BlogCardProps) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-40px" }}
         transition={{ duration: 0.5, delay: index * 0.06, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-all duration-400 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-[var(--shadow-card-hover)]"
+        className="group blog-card relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-all duration-400 hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-[var(--shadow-card-hover)]"
       >
         {/* Image */}
         <div className="relative overflow-hidden">

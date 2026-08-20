@@ -44,8 +44,8 @@ const BlogHero = ({ activeCategory, onCategoryChange, searchQuery, onSearchChang
 
           {/* Heading */}
           <h1 className="font-heading text-5xl font-extrabold tracking-tight text-foreground md:text-7xl lg:text-8xl leading-[0.95]">
-            Insights for the<br />
-            Future of{" "}
+            Building the Future<br />
+            of{" "}
             <span className="relative inline-block">
               <span className="text-primary">Freelancing</span>
               <motion.svg
