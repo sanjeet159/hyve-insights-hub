@@ -10,6 +10,7 @@ const post: BlogPostWithContent = {
   metaDescription:
     "How to hire freelancers in India in 2026: where to find vetted talent, what to pay in rupees, how to vet in 30 minutes, and how escrow protects your budget.",
   keywords: [
+    "hire freelancers in india 2026",
     "hire freelancers india",
     "hire freelancers in india",
     "how to hire freelancers in india",

@@ -9,7 +9,9 @@ const post: BlogPostWithContent = {
     "How to Hire Top Freelancers in India (Vetting Guide) | HYVE",
   metaDescription:
     "How to hire top freelancers in India: the filters, test-project and vetting framework founders use to spot quality talent fast and keep the best ones long term.",
-  keywords: ["hire freelancers india", "find best freelancers india", "how to hire talent india", "freelance hiring guide founders", "quality freelance hiring"],
+  keywords: [
+    "hire top freelancers",
+    "hire top freelancers in india","hire freelancers india", "find best freelancers india", "how to hire talent india", "freelance hiring guide founders", "quality freelance hiring"],
   excerpt: "Hiring the right talent is hard. Learn the proven framework to find and retain top-tier Indian freelancers.",
   category: "Startup Hiring",
   author: "HYVE Team",

@@ -9,7 +9,8 @@ const post: BlogPostWithContent = {
     "Why Startups Hire Freelancers in 2026 | Hiring Trends | HYVE",
   metaDescription:
     "Why Indian startups are hiring freelancers and freelance teams instead of full-time staff in 2026 — cost, speed, and how teamlancing changes the hiring math.",
-  keywords: ["why startups hire freelancers", "startup hiring trends 2026", "freelancer vs employee", "teamlancing benefits for startups"],
+  keywords: [
+    "startups hiring freelancers 2026","why startups hire freelancers", "startup hiring trends 2026", "freelancer vs employee", "teamlancing benefits for startups"],
   excerpt: "The traditional full-time hiring model is being disrupted. Here is why startups are embracing freelance teams.",
   category: "For Clients",
   author: "HYVE Team",

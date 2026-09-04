@@ -10,6 +10,8 @@ const post: BlogPostWithContent = {
   metaDescription:
     "Real freelance proposal examples and the writing habits behind them — how to open, scope, price and close so briefs turn into long-term projects on HYVE.",
   keywords: [
+    "freelance proposal examples",
+    "freelance proposal sample",
     "how to write a winning freelance proposal",
     "freelancing India",
     "HYVE freelance",
