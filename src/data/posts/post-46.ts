@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "how-to-build-a-personal-brand-as-a-freelancer",
   title: "How to Build a Personal Brand as a Freelancer",
   metaTitle: "How to Build a Personal Brand as a Freelancer | HYVE Blog",
-  metaDescription: "Step-by-step guide to building a professional brand that attracts high-ticket clients on platforms like HYVE.",
+  metaDescription:
+    "Step-by-step guide to building a professional brand that attracts high-ticket clients on platforms like HYVE. HYVE's 2026 guide to how to Build a Personal.",
   keywords: [
     "how to build a personal brand as a freelancer",
     "freelancing India",

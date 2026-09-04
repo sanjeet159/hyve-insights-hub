@@ -5,9 +5,10 @@ const post: BlogPostWithContent = {
   id: "13",
   slug: "how-much-does-it-cost-to-build-an-mvp-in-india-2026",
   title: "How Much Does It Cost to Build an MVP in India in 2026? (Honest Breakdown)",
-  metaTitle: "MVP Cost in India 2026 — Honest Breakdown (₹1.5L–₹60L) | HYVE",
+  metaTitle:
+    "MVP Cost in India 2026 — Honest Breakdown (₹1.5L–₹60L | HYVE",
   metaDescription:
-    "Real, India-specific MVP cost breakdown for 2026 — rupee ranges, hidden costs, and why most startup MVPs end up 30–50% over budget. Plus how to keep yours on track.",
+    "Real, India-specific MVP cost breakdown for 2026 — rupee ranges, hidden costs, and why most startup MVPs end up 30–50% over budget. Plus how to keep yours on.",
   keywords: [
     "mvp cost in india",
     "mvp development cost india 2026",

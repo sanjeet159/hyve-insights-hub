@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "45",
   slug: "top-10-high-paying-freelance-skills-in-india-for-2026",
   title: "Top 10 High-Paying Freelance Skills in India for 2026",
-  metaTitle: "Top 10 High-Paying Freelance Skills in India for 2026 | HYVE Blog",
+  metaTitle:
+    "Top 10 High-Paying Freelance Skills in India for 2026 | HYVE",
   metaDescription: "Discover the most lucrative freelance skills in the Indian market, from AI engineering to specialized UI/UX design.",
   keywords: [
     "top 10 high-paying freelance skills in india for 2026",

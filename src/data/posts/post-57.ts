@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "how-to-transition-from-full-time-to-freelancing",
   title: "How to Transition from Full-time to Freelancing",
   metaTitle: "How to Transition from Full-time to Freelancing | HYVE Blog",
-  metaDescription: "A practical roadmap for making the switch to independent work without risking your financial stability.",
+  metaDescription:
+    "A practical roadmap for making the switch to independent work without risking your financial stability. HYVE's 2026 guide to how to Transition from Full-time.",
   keywords: [
     "how to transition from full-time to freelancing",
     "freelancing India",

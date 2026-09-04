@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "tax-savings-for-freelancers-tips-and-tricks",
   title: "Tax Savings for Freelancers: Tips and Tricks",
   metaTitle: "Tax Savings for Freelancers: Tips and Tricks | HYVE Blog",
-  metaDescription: "Legitimate ways to reduce your tax liability as an independent professional in India.",
+  metaDescription:
+    "Legitimate ways to reduce your tax liability as an independent professional in India. HYVE's 2026 guide to tax Savings for Freelancers, for Indian.",
   keywords: [
     "tax savings for freelancers: tips and tricks",
     "freelancing India",

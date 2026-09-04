@@ -5,8 +5,10 @@ const post: BlogPostWithContent = {
   id: "70",
   slug: "digital-nomadism-in-india-best-places-to-work-from",
   title: "Digital Nomadism in India: Best Places to Work From",
-  metaTitle: "Digital Nomadism in India: Best Places to Work From | HYVE Blog",
-  metaDescription: "A guide to the best coworking spots and cities for freelancers who love to travel.",
+  metaTitle:
+    "Digital Nomadism in India: Best Places to Work From | HYVE",
+  metaDescription:
+    "A guide to the best coworking spots and cities for freelancers who love to travel. HYVE's 2026 guide to digital Nomadism in India, for Indian freelancers and.",
   keywords: [
     "digital nomadism in india: best places to work from",
     "freelancing India",

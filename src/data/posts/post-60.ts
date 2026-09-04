@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "collaboration-tools-for-freelance-teams",
   title: "Collaboration Tools for Freelance Teams",
   metaTitle: "Collaboration Tools for Freelance Teams | HYVE Blog",
-  metaDescription: "A review of the best tools for communication, project management, and file sharing for remote teams.",
+  metaDescription:
+    "A review of the best tools for communication, project management, and file sharing for remote teams. HYVE's 2026 guide to collaboration Tools for Freelance.",
   keywords: [
     "collaboration tools for freelance teams",
     "freelancing India",

@@ -5,8 +5,10 @@ const post: BlogPostWithContent = {
   id: "67",
   slug: "scaling-your-freelance-business-from-solo-to-team",
   title: "Scaling Your Freelance Business: From Solo to Team",
-  metaTitle: "Scaling Your Freelance Business: From Solo to Team | HYVE Blog",
-  metaDescription: "When and how to start building your own freelance pod to take on bigger projects.",
+  metaTitle:
+    "Scaling Your Freelance Business: From Solo to Team | HYVE",
+  metaDescription:
+    "When and how to start building your own freelance pod to take on bigger projects. HYVE's 2026 guide to scaling Your Freelance Business, for Indian.",
   keywords: [
     "scaling your freelance business: from solo to team",
     "freelancing India",

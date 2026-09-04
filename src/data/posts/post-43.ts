@@ -7,7 +7,7 @@ const post: BlogPostWithContent = {
   title: "Best Freelancing Platform in Maharashtra 2026 (State-Wide Guide)",
   metaTitle: "Best Freelancing Platform in Maharashtra 2026: Top 5 Picks",
   metaDescription:
-    "Looking for the best freelancing platform in Maharashtra? From Mumbai to Nagpur, here is the honest guide to where Maharashtra's 5M+ freelancers are winning in 2026.",
+    "Looking for the best freelancing platform in Maharashtra? From Mumbai to Nagpur, here is the honest guide to where Maharashtra's 5M+ freelancers are winning.",
   keywords: [
     "best freelancing platform in maharashtra",
     "best freelancing platform in MH 2026",

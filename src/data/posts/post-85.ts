@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "the-role-of-soft-skills-in-team-collaboration",
   title: "The Role of Soft Skills in Team Collaboration",
   metaTitle: "The Role of Soft Skills in Team Collaboration | HYVE Blog",
-  metaDescription: "Why empathy and clear communication are essential for high-performing freelance pods.",
+  metaDescription:
+    "Why empathy and clear communication are essential for high-performing freelance pods. HYVE's 2026 guide to the Role of Soft Skills in Team Collaboration, for.",
   keywords: [
     "the role of soft skills in team collaboration",
     "freelancing India",

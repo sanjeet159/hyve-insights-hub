@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "how-to-get-your-first-client-on-hyve",
   title: "How to Get Your First Client on HYVE",
   metaTitle: "How to Get Your First Client on HYVE | HYVE Blog",
-  metaDescription: "A quick-start guide for new freelancers to land their first milestone on the platform.",
+  metaDescription:
+    "A quick-start guide for new freelancers to land their first milestone on the platform. HYVE's 2026 guide to how to Get Your First Client on HYVE, for Indian.",
   keywords: [
     "how to get your first client on hyve",
     "freelancing India",

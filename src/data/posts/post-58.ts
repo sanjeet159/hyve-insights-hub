@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "mental-health-for-freelancers-staying-sane-while-remote",
   title: "Mental Health for Freelancers: Staying Sane While Remote",
   metaTitle: "Mental Health for Freelancers Working Remotely | HYVE",
-  metaDescription: "Practical advice for maintaining work-life balance and mental well-being in the freelance world.",
+  metaDescription:
+    "Practical advice for maintaining work-life balance and mental well-being in the freelance world. HYVE's 2026 guide to mental Health for Freelancers, for.",
   keywords: [
     "mental health for freelancers: staying sane while remote",
     "freelancing India",

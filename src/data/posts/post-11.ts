@@ -5,10 +5,12 @@ const post: BlogPostWithContent = {
   id: "11",
   slug: "hire-freelancers-india-startup-guide-2026",
   title: "How to Hire Freelancers in India in 2026: The Founder's Playbook",
-  metaTitle: "Hire Freelancers in India: 2026 Founder's Guide | HYVE",
+  metaTitle:
+    "Hire Freelancers in India 2026: Founder's Guide | HYVE",
   metaDescription:
-    "Hire freelancers in India the smart way. Where to find them, what to pay, how to vet, and how escrow protects your project. A 2026 founder's playbook.",
+    "How to hire freelancers in India in 2026: where to find vetted talent, what to pay in rupees, how to vet in 30 minutes, and how escrow protects your budget.",
   keywords: [
+    "hire freelancers in india 2026",
     "hire freelancers india",
     "hire freelancers in india",
     "how to hire freelancers in india",

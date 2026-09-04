@@ -5,8 +5,10 @@ const post: BlogPostWithContent = {
   id: "50",
   slug: "setting-your-freelance-rates-india-vs-global-market",
   title: "Setting Your Freelance Rates: India vs Global Market",
-  metaTitle: "Setting Your Freelance Rates: India vs Global Market | HYVE Blog",
-  metaDescription: "A data-backed guide on how to price your services competitively while maximizing your earnings.",
+  metaTitle:
+    "Setting Your Freelance Rates: India vs Global Market | HYVE",
+  metaDescription:
+    "A data-backed guide on how to price your services competitively while maximizing your earnings. HYVE's 2026 guide to setting Your Freelance Rates, for Indian.",
   keywords: [
     "setting your freelance rates: india vs global market",
     "freelancing India",

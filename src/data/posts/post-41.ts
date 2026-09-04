@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "41",
   slug: "best-freelancing-sites-india",
   title: "Best Freelancing Sites in India 2026: A Comparative Review",
-  metaTitle: "Best Freelancing Sites in India 2026 | Top Platforms Compared",
+  metaTitle:
+    "Best Freelancing Sites in India 2026 | Top Platforms Compare",
   metaDescription: "Looking for the best freelancing sites in India? We compare top platforms including Upwork, Fiverr, and HYVE to help you choose the best.",
   keywords: ["best freelancing sites in india", "top freelance websites 2026", "upwork vs fiverr vs hyve", "freelance platform comparison"],
   excerpt: "Finding the right platform is key. Here is a breakdown of the best freelancing sites in India in 2026.",

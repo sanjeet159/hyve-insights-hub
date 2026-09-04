@@ -5,9 +5,12 @@ const post: BlogPostWithContent = {
   id: "42",
   slug: "why-startups-hire-freelancers",
   title: "Why Startups Are Hiring More Freelancers Than Ever in 2026",
-  metaTitle: "Why Startups Hire Freelancers 2026 | Teamlancing Trends",
-  metaDescription: "Discover why Indian startups are shifting from full-time hiring to team-based freelance models in 2026.",
-  keywords: ["why startups hire freelancers", "startup hiring trends 2026", "freelancer vs employee", "teamlancing benefits for startups"],
+  metaTitle:
+    "Why Startups Hire Freelancers in 2026 | Hiring Trends | HYVE",
+  metaDescription:
+    "Why Indian startups are hiring freelancers and freelance teams instead of full-time staff in 2026 — cost, speed, and how teamlancing changes the hiring math.",
+  keywords: [
+    "startups hiring freelancers 2026","why startups hire freelancers", "startup hiring trends 2026", "freelancer vs employee", "teamlancing benefits for startups"],
   excerpt: "The traditional full-time hiring model is being disrupted. Here is why startups are embracing freelance teams.",
   category: "For Clients",
   author: "HYVE Team",

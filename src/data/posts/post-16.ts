@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "16",
   slug: "how-to-become-a-freelancer-in-india-2026",
   title: "How to Become a Freelancer in India in 2026 (Step-by-Step Guide)",
-  metaTitle: "How to Become a Freelancer in India in 2026 (Step-by-Step) | HYVE",
+  metaTitle:
+    "How to Become a Freelancer in India in 2026 (Step-by | HYVE",
   metaDescription:
     "Step-by-step 2026 guide to becoming a freelancer in India — pick a skill, build a portfolio, find clients, set rates, handle GST and get paid safely.",
   keywords: [

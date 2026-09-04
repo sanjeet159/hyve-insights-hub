@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "20",
   slug: "ai-tools-every-indian-freelancer-should-use-2026",
   title: "AI Tools Every Indian Freelancer Should Use in 2026",
-  metaTitle: "Top AI Tools for Indian Freelancers in 2026 (Free + Paid) | HYVE",
+  metaTitle:
+    "Top AI Tools for Indian Freelancers in 2026 (Free + P | HYVE",
   metaDescription:
     "The best AI tools every Indian freelancer should use in 2026 — for writing, design, code, video, sales, and admin. Free + paid picks with real use cases.",
   keywords: [

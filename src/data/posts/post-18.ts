@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "18",
   slug: "top-freelancing-websites-india-2026",
   title: "Top 10 Freelancing Websites in India 2026 (Honest Comparison)",
-  metaTitle: "Top 10 Freelancing Websites in India 2026 (Honest Review) | HYVE",
+  metaTitle:
+    "Top 10 Freelancing Websites in India 2026 (Honest Rev | HYVE",
   metaDescription:
     "Comparing the top 10 freelancing websites for Indians in 2026 — Upwork, Fiverr, Toptal, HYVE, Truelancer & more. Real fees, payment safety, and best fit.",
   keywords: [

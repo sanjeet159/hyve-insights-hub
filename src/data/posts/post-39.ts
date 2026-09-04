@@ -5,9 +5,13 @@ const post: BlogPostWithContent = {
   id: "39",
   slug: "how-to-hire-freelancers-india",
   title: "How to Hire Top Freelancers in India: A Founder's Guide to Quality",
-  metaTitle: "Hire Freelancers in India 2026 | Founder's Guide to Quality",
-  metaDescription: "Struggling to hire quality freelancers? Here is how to filter for the best talent in India and ensure project success.",
-  keywords: ["hire freelancers india", "find best freelancers india", "how to hire talent india", "freelance hiring guide founders", "quality freelance hiring"],
+  metaTitle:
+    "How to Hire Top Freelancers in India (Vetting Guide) | HYVE",
+  metaDescription:
+    "How to hire top freelancers in India: the filters, test-project and vetting framework founders use to spot quality talent fast and keep the best ones long term.",
+  keywords: [
+    "hire top freelancers",
+    "hire top freelancers in india","hire freelancers india", "find best freelancers india", "how to hire talent india", "freelance hiring guide founders", "quality freelance hiring"],
   excerpt: "Hiring the right talent is hard. Learn the proven framework to find and retain top-tier Indian freelancers.",
   category: "Startup Hiring",
   author: "HYVE Team",

@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "mastering-soft-skills-for-freelance-success",
   title: "Mastering Soft Skills for Freelance Success",
   metaTitle: "Mastering Soft Skills for Freelance Success | HYVE Blog",
-  metaDescription: "Why communication and emotional intelligence are just as important as your technical skills.",
+  metaDescription:
+    "Why communication and emotional intelligence are just as important as your technical skills. HYVE's 2026 guide to mastering Soft Skills for Freelance.",
   keywords: [
     "mastering soft skills for freelance success",
     "freelancing India",

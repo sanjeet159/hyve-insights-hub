@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "building-trust-with-international-clients",
   title: "Building Trust with International Clients",
   metaTitle: "Building Trust with International Clients | HYVE Blog",
-  metaDescription: "Tips for overcoming cultural and geographic barriers to build long-term relationships with global founders.",
+  metaDescription:
+    "Tips for overcoming cultural and geographic barriers to build long-term relationships with global founders. HYVE's 2026 guide to building Trust with.",
   keywords: [
     "building trust with international clients",
     "freelancing India",

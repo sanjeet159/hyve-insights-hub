@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "creating-an-effective-workspace-at-home",
   title: "Creating an Effective Workspace at Home",
   metaTitle: "Creating an Effective Workspace at Home | HYVE Blog",
-  metaDescription: "Tips for designing a home office that boosts productivity and maintains professionalism.",
+  metaDescription:
+    "Tips for designing a home office that boosts productivity and maintains professionalism. HYVE's 2026 guide to creating an Effective Workspace at Home, for.",
   keywords: [
     "creating an effective workspace at home",
     "freelancing India",

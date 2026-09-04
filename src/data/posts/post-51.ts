@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "top-productivity-hacks-for-remote-freelancers",
   title: "Top Productivity Hacks for Remote Freelancers",
   metaTitle: "Top Productivity Hacks for Remote Freelancers | HYVE Blog",
-  metaDescription: "Stay focused and avoid burnout with these time-tested productivity techniques for independent professionals.",
+  metaDescription:
+    "Stay focused and avoid burnout with these time-tested productivity techniques for independent professionals. HYVE's 2026 guide to top Productivity Hacks for.",
   keywords: [
     "top productivity hacks for remote freelancers",
     "freelancing India",

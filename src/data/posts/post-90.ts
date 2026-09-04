@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "how-to-deliver-high-quality-work-every-time",
   title: "How to Deliver High-Quality Work Every Time",
   metaTitle: "How to Deliver High-Quality Work Every Time | HYVE Blog",
-  metaDescription: "Systems and processes for ensuring excellence and consistency in your freelance output.",
+  metaDescription:
+    "Systems and processes for ensuring excellence and consistency in your freelance output. HYVE's 2026 guide to how to Deliver High-Quality Work Every Time, for.",
   keywords: [
     "how to deliver high-quality work every time",
     "freelancing India",

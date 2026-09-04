@@ -5,8 +5,10 @@ const post: BlogPostWithContent = {
   id: "53",
   slug: "the-future-of-work-how-ai-is-changing-freelancing",
   title: "The Future of Work: How AI is Changing Freelancing",
-  metaTitle: "The Future of Work: How AI is Changing Freelancing | HYVE Blog",
-  metaDescription: "Analyze the impact of AI tools on the freelance economy and how to stay ahead of the curve.",
+  metaTitle:
+    "The Future of Work: How AI is Changing Freelancing | HYVE",
+  metaDescription:
+    "Analyze the impact of AI tools on the freelance economy and how to stay ahead of the curve. HYVE's 2026 guide to the Future of Work, for Indian freelancers.",
   keywords: [
     "the future of work: how ai is changing freelancing",
     "freelancing India",

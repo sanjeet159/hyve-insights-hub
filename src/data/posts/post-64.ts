@@ -5,8 +5,10 @@ const post: BlogPostWithContent = {
   id: "64",
   slug: "the-pros-and-cons-of-different-freelance-platforms",
   title: "The Pros and Cons of Different Freelance Platforms",
-  metaTitle: "The Pros and Cons of Different Freelance Platforms | HYVE Blog",
-  metaDescription: "An honest comparison of Fiverr, Upwork, and why HYVE is the new favorite for team-based work.",
+  metaTitle:
+    "The Pros and Cons of Different Freelance Platforms | HYVE",
+  metaDescription:
+    "An honest comparison of Fiverr, Upwork, and why HYVE is the new favorite for team-based work. HYVE's 2026 guide to the Pros and Cons of Different Freelance.",
   keywords: [
     "the pros and cons of different freelance platforms",
     "freelancing India",

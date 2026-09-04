@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "how-to-conduct-effective-remote-interviews",
   title: "How to Conduct Effective Remote Interviews",
   metaTitle: "How to Conduct Effective Remote Interviews | HYVE Blog",
-  metaDescription: "Tips for founders on vetting freelance talent through video calls and trial tasks.",
+  metaDescription:
+    "Tips for founders on vetting freelance talent through video calls and trial tasks. HYVE's 2026 guide to how to Conduct Effective Remote Interviews, for.",
   keywords: [
     "how to conduct effective remote interviews",
     "freelancing India",

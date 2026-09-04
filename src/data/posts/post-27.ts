@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "27",
   slug: "best-freelancing-platform-in-bangalore-2026",
   title: "Best Freelancing Platform in Bangalore 2026 (Honest Local Guide)",
-  metaTitle: "Best Freelancing Platform in Bangalore 2026: The Founder's Guide",
+  metaTitle:
+    "Best Freelancing Platform in Bangalore 2026: The Founder's G",
   metaDescription:
     "A local expert's guide to the best freelancing platforms in Bangalore for 2026. Compare fees, payout speeds, and access to the city's top startup talent.",
   keywords: [

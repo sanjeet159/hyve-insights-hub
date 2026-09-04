@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "the-impact-of-remote-work-on-team-culture",
   title: "The Impact of Remote Work on Team Culture",
   metaTitle: "The Impact of Remote Work on Team Culture | HYVE Blog",
-  metaDescription: "How to build a sense of belonging and shared purpose in a distributed freelance team.",
+  metaDescription:
+    "How to build a sense of belonging and shared purpose in a distributed freelance team. HYVE's 2026 guide to the Impact of Remote Work on Team Culture, for.",
   keywords: [
     "the impact of remote work on team culture",
     "freelancing India",
