@@ -6,7 +6,7 @@ const post: BlogPostWithContent = {
   slug: "how-to-re-engage-past-clients-for-new-work",
   title: "How to Re-engage Past Clients for New Work",
   metaTitle: "How to Re-engage Past Clients for New Work | HYVE Blog",
-  metaDescription: "Strategies for maintaining a warm lead pipeline through effective follow-ups.",
+  metaDescription: "Follow-up strategies that keep your freelance lead pipeline warm without being pushy, including cadence, templates and timing that convert.",
   keywords: [
     "how to re-engage past clients for new work",
     "freelancing India",

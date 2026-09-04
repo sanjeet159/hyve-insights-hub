@@ -6,7 +6,7 @@ const post: BlogPostWithContent = {
   slug: "budgeting-for-freelancers-managing-irregular-income",
   title: "Budgeting for Freelancers: Managing Irregular Income",
   metaTitle: "Budgeting for Freelancers: Managing Irregular Income | HYVE Blog",
-  metaDescription: "Smart financial habits to ensure you stay afloat during dry spells.",
+  metaDescription: "Smart money habits that keep freelancers afloat during dry spells: buffer targets, pricing floors, retainers, and a simple monthly cash plan.",
   keywords: [
     "budgeting for freelancers: managing irregular income",
     "freelancing India",

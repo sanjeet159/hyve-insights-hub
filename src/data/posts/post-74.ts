@@ -5,8 +5,8 @@ const post: BlogPostWithContent = {
   id: "74",
   slug: "why-specialized-agency-services-are-being-replaced-by-teams",
   title: "Why Specialized Agency Services are Being Replaced by Teams",
-  metaTitle: "Why Specialized Agency Services are Being Replaced by Teams | HYVE Blog",
-  metaDescription: "How the agility of freelance pods is disrupting the traditional agency model.",
+  metaTitle: "Why Agencies Are Being Replaced by Freelance Teams | HYVE",
+  metaDescription: "How the speed and pricing of freelance pods is disrupting traditional agency retainers, and what founders should choose in 2026.",
   keywords: [
     "why specialized agency services are being replaced by teams",
     "freelancing India",

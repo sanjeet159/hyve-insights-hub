@@ -6,7 +6,7 @@ const post: BlogPostWithContent = {
   slug: "how-to-overcome-procrastination-as-a-freelancer",
   title: "How to Overcome Procrastination as a Freelancer",
   metaTitle: "How to Overcome Procrastination as a Freelancer | HYVE Blog",
-  metaDescription: "Practical techniques for staying disciplined when you are your own boss.",
+  metaDescription: "Practical self-discipline techniques for freelancers who are their own boss: routines, deep-work blocks, accountability and realistic daily targets.",
   keywords: [
     "how to overcome procrastination as a freelancer",
     "freelancing India",

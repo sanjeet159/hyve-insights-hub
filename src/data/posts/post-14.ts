@@ -6,8 +6,7 @@ const post: BlogPostWithContent = {
   slug: "the-handoff-gap-silent-project-killer-freelancers",
   title: "The Handoff Gap: The Silent Project Killer Nobody Talks About",
   metaTitle: "The Handoff Gap: Why Multi-Freelancer Projects Fail | HYVE",
-  metaDescription:
-    "The handoff gap is the silent killer of Indian startup projects. Learn why hiring multiple freelancers causes 2–4 week delays, bugs, and broken design — and how to fix it.",
+  metaDescription: "The handoff gap silently kills Indian startup projects. See why hiring separate freelancers causes 2-4 week delays, bugs, and broken design.",
   keywords: [
     "handoff gap",
     "freelancer handoff problems",

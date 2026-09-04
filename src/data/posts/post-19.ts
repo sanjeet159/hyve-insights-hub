@@ -5,7 +5,7 @@ const post: BlogPostWithContent = {
   id: "19",
   slug: "how-to-start-a-tech-startup-in-india-2026",
   title: "How to Start a Tech Startup in India in 2026 (Founder's Guide)",
-  metaTitle: "How to Start a Tech Startup in India in 2026 | Founder's Guide | HYVE",
+  metaTitle: "How to Start a Tech Startup in India in 2026 | HYVE",
   metaDescription:
     "A practical 2026 founder's guide to starting a tech startup in India — idea validation, MVP, hiring, funding, DPIIT registration, and the first 12 months.",
   keywords: [
