@@ -138,6 +138,24 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  faqs: [
+    {
+      question: "What is teamlancing?",
+      answer: "Teamlancing is hiring a ready-made, cross-functional freelance team as a single unit instead of hiring individual freelancers separately. The team owns the whole outcome, from design to launch.",
+    },
+    {
+      question: "How is teamlancing different from an agency?",
+      answer: "You get agency-level coordination without agency overhead: no account managers, no long retainers, and a flat 10% platform fee on HYVE with escrow-funded milestones.",
+    },
+    {
+      question: "Why is teamlancing growing in India?",
+      answer: "Indian startups need speed with small budgets. Teamlancing removes the handoff gap between specialists and delivers a launch-ready outcome in weeks rather than months.",
+    },
+    {
+      question: "Who should use teamlancing?",
+      answer: "Founders building an MVP, launching a growth engine, or shipping a redesign, and any team that would otherwise have to coordinate three or more freelancers themselves.",
+    },
+  ],
 };
 
 export default post;

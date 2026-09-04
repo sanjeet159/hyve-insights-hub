@@ -253,6 +253,24 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  faqs: [
+    {
+      question: "How do you manage a remote freelance team effectively?",
+      answer: "Define one owner per outcome, keep a single source of truth for scope, run short async updates instead of daily calls, and tie payments to approved milestones.",
+    },
+    {
+      question: "What tools do distributed freelance teams need?",
+      answer: "A task board, a shared document space, one chat channel per project, and a milestone/payment system such as HYVE's escrow so delivery and payment stay aligned.",
+    },
+    {
+      question: "How do you handle time zones and availability?",
+      answer: "Agree on a small overlap window for decisions and make everything else async with written handoffs, so no one waits a full day to unblock work.",
+    },
+    {
+      question: "Why do remote freelance teams fail?",
+      answer: "Almost always coordination, not talent: unclear ownership, undefined deliverables and unfunded milestones. Fixing those three removes most remote delivery problems.",
+    },
+  ],
 };
 
 export default post;
