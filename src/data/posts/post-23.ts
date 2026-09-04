@@ -5,9 +5,10 @@ const post: BlogPostWithContent = {
   id: "23",
   slug: "how-to-write-freelance-proposal-that-wins-clients-2026",
   title: "How to Write a Freelance Proposal That Wins Clients in 2026 (With Templates)",
-  metaTitle: "Writing Winning Freelance Proposals in 2026: Tips & Templates",
+  metaTitle:
+    "Freelance Proposal Templates That Win Clients (2026) | HYVE",
   metaDescription:
-    "Master the art of the freelance proposal in 2026. Get proven templates, psychological hooks, and pricing strategies to win high-value startup clients.",
+    "Copy-paste freelance proposal templates for 2026, plus the 5-part structure, opening hooks and pricing lines that turn startup briefs into signed projects.",
   keywords: [
     "freelance proposal writing guide 2026",
     "best freelance proposal templates for developers",

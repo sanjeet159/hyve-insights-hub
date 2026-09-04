@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "28",
   slug: "freelancing-in-india-booming-startups-struggle-to-hire",
   title: "Freelancing in India Is Booming — So Why Do Startups Still Struggle to Hire?",
-  metaTitle: "Why Startups Struggle to Hire Indian Freelancers (2026 Guide)",
+  metaTitle:
+    "Why Startups Struggle to Hire Indian Freelancers (2026 Guide",
   metaDescription: "India's freelance boom is real, so why do startups still struggle to hire? Why old hiring models fail and how teamlancing fixes it.",
   keywords: [
     "freelancing in india 2026",

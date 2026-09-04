@@ -5,8 +5,10 @@ const post: BlogPostWithContent = {
   id: "49",
   slug: "how-to-write-a-winning-freelance-proposal",
   title: "How to Write a Winning Freelance Proposal",
-  metaTitle: "How to Write a Winning Freelance Proposal | HYVE Blog",
-  metaDescription: "Secrets to writing proposals that stand out and convert leads into long-term projects on HYVE.",
+  metaTitle:
+    "Freelance Proposal Examples That Convert Clients | HYVE",
+  metaDescription:
+    "Real freelance proposal examples and the writing habits behind them — how to open, scope, price and close so briefs turn into long-term projects on HYVE.",
   keywords: [
     "how to write a winning freelance proposal",
     "freelancing India",

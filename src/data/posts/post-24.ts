@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "24",
   slug: "gst-for-freelancers-india-complete-guide-2026",
   title: "GST for Freelancers in India: The Complete 2026 Guide",
-  metaTitle: "GST for Indian Freelancers 2026: The Ultimate Compliance Guide",
+  metaTitle:
+    "GST for Indian Freelancers 2026: The Ultimate Compliance Gui",
   metaDescription:
     "Stay compliant with GST in 2026. A comprehensive guide for Indian freelancers on registration thresholds, LUT for exports, and tax-saving strategies.",
   keywords: [

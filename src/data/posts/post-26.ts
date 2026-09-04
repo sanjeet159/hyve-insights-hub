@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "26",
   slug: "best-freelancing-platform-in-india-2026",
   title: "Best Freelancing Platform in India 2026 (Honest Ranked List)",
-  metaTitle: "10 Best Freelancing Platforms in India 2026 (Ranked by Payouts)",
+  metaTitle:
+    "10 Best Freelancing Platforms in India 2026 (Ranked by Payou",
   metaDescription:
     "Compare the top 10 freelancing platforms in India for 2026. Detailed analysis of fees, INR support, payment protection, and client quality for Indian pros.",
   keywords: [

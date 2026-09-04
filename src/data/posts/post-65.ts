@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "65",
   slug: "mastering-asynchronous-communication-for-remote-work",
   title: "Mastering Asynchronous Communication for Remote Work",
-  metaTitle: "Mastering Asynchronous Communication for Remote Work | HYVE Blog",
+  metaTitle:
+    "Mastering Asynchronous Communication for Remote Work | HYVE",
   metaDescription: "How to work effectively across time zones without constant meetings and disruptions.",
   keywords: [
     "mastering asynchronous communication for remote work",

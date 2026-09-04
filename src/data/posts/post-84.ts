@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "84",
   slug: "building-a-sustainable-freelance-career-10-year-plan",
   title: "Building a Sustainable Freelance Career: 10-Year Plan",
-  metaTitle: "Building a Sustainable Freelance Career: 10-Year Plan | HYVE Blog",
+  metaTitle:
+    "Building a Sustainable Freelance Career: 10-Year Plan | HYVE",
   metaDescription: "Thinking long-term about your professional growth and financial security as a freelancer.",
   keywords: [
     "building a sustainable freelance career: 10-year plan",

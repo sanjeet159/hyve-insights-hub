@@ -5,7 +5,8 @@ const post: BlogPostWithContent = {
   id: "68",
   slug: "common-mistakes-founders-make-when-hiring-freelancers",
   title: "Common Mistakes Founders Make When Hiring Freelancers",
-  metaTitle: "Common Mistakes Founders Make When Hiring Freelancers | HYVE Blog",
+  metaTitle:
+    "Common Mistakes Founders Make When Hiring Freelancers | HYVE",
   metaDescription: "A guide for startups on how to avoid the handoff gap and get the best results from remote talent.",
   keywords: [
     "common mistakes founders make when hiring freelancers",
