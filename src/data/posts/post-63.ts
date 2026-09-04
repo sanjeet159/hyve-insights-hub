@@ -7,7 +7,8 @@ const post: BlogPostWithContent = {
   title: "Investing for Freelancers: Planning for the Future",
   metaTitle:
     "Investing for Freelancers: Planning for the Future | HYVE",
-  metaDescription: "Financial planning tips for self-employed professionals, from SIPs to health insurance.",
+  metaDescription:
+    "Financial planning tips for self-employed professionals, from SIPs to health insurance. HYVE's 2026 guide to investing for Freelancers, for Indian.",
   keywords: [
     "investing for freelancers: planning for the future",
     "freelancing India",

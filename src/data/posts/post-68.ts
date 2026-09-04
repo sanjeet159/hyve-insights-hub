@@ -7,7 +7,8 @@ const post: BlogPostWithContent = {
   title: "Common Mistakes Founders Make When Hiring Freelancers",
   metaTitle:
     "Common Mistakes Founders Make When Hiring Freelancers | HYVE",
-  metaDescription: "A guide for startups on how to avoid the handoff gap and get the best results from remote talent.",
+  metaDescription:
+    "A guide for startups on how to avoid the handoff gap and get the best results from remote talent. HYVE's 2026 guide to common Mistakes Founders Make When.",
   keywords: [
     "common mistakes founders make when hiring freelancers",
     "freelancing India",

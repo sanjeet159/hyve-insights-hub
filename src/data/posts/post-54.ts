@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "escrow-payments-why-every-freelancer-needs-protection",
   title: "Escrow Payments: Why Every Freelancer Needs Protection",
   metaTitle: "Escrow Payments: Why Freelancers Need Protection | HYVE",
-  metaDescription: "Understand the importance of escrow in securing your payments and how HYVE handles it seamlessly.",
+  metaDescription:
+    "Understand the importance of escrow in securing your payments and how HYVE handles it seamlessly. HYVE's 2026 guide to escrow Payments, for Indian.",
   keywords: [
     "escrow payments: why every freelancer needs protection",
     "freelancing India",

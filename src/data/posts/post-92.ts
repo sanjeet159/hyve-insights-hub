@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "why-hyve-is-the-future-of-the-freelance-economy",
   title: "Why HYVE is the Future of the Freelance Economy",
   metaTitle: "Why HYVE is the Future of the Freelance Economy | HYVE Blog",
-  metaDescription: "An in-depth look at our mission to build the first team-based freelancing platform.",
+  metaDescription:
+    "An in-depth look at our mission to build the first team-based freelancing platform. HYVE's 2026 guide to why HYVE is the Future of the Freelance Economy, for.",
   keywords: [
     "why hyve is the future of the freelance economy",
     "freelancing India",

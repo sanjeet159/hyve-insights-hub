@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "finding-niche-markets-where-the-real-money-is",
   title: "Finding Niche Markets: Where the Real Money Is",
   metaTitle: "Finding Niche Markets: Where the Real Money Is | HYVE Blog",
-  metaDescription: "Why specialization is the key to higher rates and how to find your own freelance niche.",
+  metaDescription:
+    "Why specialization is the key to higher rates and how to find your own freelance niche. HYVE's 2026 guide to finding Niche Markets, for Indian freelancers.",
   keywords: [
     "finding niche markets: where the real money is",
     "freelancing India",

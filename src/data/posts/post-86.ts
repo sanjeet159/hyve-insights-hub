@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "understanding-ip-rights-in-freelance-projects",
   title: "Understanding IP Rights in Freelance Projects",
   metaTitle: "Understanding IP Rights in Freelance Projects | HYVE Blog",
-  metaDescription: "A clear guide for both freelancers and founders on who owns what after a project ends.",
+  metaDescription:
+    "A clear guide for both freelancers and founders on who owns what after a project ends. HYVE's 2026 guide to understanding IP Rights in Freelance Projects.",
   keywords: [
     "understanding ip rights in freelance projects",
     "freelancing India",

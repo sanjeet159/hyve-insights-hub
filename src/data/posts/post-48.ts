@@ -7,7 +7,8 @@ const post: BlogPostWithContent = {
   title: "The Rise of Teamlancing: Why Founders Prefer Pods",
   metaTitle:
     "The Rise of Teamlancing: Why Founders Prefer Pods | HYVE",
-  metaDescription: "Why individual freelancing is evolving into team-based collaborations and how it benefits startups.",
+  metaDescription:
+    "Why individual freelancing is evolving into team-based collaborations and how it benefits startups. HYVE's 2026 guide to the Rise of Teamlancing, for Indian.",
   keywords: [
     "the rise of teamlancing: why founders prefer pods",
     "freelancing India",

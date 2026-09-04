@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "building-a-portfolio-that-sells-your-skills",
   title: "Building a Portfolio That Sells Your Skills",
   metaTitle: "Building a Portfolio That Sells Your Skills | HYVE Blog",
-  metaDescription: "Tips for creating a visual and narrative portfolio that showcases your best work and attracts premium clients.",
+  metaDescription:
+    "Tips for creating a visual and narrative portfolio that showcases your best work and attracts premium clients. HYVE's 2026 guide to building a Portfolio That.",
   keywords: [
     "building a portfolio that sells your skills",
     "freelancing India",

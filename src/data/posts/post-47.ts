@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "navigating-gst-for-freelancers-a-complete-guide",
   title: "Navigating GST for Freelancers: A Complete Guide",
   metaTitle: "Navigating GST for Freelancers: A Complete Guide | HYVE Blog",
-  metaDescription: "Everything you need to know about GST registration, filing, and exemptions for Indian freelancers in 2026.",
+  metaDescription:
+    "Everything you need to know about GST registration, filing, and exemptions for Indian freelancers in 2026. HYVE's 2026 guide to navigating GST for.",
   keywords: [
     "navigating gst for freelancers: a complete guide",
     "freelancing India",

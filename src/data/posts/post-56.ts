@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "networking-for-freelancers-beyond-social-media",
   title: "Networking for Freelancers: Beyond Social Media",
   metaTitle: "Networking for Freelancers: Beyond Social Media | HYVE Blog",
-  metaDescription: "Effective strategies for building professional relationships that lead to referrals and collaborations.",
+  metaDescription:
+    "Effective strategies for building professional relationships that lead to referrals and collaborations. HYVE's 2026 guide to networking for Freelancers, for.",
   keywords: [
     "networking for freelancers: beyond social media",
     "freelancing India",

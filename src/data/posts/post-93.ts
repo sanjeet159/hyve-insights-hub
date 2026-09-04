@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "best-freelancing-opportunities-in-mumbai-2026",
   title: "Best Freelancing Opportunities in Mumbai 2026",
   metaTitle: "Best Freelancing Opportunities in Mumbai 2026 | HYVE Blog",
-  metaDescription: "A deep dive into the Mumbai market and what skills are in high demand right now.",
+  metaDescription:
+    "A deep dive into the Mumbai market and what skills are in high demand right now. HYVE's 2026 guide to best Freelancing Opportunities in Mumbai 2026, for.",
   keywords: [
     "best freelancing opportunities in mumbai 2026",
     "freelancing India",

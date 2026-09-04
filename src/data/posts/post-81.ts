@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "marketing-yourself-social-media-for-freelancers",
   title: "Marketing Yourself: Social Media for Freelancers",
   metaTitle: "Marketing Yourself: Social Media for Freelancers | HYVE Blog",
-  metaDescription: "Which platforms to focus on and what kind of content to share to attract your ideal clients.",
+  metaDescription:
+    "Which platforms to focus on and what kind of content to share to attract your ideal clients. HYVE's 2026 guide to marketing Yourself, for Indian freelancers.",
   keywords: [
     "marketing yourself: social media for freelancers",
     "freelancing India",

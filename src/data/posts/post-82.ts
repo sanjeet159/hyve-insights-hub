@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "why-india-is-the-best-place-for-global-startups-to-hire",
   title: "Why India is the Best Place for Global Startups to Hire",
   metaTitle: "Why India Is the Best Place for Startups to Hire | HYVE",
-  metaDescription: "Highlighting the talent pool and cost-effectiveness of the Indian freelance market.",
+  metaDescription:
+    "Highlighting the talent pool and cost-effectiveness of the Indian freelance market. HYVE's 2026 guide to why India is the Best Place for Global Startups to.",
   keywords: [
     "why india is the best place for global startups to hire",
     "freelancing India",

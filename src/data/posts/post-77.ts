@@ -7,7 +7,8 @@ const post: BlogPostWithContent = {
   title: "The Importance of Continuous Learning for Freelancers",
   metaTitle:
     "The Importance of Continuous Learning for Freelancers | HYVE",
-  metaDescription: "How to stay relevant in a fast-paced market by constantly upgrading your skills.",
+  metaDescription:
+    "How to stay relevant in a fast-paced market by constantly upgrading your skills. HYVE's 2026 guide to the Importance of Continuous Learning for Freelancers.",
   keywords: [
     "the importance of continuous learning for freelancers",
     "freelancing India",

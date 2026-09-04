@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "contract-essentials-for-freelancers-in-india",
   title: "Contract Essentials for Freelancers in India",
   metaTitle: "Contract Essentials for Freelancers in India | HYVE Blog",
-  metaDescription: "Must-have clauses in your freelance contracts to protect your IP and ensure timely payments.",
+  metaDescription:
+    "Must-have clauses in your freelance contracts to protect your IP and ensure timely payments. HYVE's 2026 guide to contract Essentials for Freelancers in.",
   keywords: [
     "contract essentials for freelancers in india",
     "freelancing India",

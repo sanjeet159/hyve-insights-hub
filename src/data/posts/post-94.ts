@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "scaling-your-startup-with-teamlancing-on-hyve",
   title: "Scaling Your Startup with Teamlancing on HYVE",
   metaTitle: "Scaling Your Startup with Teamlancing on HYVE | HYVE Blog",
-  metaDescription: "A success manual for founders looking to grow rapidly using pre-integrated freelance pods.",
+  metaDescription:
+    "A success manual for founders looking to grow rapidly using pre-integrated freelance pods. HYVE's 2026 guide to scaling Your Startup with Teamlancing on.",
   keywords: [
     "scaling your startup with teamlancing on hyve",
     "freelancing India",

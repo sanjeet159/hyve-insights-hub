@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "why-bangalore-is-the-freelance-capital-of-india",
   title: "Why Bangalore is the Freelance Capital of India",
   metaTitle: "Why Bangalore is the Freelance Capital of India | HYVE Blog",
-  metaDescription: "Exploring the vibrant freelance ecosystem in Bangalore and what it means for the future of work.",
+  metaDescription:
+    "Exploring the vibrant freelance ecosystem in Bangalore and what it means for the future of work. HYVE's 2026 guide to why Bangalore is the Freelance Capital.",
   keywords: [
     "why bangalore is the freelance capital of india",
     "freelancing India",

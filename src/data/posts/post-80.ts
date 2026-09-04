@@ -6,7 +6,8 @@ const post: BlogPostWithContent = {
   slug: "the-ethics-of-ai-in-freelancing-best-practices",
   title: "The Ethics of AI in Freelancing: Best Practices",
   metaTitle: "The Ethics of AI in Freelancing: Best Practices | HYVE Blog",
-  metaDescription: "How to use AI tools responsibly without compromising the quality or originality of your work.",
+  metaDescription:
+    "How to use AI tools responsibly without compromising the quality or originality of your work. HYVE's 2026 guide to the Ethics of AI in Freelancing, for.",
   keywords: [
     "the ethics of ai in freelancing: best practices",
     "freelancing India",
