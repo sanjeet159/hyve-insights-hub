@@ -273,6 +273,24 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  faqs: [
+    {
+      question: "How much can a freelancer realistically earn in India?",
+      answer: "Entry-level Indian freelancers typically earn Rs 20,000-40,000 a month, while specialists with proven results and a niche regularly cross Rs 1 lakh. The jump comes from switching from hourly task work to outcome-based projects and retainers.",
+    },
+    {
+      question: "What skills pay the most for Indian freelancers in 2026?",
+      answer: "Product design, full-stack and mobile development, performance marketing, technical SEO, AI/automation work, and financial modelling command the highest rates because they map directly to startup revenue.",
+    },
+    {
+      question: "How do I find clients who pay well?",
+      answer: "Stop bidding at the bottom of marketplaces. Publish proof of results, target funded startups, and work through platforms like HYVE where projects are escrow-funded and teams are pre-vetted, so pricing conversations start higher.",
+    },
+    {
+      question: "Is Rs 1 lakh per month sustainable as a freelancer?",
+      answer: "Yes, if you build repeat revenue. Two or three retainers plus one project usually beats chasing a dozen one-off gigs, and escrow-backed milestones remove the cash-flow gaps that break most freelance careers.",
+    },
+  ],
 };
 
 export default post;

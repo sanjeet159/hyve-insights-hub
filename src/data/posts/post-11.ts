@@ -214,6 +214,24 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  faqs: [
+    {
+      question: "How do I hire freelancers in India as a startup?",
+      answer: "Define the outcome and budget, shortlist pre-vetted talent, run a small paid milestone, and fund work through escrow so both sides are protected. HYVE handles vetting, contracts and payments in one place.",
+    },
+    {
+      question: "How much does it cost to hire freelancers in India?",
+      answer: "A focused MVP build typically runs Rs 3-12 lakh depending on scope, while individual specialists range from Rs 30,000 to Rs 2 lakh per month. HYVE charges a flat 10% platform fee.",
+    },
+    {
+      question: "Is it safer to hire a freelance team than individual freelancers?",
+      answer: "Yes for multi-skill work. A team owns the full outcome and removes the handoff gap between design, development and marketing that causes most delays.",
+    },
+    {
+      question: "How do I protect my startup legally when hiring freelancers?",
+      answer: "Use a written scope, an IP assignment clause, confidentiality terms and milestone-based escrow payments so deliverables and ownership are unambiguous.",
+    },
+  ],
 };
 
 export default post;

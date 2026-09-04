@@ -5,7 +5,7 @@ const post: BlogPostWithContent = {
   id: "15",
   slug: "agency-vs-freelancers-vs-teamlancing-startup-guide",
   title: "Agency vs Freelancers vs Teamlancing — Which Is Right for Your Startup?",
-  metaTitle: "Agency vs Freelancers vs Teamlancing: Best Hiring Model 2026 | HYVE",
+  metaTitle: "Agency vs Freelancers vs Teamlancing: Best Model 2026 | HYVE",
   metaDescription:
     "Agency, freelancers, or teamlancing — which hiring model actually fits your Indian startup? Honest 2026 comparison on cost, speed, quality, ownership, and risk.",
   keywords: [

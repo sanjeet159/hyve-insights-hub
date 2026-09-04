@@ -211,6 +211,24 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  faqs: [
+    {
+      question: "What do Indian startup clients want most from freelancers?",
+      answer: "Clear communication, predictable delivery and ownership of outcomes. Most clients rank reliability above raw skill because a missed deadline costs them more than a slightly better design.",
+    },
+    {
+      question: "How important is pricing to Indian clients?",
+      answer: "Less than freelancers assume. Clients compare value and risk, not just rate cards, which is why escrow protection and a written scope often win the project over a cheaper bid.",
+    },
+    {
+      question: "How can freelancers stand out to startup founders?",
+      answer: "Show relevant results, propose a clear plan with milestones, and reduce the founder's coordination work by bringing a complete team through HYVE instead of one skill.",
+    },
+    {
+      question: "Do clients prefer individual freelancers or teams?",
+      answer: "For anything beyond a single task, founders prefer a team that owns the whole outcome, because it removes handoff delays and the need to project-manage several people.",
+    },
+  ],
 };
 
 export default post;

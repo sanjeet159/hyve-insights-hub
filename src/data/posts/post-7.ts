@@ -222,6 +222,24 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  faqs: [
+    {
+      question: "What is the biggest mistake startups make when hiring freelancers?",
+      answer: "Hiring individual specialists separately and assuming they will coordinate themselves. The handoff gap between designer, developer and marketer is where most timelines and budgets are lost.",
+    },
+    {
+      question: "How do I avoid hiring the wrong freelancer?",
+      answer: "Ask for outcome-based case studies rather than portfolios, run a small paid trial milestone, and define deliverables in writing before work starts.",
+    },
+    {
+      question: "Should startups pay freelancers upfront?",
+      answer: "Use escrow-funded milestones instead of blind advances. The money is secured so the freelancer starts confidently, and it is only released when a milestone is approved.",
+    },
+    {
+      question: "Is hiring a freelance team cheaper than an agency?",
+      answer: "Usually yes. On HYVE a pre-vetted freelance team costs a fraction of agency retainers with a flat 10% platform fee and no account-management overhead.",
+    },
+  ],
 };
 
 export default post;

@@ -196,6 +196,24 @@ const post: BlogPostWithContent = {
 </div>
 
 </div>`,
+  faqs: [
+    {
+      question: "How should Indian freelancers price their services in 2026?",
+      answer: "Price on the value of the outcome, not hours. Set a project fee based on the client's result, keep a rate floor you never go below, and use retainers for ongoing work.",
+    },
+    {
+      question: "What is a good hourly rate for freelancers in India?",
+      answer: "Ranges vary widely: roughly Rs 500-1,200 for junior work, Rs 1,500-3,000 for experienced specialists, and higher for niche product, growth or AI expertise.",
+    },
+    {
+      question: "Should I show my prices publicly?",
+      answer: "Publish starting ranges to filter out low-budget enquiries, then quote precisely after a short scoping call so the price matches the actual scope.",
+    },
+    {
+      question: "How do I raise my rates without losing clients?",
+      answer: "Raise on new projects first, communicate increases with the results you delivered, and offer a retainer that gives the client predictability in exchange for the new rate.",
+    },
+  ],
 };
 
 export default post;

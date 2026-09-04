@@ -5,7 +5,7 @@ const post: BlogPostWithContent = {
   id: "44",
   slug: "how-to-build-freelance-teams-guide",
   title: "How to Build a Freelance Team in 2026: The Founder's Guide to Scaling Without Hiring",
-  metaTitle: "How to Build a Freelance Team: A Detailed Guide for Founders | HYVE",
+  metaTitle: "How to Build a Freelance Team: Founder Guide 2026 | HYVE",
   metaDescription:
     "Learn how to build and manage a freelance team in 2026. Avoid the 'handoff gap', master teamlancing, and scale your startup without the overhead of full-time hiring.",
   keywords: [

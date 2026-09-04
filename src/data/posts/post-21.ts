@@ -5,7 +5,7 @@ const post: BlogPostWithContent = {
   id: "21",
   slug: "freelance-vs-full-time-india-which-pays-more-2026",
   title: "Freelance vs Full-Time in India: Which Pays More in 2026?",
-  metaTitle: "Freelance vs Full-Time Job in India: Which Pays More in 2026? | HYVE",
+  metaTitle: "Freelance vs Full-Time in India: Which Pays More 2026 | HYVE",
   metaDescription:
     "Freelancing vs a full-time job in India in 2026 — real take-home comparison, hidden costs, taxes, benefits, and which actually pays more for your skill.",
   keywords: [

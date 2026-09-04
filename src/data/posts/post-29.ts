@@ -6,8 +6,7 @@ const post: BlogPostWithContent = {
   slug: "what-is-freelancing-simple-guide-founders-freelancers",
   title: "What Is Freelancing? A Simple Guide for Founders and Freelancers",
   metaTitle: "What Is Freelancing? 2026 Guide for Indian Founders & Talent",
-  metaDescription:
-    "A comprehensive guide to freelancing in 2026. Understand how it works for both talent and founders, the benefits of teamlancing, and how to succeed in India's gig economy.",
+  metaDescription: "A complete guide to freelancing in 2026: how it works for talent and founders, what teamlancing changes, and how to win in India.",
   keywords: [
     "what is freelancing india",
     "freelancing guide for founders",

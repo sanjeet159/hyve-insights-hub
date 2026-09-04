@@ -5,8 +5,8 @@ const post: BlogPostWithContent = {
   id: "73",
   slug: "the-legal-side-of-freelancing-in-india-a-founder-guide",
   title: "The Legal Side of Freelancing in India: A Founder Guide",
-  metaTitle: "The Legal Side of Freelancing in India: A Founder Guide | HYVE Blog",
-  metaDescription: "What startups need to know about Indian labor laws when hiring freelance teams.",
+  metaTitle: "The Legal Side of Freelancing in India: Guide | HYVE",
+  metaDescription: "What Indian startups and freelancers must know about contracts, labour rules, IP, GST and compliance when working with freelance teams.",
   keywords: [
     "the legal side of freelancing in india: a founder guide",
     "freelancing India",

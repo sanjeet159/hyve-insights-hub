@@ -5,7 +5,7 @@ const post: BlogPostWithContent = {
   id: "52",
   slug: "managing-client-expectations-the-key-to-long-term-success",
   title: "Managing Client Expectations: The Key to Long-term Success",
-  metaTitle: "Managing Client Expectations: The Key to Long-term Success | HYVE Blog",
+  metaTitle: "Managing Client Expectations for Freelancers | HYVE Blog",
   metaDescription: "How to communicate effectively and set boundaries to ensure client satisfaction and repeat business.",
   keywords: [
     "managing client expectations: the key to long-term success",

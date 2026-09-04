@@ -6,7 +6,7 @@ const post: BlogPostWithContent = {
   slug: "finding-work-life-balance-in-a-always-on-world",
   title: "Finding Work-Life Balance in a Always-On World",
   metaTitle: "Finding Work-Life Balance in a Always-On World | HYVE Blog",
-  metaDescription: "Setting boundaries and sticking to them to avoid burnout and maintain health.",
+  metaDescription: "How freelancers set and hold work-life boundaries to avoid burnout: client hours, response rules, workload caps and healthy recovery habits.",
   keywords: [
     "finding work-life balance in a always-on world",
     "freelancing India",

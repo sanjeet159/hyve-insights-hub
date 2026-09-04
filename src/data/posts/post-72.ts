@@ -6,7 +6,7 @@ const post: BlogPostWithContent = {
   slug: "handling-multiple-projects-without-burnout",
   title: "Handling Multiple Projects Without Burnout",
   metaTitle: "Handling Multiple Projects Without Burnout | HYVE Blog",
-  metaDescription: "Effective time management and organization tips for high-demand freelancers.",
+  metaDescription: "Time management and organisation tips for high-demand freelancers: batching, buffers, client windows, and simple systems that hold up under load.",
   keywords: [
     "handling multiple projects without burnout",
     "freelancing India",
