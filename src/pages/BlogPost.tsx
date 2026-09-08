@@ -39,15 +39,33 @@ const renderMarkdown = (content: string) =>
     const t = line.trim();
     if (!t) return <div key={i} className="h-3" />;
 
+    const inline = (s: string) =>
+      s
+        .replace(
+          /\*\*(.*?)\*\*/g,
+          '<strong class="font-semibold text-foreground">$1</strong>'
+        )
+        .replace(
+          /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
+          '<a href="$2" target="_blank" rel="noopener noreferrer" class="font-medium text-primary underline decoration-primary/30 underline-offset-4 hover:decoration-primary transition-colors">$1</a>'
+        );
+
     if (t.startsWith("### ")) {
       const text = t.slice(4);
+      const num = text.match(/^(\d+)\.\s+/)?.[1];
+      const label = num ? text.replace(/^\d+\.\s+/, "") : text;
       return (
         <h3
           key={i}
           id={slugify(text)}
-          className="mb-4 mt-10 font-heading text-xl font-bold text-foreground scroll-mt-24"
+          className="mb-4 mt-12 flex items-center gap-3 font-heading text-[22px] font-bold leading-snug tracking-[-0.01em] text-foreground scroll-mt-24"
         >
-          {text}
+          {num && (
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-primary/12 text-sm font-bold text-primary">
+              {num}
+            </span>
+          )}
+          {label}
         </h3>
       );
     }
@@ -58,9 +76,9 @@ const renderMarkdown = (content: string) =>
         <h2
           key={i}
           id={slugify(text)}
-          className="mb-5 mt-12 font-heading text-2xl font-bold text-foreground relative scroll-mt-24"
+          className="mb-6 mt-16 font-heading text-[30px] font-extrabold leading-tight tracking-[-0.02em] text-foreground relative scroll-mt-24"
         >
-          <span className="absolute -left-4 top-1 w-1 h-6 rounded-full bg-primary hidden lg:block" />
+          <span className="absolute -left-5 top-1.5 w-1.5 h-8 rounded-full bg-primary hidden lg:block" />
           {text}
         </h2>
       );
@@ -70,7 +88,7 @@ const renderMarkdown = (content: string) =>
       return (
         <blockquote
           key={i}
-          className="my-8 border-l-[3px] border-primary bg-accent/50 py-5 pl-6 pr-5 text-foreground/80 italic rounded-r-xl text-[15px] leading-relaxed"
+          className="my-10 rounded-2xl border-l-[3px] border-primary bg-accent/60 py-6 pl-7 pr-6 font-heading text-[18px] font-medium italic leading-relaxed text-foreground/90"
         >
           {t.slice(2).replace(/\*/g, "")}
         </blockquote>
@@ -78,29 +96,77 @@ const renderMarkdown = (content: string) =>
 
     if (t.startsWith("---"))
       return (
-        <div key={i} className="my-12 flex items-center gap-4">
+        <div key={i} className="my-14 flex items-center gap-4">
           <div className="h-px flex-1 bg-border/50" />
           <div className="h-1.5 w-1.5 rounded-full bg-primary/60" />
           <div className="h-px flex-1 bg-border/50" />
         </div>
       );
 
+    // Meta lines like: **Earnings:** X · **Tools:** Y · **Difficulty:** Z
+    if (t.includes("·") && /^\*\*[^*]+:\*\*/.test(t)) {
+      const parts = t.split("·").map((p) => p.trim()).filter(Boolean);
+      return (
+        <div key={i} className="mb-6 flex flex-wrap gap-2">
+          {parts.map((p, k) => {
+            const m = p.match(/^\*\*(.*?):\*\*\s*(.*)$/);
+            return (
+              <span
+                key={k}
+                className="inline-flex items-center gap-1.5 rounded-full border border-border/60 bg-muted/40 px-3 py-1.5 text-[13.5px]"
+              >
+                {m ? (
+                  <>
+                    <span className="font-semibold text-foreground/60">
+                      {m[1]}
+                    </span>
+                    <span className="font-semibold text-foreground">
+                      {m[2]}
+                    </span>
+                  </>
+                ) : (
+                  <span
+                    className="text-foreground/75"
+                    dangerouslySetInnerHTML={{ __html: inline(p) }}
+                  />
+                )}
+              </span>
+            );
+          })}
+        </div>
+      );
+    }
+
+    // Callouts: **Tip:** ... / **Note:** ...
+    const callout = t.match(/^\*\*(Tip|Note|Warning|Pro tip|Bonus):\*\*\s*([\s\S]*)$/i);
+    if (callout) {
+      return (
+        <div
+          key={i}
+          className="my-7 rounded-xl border border-primary/25 bg-primary/[0.06] px-5 py-4"
+        >
+          <span className="mb-1 block text-[11px] font-bold uppercase tracking-[0.14em] text-primary">
+            {callout[1]}
+          </span>
+          <span
+            className="block text-[16.5px] leading-[1.75] text-foreground/80"
+            dangerouslySetInnerHTML={{ __html: inline(callout[2]) }}
+          />
+        </div>
+      );
+    }
+
     if (/^\d+\.\s/.test(t)) {
       const num = t.match(/^(\d+)/)?.[1];
       return (
-        <div key={i} className="mb-3 flex gap-3.5 leading-relaxed">
-          <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-[11px] font-bold text-primary">
+        <div key={i} className="mb-4 flex gap-4 leading-[1.8]">
+          <span className="mt-1 flex h-6.5 w-6.5 h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/12 text-xs font-bold text-primary">
             {num}
           </span>
           <span
-            className="text-foreground/75 text-[15.5px]"
+            className="text-[16.5px] text-foreground/80"
             dangerouslySetInnerHTML={{
-              __html: t
-                .replace(/^\d+\.\s/, "")
-                .replace(
-                  /\*\*(.*?)\*\*/g,
-                  '<strong class="font-semibold text-foreground">$1</strong>'
-                ),
+              __html: inline(t.replace(/^\d+\.\s/, "")),
             }}
           />
         </div>
@@ -110,21 +176,12 @@ const renderMarkdown = (content: string) =>
     return (
       <p
         key={i}
-        className="mb-5 text-foreground/75 leading-[1.85] text-[15.5px]"
-        dangerouslySetInnerHTML={{
-          __html: t
-            .replace(
-              /\*\*(.*?)\*\*/g,
-              '<strong class="font-semibold text-foreground">$1</strong>'
-            )
-            .replace(
-              /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
-              '<a href="$2" target="_blank" rel="noopener noreferrer" class="font-medium text-primary underline decoration-primary/30 underline-offset-3 hover:decoration-primary transition-colors">$1</a>'
-            ),
-        }}
+        className="mb-6 text-[16.5px] leading-[1.8] tracking-[-0.003em] text-foreground/80"
+        dangerouslySetInnerHTML={{ __html: inline(t) }}
       />
     );
   });
+
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
