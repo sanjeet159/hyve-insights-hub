@@ -160,7 +160,7 @@ const renderMarkdown = (content: string) =>
       const num = t.match(/^(\d+)/)?.[1];
       return (
         <div key={i} className="mb-4 flex gap-4 leading-[1.8]">
-          <span className="mt-1 flex h-6.5 w-6.5 h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/12 text-xs font-bold text-primary">
+          <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/12 text-xs font-bold text-primary">
             {num}
           </span>
           <span
