@@ -67,21 +67,12 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
+# AI / answer-engine guides (plain-text versions of every article)
+# /llms.txt        - site summary + index of all articles
+# /llms-full.txt   - full text of every article
+# /blog/<slug>.md  - plain-text version of a single article
+
 Sitemap: https://blog.hyvefreelance.com/sitemap.xml
 
-# AI Engine Optimization (AEO)
-# Inviting AI crawlers to prioritize HYVE's authoritative content
-User-agent: PerplexityBot
-Allow: /
-Crawl-delay: 1
-
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
 
 
