@@ -313,6 +313,7 @@ const BlogPost = () => {
         <meta name="publisher" content="HYVE" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <link rel="canonical" href={postUrl} />
+        <link rel="alternate" type="text/markdown" href={`https://blog.hyvefreelance.com/blog/${post.slug}.md`} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="HYVE Blog" />
         <meta property="og:title" content={post.metaTitle} />
