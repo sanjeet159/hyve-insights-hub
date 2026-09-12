@@ -1,7 +1,7 @@
 // Regenerates public/sitemap.xml and public/llms.txt from the blog post data.
 // Runs automatically via the predev/prebuild npm hooks.
 
-import { writeFileSync } from "fs";
+import { writeFileSync, mkdirSync } from "fs";
 import { resolve } from "path";
 import { allPosts } from "../src/data/posts";
 
