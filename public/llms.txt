@@ -14,6 +14,9 @@
 ## Pages
 
 - [Home](https://blog.hyvefreelance.com/): Latest articles, featured post and category browser.
+- [Full text of all articles](https://blog.hyvefreelance.com/llms-full.txt): Complete plain-text corpus of every HYVE Blog article.
+
+Every article is also available as plain text at https://blog.hyvefreelance.com/blog/<slug>.md
 
 ## Blog
 
