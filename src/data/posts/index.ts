@@ -95,6 +95,7 @@ import post93 from "./post-93";
 import post94 from "./post-94";
 import post95 from "./post-95";
 import post96 from "./post-96";
+import post97 from "./post-97";
 
 
 export type { BlogPost, BlogPostWithContent, Category } from "./types";
@@ -103,6 +104,7 @@ export { categories } from "./types";
 // All posts in order (first is featured)
 export const allPosts = [
   post23,
+  post97,
   post96,
   post95,
 
