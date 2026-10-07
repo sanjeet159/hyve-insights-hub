@@ -1,4 +1,4 @@
-import post98 from "./post-98";
+import blog98 from "@/assets/blog-98-remote-developers.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
@@ -112,7 +112,7 @@ const post: BlogPostWithContent = {
 <li style="margin:0 0 10px 0"><strong>US/Western Europe equivalents:</strong> commonly $60–$150+ / hour</li>
 </ul>
 
-<p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 20px 0">For context on the full build cost, including what a complete MVP takes, see our <a href="/blog/mvp-development-cost-india-2026" style="color:#b58105;text-decoration:underline">MVP cost breakdown for India</a>.</p>
+<p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 20px 0">For context on the full build cost, including what a complete MVP takes, see our <a href="/blog/how-much-does-it-cost-to-build-an-mvp-in-india-2026" style="color:#b58105;text-decoration:underline">MVP cost breakdown for India</a>.</p>
 
 <p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 32px 0">Also budget for what is not the rate: project management time, revisions, and the cost of a bad hire who must be replaced. A slightly costlier developer who ships first is always cheaper in total.</p>
 
@@ -126,7 +126,7 @@ const post: BlogPostWithContent = {
 <li style="margin:0 0 10px 0"><strong>Full-time remote hires</strong> suit long-term product ownership. Slower and costlier to hire, but worth it for core IP.</li>
 </ul>
 
-<p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 32px 0">If you are weighing these options in depth, read our comparison of <a href="/blog/agency-vs-freelancers-vs-teamlancing" style="color:#b58105;text-decoration:underline">agency vs freelancers vs teamlancing</a>.</p>
+<p style="font-size:16px;color:#444;line-height:1.85;margin:0 0 32px 0">If you are weighing these options in depth, read our comparison of <a href="/blog/agency-vs-freelancers-vs-teamlancing-startup-guide" style="color:#b58105;text-decoration:underline">agency vs freelancers vs teamlancing</a>.</p>
 
 <h2 style="font-size:28px;font-weight:800;color:#0d0d0d;margin:40px 0 16px 0;line-height:1.25">Five mistakes companies make when hiring remote developers</h2>
 
