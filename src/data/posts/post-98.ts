@@ -1,4 +1,4 @@
-import blog98 from "@/assets/blog-98-remote-developers.jpg";
+import post98 from "./post-98";
 import type { BlogPostWithContent } from "./types";
 
 const post: BlogPostWithContent = {
