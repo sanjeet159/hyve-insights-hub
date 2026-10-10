@@ -115,7 +115,7 @@ const post: BlogPostWithContent = {
 <li><strong>Freelance platforms</strong> — large pools of talent, but quality varies and screening takes time.</li>
 <li><strong>Curated talent networks</strong> — smaller pools of pre-vetted professionals.</li>
 </ul>
-<p><strong>HYVE Freelance</strong> is a curated, team-based freelancing platform in India. Instead of piecing together individual freelancers, businesses can work with pre-vetted freelancers and cross-functional teams for product, technology and design work, with milestone-based payments and a flat 10% platform fee. For a broader overview, see our <a href="/blog/how-to-hire-freelancers-india-startup-guide-2026" ${a}>complete guide to hiring freelancers in India</a>.</p>
+<p><strong>HYVE Freelance</strong> is a curated, team-based freelancing platform in India. Instead of piecing together individual freelancers, businesses can work with pre-vetted freelancers and cross-functional teams for product, technology and design work, with milestone-based payments and a flat 10% platform fee. For a broader overview, see our <a href="/blog/hire-freelancers-india-startup-guide-2026" ${a}>complete guide to hiring freelancers in India</a>.</p>
 
 <h2 ${h2}>Questions to Ask Before Hiring an AI Developer</h2>
 <ul ${ul}>
