@@ -32,6 +32,7 @@ const post: BlogPostWithContent = {
   date: "October 10, 2026",
   readTime: "11 min read",
   image: blog101,
+  imageAlt: "Team of AI developers in India reviewing a neural network model and code on laptops",
   imagePosition: "center",
   featured: false,
   content: `<div style="font-family:inherit;line-height:1.8;color:#333;max-width:100%">

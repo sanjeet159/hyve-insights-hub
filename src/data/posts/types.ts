@@ -29,6 +29,7 @@ export interface BlogPost {
   readTime: string;
   image: string;
   featured?: boolean;
+  imageAlt?: string;
   imagePosition?: "top" | "center" | "bottom" | "left" | "right";
 }
 
