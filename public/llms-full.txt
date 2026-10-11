@@ -253,7 +253,7 @@ The most reliable approach is to write a clear brief and collect project-specifi
 
 - Curated talent networks — smaller pools of pre-vetted professionals.
 
-HYVE Freelance is a curated, team-based freelancing platform in India. Instead of piecing together individual freelancers, businesses can work with pre-vetted freelancers and cross-functional teams for product, technology and design work, with milestone-based payments and a flat 10% platform fee. For a broader overview, see our complete guide to hiring freelancers in India.
+HYVE Freelance is a curated, team-based freelancing platform in India. Instead of piecing together individual freelancers, businesses can work with pre-vetted freelancers and cross-functional teams for product, technology and design work, with milestone-based payments and a flat 10% platform fee. For a broader overview, see our complete guide to hiring freelancers in India. If your project is mostly conventional software, our guides on how to hire remote developers and hiring software developers in India cover those roles in depth.
 
 ## Questions to Ask Before Hiring an AI Developer
 
