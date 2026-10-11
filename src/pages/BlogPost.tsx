@@ -406,7 +406,7 @@ const BlogPost = () => {
             >
               <img
                 src={post.image}
-                alt={post.title}
+                alt={post.imageAlt || post.title}
                 className={`h-[260px] w-full object-cover md:h-[400px] lg:h-[460px] object-${post.imagePosition || "center"}`}
                 width={1200}
                 height={640}
