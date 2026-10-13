@@ -213,7 +213,7 @@ const post: BlogPostWithContent = {
 <li><strong>Curated talent networks</strong> — pre-vetted freelancers, less time spent screening.</li>
 </ul>
 <p>Choose the channel based on the type of work, the experience you need and how often you need editing support.</p>
-<p><strong>HYVE Freelance</strong> is a curated talent community that connects businesses with pre-vetted freelancers in India — including video editors and creative teams. Instead of sorting through hundreds of profiles, you can explore talent matched to your project, with milestone-based payments and a flat 10% platform fee. If you are hiring for other roles too, our <a href="/blog/how-to-hire-freelancers-india-startup-guide-2026" ${a}>complete guide to hiring freelancers in India</a> covers the wider process.</p>
+<p><strong>HYVE Freelance</strong> is a curated talent community that connects businesses with pre-vetted freelancers in India — including video editors and creative teams. Instead of sorting through hundreds of profiles, you can explore talent matched to your project, with milestone-based payments and a flat 10% platform fee. If you are hiring for other roles too, our <a href="/blog/hire-freelancers-india-startup-guide-2026" ${a}>complete guide to hiring freelancers in India</a> covers the wider process.</p>
 
 <h2 ${h2}>Final Thoughts</h2>
 <p>To hire the right freelance video editor, define what you need, review work that matches your format, agree clearly on deliverables and ownership, and start with a small, well-scoped project. Get those basics right and you can build a reliable video workflow without a full-time hire.</p>
