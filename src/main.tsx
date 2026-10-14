@@ -4,6 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import App from "./App.tsx";
 
+document.querySelectorAll('link[rel="canonical"]').forEach((l) => l.remove()); // static copy; Helmet sets the live one
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <HelmetProvider>
