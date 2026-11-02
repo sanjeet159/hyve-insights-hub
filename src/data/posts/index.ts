@@ -102,6 +102,7 @@ import post100 from "./post-100";
 import post101 from "./post-101";
 import post102 from "./post-102";
 import post103 from "./post-103";
+import post104 from "./post-104";
 import type { BlogPostWithContent } from "./types";
 
 
