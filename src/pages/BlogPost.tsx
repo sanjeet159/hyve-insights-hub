@@ -318,7 +318,7 @@ const BlogPost = () => {
         <meta property="og:site_name" content="HYVE Blog" />
         <meta property="og:title" content={post.metaTitle} />
         <meta property="og:description" content={post.excerpt || post.metaDescription} />
-        <meta property="og:image" content={post.image} />
+        <meta property="og:image" content={post.image?.startsWith("http") ? post.image : `https://blog.hyvefreelance.com${post.image}`} />
         <meta property="og:url" content={postUrl} />
         <meta property="og:locale" content="en_IN" />
         <meta property="article:published_time" content={post.date} />
@@ -332,7 +332,7 @@ const BlogPost = () => {
         <meta name="twitter:site" content="@HYVEfreelance" />
         <meta name="twitter:title" content={post.metaTitle} />
         <meta name="twitter:description" content={post.excerpt || post.metaDescription} />
-        <meta name="twitter:image" content={post.image} />
+        <meta name="twitter:image" content={post.image?.startsWith("http") ? post.image : `https://blog.hyvefreelance.com${post.image}`} />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbLd)}</script>
         {post.faqs && post.faqs.length > 0 && (

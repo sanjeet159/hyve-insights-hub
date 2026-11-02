@@ -153,6 +153,18 @@ A portfolio is more than attractive screens. When reviewing candidates, look for
 
 Most portfolios are team efforts. Ask each candidate to explain their exact contribution to every project they show: did they own the whole design, handle only the UI, or work from someone else's wireframes? Judging a freelance UX designer on work they did not lead is one of the most common hiring mistakes.
 
+For a quick screen, run each portfolio through five checks before a call:
+
+☑ Relevant to your product type (app, SaaS, e-commerce, website)
+
+☑ Shows process — wireframes, flows or reasoning, not just finals
+
+☑ Consistent quality across at least three projects
+
+☑ Includes responsive/mobile examples
+
+☑ The candidate can explain their exact role in each case study
+
 ## How Much Does It Cost to Hire a Freelance UI/UX Designer?
 
 There is no single market rate — the cost of hiring a UI UX designer depends heavily on scope, experience and location. Common pricing models:
@@ -202,6 +214,8 @@ CommunicationDirect with the designerInternal, immediateOften layered through ma
 Short-term projectsVery suitableRarely worth hiring forSuitable for large campaigns
 
 Long-term product developmentSuitable with a retainerStrong fit at steady volumePossible but costly over time
+
+Best suited forStartups and SMBs with defined projects or variable design needsProducts with design work every dayLarge launches needing research, design and engineering together
 
 No option is always better. Freelancers suit flexible budgets and growing teams, in-house designers suit products with steady daily design needs, and agencies suit large projects that need research, design and engineering coordination together. For a broader comparison across hiring models, read our guide to agency vs freelancers vs teamlancing.
 
