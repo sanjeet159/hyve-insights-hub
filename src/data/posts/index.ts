@@ -112,6 +112,7 @@ export { categories } from "./types";
 // All posts in order (first is featured)
 export const allPosts = [
   post23,
+  post104,
   post103,
   post102,
   post101,
