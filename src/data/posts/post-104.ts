@@ -1,4 +1,4 @@
-import blog103 from "@/assets/blog-103-uiux-designer.jpg";
+import blog104 from "@/assets/src/assets/blog-104.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const h2 = 'style="font-size:1.6rem;font-weight:800;margin:2.2rem 0 1rem;color:#111"';
@@ -34,7 +34,7 @@ const post: BlogPostWithContent = {
   author: "HYVE Team",
   date: "November 2, 2026",
   readTime: "12 min read",
-  image: blog103,
+  image: blog104,
   imageAlt: "Professional working at a computer planning digital workflows and business automation",
   imagePosition: "center",
   featured: false,
