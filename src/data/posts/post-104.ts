@@ -1,4 +1,4 @@
-import blog104 from "@/assets/src/assets/blog-104.jpg";
+import blog104 from "@/assets/blog-104.jpg";
 import type { BlogPostWithContent } from "./types";
 
 const h2 = 'style="font-size:1.6rem;font-weight:800;margin:2.2rem 0 1rem;color:#111"';
