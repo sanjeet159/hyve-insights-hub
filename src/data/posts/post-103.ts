@@ -131,6 +131,14 @@ const post: BlogPostWithContent = {
 <li><strong>Final product outcomes, when verifiable</strong> — links to live products, if available.</li>
 </ul>
 <p>Most portfolios are team efforts. Ask each candidate to explain their exact contribution to every project they show: did they own the whole design, handle only the UI, or work from someone else's wireframes? Judging a <strong>freelance UX designer</strong> on work they did not lead is one of the most common hiring mistakes.</p>
+<p>For a quick screen, run each portfolio through five checks before a call:</p>
+<div style="padding:1.2rem 1.4rem;border-left:4px solid #F1AB13;background:#FFF8E6;border-radius:12px;margin:0 0 1.2rem">
+<p style="margin:0 0 .4rem">☑ Relevant to your product type (app, SaaS, e-commerce, website)</p>
+<p style="margin:0 0 .4rem">☑ Shows process — wireframes, flows or reasoning, not just finals</p>
+<p style="margin:0 0 .4rem">☑ Consistent quality across at least three projects</p>
+<p style="margin:0 0 .4rem">☑ Includes responsive/mobile examples</p>
+<p style="margin:0">☑ The candidate can explain their exact role in each case study</p>
+</div>
 
 <h2 ${h2}>How Much Does It Cost to Hire a Freelance UI/UX Designer?</h2>
 <p>There is no single market rate — the <strong>cost of hiring a UI UX designer</strong> depends heavily on scope, experience and location. Common pricing models:</p>
@@ -165,6 +173,7 @@ const post: BlogPostWithContent = {
 <tr><td ${td}><strong>Communication</strong></td><td ${td}>Direct with the designer</td><td ${td}>Internal, immediate</td><td ${td}>Often layered through managers</td></tr>
 <tr><td ${td}><strong>Short-term projects</strong></td><td ${td}>Very suitable</td><td ${td}>Rarely worth hiring for</td><td ${td}>Suitable for large campaigns</td></tr>
 <tr><td ${td}><strong>Long-term product development</strong></td><td ${td}>Suitable with a retainer</td><td ${td}>Strong fit at steady volume</td><td ${td}>Possible but costly over time</td></tr>
+<tr><td ${td}><strong>Best suited for</strong></td><td ${td}>Startups and SMBs with defined projects or variable design needs</td><td ${td}>Products with design work every day</td><td ${td}>Large launches needing research, design and engineering together</td></tr>
 </tbody>
 </table>
 </div>
