@@ -103,6 +103,11 @@ import post101 from "./post-101";
 import post102 from "./post-102";
 import post103 from "./post-103";
 import post104 from "./post-104";
+import post105 from "./post-105";
+import post106 from "./post-106";
+import post107 from "./post-107";
+import post108 from "./post-108";
+import post109 from "./post-109";
 import type { BlogPostWithContent } from "./types";
 
 
@@ -112,6 +117,11 @@ export { categories } from "./types";
 // All posts in order (first is featured)
 export const allPosts = [
   post23,
+  post109,
+  post108,
+  post107,
+  post106,
+  post105,
   post104,
   post103,
   post102,
