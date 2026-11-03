@@ -5,7 +5,7 @@ const post: BlogPostWithContent = {
   id: "108",
   slug: "hire-freelance-graphic-designer-india",
   title: "How to Hire a Freelance Graphic Designer in India",
-  metaTitle: "How to Hire a Freelance Graphic Designer in India | HYVE Freelance",
+  metaTitle: "How to Hire a Freelance Graphic Designer | HYVE Freelance",
   metaDescription:
     "Find out how to hire a freelance graphic designer in India. Learn what skills to look for, how to review portfolios, compare pricing and brief your project.",
   keywords: [

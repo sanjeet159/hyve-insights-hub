@@ -5,7 +5,7 @@ const post: BlogPostWithContent = {
   id: "109",
   slug: "hire-freelance-content-writer",
   title: "How to Hire a Freelance Content Writer for Your Business",
-  metaTitle: "How to Hire a Freelance Content Writer for Your Business | HYVE Freelance",
+  metaTitle: "How to Hire a Freelance Content Writer | HYVE Freelance",
   metaDescription:
     "Learn how to hire a freelance content writer for your business. Explore writing skills, SEO experience, portfolio checks, pricing and hiring questions.",
   keywords: [
