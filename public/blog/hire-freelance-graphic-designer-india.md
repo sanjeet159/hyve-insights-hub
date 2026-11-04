@@ -9,7 +9,7 @@
 
 Strong visual design helps a business communicate clearly and create a consistent identity across its website, social channels, marketing materials and products. Whether you need a logo, brand identity, social media creatives or packaging, choosing the right designer starts with a clear brief. This guide explains how to hire a freelance graphic designer in India, assess their portfolio and agree on deliverables.
 
-In this guide: understand the role, define your project, assess relevant experience, compare hiring options and agree on deliverables before you begin.
+In this guide: clarify your design deliverables, review portfolios by specialization and agree on files, revisions and usage rights before you begin.
 
 ## When Does Your Business Need a Graphic Designer?
 
@@ -19,7 +19,7 @@ Think about the audience, where the design will appear and what action or messag
 
 ## What Does a Freelance Graphic Designer Do?
 
-Depending on their specialization, a graphic designer may develop visual concepts, create layouts, select typography and color systems, prepare digital or print assets, adapt designs to different formats and deliver editable source files. Brand identity projects may include logo variations, color palettes, typography, iconography and usage guidelines. Packaging or print projects may also require production-ready artwork and knowledge of technical specifications.
+Depending on their specialization, a graphic designer may develop visual concepts, create layouts, select typography and color systems, prepare digital or print assets, adapt designs to different formats and deliver editable source files. Brand identity projects may include logo variations, color palettes, typography, iconography and usage guidelines. Packaging or print projects may also require production-ready artwork and knowledge of technical specifications. If the project leans toward product interfaces rather than marketing visuals, see our guide on how to hire a freelance UI/UX designer.
 
 ## How to Hire a Freelance Graphic Designer in India: Step by Step
 
@@ -63,21 +63,21 @@ A freelancer can suit a defined design task or ongoing set of deliverables. An a
 
 ## Common Mistakes to Avoid
 
-Avoid hiring based only on the lowest price, giving a vague brief, choosing only by personal taste, expecting unlimited revisions, overlooking print specifications, using unlicensed assets or failing to clarify source files and usage rights. Give actionable feedback tied to the audience and project objective.
+Avoid hiring based only on the lowest price, giving a vague brief, choosing only by personal taste, expecting unlimited revisions, overlooking print specifications, using unlicensed assets or failing to clarify source files and usage rights. Give actionable feedback tied to the audience and project objective. For a broader look at hiring pitfalls, see common mistakes founders make when hiring freelancers.
 
 ## Where to Find a Freelance Graphic Designer in India
 
-Explore referrals, design communities, professional networks, freelance platforms and curated talent networks. Compare designers by specialization, relevant portfolio work, communication and availability.
+Explore referrals, design communities, professional networks, freelance platforms and curated talent networks. Compare designers by specialization, relevant portfolio work, communication and availability. If you need someone to own publishing and content planning for social creatives, see how to hire a freelance social media manager. For larger studio-style engagements, our review of the best website design companies in India explains when an agency may fit better.
 
 HYVE Freelance is a curated talent community that connects businesses with pre-vetted freelancers across design, product and development. You can explore talent for branding, marketing and other creative projects and agree on scope and milestones before starting.
 
 ## Prepare a Clear Project Brief
 
-Before contacting candidates, write down the business goal, current situation, required deliverables, tools or brand guidelines, target audience, budget range, timeline, approval process and how success will be assessed. Share only the access and information needed for the work, and agree on confidentiality and ownership where relevant.
+Before contacting candidates, write down the business goal, deliverables, formats and dimensions, brand guidelines, references, target audience, budget range, timeline, revision expectations and approval process. Share only the files and information needed for the work, and agree on source files and usage rights where relevant.
 
 ## Final Thoughts
 
-The right freelancer is not simply the person with the most impressive profile or lowest quote. Look for relevant work, a clear process, reliable communication and an understanding of your business objective. A well-defined first project gives both sides a practical way to confirm fit before committing to a larger engagement.
+The right designer is not simply the person with the most impressive profile or lowest quote. Look for work relevant to your deliverable, a clear design process, reliable communication and an understanding of your audience. A small, well-defined first project gives both sides a practical way to confirm fit before committing to a larger engagement.
 
 ### Looking to Find the Right Freelance Talent?
 
