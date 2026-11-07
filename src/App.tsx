@@ -8,7 +8,8 @@ import Index from "./pages/Index.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Sitemap from "./pages/Sitemap.tsx";
-
+import CityLandingPage from "./pages/CityLandingPage";
+import { cityPages } from "@/data/cities";
 
 const queryClient = new QueryClient();
 
@@ -23,9 +24,20 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/sitemap.xml" element={<Sitemap />} />
+
+          {cityPages.map((city) => (
+            <Route key={city.slug} path={`/${city.slug}`} element={<CityLandingPage />} />
+          ))}
+
+          {/* Redirect the common Bangalore spelling to the canonical Bengaluru URL. */}
+          <Route path="/bangalore" element={<Navigate to="/bengaluru" replace />} />
+
           {/* Legacy URL redirects — preserve link equity from old indexed slugs */}
-          <Route path="/how-to-start-freelancing-in-2025" element={<Navigate to="/blog/how-to-become-a-freelancer-in-india-2026" replace />} />
-          <Route path="/top-freelancing-platforms-in-2025" element={<Navigate to="/blog/top-freelancing-websites-india-2026" replace />} />
+          <Route path="/how-to-start-freelancing-in-2025"
+            element={<Navigate to="/blog/how-to-become-a-freelancer-in-india-2026" replace />} />
+          <Route path="/top-freelancing-platforms-in-2025"
+            element={<Navigate to="/blog/top-freelancing-websites-india-2026" replace />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
