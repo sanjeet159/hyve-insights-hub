@@ -1,12 +1,27 @@
 import { allPosts } from "@/data/posts";
+import { cityPages } from "@/data/cities";
+
+const escapeXml = (value: string): string =>
+  value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
 
 export const generateSitemapXML = (): string => {
   const baseUrl = "https://blog.hyvefreelance.com";
   const today = new Date().toISOString().split("T")[0];
 
-  const staticUrls: Array<{ loc: string; priority: string; changefreq: string; lastmod?: string }> = [
+  const staticUrls = [
     { loc: baseUrl, priority: "1.0", changefreq: "daily" },
   ];
+
+  const cityUrls = cityPages.map((city) => ({
+    loc: `${baseUrl}/${city.slug}`,
+    priority: "0.7",
+    changefreq: "monthly",
+  }));
 
   const postUrls = allPosts.map((post) => ({
     loc: `${baseUrl}/blog/${post.slug}`,
@@ -15,19 +30,15 @@ export const generateSitemapXML = (): string => {
     lastmod: today,
   }));
 
-  const allUrls = [...staticUrls, ...postUrls];
+  const allUrls = [...staticUrls, ...cityUrls, ...postUrls];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allUrls
-  .map(
-    (url) => `  <url>
-    <loc>${url.loc}</loc>
+${allUrls.map((url) => `  <url>
+    <loc>${escapeXml(url.loc)}</loc>
     <changefreq>${url.changefreq}</changefreq>
     <priority>${url.priority}</priority>
-    ${url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ""}
-  </url>`
-  )
-  .join("\n")}
+    ${"lastmod" in url && url.lastmod ? `<lastmod>${url.lastmod}</lastmod>` : ""}
+  </url>`).join("\n")}
 </urlset>`;
 };
